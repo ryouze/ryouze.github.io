@@ -1,0 +1,343 @@
+body {
+  background-color: #1a1a1a;
+  border: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  width: 100%;
+}
+
+a {
+  color: #bb4b4b;
+  text-decoration: none;
+}
+
+#js_disabled {
+  background-color: black;
+  color: yellow;
+  font-size: 150%;
+}
+
+/* centering hack */
+/* use with: margin-left: auto; margin-right: auto; width: 400px; */
+.centering_outer {
+  display: table;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.centering_middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* container for window content itself  */
+.fullscreen_window {
+  /* hide by default, js will unhide */
+  display: none;
+  height: 100%;
+  margin-bottom: 200px;
+  position: fixed;
+  width: 100%;
+}
+
+/* desktop window */
+#desktop_window {
+  background: linear-gradient(0deg, #f99777 -2.1%, #623aa2 90%);
+}
+
+#desktop_window #desktop_icons_container {
+  color: #d3d3d3;
+  float: left;
+  font-size: 90%;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+#desktop_window #desktop_icons_container .icon {
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  width: 90%;
+}
+
+#desktop_window #desktop_icons_container .icon:hover {
+  background-color: #bb4b4b;
+}
+
+#desktop_window #desktop_icons_container .icon img {
+  display: block;
+  margin: 0 auto;
+  width: 60px;
+}
+
+#desktop_window #desktop_icons_container .icon p {
+  text-shadow: 0px 0px 10px #1a1a1a;
+}
+
+/* container for title-bar with window title and close button */
+.titlebar {
+  align-items: center;
+  background-color: #262626;
+  border-bottom: 2px solid red;
+  color: #cccccc;
+  display: flex;
+  flex-direction: row;
+  font-size: 110%;
+  height: 45px;
+  position: fixed;
+  text-shadow: 0px 0px 5px black;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.titlebar .titlebar_left {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  font-size: 90%;
+  height: 100%;
+  justify-content: flex-start;
+  padding-left: 10px;
+  text-align: left;
+  user-select: text;
+}
+
+.titlebar .titlebar_left img {
+  height: 60%;
+  padding-right: 10px;
+}
+
+.titlebar .titlebar_right {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.titlebar .titlebar_right .close_button {
+  background-color: #4d4d4d;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #1a1a1a;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+}
+
+.titlebar .titlebar_right .close_button:hover {
+  background-color: red;
+}
+
+.app_container .app_content {
+  background-color: #1a1a1a;
+  border-radius: 25px;
+  box-shadow: 0px 0px 15px #262626;
+  font-size: 130%;
+  line-height: 1.5;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  user-select: text;
+  width: 40%;
+}
+
+/* containers for windows other than desktop */
+#notepad_window {
+  background: radial-gradient(circle, #5c0067 0%, #e45151 100%);
+  display: none;
+}
+
+#notepad_window h1 {
+  font-size: 250%;
+}
+
+#notepad_window hr {
+  color: #d3d3d3;
+  margin-bottom: 55px;
+  width: 30%;
+}
+
+#notepad_window .app_content {
+  padding-bottom: 60px;
+}
+
+#wa_rebrand_window {
+  display: none;
+}
+
+/* #terminal_window {
+  background: linear-gradient(45deg, #57003f 0%, #f57453 100%);
+  display: none;
+} */
+
+/* container for on-click menus such as start menu or calendar */
+.taskbar_menu_container {
+  border-top: 2px solid red;
+  bottom: 0;
+  display: none;
+  margin-bottom: 38px;
+  position: fixed;
+  z-index: 50;
+}
+
+/* container for start menu */
+#start_menu_container {
+  background-color: #1F1F1F;
+  border-top-right-radius: 15px;
+  box-shadow: 0px 0px 15px #0d0d0d;
+  height: 500px;
+  left: 0;
+  padding: 20px;
+  width: 300px;
+}
+
+#start_menu_container #avatar {
+  border-radius: 50%;
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+}
+
+#start_menu_container h1 {
+  user-select: text;
+  letter-spacing: 0.3em;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#start_menu_container a {
+  background-color: #0d0d0d;
+  border-radius: 10px;
+  border: 2px solid #262626;
+  display: block;
+  font-size: 130%;
+  letter-spacing: 0.3em;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+#start_menu_container a:hover {
+  background-color: #330000;
+}
+
+/* containers other than start menu */
+#menu_wifi {
+  border-top-left-radius: 15px;
+  box-shadow: 0px 0px 15px #0d0d0d;
+  right: 0;
+  width: 400px;
+}
+
+#menu_volumebar {
+  border-top-left-radius: 15px;
+  box-shadow: 0px 0px 15px #0d0d0d;
+  right: 0;
+  width: 400px;
+}
+
+#menu_calendar {
+  border-top-left-radius: 15px;
+  box-shadow: 0px 0px 15px #0d0d0d;
+  right: 0;
+  width: 400px;
+}
+
+#taskbar {
+  align-items: center;
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  height: 38px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+#taskbar .tb_left {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+#taskbar .tb_center {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+}
+
+#taskbar .tb_right {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+#taskbar .tb_right #taskbar_clock {
+  align-items: center;
+  background-color: black;
+  color: lightgray;
+  display: flex;
+  font-size: 95%;
+  font-weight: 100;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#taskbar .tb_right #taskbar_clock:hover {
+  background-color: #191919;
+}
+
+/* responsive design */
+/* narrow device */
+@media only screen and (max-width: 1200px) {
+  .app_container .app_content {
+    width: 85%;
+  }
+}
+
+/* mobile device */
+@media only screen and (max-width: 700px) {
+  #start_menu_container {
+    width: 250px;
+  }
+
+  #menu_wifi {
+    width: 280px;
+  }
+
+  #menu_volumebar {
+    width: 280px;
+  }
+
+  #menu_calendar {
+    width: 280px;
+  }
+}

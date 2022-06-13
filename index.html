@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="ryouze's personal webpage">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- run js only after the page has fully loaded -->
+    <script src="scripts/script.js" defer></script>
+    <title>リョウゼ / ryouze</title>
+</head>
+
+<body onload="startTime()">
+    <!-- display warning message if javascript disabled -->
+    <noscript>
+        <p id="js_disabled">javascript is disabled, some things might not work</p>
+    </noscript>
+    <!-- full page desktop window, toggled by buttons on taskbar or desktop icons -->
+    <section id="desktop_window" class="fullscreen_window" draggable="false" ondragstart="return false;">
+        <!-- desktop icons -->
+        <div id="desktop_icons_container">
+            <div class="icon" title="Text File" onclick="toggle_menu_visibility_by_id('hide_all');open_window('notepad')">
+                <img src="img/app/text.ico" alt="about shortcut">
+                <p>about.txt</p>
+            </div>
+            <div class="icon" title="HTML File" onclick="toggle_menu_visibility_by_id('hide_all');open_window('wa_rebrand')">
+                <img src="img/app/html.ico" alt="firefox shortcut">
+                <p>wa_rebrand.html</p>
+            </div>
+        </div>
+    </section>
+    <!-- full page windows other than desktop -->
+    <!-- notepad++ - about me -->
+    <section id="notepad_window" class="fullscreen_window" draggable="false" ondragstart="return false;">
+        <div class="app_container">
+            <div class="titlebar">
+                <div class="titlebar_left">
+                    <img src="img/app/notepad.ico" alt="notepad++ icon">
+                    <p>about.txt - Notepad++</p>
+                </div>
+                <div class="titlebar_right">
+                    <p class="close_button" title="Close window" onclick="toggle_menu_visibility_by_id('hide_all');open_window('notepad')">&#10005;</p>
+                </div>
+            </div>
+            <!-- hack for consistent centering -->
+            <div class="centering_outer">
+                <div class="centering_middle">
+                    <div class="app_content">
+                        <h1>Hi</h1>
+                        <hr>
+                        <p>I program in Python, JavaScript, Bash/Powershell and R.</p>
+                        <p>I'm currently learning C.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- firefox - wa_rebrand -->
+    <section id="wa_rebrand_window" class="fullscreen_window" draggable="false" ondragstart="return false;">
+        <div class="app_container">
+            <div class="titlebar">
+                <div class="titlebar_left">
+                    <img src="img/app/firefox.ico" alt="firefox icon">
+                    <p>wa_rebrand.html - Firefox</p>
+                </div>
+                <div class="titlebar_right">
+                    <p class="close_button" title="Close window" onclick="toggle_menu_visibility_by_id('hide_all');open_window('wa_rebrand')">&#10005;</p>
+                </div>
+            </div>
+            <!-- iframe: wa_rebrand -->
+            <iframe src="./wa_rebrand.html" style="border: none; bottom: 0px; height: 100%; margin: 0; overflow: visible; padding: 0; position: fixed; right: 0px; top: 0px; width: 100%; z-index: 20;"></iframe>
+        </div>
+    </section>
+    <!-- on-click start menu on taskbar -->
+    <section id="start_menu_container" class="taskbar_menu_container" draggable="false" ondragstart="return false;">
+        <img id="avatar" src="https://avatars.githubusercontent.com/u/98982999?v=4" title="きりさめ まりさ" alt="github avatar">
+        <h1>リョウゼ</h1>
+        <hr>
+        <a title="Open Github profile in new tab" href="https://github.com/ryouze/" target="_blank" rel="noopener noreferrer">私のGithub</a>
+        <a title="Open Github repository in new tab" href="https://github.com/ryouze/ryouze.github.io" target="_blank" rel="noopener noreferrer">ソースコード</a>
+    </section>
+    <!-- on-click menus other than start menu -->
+    <img id="menu_volumebar" class="taskbar_menu_container" src="img/taskbar/volume_bar.png" alt="taskbar volume bar" draggable="false" ondragstart="return false;">
+    <img id="menu_wifi" class="taskbar_menu_container" src="img/taskbar/wifi_menu.png" alt="taskbar wifi menu" draggable="false" ondragstart="return false;">
+    <img id="menu_calendar" class="taskbar_menu_container" src="img/taskbar/calendar.png" alt="taskbar menu_calendar" draggable="false" ondragstart="return false;">
+    <!-- taskbar at the bottom -->
+    <nav id="taskbar" draggable="false" ondragstart="return false;">
+        <!-- left side of taskbar -->
+        <div class="tb_left">
+            <img title="Start" src="img/taskbar/start_button.png" onmouseover="this.src='img/taskbar/start_button_hover.png'" onmouseout="this.src='img/taskbar/start_button.png'" alt="taskbar start button" onclick="toggle_menu_visibility_by_id('start_menu_container')">
+        </div>
+        <!-- center of taskbar -->
+        <div class="tb_center">
+            <img id="notepad" title="about.txt - Notepad++" src="img/taskbar/notepad.png" onmouseover="this.src='img/taskbar/notepad_hover.png'" onmouseout="this.src='img/taskbar/notepad.png'" alt="taskbar Notepad" onclick="toggle_menu_visibility_by_id('hide_all');open_window('notepad')">
+            <img id="firefox" title="wa_rebrand.html - Firefox" src="img/taskbar/firefox.png" onmouseover="this.src='img/taskbar/firefox_hover.png'" onmouseout="this.src='img/taskbar/firefox.png'" alt="taskbar firefox" onclick="toggle_menu_visibility_by_id('hide_all');open_window('wa_rebrand')">
+        </div>
+        <!-- right side of taskbar -->
+        <div class="tb_right">
+            <img title="Internet Access" src="img/taskbar/wifi.png" onmouseover="this.src='img/taskbar/wifi_hover.png'" onmouseout="this.src='img/taskbar/wifi.png'" onclick="toggle_menu_visibility_by_id('menu_wifi')" alt="taskbar wifi button">
+            <img title="Speakers: Muted" src="img/taskbar/volume.png" onmouseover="this.src='img/taskbar/volume_hover.png'" onmouseout="this.src='img/taskbar/volume.png'" onclick="toggle_menu_visibility_by_id('menu_volumebar')" alt="taskbar volume button">
+            <div id="taskbar_clock" onclick="toggle_menu_visibility_by_id('menu_calendar')">00:00:00</div>
+            <img id="desktop" src="img/taskbar/show_desktop.png" onmouseover="this.src='img/taskbar/show_desktop_hover.png'" onmouseout="this.src='img/taskbar/show_desktop.png'" alt="taskbar show desktop button" onclick="toggle_menu_visibility_by_id('hide_all');open_window(this.id)">
+        </div>
+    </nav>
+</body>
+
+</html>

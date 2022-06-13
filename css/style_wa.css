@@ -1,0 +1,195 @@
+body {
+  background-color: #1a1a1a;
+  border: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  margin-bottom: 150px;
+  margin-top: 120px;
+  outline: none;
+  overflow-x: hidden;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  width: 100%;
+}
+
+a {
+  color: #bb4b4b;
+  text-decoration: none;
+}
+
+/* resize and highlight image on hover */
+.image_highlight_on_hover {
+  transition: 0.3s;
+}
+
+.image_highlight_on_hover:hover {
+  transform: scale(0.95);
+  filter: brightness(120%) saturate(120%);
+}
+
+/* big title at beginning of page */
+.big_title_container {
+  font-size: 150%;
+  margin: auto;
+  user-select: text;
+  width: 30%;
+}
+
+.big_title_container img {
+  cursor: pointer;
+  width: 300px;
+}
+
+.big_title_container h1 {
+  letter-spacing: 0.05em;
+}
+
+.big_title_container p {
+  color: #d3d3d3;
+  letter-spacing: 0.1em;
+}
+
+.big_title_container hr {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  width: 150px;
+  color: #d3d3d3;
+}
+
+/* navbar container */
+#navbar {
+  background-color: #141414;
+  border-radius: 20px;
+  border: 2px solid #262626;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 7px;
+  width: 30%;
+}
+
+/* navbar: tab buttons that display different tabs on click */
+#navbar .tab_button {
+  background-color: #404040;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 150%;
+  height: 60px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  outline: none;
+  overflow: hidden;
+  width: 100%;
+}
+
+#navbar .tab_button:hover {
+  background-color: #808080;
+}
+
+#navbar .tab_button.active {
+  background-color: #bb4b4b;
+}
+
+/* tab container itself; hidden by default, js will unhide  */
+.tab_container {
+  background-color: #262626;
+  border-radius: 50px;
+  border: 2px solid #333333;
+  box-shadow: 0px 0px 15px #0d0d0d;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 50px;
+  user-select: text;
+  width: 40%;
+}
+
+/* description within full page tab */
+.description_container {
+  font-size: 110%;
+}
+
+.description_container hr {
+  margin-bottom: 50px;
+  /* margin-top: 50px; */
+  width: 80%;
+  color: #d3d3d3;
+}
+
+.description_container h2 {
+  margin-top: 60px;
+}
+
+.description_container p {
+  color: #d3d3d3;
+  letter-spacing: 0.03em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+.description_container img {
+  border-radius: 35px;
+  margin: auto;
+  padding: 10px;
+  width: 70%;
+}
+
+.description_container .img_wide {
+  width: 95%;
+}
+
+/* responsive design */
+/* narrow device */
+@media only screen and (max-width: 1200px) {
+  .big_title_container {
+    font-size: 150%;
+    width: 80%;
+  }
+
+  #navbar {
+    width: 50%;
+  }
+
+  .tab_container {
+    width: 70%;
+  }
+}
+
+/* mobile device */
+@media only screen and (max-width: 700px) {
+  #navbar {
+    width: 85%;
+  }
+
+  #navbar .tab_button {
+    font-size: 140%;
+  }
+
+  .tab_container {
+    border-radius: 20px;
+    padding: 30px;
+    width: 75%;
+  }
+
+  .description_container p {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .description_container img {
+    width: 95%;
+  }
+
+}

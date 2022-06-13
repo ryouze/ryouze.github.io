@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style_wa.css">
+    <!-- icons for navbar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- run js only after the page has fully loaded -->
+    <script src="scripts/script_wa.js" defer></script>
+    <title>subpage: wa_rebrand.html</title>
+</head>
+
+<body>
+    <div class="big_title_container" draggable="false" ondragstart="return false;">
+        <img class="image_highlight_on_hover" src="img/wa/wa_logo.png" onclick="window.open('https://www.wa.amu.edu.pl/wa/','_blank')" title="Open WA website in new tab" alt="wa logo shortcut">
+        <h1>wa rebrand 2022</h1>
+        <p>eltit group project</p>
+        <hr>
+    </div>
+    <div id="navbar">
+        <button class="tab_button" onclick="open_tab(event, 'home')" id="default_open"><i class="fa fa-home"></i> Overview</button>
+        <button class="tab_button" onclick="open_tab(event, 'plant')"><i class="fa fa-tree"></i> Bring a Plant</button>
+        <button class="tab_button" onclick="open_tab(event, 'map')"><i class="fa fa-map-marker"></i> Signs & Maps</button>
+        <button class="tab_button" onclick="open_tab(event, 'concept')"><i class="fa fa-photo"></i> Concept</button>
+        <button class="tab_button" onclick="open_tab(event, 'other')"><i class="fa fa-edit"></i> Other ideas</button>
+    </div>
+    <!-- tab: home -->
+    <div id="home" class="tab_container">
+        <div class="description_container">
+            <h1>Who we are</h1>
+            <p>We, students of ELTIT, are a group of people passionate about introducing positive change and bringing fun ideas into life. After three years of being part of the faculty of English, we have decided to put our creativity into making Heliodori a special and magical place for everyone. In our opinion, the spaces we visit every day do not reflect the unique spirit of UAM WA students. Therefore, we want to encourage all of you to help us reinvent the interior of our faculty and warm up the places where we spend so much of our time.</p>
+            <h1>Our proposal</h1>
+            <p>The classrooms of Collegium Heliodori can sometimes be bland and unfriendly. We are aware of the ongoing renovations inside the building; however, we would like to propose several solutions that could help to improve the atmosphere in the building of our faculty.</p>
+            <hr>
+            <h2>#1 The Bring A Plant To WA Initiative</h2>
+            <p>Bringing plants to the building would not only help to fill in the unutilized space in the corridors and classrooms but could also create a sense of community among students as they take care of the plants together.</p>
+            <h2>#2 Signs & Maps</h2>
+            <p>In addition to the map of the building being displayed around WA, we think including clear signs to important locations (e.g., BOS, the cloakroom, the cafeteria, or the students' room) would be very helpful for all students.</p>
+            <h2>#3 Concept</h2>
+            <p>Images showcasing how WA would look if our suggestions were taken into consideration.</p>
+            <h2>#4 Other ideas</h2>
+            <p>Ideas that we also had in mind.</p>
+        </div>
+    </div>
+    <!-- tab 1: plant -->
+    <div id="plant" class="tab_container">
+        <div class="description_container" draggable="false" ondragstart="return false;">
+            <h1>#1 Bring a Plant</h1>
+            <p>Bringing plants to the building would not only help to fill in the unutilized space in the corridors and classrooms but could also create a sense of community among students as they take care of the plants together.</p>
+            <p>In addition to bringing plants, the classrooms would also benefit from having more shelves and other usable surfaces where students would leave their belongings or study materials.</p>
+            <img src="img/wa/bring_a_plant.jpg" alt="bring a plant to wa">
+            <img src="img/wa/what_kind_of_plant.jpg" alt="what kind of plant can be brought">
+            <p style="text-align: center; font-size: 80%; padding: 5px">Please also bring small watering cans, so we can take care of the plants together.</p>
+            <img src="img/wa/odnowa_window.jpg" alt="window, bring a plant to uni">
+            <img src="img/wa/bring_a_plant_odnowa.jpg" alt="bring a plant, put it anywhere">
+            <img src="img/wa/plant_things_to_know.jpg" alt="things to know">
+        </div>
+    </div>
+    <!-- tab 2: map -->
+    <div id="map" class="tab_container">
+        <div class="description_container" draggable="false" ondragstart="return false;">
+            <h1>#2 Signs & Maps</h1>
+            <p>In addition to the map of the building being displayed around WA, we think including clear signs to important locations (e.g., BOS, the cloakroom, the cafeteria, or the students' room) would be very helpful for all students.</p>
+            <img class="img_wide" src="img/wa/sign1.png" alt="class numbers - this way">
+            <img class="img_wide" src="img/wa/sign2.png" alt="class numbers - through here">
+            <p style="margin-top: 60px;">In fact, we think that having maps present on the walls all around Collegium Heliodori would be more useful and easily accessible than handing out a lot of fliers.</p>
+            <img src="img/wa/much_confusion.jpg" alt="confused person">
+            <img src="img/wa/maps_everyone.jpg" alt="map of wa">
+        </div>
+    </div>
+    <!-- tab 3: concept -->
+    <div id="concept" class="tab_container">
+        <div class="description_container" draggable="false" ondragstart="return false;">
+            <h1>#3 Concept</h1>
+            <p>Images showcasing how WA would look if our suggestions were taken into consideration.</p>
+            <img class="img_wide" src="img/wa/class_before.jpg" alt="class without posters and plants">
+            <img class="img_wide" src="img/wa/class_after.jpg" alt="class with posters and plants">
+            <img class="img_wide" src="img/wa/stairs_before.jpg" alt="stairs without a plant">
+            <img class="img_wide" src="img/wa/stairs_after.jpg" alt="stairs with a plant">
+        </div>
+    </div>
+    <!-- tab 4: other -->
+    <div id="other" class="tab_container">
+        <div class="description_container" draggable="false" ondragstart="return false;">
+            <h1 style="margin-bottom: 50px">#4 Other ideas</h1>
+            <hr>
+            <h2>(I) Posters: Promotion of WA studies</h2>
+            <p>In order to popularize the studies conducted at WA, promotional concepts of said studies could be placed in the corridors and classrooms of the building. The concepts would provide more visual interest, as well as potentially spark students' interest in research and encourage them to participate in future studies. Such promotional concepts are currently being displayed at the entrance to the second floor.</p>
+            <h2>(II) Posters: WA students' art and interests</h2>
+            <p>In addition to concepts dealing strictly with university activities, concepts showcasing students' interests would help bring the building alive, too. Currently, several paintings done by students are displayed in the corridor on the second floor. However, more themed boards with art could be added to other places in the building - for example, one board can showcase photography, another poetry, etc.</p>
+            <h2>(III) WA Hall of Fame</h2>
+            <p>We could also feature well-known researchers who have visited and given a lecture for our faculty. Furthermore, each of the researcher could have a poster dedicated to them, which they could later sign. This would show students that they have many opportunities to meet scientists specializing in many different fields as well as listen to new, interesting research.</p>
+            <h2>(IV) Social media</h2>
+            <p>The faculty could also benefit from connecting with students through social media more. An idea we had to make the WA social media more useful is to provide weekly reviews, which would include possible days off, upcoming deadlines, and reminders for events and other student duties.</p>
+            <h2>(V) Murals</h2>
+            <p>Many classrooms have at least one completely blank wall, typically the one behind students' desks. Murals could be another way to bring more color and life to the classrooms.</p>
+        </div>
+    </div>
+</body>
+
+</html>
