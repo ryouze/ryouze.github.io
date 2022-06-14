@@ -1,3 +1,8 @@
+function go_to_top_of_page() {
+    document.body.scrollTop = 0; // safari
+    document.documentElement.scrollTop = 0; // firefox, chrome
+}
+
 // choose tab on click
 function open_tab(evt, target_name) {
     var i, tab_container, tab_button;
@@ -17,3 +22,4 @@ function open_tab(evt, target_name) {
 }
 // get the element with id="default_open" and click on it
 document.getElementById("default_open").click();
+
