@@ -1,0 +1,282 @@
+{
+    "Gassi gehen": {
+        "answer": "wyprowadzać psa",
+        "extra": "na spacer"
+    },
+    "abgeben": {
+        "answer": "oddać, zwrócić",
+        "extra": "coś"
+    },
+    "beliebt": {
+        "answer": "lubiany, popularny",
+        "extra": ""
+    },
+    "das Fell": {
+        "answer": "futro, sierść",
+        "extra": ""
+    },
+    "das Fleisch": {
+        "answer": "mięso",
+        "extra": ""
+    },
+    "das Fluchttier": {
+        "answer": "zwierze płochliwe",
+        "extra": ""
+    },
+    "das Haustier": {
+        "answer": "zwierze domowe",
+        "extra": ""
+    },
+    "das Huhn": {
+        "answer": "kurczak",
+        "extra": ""
+    },
+    "das Insekt": {
+        "answer": "insekt",
+        "extra": "klasa zwierząt"
+    },
+    "das Kaninchen": {
+        "answer": "królik",
+        "extra": ""
+    },
+    "das Krokodil": {
+        "answer": "krokodyl",
+        "extra": ""
+    },
+    "das Meerschweinchen": {
+        "answer": "świnka morska",
+        "extra": ""
+    },
+    "das Nutztier": {
+        "answer": "zwierzę użytkowe",
+        "extra": "np. krowa"
+    },
+    "das Pferd": {
+        "answer": "koń",
+        "extra": ""
+    },
+    "das Reptil": {
+        "answer": "gad",
+        "extra": "klasa zwierząt"
+    },
+    "das Schwein": {
+        "answer": "świnia",
+        "extra": ""
+    },
+    "das Säugetier": {
+        "answer": "ssak",
+        "extra": "klasa zwierząt"
+    },
+    "das Tier": {
+        "answer": "zwierze",
+        "extra": ""
+    },
+    "das Tierfutter": {
+        "answer": "karma dla zwierząt",
+        "extra": ""
+    },
+    "das Tierheim": {
+        "answer": "schronisko dla zwierząt",
+        "extra": ""
+    },
+    "das Verhalten": {
+        "answer": "zachowanie",
+        "extra": "np. dobre"
+    },
+    "das Wildschwein": {
+        "answer": "dzik",
+        "extra": ""
+    },
+    "der Affe": {
+        "answer": "małpa",
+        "extra": ""
+    },
+    "der Delfin": {
+        "answer": "delfin",
+        "extra": ""
+    },
+    "der Einbrecher": {
+        "answer": "włamywacz",
+        "extra": ""
+    },
+    "der Elefant": {
+        "answer": "słoń",
+        "extra": ""
+    },
+    "der Elektrozaun": {
+        "answer": "płot elektryczny",
+        "extra": "np. na farmie"
+    },
+    "der Fisch": {
+        "answer": "ryba",
+        "extra": "klasa zwierząt"
+    },
+    "der Fleischfresser": {
+        "answer": "mięsożerca",
+        "extra": "np. wilk"
+    },
+    "der Führerschein": {
+        "answer": "prawo jazdy",
+        "extra": "na samochód"
+    },
+    "der Hai": {
+        "answer": "rekin",
+        "extra": ""
+    },
+    "der Hamster": {
+        "answer": "chomik",
+        "extra": ""
+    },
+    "der Hase": {
+        "answer": "królik",
+        "extra": ""
+    },
+    "der Hund": {
+        "answer": "pies",
+        "extra": ""
+    },
+    "der Löwe": {
+        "answer": "lew",
+        "extra": ""
+    },
+    "der Papagei": {
+        "answer": "papuga",
+        "extra": ""
+    },
+    "der Pflanzenfresser": {
+        "answer": "roślinożerca",
+        "extra": "np. krowa"
+    },
+    "der Pinguin": {
+        "answer": "pingwin",
+        "extra": ""
+    },
+    "der Tierarzt": {
+        "answer": "weterynarz",
+        "extra": ""
+    },
+    "der Tierschutz": {
+        "answer": "ochrona zwierząt",
+        "extra": ""
+    },
+    "der Tiger": {
+        "answer": "tygrys",
+        "extra": ""
+    },
+    "der Unfall": {
+        "answer": "wypadek",
+        "extra": ""
+    },
+    "der Vogel": {
+        "answer": "ptak",
+        "extra": "klasa zwierząt"
+    },
+    "der Welpe": {
+        "answer": "szczeniak",
+        "extra": "mały pies"
+    },
+    "der Wisent": {
+        "answer": "żubr",
+        "extra": ""
+    },
+    "der Wolf": {
+        "answer": "wilk",
+        "extra": ""
+    },
+    "die Amphibie": {
+        "answer": "płaz",
+        "extra": "klasa zwierząt"
+    },
+    "die Bewegung": {
+        "answer": "ruch",
+        "extra": "np. fizyczny"
+    },
+    "die Giraffe": {
+        "answer": "żyrafa",
+        "extra": ""
+    },
+    "die Katze": {
+        "answer": "kot",
+        "extra": ""
+    },
+    "die Kuh": {
+        "answer": "krowa",
+        "extra": ""
+    },
+    "die Maus": {
+        "answer": "mysz",
+        "extra": ""
+    },
+    "die Pflanze": {
+        "answer": "roślina",
+        "extra": ""
+    },
+    "die Pflicht": {
+        "answer": "obowiązek",
+        "extra": "np. karmienia zwierząt"
+    },
+    "die Rasse": {
+        "answer": "rasa",
+        "extra": "np. psa"
+    },
+    "die Ratte": {
+        "answer": "szczur",
+        "extra": ""
+    },
+    "die Schildkröte": {
+        "answer": "żółw",
+        "extra": ""
+    },
+    "die Schlange": {
+        "answer": "wąż",
+        "extra": ""
+    },
+    "die Zucht": {
+        "answer": "hodowla",
+        "extra": "zwierząt"
+    },
+    "dort": {
+        "answer": "tam",
+        "extra": "coś jest"
+    },
+    "fangen": {
+        "answer": "łapać, chwytać",
+        "extra": ""
+    },
+    "füttern": {
+        "answer": "karmić",
+        "extra": "np. kota"
+    },
+    "gefährlich": {
+        "answer": "niebezpieczny",
+        "extra": "np. niedźwiedź"
+    },
+    "illegal": {
+        "answer": "nielegalny",
+        "extra": ""
+    },
+    "impfen": {
+        "answer": "szczepić",
+        "extra": ""
+    },
+    "kaputtmachen": {
+        "answer": "zepsuć",
+        "extra": "coś"
+    },
+    "nachtaktiv": {
+        "answer": "zwierze aktywne nocą, nocne",
+        "extra": ""
+    },
+    "süß, niedlich, putzig": {
+        "answer": "słodki, śmieszny",
+        "extra": "np. pies"
+    },
+    "wachsen": {
+        "answer": "rosnąć",
+        "extra": "np. zwierze"
+    },
+    "zum Tierarzt bringen": {
+        "answer": "zawieźć do weterynarza",
+        "extra": ""
+    }
+}

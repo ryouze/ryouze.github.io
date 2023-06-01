@@ -1,0 +1,342 @@
+{
+    "ablaufen": {
+        "answer": "wygasać",
+        "extra": ""
+    },
+    "alleine": {
+        "answer": "sam",
+        "extra": "np. mieszkać w domu"
+    },
+    "aufzählen": {
+        "answer": "wyliczać",
+        "extra": ""
+    },
+    "außerhalb": {
+        "answer": "na zewnątrz",
+        "extra": ""
+    },
+    "benutzen": {
+        "answer": "używać",
+        "extra": ""
+    },
+    "beschreiben": {
+        "answer": "opisywać, przedstawiać",
+        "extra": ""
+    },
+    "besichtigen": {
+        "answer": "zwiedzać",
+        "extra": ""
+    },
+    "besuchen": {
+        "answer": "odwiedzać",
+        "extra": ""
+    },
+    "bügeln": {
+        "answer": "prasować",
+        "extra": "np. ubrania"
+    },
+    "das Erlebnis": {
+        "answer": "przeżycie, przyoda",
+        "extra": ""
+    },
+    "das Glas": {
+        "answer": "szklanka",
+        "extra": ""
+    },
+    "das Instrument": {
+        "answer": "instrument",
+        "extra": ""
+    },
+    "das Mittelalter": {
+        "answer": "średniowiecze",
+        "extra": ""
+    },
+    "das Röhrchen": {
+        "answer": "rura",
+        "extra": ""
+    },
+    "das Schloss": {
+        "answer": "zamek",
+        "extra": ""
+    },
+    "dauern": {
+        "answer": "ostatni",
+        "extra": ""
+    },
+    "davon ausgehen": {
+        "answer": "przypuszczać, wyjść z założenia",
+        "extra": ""
+    },
+    "der Augenblick": {
+        "answer": "moment, chwila",
+        "extra": ""
+    },
+    "der Ausflug": {
+        "answer": "wycieczka",
+        "extra": "np. w góry"
+    },
+    "der Fallschirm": {
+        "answer": "spadochron",
+        "extra": ""
+    },
+    "der Gast": {
+        "answer": "gość",
+        "extra": "w domu"
+    },
+    "der Gegenstand": {
+        "answer": "przedmiot, obiekt",
+        "extra": ""
+    },
+    "der Hinweis": {
+        "answer": "wskazówka, podpowiedź",
+        "extra": ""
+    },
+    "der Junggesellenabschied": {
+        "answer": "wieczór kawalerski",
+        "extra": ""
+    },
+    "der Luftdruck": {
+        "answer": "ciśnienie powietrza",
+        "extra": ""
+    },
+    "der Ort": {
+        "answer": "miejsce",
+        "extra": ""
+    },
+    "der Schacht": {
+        "answer": "szyb",
+        "extra": ""
+    },
+    "der Schatz": {
+        "answer": "skarb",
+        "extra": ""
+    },
+    "der Spaziergang": {
+        "answer": "spacer",
+        "extra": ""
+    },
+    "der Unterschied": {
+        "answer": "różnica",
+        "extra": ""
+    },
+    "die Anspielung": {
+        "answer": "aluzja, nawiązanie do czegoś",
+        "extra": ""
+    },
+    "die Anstrengung": {
+        "answer": "wysiłek",
+        "extra": ""
+    },
+    "die Arbeitszeit": {
+        "answer": "godziny pracy",
+        "extra": ""
+    },
+    "die Aufgabe": {
+        "answer": "zadanie",
+        "extra": ""
+    },
+    "die Auswahl": {
+        "answer": "wybór",
+        "extra": "np. kolorów"
+    },
+    "die Bereicherung": {
+        "answer": "wzbogacenie, bogacenie się",
+        "extra": ""
+    },
+    "die Festung": {
+        "answer": "forteca",
+        "extra": ""
+    },
+    "die Freizeit": {
+        "answer": "czas wolny",
+        "extra": ""
+    },
+    "die Innenstadt": {
+        "answer": "śródmieście",
+        "extra": "środek miasta"
+    },
+    "die Luft": {
+        "answer": "powietrze",
+        "extra": ""
+    },
+    "die Pflicht": {
+        "answer": "obowiązek",
+        "extra": ""
+    },
+    "die Sauna": {
+        "answer": "sauna",
+        "extra": ""
+    },
+    "die Schlafenszeit": {
+        "answer": "pora spania",
+        "extra": ""
+    },
+    "die Stunde": {
+        "answer": "godzina",
+        "extra": ""
+    },
+    "die Verpflichtung": {
+        "answer": "zobowiązanie, obowiązek",
+        "extra": ""
+    },
+    "draußen": {
+        "answer": "na zewnątrz, na dworze",
+        "extra": ""
+    },
+    "durchsichtig": {
+        "answer": "przezroczysty",
+        "extra": ""
+    },
+    "ein Instrument spielen": {
+        "answer": "grać na instrumencie",
+        "extra": ""
+    },
+    "ein Rätsel lösen": {
+        "answer": "rozwiązać zagadkę",
+        "extra": ""
+    },
+    "eingeschränkt sein": {
+        "answer": "być ograniczonym",
+        "extra": ""
+    },
+    "einteilen": {
+        "answer": "dzielić, podzielić [się]",
+        "extra": ""
+    },
+    "entspannen": {
+        "answer": "zrelaksować się",
+        "extra": ""
+    },
+    "erklären": {
+        "answer": "wyjaśniać, objaśniać",
+        "extra": ""
+    },
+    "erkunden": {
+        "answer": "badać, poznawać",
+        "extra": ""
+    },
+    "erwähnen": {
+        "answer": "wspominać, napominać",
+        "extra": ""
+    },
+    "etwas erledigen": {
+        "answer": "załatwić coś",
+        "extra": ""
+    },
+    "etwas unternehmen": {
+        "answer": "podjąć się czegoś",
+        "extra": ""
+    },
+    "gefährlich": {
+        "answer": "niebezpieczny",
+        "extra": ""
+    },
+    "glatt": {
+        "answer": "gładki",
+        "extra": ""
+    },
+    "in der Sonne liegen": {
+        "answer": "leżeć w słońcu",
+        "extra": ""
+    },
+    "meditieren": {
+        "answer": "medytować",
+        "extra": ""
+    },
+    "merkwürdig": {
+        "answer": "dziwny",
+        "extra": ""
+    },
+    "neulich": {
+        "answer": "ostatnio, niedawno",
+        "extra": ""
+    },
+    "schwierig": {
+        "answer": "trudny",
+        "extra": ""
+    },
+    "sich aneignen": {
+        "answer": "przywłaszczać, zawłaszczać",
+        "extra": ""
+    },
+    "sich ausruhen": {
+        "answer": "wypoczywać, odpoczywać",
+        "extra": ""
+    },
+    "sich erinnern": {
+        "answer": "przypominać sobie",
+        "extra": ""
+    },
+    "sich etwas ausdenke": {
+        "answer": "wymyślić coś",
+        "extra": ""
+    },
+    "sich etwas vornehmen": {
+        "answer": "zamierzać coś zrobić",
+        "extra": ""
+    },
+    "sich kümmern um": {
+        "answer": "opiekować się, troszczyć się o",
+        "extra": ""
+    },
+    "sich verabreden": {
+        "answer": "umawiać się",
+        "extra": ""
+    },
+    "sich vorstellen": {
+        "answer": "przedstawiać się",
+        "extra": ""
+    },
+    "sich wundern": {
+        "answer": "zastanawiać się",
+        "extra": ""
+    },
+    "singen": {
+        "answer": "śpiewać",
+        "extra": ""
+    },
+    "springen": {
+        "answer": "skakać, podskakiwać",
+        "extra": ""
+    },
+    "spülen": {
+        "answer": "płukać, opłukiwać, myć",
+        "extra": "np. naczynia"
+    },
+    "stadtnah": {
+        "answer": "blisko miasta",
+        "extra": ""
+    },
+    "stattdessen": {
+        "answer": "zamiast tego",
+        "extra": ""
+    },
+    "unabhängig": {
+        "answer": "niezależny",
+        "extra": ""
+    },
+    "unterwegs sein": {
+        "answer": "być w drodze/ruchu",
+        "extra": "np. jako muzyk na trasie koncertowej"
+    },
+    "verbringen": {
+        "answer": "spędzać",
+        "extra": "np. czas"
+    },
+    "versuchen": {
+        "answer": "próbować",
+        "extra": "np. pomóc"
+    },
+    "wandern": {
+        "answer": "wędrować",
+        "extra": ""
+    },
+    "waschen": {
+        "answer": "myć, prać",
+        "extra": "np. warzywa, samochód"
+    },
+    "zur Verfügung haben": {
+        "answer": "mieć coś dostępne/do dyspozycji",
+        "extra": ""
+    }
+}

@@ -1,0 +1,218 @@
+{
+    "Gleich da drüben": {
+        "answer": "tam, po tamtej stronie",
+        "extra": "jest coś, np. bankomat"
+    },
+    "Ich bin hier fremd": {
+        "answer": "nie jestem stąd",
+        "extra": "zatrzymując kogoś na ulicy"
+    },
+    "Ich suche…": {
+        "answer": "Ja szukam…",
+        "extra": "Akkusativ"
+    },
+    "Nach dem Weg fragen": {
+        "answer": "pytać o drogę",
+        "extra": ""
+    },
+    "Verzeihung/Entschuldigung…": {
+        "answer": "Przepraszam…",
+        "extra": "zatrzymując kogoś na ulicy"
+    },
+    "Wo finde ich…": {
+        "answer": "Gdzie znajdę…",
+        "extra": "Akkusativ"
+    },
+    "Wo ist…": {
+        "answer": "Gdzie jest…",
+        "extra": ""
+    },
+    "abbiegen": {
+        "answer": "skręcać",
+        "extra": "w ulicę; czasownik roździelnie złożony"
+    },
+    "an der Ecke": {
+        "answer": "na rogu",
+        "extra": ""
+    },
+    "das Feuer": {
+        "answer": "ogień",
+        "extra": ""
+    },
+    "das Gebäude": {
+        "answer": "budynek",
+        "extra": "np. sklep"
+    },
+    "das Pferd": {
+        "answer": "koń",
+        "extra": ""
+    },
+    "das Schwert": {
+        "answer": "miecz",
+        "extra": "broń do walki"
+    },
+    "der Bettler": {
+        "answer": "żebrak",
+        "extra": ""
+    },
+    "der Gehweg": {
+        "answer": "chodnik",
+        "extra": "dla pieszych"
+    },
+    "der Geldautomat": {
+        "answer": "bankomat",
+        "extra": "do wypłacania pieniędzy"
+    },
+    "der Gänsestall": {
+        "answer": "gęsiarnia",
+        "extra": "miejsce do życia dla gęsi"
+    },
+    "der Mönch": {
+        "answer": "mnich",
+        "extra": "w kościele"
+    },
+    "der Nord": {
+        "answer": "północ",
+        "extra": ""
+    },
+    "der Ost": {
+        "answer": "wschód",
+        "extra": ""
+    },
+    "der Schnee": {
+        "answer": "śnieg",
+        "extra": "w zimie"
+    },
+    "der Soldat": {
+        "answer": "żołnierz",
+        "extra": ""
+    },
+    "der Süd": {
+        "answer": "południe",
+        "extra": ""
+    },
+    "der Umzug": {
+        "answer": "przeprowadzka, pochód, procesja",
+        "extra": "religijna"
+    },
+    "der West": {
+        "answer": "zachód",
+        "extra": ""
+    },
+    "der Zebrastreifen": {
+        "answer": "przejście dla pieszych",
+        "extra": "zebra, pasy na ulicy"
+    },
+    "die Brezel": {
+        "answer": "precel",
+        "extra": "jedzenie"
+    },
+    "die Gegend": {
+        "answer": "okolica",
+        "extra": ""
+    },
+    "die Haltestelle": {
+        "answer": "przystanek",
+        "extra": "np. autobusowy"
+    },
+    "die Hauptstraße": {
+        "answer": "ulica główna",
+        "extra": ""
+    },
+    "die Kreuzung": {
+        "answer": "skrzyżowanie",
+        "extra": "np. bis zur Kreuzung - aż do skrzyżowania"
+    },
+    "die Laterne": {
+        "answer": "latarnia",
+        "extra": "uliczna"
+    },
+    "die Lumpen": {
+        "answer": "szmaty",
+        "extra": "materiał, ubranie"
+    },
+    "die Straße": {
+        "answer": "ulica",
+        "extra": ""
+    },
+    "die Süßigkeit": {
+        "answer": "słodycze",
+        "extra": "jedzenie"
+    },
+    "entlang": {
+        "answer": "wzdłuż",
+        "extra": "drogi, łącznie z zakrętami; przed: Genitiv; po: Akkusativ; np. Geh die Blumenstraße entlang"
+    },
+    "gegenüber": {
+        "answer": "naprzeciw",
+        "extra": "Dativ, np. Das Schwimmbad liegt dem Café gegenüber"
+    },
+    "geh links": {
+        "answer": "idź w lewo",
+        "extra": ""
+    },
+    "geh rechts": {
+        "answer": "idź w prawo",
+        "extra": ""
+    },
+    "gleich um die Ecke": {
+        "answer": "tuż za rogiem",
+        "extra": ""
+    },
+    "immer geradeaus": {
+        "answer": "cały czas prosto",
+        "extra": ""
+    },
+    "in der Nähe von Supermarkt": {
+        "answer": "w pobliżu supermarketu",
+        "extra": ""
+    },
+    "leuchten": {
+        "answer": "świecić",
+        "extra": "latarnia w nocy"
+    },
+    "links": {
+        "answer": "lewo",
+        "extra": ""
+    },
+    "neben": {
+        "answer": "obok",
+        "extra": ""
+    },
+    "rechts": {
+        "answer": "prawo",
+        "extra": ""
+    },
+    "schnattern": {
+        "answer": "kwakać, gęgać",
+        "extra": "dźwięk wydawany przez gęś"
+    },
+    "teilen": {
+        "answer": "dzielić się",
+        "extra": "jedzeniem, pieniędzmi"
+    },
+    "um die Ecke": {
+        "answer": "za rogiem",
+        "extra": "Akkusativ"
+    },
+    "ungefähr/circa": {
+        "answer": "około",
+        "extra": "około 15 minut"
+    },
+    "unter": {
+        "answer": "pod, przy",
+        "extra": ""
+    },
+    "zurück": {
+        "answer": "z powrotem",
+        "extra": ""
+    },
+    "zwischen": {
+        "answer": "pomiędzy",
+        "extra": ""
+    },
+    "über": {
+        "answer": "przez",
+        "extra": ""
+    }
+}

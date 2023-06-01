@@ -1,0 +1,16 @@
+/* loaded when javascript is disabled, shows all full page tabs */
+#js_disabled {
+  background-color: darkred;
+  border-top: 1px solid red;
+  bottom: 0;
+  color: yellow;
+  font-size: 120%;
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+}
+
+.full_page_tab {
+  display: block;
+}

@@ -1,0 +1,1854 @@
+{
+    "Alltag": {
+        "answer": "zwykły dzień",
+        "extra": ""
+    },
+    "Angst spüren": {
+        "answer": "odczuwać strach",
+        "extra": ""
+    },
+    "April": {
+        "answer": "kwiecień",
+        "extra": ""
+    },
+    "Arzneimittel kaufen": {
+        "answer": "kupować leki",
+        "extra": ""
+    },
+    "August": {
+        "answer": "sierpień",
+        "extra": ""
+    },
+    "Auto fahren": {
+        "answer": "prowadzić samochód",
+        "extra": ""
+    },
+    "Bandmitglieder": {
+        "answer": "członkowie zespołu",
+        "extra": ""
+    },
+    "Besuch haben": {
+        "answer": "mieć wizytę",
+        "extra": ""
+    },
+    "Brief schreiben": {
+        "answer": "napisać list",
+        "extra": ""
+    },
+    "Briefmarken": {
+        "answer": "znaczki pocztowkowe",
+        "extra": ""
+    },
+    "Briefmarken kaufen": {
+        "answer": "kupować znaczki pocztowe",
+        "extra": ""
+    },
+    "Briefpapier": {
+        "answer": "materiały piśmiennicze",
+        "extra": ""
+    },
+    "Brot kaufen": {
+        "answer": "kupować chleb",
+        "extra": ""
+    },
+    "Bücher kaufen": {
+        "answer": "kupować książki",
+        "extra": ""
+    },
+    "Das Buch liegt auf dem Tisch": {
+        "answer": "książka leży na stole",
+        "extra": ""
+    },
+    "Das Wasser hat von der Decke getropft": {
+        "answer": "woda kapała z sufitu",
+        "extra": ""
+    },
+    "Der Stress im Büro ist groß": {
+        "answer": "stres w biurze jest duży",
+        "extra": ""
+    },
+    "Deutsch lernen": {
+        "answer": "uczyć się niemieckiego",
+        "extra": ""
+    },
+    "Dezember": {
+        "answer": "grudzień",
+        "extra": ""
+    },
+    "Die Vase steht auf dem Regal": {
+        "answer": "wazon stoi na półce",
+        "extra": ""
+    },
+    "Durchfall haben": {
+        "answer": "mieć rozwolnienie",
+        "extra": ""
+    },
+    "Eingeschlossen": {
+        "answer": "zamknięty",
+        "extra": ""
+    },
+    "Eis essen": {
+        "answer": "jeść lody",
+        "extra": "ei - jajko"
+    },
+    "Er soll Hustentee trinken": {
+        "answer": "on powinien pić herbatę na kaszel",
+        "extra": ""
+    },
+    "Er soll im Bett bleiben": {
+        "answer": "on powinien zostać w łóżku",
+        "extra": ""
+    },
+    "Es ist halb acht": {
+        "answer": "jest wpół do ósmej",
+        "extra": ""
+    },
+    "Es ist wie es ist": {
+        "answer": "jest jak jest",
+        "extra": ""
+    },
+    "Fahrkarten kaufen": {
+        "answer": "kupować bilet",
+        "extra": ""
+    },
+    "Fahrrad fahren": {
+        "answer": "jeździć na rowerze",
+        "extra": ""
+    },
+    "Februar": {
+        "answer": "luty",
+        "extra": ""
+    },
+    "Filme kaufen": {
+        "answer": "kupować filmy",
+        "extra": ""
+    },
+    "Fleisch": {
+        "answer": "mięso",
+        "extra": ""
+    },
+    "Freunde treffen": {
+        "answer": "spotykać się ze znajomymi",
+        "extra": ""
+    },
+    "Fußball spielen": {
+        "answer": "grać w piłkę nożną",
+        "extra": ""
+    },
+    "Gegensätze ziehen sich an": {
+        "answer": "przeciwieństwa się przyciągają",
+        "extra": ""
+    },
+    "Geld abheben": {
+        "answer": "podjąć pieniądze",
+        "extra": ""
+    },
+    "Gute Besserung!": {
+        "answer": "Szybkiego powrotu do zdrowia!",
+        "extra": ""
+    },
+    "Handschuhe": {
+        "answer": "rękawiczki",
+        "extra": ""
+    },
+    "Ich bin um Viertel vor acht ins Büro gefahren": {
+        "answer": "za piętnaście ósma poszedłem do biura",
+        "extra": ""
+    },
+    "Ich gebe Ihnen einen Rat": {
+        "answer": "daję panu radę",
+        "extra": ""
+    },
+    "Ich gehe aufs Klo": {
+        "answer": "idę do łazienki",
+        "extra": ""
+    },
+    "Ich lege das Buch auf den Tisch": {
+        "answer": "kładę książkę na stole na stół",
+        "extra": ""
+    },
+    "Ich stelle die Vase auf das Regal": {
+        "answer": "stawiam wazon na półkę",
+        "extra": ""
+    },
+    "Ich wache um sieben Uhr auf": {
+        "answer": "budzę się o siódmej",
+        "extra": "budzić się"
+    },
+    "Januar": {
+        "answer": "styczeń",
+        "extra": ""
+    },
+    "Juli": {
+        "answer": "lipiec",
+        "extra": ""
+    },
+    "Juni": {
+        "answer": "czerwiec",
+        "extra": ""
+    },
+    "Kleidung kaufen": {
+        "answer": "kupować ubrania",
+        "extra": ""
+    },
+    "Kopfschmerzen": {
+        "answer": "ból głowy",
+        "extra": ""
+    },
+    "Krankenversicherungskarte": {
+        "answer": "karta ubezpieczenia zdrowotnego",
+        "extra": ""
+    },
+    "Kuchen": {
+        "answer": "ciasto",
+        "extra": ""
+    },
+    "Lebensmittel kaufen": {
+        "answer": "kupować artykuły spożywcze",
+        "extra": ""
+    },
+    "Mai": {
+        "answer": "maj",
+        "extra": ""
+    },
+    "Medikamente": {
+        "answer": "lekarstwo",
+        "extra": ""
+    },
+    "Mist": {
+        "answer": "gnój",
+        "extra": "przekleństwo"
+    },
+    "März": {
+        "answer": "marzec",
+        "extra": ""
+    },
+    "November": {
+        "answer": "listopad",
+        "extra": ""
+    },
+    "Obst": {
+        "answer": "owoc",
+        "extra": ""
+    },
+    "Oktober": {
+        "answer": "październik",
+        "extra": ""
+    },
+    "Rad fahren": {
+        "answer": "jeździć na rowerze",
+        "extra": ""
+    },
+    "Schmerzen": {
+        "answer": "boleć",
+        "extra": "Ich habe Kopfschmerzen"
+    },
+    "Schokolade": {
+        "answer": "czekolada",
+        "extra": ""
+    },
+    "Schweinebraten": {
+        "answer": "pieczeń wieprzowa",
+        "extra": ""
+    },
+    "September": {
+        "answer": "sierpień",
+        "extra": ""
+    },
+    "Sie soll Nasentropfen nehmen": {
+        "answer": "ona powinna wziąć krople do nosa",
+        "extra": ""
+    },
+    "Skibrillen": {
+        "answer": "okulary narciarskie",
+        "extra": ""
+    },
+    "Tee": {
+        "answer": "herbata",
+        "extra": ""
+    },
+    "Tennis spielen": {
+        "answer": "grać w tenisa",
+        "extra": ""
+    },
+    "Verbandszeug": {
+        "answer": "bandaże",
+        "extra": ""
+    },
+    "Verstopfung haben": {
+        "answer": "mieć zaparcia",
+        "extra": ""
+    },
+    "Was gibt’s Neues in der Welt?": {
+        "answer": "co nowego w świecie?",
+        "extra": ""
+    },
+    "Wasser": {
+        "answer": "woda",
+        "extra": ""
+    },
+    "Wenn ich Milch trinke, bekomme ich Magenschmerzen": {
+        "answer": "kiedy piję mleko, boli mnie brzuch",
+        "extra": ""
+    },
+    "Wohnung aufräumen": {
+        "answer": "porzprzątać mieszkanie",
+        "extra": ""
+    },
+    "Wurst kaufen": {
+        "answer": "kupować kiełbasy",
+        "extra": ""
+    },
+    "Zeitung lesen": {
+        "answer": "czytać gazetę",
+        "extra": ""
+    },
+    "Zum Schluss": {
+        "answer": "wreszczie, w końcu",
+        "extra": ""
+    },
+    "alles wird gut": {
+        "answer": "wszystko będzie w porządku",
+        "extra": ""
+    },
+    "an der Ecke": {
+        "answer": "na rogu",
+        "extra": ""
+    },
+    "andere": {
+        "answer": "inny",
+        "extra": ""
+    },
+    "anrufen": {
+        "answer": "zadzwonić",
+        "extra": ""
+    },
+    "anspruchsvoll": {
+        "answer": "wymagający",
+        "extra": ""
+    },
+    "arbeiten": {
+        "answer": "pracować",
+        "extra": ""
+    },
+    "auf einmal": {
+        "answer": "nagle",
+        "extra": ""
+    },
+    "aufräumen": {
+        "answer": "sprzątać",
+        "extra": ""
+    },
+    "aufschreiben": {
+        "answer": "zanotować",
+        "extra": "ich muss mir alle Regeln aufschreiben"
+    },
+    "aufstehen": {
+        "answer": "wstawać",
+        "extra": ""
+    },
+    "aufwachen": {
+        "answer": "budzić się",
+        "extra": "ich wache meistens um 7 Uhr auf"
+    },
+    "ausschlafen": {
+        "answer": "wyspać się",
+        "extra": ""
+    },
+    "ausziehen": {
+        "answer": "wyprowadzić się",
+        "extra": ""
+    },
+    "beantworten": {
+        "answer": "odpowiadać",
+        "extra": ""
+    },
+    "bedeuten": {
+        "answer": "znaczyć",
+        "extra": "co to znaczy"
+    },
+    "beginnen": {
+        "answer": "zaczynać",
+        "extra": ""
+    },
+    "besonders": {
+        "answer": "szczególnie",
+        "extra": ""
+    },
+    "bestimmt": {
+        "answer": "na pewno",
+        "extra": "Bestimmt hast du schon eine Lösung gefunden"
+    },
+    "bevor": {
+        "answer": "przed, zanim",
+        "extra": ""
+    },
+    "bezahlen": {
+        "answer": "zapłacić",
+        "extra": ""
+    },
+    "bitter": {
+        "answer": "gorzki",
+        "extra": ""
+    },
+    "bringen": {
+        "answer": "przynosić",
+        "extra": ""
+    },
+    "damals": {
+        "answer": "wtedy, wcześniej, kiedyś",
+        "extra": ""
+    },
+    "das Auge": {
+        "answer": "oko",
+        "extra": ""
+    },
+    "das Bein": {
+        "answer": "noga",
+        "extra": ""
+    },
+    "das Blumengeschäft": {
+        "answer": "kwiaciarnia",
+        "extra": ""
+    },
+    "das Brot": {
+        "answer": "chleb",
+        "extra": ""
+    },
+    "das Brötchen": {
+        "answer": "bułka",
+        "extra": ""
+    },
+    "das Cafe": {
+        "answer": "kawiarnia",
+        "extra": ""
+    },
+    "das Café": {
+        "answer": "kawiarnia",
+        "extra": ""
+    },
+    "das Fahrrad": {
+        "answer": "rower",
+        "extra": ""
+    },
+    "das Fenster": {
+        "answer": "okno",
+        "extra": "Die Polizei hat das Fenster..."
+    },
+    "das Fenster einschlagen": {
+        "answer": "wybić okno",
+        "extra": ""
+    },
+    "das Fieber": {
+        "answer": "gorączka",
+        "extra": "Ich bin erkältet und habe Fieber."
+    },
+    "das Fotostudio": {
+        "answer": "studio fotograficzne",
+        "extra": ""
+    },
+    "das Fußballspiel": {
+        "answer": "mecz piłki nożnej",
+        "extra": ""
+    },
+    "das Geld abheben": {
+        "answer": "wypłacić pieniądze",
+        "extra": "z banku"
+    },
+    "das Geld einzahlen": {
+        "answer": "wpłacić pieniądze",
+        "extra": "do banku"
+    },
+    "das Geld wechseln": {
+        "answer": "wymieniać pieniądze",
+        "extra": ""
+    },
+    "das Gesicht": {
+        "answer": "twarz",
+        "extra": ""
+    },
+    "das Gesundheit": {
+        "answer": "zdrowie",
+        "extra": ""
+    },
+    "das Gleiche": {
+        "answer": "to samo",
+        "extra": "Immer das Gleiche, du kommst zu spät"
+    },
+    "das Hotel": {
+        "answer": "hotel",
+        "extra": ""
+    },
+    "das Jahr": {
+        "answer": "rok",
+        "extra": ""
+    },
+    "das Kino": {
+        "answer": "kino",
+        "extra": ""
+    },
+    "das Knie": {
+        "answer": "kolano",
+        "extra": ""
+    },
+    "das Loch": {
+        "answer": "dziura",
+        "extra": ""
+    },
+    "das Magengenschwur": {
+        "answer": "wrzód żołądka",
+        "extra": ""
+    },
+    "das Medikament": {
+        "answer": "lek",
+        "extra": ""
+    },
+    "das Meer": {
+        "answer": "morze",
+        "extra": ""
+    },
+    "das Militär": {
+        "answer": "wojsko",
+        "extra": ""
+    },
+    "das Mineralwasser": {
+        "answer": "woda",
+        "extra": ""
+    },
+    "das Mineralwasser mit Zitrone": {
+        "answer": "woda mineralna z cytryną",
+        "extra": ""
+    },
+    "das Mittelmeer": {
+        "answer": "Morze Śródziemne",
+        "extra": ""
+    },
+    "das Ohr": {
+        "answer": "ucho",
+        "extra": ""
+    },
+    "das Pech": {
+        "answer": "pech",
+        "extra": ""
+    },
+    "das Rathaus": {
+        "answer": "ratusz",
+        "extra": ""
+    },
+    "das Reisebüro": {
+        "answer": "biuro podróży",
+        "extra": ""
+    },
+    "das Restaurant": {
+        "answer": "restauracja",
+        "extra": ""
+    },
+    "das Rührei": {
+        "answer": "jajecznica",
+        "extra": ""
+    },
+    "das Schwimmbad": {
+        "answer": "basen",
+        "extra": ""
+    },
+    "das Spiegelei": {
+        "answer": "jajko sadzone",
+        "extra": ""
+    },
+    "das Stadtmuseum": {
+        "answer": "muzeum miejskie",
+        "extra": ""
+    },
+    "das Textilgeschäft": {
+        "answer": "sklep z tkaninami",
+        "extra": ""
+    },
+    "das Verkehrszentrum": {
+        "answer": "centrum komunikacyjne",
+        "extra": ""
+    },
+    "das Wissen": {
+        "answer": "wiedza",
+        "extra": ""
+    },
+    "das weiß ich nicht genau": {
+        "answer": "nie wiem tego dokładnie",
+        "extra": ""
+    },
+    "davon": {
+        "answer": "z tego",
+        "extra": "Ich habe keine Ahnung davon"
+    },
+    "den Boden wischen": {
+        "answer": "mopować podłogę",
+        "extra": ""
+    },
+    "den Brief beantworten": {
+        "answer": "odpowiadać na list",
+        "extra": ""
+    },
+    "der Arm": {
+        "answer": "ramię",
+        "extra": ""
+    },
+    "der Arzt": {
+        "answer": "lekarz",
+        "extra": ""
+    },
+    "der Aufenthalt": {
+        "answer": "pobyt",
+        "extra": ""
+    },
+    "der Ausflug": {
+        "answer": "wycieczka",
+        "extra": ""
+    },
+    "der Bahnhof": {
+        "answer": "dworzec kolejowy",
+        "extra": ""
+    },
+    "der Bauch": {
+        "answer": "brzuch",
+        "extra": ""
+    },
+    "der Busbahnhof": {
+        "answer": "dworzec autobusowy",
+        "extra": ""
+    },
+    "der Busen": {
+        "answer": "biust",
+        "extra": ""
+    },
+    "der Bäcker": {
+        "answer": "piekarz",
+        "extra": ""
+    },
+    "der Bürgerkrieg": {
+        "answer": "wojna domowa",
+        "extra": ""
+    },
+    "der Chef": {
+        "answer": "szef",
+        "extra": ""
+    },
+    "der Einbrecher": {
+        "answer": "włamywacz",
+        "extra": ""
+    },
+    "der Fahrplan": {
+        "answer": "rozkład jazdy",
+        "extra": ""
+    },
+    "der Finger": {
+        "answer": "palec",
+        "extra": ""
+    },
+    "der Flughafen": {
+        "answer": "lotnisko",
+        "extra": ""
+    },
+    "der Fortschritt": {
+        "answer": "postęp",
+        "extra": ""
+    },
+    "der Fuß": {
+        "answer": "stopa",
+        "extra": ""
+    },
+    "der Gartenschlauch": {
+        "answer": "wąż ogrodowy",
+        "extra": ""
+    },
+    "der Getränkemarkt": {
+        "answer": "sklep z napojami",
+        "extra": ""
+    },
+    "der Gewinn": {
+        "answer": "wygrana",
+        "extra": ""
+    },
+    "der Hals": {
+        "answer": "szyja",
+        "extra": ""
+    },
+    "der Himmel": {
+        "answer": "niebo",
+        "extra": ""
+    },
+    "der Hinweis": {
+        "answer": "nawiązanie/informacja/wskazówka",
+        "extra": ""
+    },
+    "der Husten": {
+        "answer": "kaszel",
+        "extra": ""
+    },
+    "der Intercity nach Hamburg": {
+        "answer": "pociąg do Hamburga",
+        "extra": ""
+    },
+    "der Kaffee": {
+        "answer": "kawa",
+        "extra": ""
+    },
+    "der Kamillentee": {
+        "answer": "herbata rumiankowa",
+        "extra": ""
+    },
+    "der Kamm": {
+        "answer": "grzebień",
+        "extra": ""
+    },
+    "der Keller": {
+        "answer": "piwnica",
+        "extra": ""
+    },
+    "der Kellner": {
+        "answer": "kelner",
+        "extra": ""
+    },
+    "der Kopf": {
+        "answer": "głowa",
+        "extra": ""
+    },
+    "der Linienbus": {
+        "answer": "autobus liniowy",
+        "extra": "kursujący regularnie"
+    },
+    "der Lärm": {
+        "answer": "hałas",
+        "extra": "Kinder machen viel Lärm"
+    },
+    "der Marktplatz": {
+        "answer": "rynek",
+        "extra": ""
+    },
+    "der Missbrauch": {
+        "answer": "nadużycie",
+        "extra": ""
+    },
+    "der Monat": {
+        "answer": "miesiąc",
+        "extra": ""
+    },
+    "der Mund": {
+        "answer": "usta",
+        "extra": ""
+    },
+    "der Mutig": {
+        "answer": "odwaga",
+        "extra": ""
+    },
+    "der Nachrichtensender": {
+        "answer": "rozgłośnia",
+        "extra": ""
+    },
+    "der Nebentisch": {
+        "answer": "stół obok",
+        "extra": ""
+    },
+    "der Ort": {
+        "answer": "miejscowość",
+        "extra": ""
+    },
+    "der Pullover": {
+        "answer": "sweter",
+        "extra": ""
+    },
+    "der Quark": {
+        "answer": "twaróg",
+        "extra": ""
+    },
+    "der Quatsch": {
+        "answer": "nonsens, bzdura",
+        "extra": "to największa bzdura jaką słyszałem"
+    },
+    "der Quell": {
+        "answer": "źródło",
+        "extra": "internet to źródło wiedzy"
+    },
+    "der Rat": {
+        "answer": "rada",
+        "extra": ""
+    },
+    "der Rücken": {
+        "answer": "plecy",
+        "extra": ""
+    },
+    "der Saft": {
+        "answer": "sok",
+        "extra": "Orangesaft"
+    },
+    "der Salat": {
+        "answer": "sałata",
+        "extra": ""
+    },
+    "der Satz": {
+        "answer": "zdanie",
+        "extra": "przeczytać zdanie na kartce"
+    },
+    "der Schalter": {
+        "answer": "okienko",
+        "extra": "na poczcie, w banku"
+    },
+    "der Schlaftee": {
+        "answer": "herbata na sen",
+        "extra": ""
+    },
+    "der Schluckauf": {
+        "answer": "czkawka",
+        "extra": ""
+    },
+    "der Schmerz": {
+        "answer": "ból",
+        "extra": ""
+    },
+    "der See": {
+        "answer": "jezioro",
+        "extra": ""
+    },
+    "der Stadtpark": {
+        "answer": "park miejski",
+        "extra": ""
+    },
+    "der Stephansdom": {
+        "answer": "katedra św. Stefana",
+        "extra": ""
+    },
+    "der Supermarkt": {
+        "answer": "supermarket",
+        "extra": ""
+    },
+    "der Tag": {
+        "answer": "dzień",
+        "extra": ""
+    },
+    "der Tee": {
+        "answer": "herbata",
+        "extra": ""
+    },
+    "der Tischler": {
+        "answer": "stolarz",
+        "extra": ""
+    },
+    "der Unfall": {
+        "answer": "wypadek",
+        "extra": ""
+    },
+    "der Verkehr": {
+        "answer": "ruch",
+        "extra": "uliczny"
+    },
+    "der Vormieter": {
+        "answer": "poprzedni lokatorzy",
+        "extra": ""
+    },
+    "der Waschmaschinenschlauch": {
+        "answer": "wąż do pralki",
+        "extra": ""
+    },
+    "der Weg": {
+        "answer": "droga, trasa",
+        "extra": ""
+    },
+    "der Zahn": {
+        "answer": "ząb",
+        "extra": ""
+    },
+    "der Zeh": {
+        "answer": "palec u stopy",
+        "extra": ""
+    },
+    "der Zug": {
+        "answer": "pociąg",
+        "extra": ""
+    },
+    "der zentrale Busbahnhof": {
+        "answer": "główny dworzec autobusowy",
+        "extra": ""
+    },
+    "der Ärger": {
+        "answer": "złość",
+        "extra": ""
+    },
+    "die Apotheke": {
+        "answer": "apteka",
+        "extra": ""
+    },
+    "die Auskunft": {
+        "answer": "informacja",
+        "extra": ""
+    },
+    "die Ausrüstung": {
+        "answer": "ekwipunek",
+        "extra": ""
+    },
+    "die Autobahn": {
+        "answer": "autostrada",
+        "extra": ""
+    },
+    "die Autowerkstatt": {
+        "answer": "warsztat samochodowy",
+        "extra": ""
+    },
+    "die Bahn": {
+        "answer": "kolej",
+        "extra": ""
+    },
+    "die Bank": {
+        "answer": "bank",
+        "extra": ""
+    },
+    "die Brust": {
+        "answer": "klatka piersiowa",
+        "extra": ""
+    },
+    "die Buchhandlung": {
+        "answer": "księgarnia",
+        "extra": ""
+    },
+    "die Bundesstraße": {
+        "answer": "droga krajowa",
+        "extra": ""
+    },
+    "die Butter": {
+        "answer": "masło",
+        "extra": ""
+    },
+    "die Bäckerei": {
+        "answer": "piekarnia",
+        "extra": ""
+    },
+    "die Diskothek": {
+        "answer": "dyskoteka",
+        "extra": ""
+    },
+    "die Elektroleitung": {
+        "answer": "przewody elektryczne",
+        "extra": ""
+    },
+    "die Flugverbindung": {
+        "answer": "połączenie lotnicze",
+        "extra": ""
+    },
+    "die Freiheit": {
+        "answer": "wolność",
+        "extra": ""
+    },
+    "die Friseurin": {
+        "answer": "fryzjerka",
+        "extra": ""
+    },
+    "die Gasse": {
+        "answer": "wąska, malowniczna uliczka",
+        "extra": ""
+    },
+    "die Gesundheit": {
+        "answer": "zdrowie",
+        "extra": ""
+    },
+    "die Gewalt": {
+        "answer": "przemoc",
+        "extra": ""
+    },
+    "die Haflerflocken": {
+        "answer": "płatki śniadaniowe",
+        "extra": ""
+    },
+    "die Hand": {
+        "answer": "ręka",
+        "extra": ""
+    },
+    "die Handwerker": {
+        "answer": "robotnicy",
+        "extra": ""
+    },
+    "die Hauptstadt": {
+        "answer": "stolica",
+        "extra": "państwa"
+    },
+    "die Innenstadt": {
+        "answer": "centrum miasta",
+        "extra": ""
+    },
+    "die Kirche": {
+        "answer": "kościół",
+        "extra": ""
+    },
+    "die Konfitüre": {
+        "answer": "konfitura",
+        "extra": ""
+    },
+    "die Kreislaufstörung": {
+        "answer": "zaburzenia krążenia",
+        "extra": "Kreislaufstörungen haben"
+    },
+    "die Luft": {
+        "answer": "powietrze/wiatr",
+        "extra": "Die Luft ist rein."
+    },
+    "die Margarine": {
+        "answer": "margaryna",
+        "extra": ""
+    },
+    "die Meditationsübungen": {
+        "answer": "ćwiczenia medytacyjne",
+        "extra": ""
+    },
+    "die Metzgerei": {
+        "answer": "sklep mięsny",
+        "extra": ""
+    },
+    "die Milch": {
+        "answer": "mleko",
+        "extra": ""
+    },
+    "die Mitte": {
+        "answer": "środek",
+        "extra": "pomiędzy wschodem, a zachodem"
+    },
+    "die Müsli mit Milch": {
+        "answer": "Musli z mlekiem",
+        "extra": ""
+    },
+    "die Mützen": {
+        "answer": "czapki",
+        "extra": ""
+    },
+    "die Nase": {
+        "answer": "nos",
+        "extra": ""
+    },
+    "die Oper": {
+        "answer": "opera",
+        "extra": ""
+    },
+    "die Polizei": {
+        "answer": "policja",
+        "extra": ""
+    },
+    "die Post": {
+        "answer": "poczta",
+        "extra": ""
+    },
+    "die Qual": {
+        "answer": "agonia",
+        "extra": "einkäufe machen ist für mich eine Qual"
+    },
+    "die Qualität": {
+        "answer": "jakość",
+        "extra": ""
+    },
+    "die Reinigung": {
+        "answer": "pralnia chemiczna",
+        "extra": ""
+    },
+    "die Reisegruppe": {
+        "answer": "grupa wycieczkowa",
+        "extra": ""
+    },
+    "die Röntgenaufnahme": {
+        "answer": "prześwietlenie",
+        "extra": ""
+    },
+    "die Sache ist klar": {
+        "answer": "rzecz jest jasna",
+        "extra": ""
+    },
+    "die Sachertorte": {
+        "answer": "tort Sacher",
+        "extra": "jedzenie"
+    },
+    "die Schals": {
+        "answer": "szaliki",
+        "extra": ""
+    },
+    "die Schiffsreise": {
+        "answer": "podróz statkiem",
+        "extra": ""
+    },
+    "die See": {
+        "answer": "morze",
+        "extra": "np. morze Bałtyckie"
+    },
+    "die Skihosen": {
+        "answer": "spodnie narciarskie",
+        "extra": ""
+    },
+    "die Stadtbibliothek": {
+        "answer": "biblioteka publiczna",
+        "extra": ""
+    },
+    "die Straße": {
+        "answer": "ulica",
+        "extra": ""
+    },
+    "die Telefonzelle": {
+        "answer": "budka telefoniczna",
+        "extra": ""
+    },
+    "die Treppe": {
+        "answer": "schody",
+        "extra": ""
+    },
+    "die Umgebung": {
+        "answer": "okolica",
+        "extra": ""
+    },
+    "die Ursache": {
+        "answer": "powód",
+        "extra": "was ist die Ursache für Ihr Problem?"
+    },
+    "die Verbindung": {
+        "answer": "połączenie",
+        "extra": ""
+    },
+    "die Verspätung": {
+        "answer": "opóźnienie",
+        "extra": ""
+    },
+    "die Wahl": {
+        "answer": "wybór",
+        "extra": ""
+    },
+    "die Wand": {
+        "answer": "ściana",
+        "extra": ""
+    },
+    "die Waren": {
+        "answer": "towary",
+        "extra": ""
+    },
+    "die Waschmaschine": {
+        "answer": "pralka",
+        "extra": ""
+    },
+    "die Weltreise": {
+        "answer": "podróż dookoła świata",
+        "extra": ""
+    },
+    "die Wiedervereinigung": {
+        "answer": "zjednoczenie",
+        "extra": ""
+    },
+    "die Zähne": {
+        "answer": "zęby",
+        "extra": ""
+    },
+    "die meisten": {
+        "answer": "większość",
+        "extra": ""
+    },
+    "die Ärztin": {
+        "answer": "lekarka",
+        "extra": ""
+    },
+    "diese Person": {
+        "answer": "ta osoba",
+        "extra": ""
+    },
+    "draußen": {
+        "answer": "na świeżym powietrzu",
+        "extra": ""
+    },
+    "durch die Decke": {
+        "answer": "z sufitu",
+        "extra": ""
+    },
+    "dürfen": {
+        "answer": "mieć pozwolenie (na)",
+        "extra": "ich darf, du darfst, er darf, wir dürfen, ihr dürft, sie/Sie dürfen"
+    },
+    "ehemalig": {
+        "answer": "były",
+        "extra": ""
+    },
+    "eigentlich": {
+        "answer": "właściwie",
+        "extra": ""
+    },
+    "ein Bild malen": {
+        "answer": "malować obraz",
+        "extra": ""
+    },
+    "ein Buch leihen": {
+        "answer": "wypożyczyć książkę",
+        "extra": ""
+    },
+    "ein Buch lesen": {
+        "answer": "czytać książkę",
+        "extra": ""
+    },
+    "ein Geräusch hören": {
+        "answer": "słyszeć hałas",
+        "extra": ""
+    },
+    "ein Kind bekommen": {
+        "answer": "urodzić dziecko",
+        "extra": ""
+    },
+    "ein Magengeschwür haben": {
+        "answer": "mieć wrzód żołądka",
+        "extra": ""
+    },
+    "ein Passbild machen lassen": {
+        "answer": "zleicić zrobienie zdjęcia paszportowego",
+        "extra": ""
+    },
+    "ein paar": {
+        "answer": "parę, kilka",
+        "extra": ""
+    },
+    "eine Reise buchen": {
+        "answer": "zarezerwować wycieczkę",
+        "extra": ""
+    },
+    "einen Pass bekommen": {
+        "answer": "otrzymać paszport",
+        "extra": ""
+    },
+    "einkaufen": {
+        "answer": "kupować",
+        "extra": ""
+    },
+    "einschlafen": {
+        "answer": "zasypiać",
+        "extra": ""
+    },
+    "endlich": {
+        "answer": "nareszcie",
+        "extra": "na endlich bist du da"
+    },
+    "entfernt": {
+        "answer": "oddalony",
+        "extra": ""
+    },
+    "entlang": {
+        "answer": "wzdłuż",
+        "extra": "Akkusativ; Ich gehe die Straße entlang"
+    },
+    "es tut weh": {
+        "answer": "to boli",
+        "extra": ""
+    },
+    "essen": {
+        "answer": "jeść",
+        "extra": ""
+    },
+    "essen gehen": {
+        "answer": "iść",
+        "extra": "coś"
+    },
+    "fallen": {
+        "answer": "spadać",
+        "extra": ""
+    },
+    "falsch anschießen": {
+        "answer": "źle podłączyć",
+        "extra": ""
+    },
+    "fast alle Länder der Welt": {
+        "answer": "prawie wszystkie kraje swiata",
+        "extra": ""
+    },
+    "feiern": {
+        "answer": "świętować",
+        "extra": ""
+    },
+    "fernsehen": {
+        "answer": "oglądać telewizję",
+        "extra": ""
+    },
+    "fotografieren": {
+        "answer": "fotografować",
+        "extra": ""
+    },
+    "fragen": {
+        "answer": "pytać",
+        "extra": ""
+    },
+    "fördernd": {
+        "answer": "wymagający, rozwijający",
+        "extra": ""
+    },
+    "gebären": {
+        "answer": "rodzić się",
+        "extra": ""
+    },
+    "geehrt": {
+        "answer": "szanowny",
+        "extra": "szanowy Panie"
+    },
+    "gefährlich": {
+        "answer": "niebezpieczny",
+        "extra": ""
+    },
+    "gegen die Schmerzen": {
+        "answer": "na bóle",
+        "extra": ""
+    },
+    "gegenüber": {
+        "answer": "naprzeciw",
+        "extra": "Dativ; Das Schwimmbad liegt dem Café gegenüber"
+    },
+    "geh links": {
+        "answer": "idź w lewo",
+        "extra": ""
+    },
+    "geh rechts": {
+        "answer": "idź w prawo",
+        "extra": ""
+    },
+    "gehen": {
+        "answer": "chodzić",
+        "extra": ""
+    },
+    "gehen Sie schon mal rein": {
+        "answer": "niech Pan wejdzie",
+        "extra": ""
+    },
+    "gehören": {
+        "answer": "należeć",
+        "extra": "do"
+    },
+    "gerade": {
+        "answer": "właśnie",
+        "extra": "was hast du gerade gemacht - co właśnie zrobiłeś"
+    },
+    "gewinnen": {
+        "answer": "wygrywać",
+        "extra": ""
+    },
+    "glauben": {
+        "answer": "wierzyć",
+        "extra": ""
+    },
+    "grüßen": {
+        "answer": "pozdrawiać",
+        "extra": ""
+    },
+    "handlich": {
+        "answer": "poręczny",
+        "extra": ""
+    },
+    "heute früh": {
+        "answer": "dzisiaj rano",
+        "extra": ""
+    },
+    "hinfallen": {
+        "answer": "przewrócić sie",
+        "extra": ""
+    },
+    "hinten": {
+        "answer": "z tyłu",
+        "extra": ""
+    },
+    "hinter": {
+        "answer": "z tyłu",
+        "extra": ""
+    },
+    "holen": {
+        "answer": "przyprowadzać",
+        "extra": ""
+    },
+    "häufig oft": {
+        "answer": "często",
+        "extra": ""
+    },
+    "höchstens": {
+        "answer": "najbardziej",
+        "extra": "er verdient höchstens zwei tausend Euro"
+    },
+    "hören": {
+        "answer": "słuchać",
+        "extra": ""
+    },
+    "ich fühle mich heute müde und schlapp": {
+        "answer": "czuję się dziś zmęczony i słaba",
+        "extra": ""
+    },
+    "ich habe Lust zu...": {
+        "answer": "chcę...",
+        "extra": ""
+    },
+    "ich habe jetzt die Ergebnisse": {
+        "answer": "mam teraz wyniki",
+        "extra": ""
+    },
+    "ihr Bein ist gebrochen": {
+        "answer": "jej noga jest złamana",
+        "extra": ""
+    },
+    "im Garten arbeiten": {
+        "answer": "pracować w ogrodzie",
+        "extra": ""
+    },
+    "im Internet etwas suchen": {
+        "answer": "szukać czegoś w internecie",
+        "extra": ""
+    },
+    "immer": {
+        "answer": "zawsze",
+        "extra": ""
+    },
+    "immer geradeaus": {
+        "answer": "cały czas prosto",
+        "extra": ""
+    },
+    "in die Wohnung einsteigen": {
+        "answer": "wejść do góry do mieszkania",
+        "extra": ""
+    },
+    "ins Bett gehen": {
+        "answer": "iść do łóżka",
+        "extra": ""
+    },
+    "ins Kino gehen": {
+        "answer": "iść do kina",
+        "extra": ""
+    },
+    "ins Konzert gehen": {
+        "answer": "iść na koncert",
+        "extra": ""
+    },
+    "ins Theater gehen": {
+        "answer": "iść do teatru",
+        "extra": ""
+    },
+    "jährlich": {
+        "answer": "roczny",
+        "extra": ""
+    },
+    "kennen": {
+        "answer": "wiedzieć/znać",
+        "extra": "ich kenne sie schon 20 Jahre"
+    },
+    "klingeln": {
+        "answer": "zadzwonić",
+        "extra": "ich klingle, du klingelst"
+    },
+    "kochen": {
+        "answer": "gotować",
+        "extra": ""
+    },
+    "konzentrieren": {
+        "answer": "skupiać się",
+        "extra": "Ich muss mich konzentrieren"
+    },
+    "können": {
+        "answer": "móc, potrafić, umieć",
+        "extra": "ich kann"
+    },
+    "kündigen": {
+        "answer": "złożyć wymówienie",
+        "extra": ""
+    },
+    "lassen": {
+        "answer": "zostawić, pozwalać, zlecać",
+        "extra": ""
+    },
+    "legen Sie sich dahin!": {
+        "answer": "proszę się tam położyć!",
+        "extra": ""
+    },
+    "leisen": {
+        "answer": "cichy",
+        "extra": "leise Sei leise"
+    },
+    "lesen": {
+        "answer": "czytać",
+        "extra": ""
+    },
+    "links": {
+        "answer": "lewo",
+        "extra": ""
+    },
+    "machen": {
+        "answer": "robić",
+        "extra": ""
+    },
+    "malen": {
+        "answer": "malować",
+        "extra": ""
+    },
+    "manchmal": {
+        "answer": "czasami",
+        "extra": ""
+    },
+    "mehr als": {
+        "answer": "ponad",
+        "extra": ""
+    },
+    "mein Rücken tut weh": {
+        "answer": "bolą mnie plecy",
+        "extra": ""
+    },
+    "mieten": {
+        "answer": "wynająć",
+        "extra": ""
+    },
+    "mitnehmen": {
+        "answer": "brać",
+        "extra": ""
+    },
+    "monatlich": {
+        "answer": "miesięczny",
+        "extra": ""
+    },
+    "morgen früh": {
+        "answer": "jutro rano",
+        "extra": ""
+    },
+    "mutig": {
+        "answer": "odważny",
+        "extra": ""
+    },
+    "möchten": {
+        "answer": "chciałbym",
+        "extra": ""
+    },
+    "mögen": {
+        "answer": "lubieć, mieć życzenie",
+        "extra": "ich mag"
+    },
+    "müde": {
+        "answer": "zmęczony",
+        "extra": ""
+    },
+    "müssen": {
+        "answer": "musieć",
+        "extra": "ich muss, ihr müsst"
+    },
+    "neben": {
+        "answer": "obok",
+        "extra": ""
+    },
+    "nehmen": {
+        "answer": "brać",
+        "extra": ""
+    },
+    "nervös sein": {
+        "answer": "być zdeneworwanym",
+        "extra": ""
+    },
+    "nämlich": {
+        "answer": "mianowicie",
+        "extra": ""
+    },
+    "oben": {
+        "answer": "nad",
+        "extra": ""
+    },
+    "oft": {
+        "answer": "często",
+        "extra": ""
+    },
+    "passieren": {
+        "answer": "wydarzyć się",
+        "extra": ""
+    },
+    "rauchen": {
+        "answer": "palić",
+        "extra": ""
+    },
+    "rechts": {
+        "answer": "prawo",
+        "extra": ""
+    },
+    "reden": {
+        "answer": "mówić",
+        "extra": "du redest Quatsch! - ty mówisz bzdury!"
+    },
+    "rufen": {
+        "answer": "wołać",
+        "extra": ""
+    },
+    "rühren": {
+        "answer": "mieszać",
+        "extra": ""
+    },
+    "schauen": {
+        "answer": "patrzeć",
+        "extra": "schaute, geschaut"
+    },
+    "schlafen": {
+        "answer": "spać",
+        "extra": ""
+    },
+    "schlapp": {
+        "answer": "słaby",
+        "extra": ""
+    },
+    "schlecht": {
+        "answer": "źły, kiepski",
+        "extra": "falsch"
+    },
+    "schlimm": {
+        "answer": "źle",
+        "extra": ""
+    },
+    "schrecklich": {
+        "answer": "straszne",
+        "extra": ""
+    },
+    "schrecklich/furchtbar": {
+        "answer": "straszny, okropny",
+        "extra": ""
+    },
+    "schreiben": {
+        "answer": "pisać",
+        "extra": ""
+    },
+    "schwimmen": {
+        "answer": "pływać",
+        "extra": ""
+    },
+    "sehen": {
+        "answer": "widzieć",
+        "extra": ""
+    },
+    "sei vorsichtig": {
+        "answer": "bądź ostrożny",
+        "extra": ""
+    },
+    "sein Auto reparieren lassen": {
+        "answer": "zlecić naprawę auta",
+        "extra": ""
+    },
+    "seine Augen tun weh": {
+        "answer": "bolą go oczy",
+        "extra": ""
+    },
+    "seine Kleidung reinigen lassen": {
+        "answer": "zlecić wyczyszczenie odzieży",
+        "extra": ""
+    },
+    "seine Wäsche waschen lassen": {
+        "answer": "zlecić pranie bielizny",
+        "extra": ""
+    },
+    "selbst": {
+        "answer": "sam, samodzielnie",
+        "extra": "coś zrobić"
+    },
+    "sich anziehen": {
+        "answer": "ubierać się",
+        "extra": ""
+    },
+    "sich gesellen": {
+        "answer": "dołączać się",
+        "extra": ""
+    },
+    "sich ärgern": {
+        "answer": "złościć się",
+        "extra": "Ich ärgere mich nicht"
+    },
+    "sogar": {
+        "answer": "nawet",
+        "extra": ""
+    },
+    "sollen": {
+        "answer": "mieć powinność",
+        "extra": ""
+    },
+    "spazieren gehen": {
+        "answer": "iść na spacer",
+        "extra": ""
+    },
+    "sprechen": {
+        "answer": "mówić",
+        "extra": ""
+    },
+    "stören": {
+        "answer": "przeszkadzać",
+        "extra": "Akkusativ; Darf ich Sie stören?"
+    },
+    "säen": {
+        "answer": "siać",
+        "extra": ""
+    },
+    "tanzen": {
+        "answer": "tańczyć",
+        "extra": ""
+    },
+    "trinken": {
+        "answer": "pić",
+        "extra": ""
+    },
+    "tropfen": {
+        "answer": "kapać",
+        "extra": ""
+    },
+    "tun": {
+        "answer": "czynić",
+        "extra": ""
+    },
+    "täglich": {
+        "answer": "dzienny",
+        "extra": ""
+    },
+    "um die Ecke": {
+        "answer": "za rogiem",
+        "extra": "Akkusativ"
+    },
+    "um wie viel Uhr?": {
+        "answer": "o której godzinie?",
+        "extra": ""
+    },
+    "umstritten": {
+        "answer": "kontrowersyjny",
+        "extra": "das ist sehr umstritten"
+    },
+    "umziehen": {
+        "answer": "przebierać się",
+        "extra": "zum Sport umziehen"
+    },
+    "unbedingt": {
+        "answer": "koniecznie",
+        "extra": ""
+    },
+    "unten": {
+        "answer": "poniżej",
+        "extra": ""
+    },
+    "unter": {
+        "answer": "pod",
+        "extra": ""
+    },
+    "unwichtig": {
+        "answer": "nieważny",
+        "extra": ""
+    },
+    "verabredet sein": {
+        "answer": "być umówionym",
+        "extra": "na spotkanie"
+    },
+    "vielleicht": {
+        "answer": "być może",
+        "extra": ""
+    },
+    "von dem Schlauch": {
+        "answer": "z węża",
+        "extra": "von = Dativ"
+    },
+    "vor": {
+        "answer": "z przodu",
+        "extra": ""
+    },
+    "vorne": {
+        "answer": "z przodu",
+        "extra": ""
+    },
+    "vorsichtig": {
+        "answer": "ostrożny/uważny",
+        "extra": "Seien Sie vorischtig!"
+    },
+    "wann?": {
+        "answer": "kiedy?",
+        "extra": ""
+    },
+    "wechseln": {
+        "answer": "wymienić",
+        "extra": ""
+    },
+    "weg": {
+        "answer": "nieobecny",
+        "extra": "er ist weg"
+    },
+    "wegfahren": {
+        "answer": "odjeżdżać",
+        "extra": ""
+    },
+    "wehtun": {
+        "answer": "ból",
+        "extra": "mein Rucken tut weh."
+    },
+    "weiterschlafen": {
+        "answer": "wracać spać",
+        "extra": "lass mich bitte weiterschlafen"
+    },
+    "wenige": {
+        "answer": "mało, niewiele",
+        "extra": ""
+    },
+    "wessen": {
+        "answer": "czyj",
+        "extra": ""
+    },
+    "wichtig": {
+        "answer": "ważny",
+        "extra": "das ist wichtig"
+    },
+    "wieder": {
+        "answer": "znowu",
+        "extra": ""
+    },
+    "wischen": {
+        "answer": "wycierać",
+        "extra": "wischte, gewischt"
+    },
+    "wissen": {
+        "answer": "wiedzieć",
+        "extra": ""
+    },
+    "wo fehlt’s denn?": {
+        "answer": "gdzie pana boli, gdzie jest problem",
+        "extra": ""
+    },
+    "wollen": {
+        "answer": "chcieć",
+        "extra": "ich will"
+    },
+    "wunderschön": {
+        "answer": "piękne",
+        "extra": ""
+    },
+    "zeichnen": {
+        "answer": "rysować",
+        "extra": ""
+    },
+    "zu 2 Euro": {
+        "answer": "za 2 Euro",
+        "extra": ""
+    },
+    "zu Mittag essen": {
+        "answer": "jeść obiad",
+        "extra": ""
+    },
+    "zu dick sein": {
+        "answer": "być za grubym",
+        "extra": ""
+    },
+    "zu viel Cholesterin haben": {
+        "answer": "mieć za dużo cholesterolu",
+        "extra": ""
+    },
+    "zuerst": {
+        "answer": "pierwszy",
+        "extra": ""
+    },
+    "zuhören": {
+        "answer": "przysłuchiwać się",
+        "extra": ""
+    },
+    "zum Beispiel": {
+        "answer": "na przykład",
+        "extra": "n.p. drzewo - z.B. Baum"
+    },
+    "zwischen": {
+        "answer": "pomiędzy",
+        "extra": ""
+    },
+    "über": {
+        "answer": "powyżej",
+        "extra": ""
+    },
+    "überlegen": {
+        "answer": "zastanawiać się, kalkulować",
+        "extra": ""
+    },
+    "übernachten": {
+        "answer": "przenocować",
+        "extra": "Ich habe in Paris übernachtet"
+    }
+}

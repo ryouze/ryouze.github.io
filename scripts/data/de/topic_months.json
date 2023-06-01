@@ -1,0 +1,50 @@
+{
+    "der April": {
+        "answer": "Kwiecień",
+        "extra": ""
+    },
+    "der August": {
+        "answer": "Sierpień",
+        "extra": ""
+    },
+    "der Dezember": {
+        "answer": "Grudzień",
+        "extra": ""
+    },
+    "der Februar": {
+        "answer": "Luty",
+        "extra": ""
+    },
+    "der Januar": {
+        "answer": "Styczeń",
+        "extra": ""
+    },
+    "der Juli": {
+        "answer": "Lipiec",
+        "extra": ""
+    },
+    "der Juni": {
+        "answer": "Czerwiec",
+        "extra": ""
+    },
+    "der Mai": {
+        "answer": "Maj",
+        "extra": ""
+    },
+    "der März": {
+        "answer": "Marzec",
+        "extra": ""
+    },
+    "der November": {
+        "answer": "Listopad",
+        "extra": ""
+    },
+    "der Oktober": {
+        "answer": "Październik",
+        "extra": ""
+    },
+    "der September": {
+        "answer": "Wrzesień",
+        "extra": ""
+    }
+}

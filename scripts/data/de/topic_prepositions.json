@@ -1,0 +1,110 @@
+{
+    "an": {
+        "answer": "przy, na, w",
+        "extra": "Dativ"
+    },
+    "anstatt/statt": {
+        "answer": "zamiast",
+        "extra": "Genitiv"
+    },
+    "auf": {
+        "answer": "na, w, podczas",
+        "extra": "Dativ"
+    },
+    "aus": {
+        "answer": "z, ze środka",
+        "extra": "Dativ"
+    },
+    "außer": {
+        "answer": "oprócz, z wyjątkiem, poza",
+        "extra": "Dativ"
+    },
+    "bei": {
+        "answer": "u, przy, koło",
+        "extra": "Dativ"
+    },
+    "durch": {
+        "answer": "przez",
+        "extra": "Akkusativ"
+    },
+    "entlang": {
+        "answer": "wzdłuż",
+        "extra": "Akkusativ"
+    },
+    "für": {
+        "answer": "dla, za",
+        "extra": "Akkusativ"
+    },
+    "gegen": {
+        "answer": "przeciwko, około",
+        "extra": "Akkusativ; przeciwko bólowi, około godziny"
+    },
+    "gegenüber": {
+        "answer": "naprzeciwko",
+        "extra": "Dativ"
+    },
+    "in": {
+        "answer": "w, we wnętrzu",
+        "extra": "Any"
+    },
+    "mit": {
+        "answer": "z",
+        "extra": "Dativ; z czymś, z kimś"
+    },
+    "nach": {
+        "answer": "po, do, według",
+        "extra": "Dativ"
+    },
+    "neben": {
+        "answer": "obok, przy",
+        "extra": "Dativ"
+    },
+    "ohne": {
+        "answer": "bez",
+        "extra": "Akkusativ"
+    },
+    "seit": {
+        "answer": "od",
+        "extra": "Dativ; od czasu, od roku"
+    },
+    "trotz": {
+        "answer": "mimo",
+        "extra": "Genitiv"
+    },
+    "um": {
+        "answer": "wokół, dookoła",
+        "extra": "Akkusativ"
+    },
+    "unter": {
+        "answer": "pod, poniżej, wśród",
+        "extra": "Any"
+    },
+    "von": {
+        "answer": "od, z, o",
+        "extra": "Dativ; od miasta"
+    },
+    "vor": {
+        "answer": "przed",
+        "extra": "Any; przed sylwestrem"
+    },
+    "wegen": {
+        "answer": "z powodu, ze względu na",
+        "extra": "Genitiv"
+    },
+    "während": {
+        "answer": "podczas, w trakcie",
+        "extra": "Genitiv"
+    },
+    "zu": {
+        "answer": "do, zbyt, za",
+        "extra": "Dativ; do budowli, za drogie"
+    },
+    "zwischen": {
+        "answer": "pomiędzy",
+        "extra": "Any"
+    },
+    "über": {
+        "answer": "nad, ponad",
+        "extra": "Any"
+    }
+}

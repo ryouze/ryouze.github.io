@@ -1,0 +1,262 @@
+{
+    "aber": {
+        "answer": "ale",
+        "extra": "spójnik prosty"
+    },
+    "als": {
+        "answer": "kiedy, gdy",
+        "extra": "spójnik końcowy"
+    },
+    "also": {
+        "answer": "a więc, zatem",
+        "extra": "spójnik przestawny"
+    },
+    "außerdem": {
+        "answer": "poza tym, oprócz tego",
+        "extra": "spójnik przestawny"
+    },
+    "bevor / ehe": {
+        "answer": "zanim",
+        "extra": "spójnik końcowy"
+    },
+    "bieten": {
+        "answer": "oferować, dawać",
+        "extra": ""
+    },
+    "bis": {
+        "answer": "aż",
+        "extra": "spójnik końcowy"
+    },
+    "chronić": {
+        "answer": "chronić",
+        "extra": ""
+    },
+    "damit / um … zu": {
+        "answer": "aby, żeby",
+        "extra": "spójnik końcowy"
+    },
+    "dann": {
+        "answer": "potem, następnie",
+        "extra": "spójnik przestawny"
+    },
+    "das Schloss": {
+        "answer": "zamek, pałac",
+        "extra": "a3"
+    },
+    "das Seeufer": {
+        "answer": "brzeg morski",
+        "extra": ""
+    },
+    "das Städtchen": {
+        "answer": "miasteczko",
+        "extra": ""
+    },
+    "das Vergnügen": {
+        "answer": "brzeg morski",
+        "extra": ""
+    },
+    "das Österreich": {
+        "answer": "Austria",
+        "extra": "kraj"
+    },
+    "dass": {
+        "answer": "że",
+        "extra": "spójnik końcowy"
+    },
+    "denn": {
+        "answer": "ponieważ",
+        "extra": "spójnik prosty"
+    },
+    "der Badestrand": {
+        "answer": "plaża kąpielowa",
+        "extra": ""
+    },
+    "der Bodensee": {
+        "answer": "jezioro bodeńskie",
+        "extra": ""
+    },
+    "der See": {
+        "answer": "jezioro",
+        "extra": ""
+    },
+    "der Spaziergang": {
+        "answer": "spacer",
+        "extra": ""
+    },
+    "der Strand": {
+        "answer": "plaża",
+        "extra": "nad morzem"
+    },
+    "der Trockner": {
+        "answer": "suszarka, suszarnia",
+        "extra": ""
+    },
+    "deshalb / darum / deswegen": {
+        "answer": "dlatego",
+        "extra": "spójnik przestawny"
+    },
+    "die Dusche": {
+        "answer": "prysznic",
+        "extra": ""
+    },
+    "die Fahrradtour": {
+        "answer": "wycieczka rowerowa",
+        "extra": ""
+    },
+    "die Fernreise": {
+        "answer": "daleka podróż",
+        "extra": ""
+    },
+    "die Insel": {
+        "answer": "wyspa",
+        "extra": ""
+    },
+    "die Kreuzfahrt": {
+        "answer": "rejs",
+        "extra": "np. statkiem"
+    },
+    "die Mauer": {
+        "answer": "mur",
+        "extra": "np. Berliński"
+    },
+    "die Pflanze": {
+        "answer": "roślina",
+        "extra": "np. tropikalna"
+    },
+    "die Schifffahrt": {
+        "answer": "żegluga",
+        "extra": ""
+    },
+    "die Schweiz": {
+        "answer": "Szwajcaria",
+        "extra": "kraj"
+    },
+    "die Speise": {
+        "answer": "potrawa, danie",
+        "extra": ""
+    },
+    "die Stadt": {
+        "answer": "miasto",
+        "extra": "np. Hamburg"
+    },
+    "die Teilung": {
+        "answer": "podział, rozbiór",
+        "extra": "np. Niemiec murem Berlińskim"
+    },
+    "die Touristikmesse": {
+        "answer": "targi turystyczne",
+        "extra": ""
+    },
+    "die Unterkunft": {
+        "answer": "zakwaterowanie",
+        "extra": "np. w hotelu"
+    },
+    "die Werbung": {
+        "answer": "reklama",
+        "extra": "np. samochodów"
+    },
+    "gemütlich": {
+        "answer": "przyjemny, przytulny",
+        "extra": ""
+    },
+    "herrlich": {
+        "answer": "wspaniały",
+        "extra": ""
+    },
+    "hübsch": {
+        "answer": "śliczny, ładny",
+        "extra": ""
+    },
+    "kurz und knapp": {
+        "answer": "krótko i zwięźle",
+        "extra": ""
+    },
+    "nachdem": {
+        "answer": "po tym jak",
+        "extra": "spójnik końcowy"
+    },
+    "ob": {
+        "answer": "czy",
+        "extra": "spójnik końcowy"
+    },
+    "obwohl": {
+        "answer": "chociaż",
+        "extra": "spójnik końcowy"
+    },
+    "oder": {
+        "answer": "albo, lub",
+        "extra": "spójnik prosty"
+    },
+    "seitdem /seit": {
+        "answer": "odkąd",
+        "extra": "spójnik końcowy"
+    },
+    "sich erholen": {
+        "answer": "odpoczywać, wypoczywać",
+        "extra": ""
+    },
+    "sobald": {
+        "answer": "jak tylko",
+        "extra": "spójnik końcowy"
+    },
+    "sogar": {
+        "answer": "nawet",
+        "extra": ""
+    },
+    "solange": {
+        "answer": "jak długo, dopóki",
+        "extra": "spójnik końcowy"
+    },
+    "sondern": {
+        "answer": "lecz",
+        "extra": "spójnik prosty"
+    },
+    "sonst": {
+        "answer": "w przeciwnym razie",
+        "extra": "spójnik przestawny"
+    },
+    "sooft": {
+        "answer": "tak często jak",
+        "extra": "spójnik końcowy"
+    },
+    "teilen": {
+        "answer": "dzielić, podzielić",
+        "extra": ""
+    },
+    "trotzdem": {
+        "answer": "mimo to",
+        "extra": "spójnik przestawny"
+    },
+    "und": {
+        "answer": "i, a",
+        "extra": "spójnik prosty"
+    },
+    "vermuten": {
+        "answer": "przypuszczać, podejrzewać",
+        "extra": ""
+    },
+    "verwöhnen": {
+        "answer": "rozpieszczać",
+        "extra": ""
+    },
+    "wachsen": {
+        "answer": "rosnąć",
+        "extra": "np. dziecko rośnie"
+    },
+    "weil": {
+        "answer": "ponieważ",
+        "extra": "spójnik końcowy"
+    },
+    "wenn": {
+        "answer": "jeśli, kiedy, gdy",
+        "extra": "spójnik końcowy"
+    },
+    "wunderschön": {
+        "answer": "przepiękny",
+        "extra": "wunder = cud; schön = piękny"
+    },
+    "während": {
+        "answer": "podczas, gdy",
+        "extra": "spójnik końcowy"
+    }
+}

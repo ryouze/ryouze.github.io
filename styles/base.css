@@ -1,0 +1,275 @@
+/* variables*/
+:root {
+  --almost_white: #d3d3d3;
+  --header_background: #141414;
+  --header_border: #262626;
+  --header_shadow: #0d0d0d;
+  --link_color_hover_background: #704343;
+  --link_color_hover: #ff9999;
+  --link_color: #E94560;
+  --nav_button_active: #bb4b4b;
+  --nav_button_background: #404040;
+  --nav_hover: #808080;
+  --splitter_color: #404040;
+  --tab_background: #262626;
+  --tab_border: #333333;
+  --tab_shadow: #0d0d0d;
+}
+
+body {
+  -webkit-user-select: none;
+  background-color: #1a1a1a;
+  border: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  text-align: center;
+  user-select: none;
+}
+
+/* do not stretch when padding or border is added; if div defined as 100px width and 10px padding, then it will still be 100px wide */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#top_alert {
+  background-color: var(--header_background);
+  border-bottom: 1px solid var(--nav_button_active);
+  color: var(--nav_button_active);
+  font-size: 120%;
+  opacity: 0;
+  padding: 10px;
+  pointer-events: none;
+  position: fixed;
+  top: 50px;
+  transform: translateY(-50px);
+  width: 100%;
+  z-index: 2;
+}
+
+.class_AnimAlert {
+  animation: AnimAlert 2s linear forwards;
+}
+
+@keyframes AnimAlert {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  7% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  85% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+.enable_select {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.link {
+  color: var(--link_color);
+  cursor: pointer;
+  text-decoration: underline;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.link:hover {
+  background-color: var(--link_color_hover_background);
+  color: var(--link_color_hover);
+}
+
+.image_highlight_on_hover:hover {
+  filter: brightness(120%) saturate(120%);
+}
+
+/* header at the top; contains website name and navigation links */
+header {
+  align-items: center;
+  background-color: var(--header_background);
+  border-bottom: 3px solid var(--header_border);
+  box-shadow: 0px 0px 15px var(--header_shadow);
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+header a {
+  color: white;
+}
+
+/* webpage title */
+header>#header_logo {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* responsive navbar menu for navbar */
+header>#mobile_menu_toggle {
+  display: none;
+}
+
+header>#hamburger {
+  display: none;
+}
+
+/* container aligned to the right; contains links to tabs and websites */
+header>nav {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* all direct children (incl. separator) have margin on the right */
+header>nav>*:not(:last-child) {
+  margin-right: 6px;
+}
+
+header>nav:hover>.tab_link {
+  transition: background-color 0.1s;
+}
+
+header>nav>.tab_link {
+  border-radius: 5px;
+  font-size: 20px;
+  padding-bottom: 6px;
+  padding-left: 18px;
+  padding-right: 20px;
+  padding-top: 6px;
+}
+
+header>nav>.tab_link:hover {
+  background-color: var(--nav_hover);
+}
+
+header>nav>.tab_link.active {
+  background-color: var(--nav_button_active);
+}
+
+header>nav>.navbar_splitter {
+  border-left: 2px solid var(--splitter_color);
+  height: 40%;
+}
+
+/* full page tabs */
+.full_page_tab {
+  background-color: var(--tab_background);
+  border-radius: 25px;
+  border: 2px solid var(--tab_border);
+  box-shadow: 0px 0px 15px var(--tab_shadow);
+  display: none;
+  margin-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  overflow-wrap: break-word;
+  /* top, right, bottom, left */
+  padding: 40px 50px 40px 50px;
+  width: 600px;
+}
+
+.full_page_tab img {
+  border-radius: 35px;
+  -webkit-user-select: none;
+  height: auto;
+  user-select: none;
+  width: 100%;
+}
+
+/* welcome title */
+.tab_title h1 {
+  font-size: 300%;
+  margin-bottom: 26px;
+}
+
+.tab_title h2 {
+  font-size: 130%;
+  margin-bottom: 26px;
+}
+
+/* project number */
+.tab_title p {
+  color: var(--almost_white);
+  font-size: 120%;
+  letter-spacing: 0.1em;
+  margin-bottom: 20px;
+}
+
+.tab_title img {
+  filter: drop-shadow(0 0px 3px var(--tab_shadow));
+  height: 70px;
+  margin: 20px;
+}
+
+.tab_title hr {
+  color: gray;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  size: 2;
+}
+
+/* main project's description under project tab */
+article {
+  color: var(--almost_white);
+  font-size: 120%;
+  line-height: 1.8;
+  text-align: center;
+}
+
+article h1 {
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+article p {
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+  padding-top: 10px;
+}
+
+article p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+article li {
+  font-size: 90%;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  list-style-type: none;
+}
+
+article li:last-child {
+  margin-bottom: 50px;
+}

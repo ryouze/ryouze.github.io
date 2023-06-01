@@ -1,0 +1,394 @@
+{
+    "An erster Stelle steht/stehen...": {
+        "answer": "Przede wszystkim jest...",
+        "extra": ""
+    },
+    "Diese Grafik zeigt...": {
+        "answer": "Ta grafika przedstawia...",
+        "extra": ""
+    },
+    "Geld auf das Konto einzahlen": {
+        "answer": "wpłacić pieniądze na konto",
+        "extra": ""
+    },
+    "Geld gewinnen": {
+        "answer": "wygrywać pieniądze",
+        "extra": ""
+    },
+    "Geld investieren": {
+        "answer": "inwestować pieniądze",
+        "extra": ""
+    },
+    "Geld leihen": {
+        "answer": "pożyczyć pieniądze",
+        "extra": ""
+    },
+    "Geld macht nicht glücklich, aber es beruhigt": {
+        "answer": "pieniądze nie uszczęśliwiają, ale uspokajają",
+        "extra": ""
+    },
+    "Geld regiert die Welt": {
+        "answer": "pieniądze rządzą światem",
+        "extra": ""
+    },
+    "Geld reinlegen": {
+        "answer": "włożyć pieniądze",
+        "extra": ""
+    },
+    "Geld verdienen": {
+        "answer": "zarabiać pieniądze",
+        "extra": ""
+    },
+    "Geld verleihen": {
+        "answer": "pożyczyć komuś pieniądze",
+        "extra": ""
+    },
+    "Geld verlieren": {
+        "answer": "stracić pieniądze",
+        "extra": ""
+    },
+    "Geld vom Konto abheben": {
+        "answer": "wypłacić pieniądze z konta",
+        "extra": ""
+    },
+    "Glück kann man nur empfinden": {
+        "answer": "szczęście można tylko poczuć",
+        "extra": ""
+    },
+    "Ich beschreibe die Grafik": {
+        "answer": "Ja opisuję grafikę",
+        "extra": ""
+    },
+    "Im Verhältnis sehen": {
+        "answer": "zobaczyć w relacji",
+        "extra": ""
+    },
+    "In der Grafik sehen wir...": {
+        "answer": "Na grafice widzimy...",
+        "extra": ""
+    },
+    "In welchem Jahr wurde diese Grafik veröffentlicht?": {
+        "answer": "W którym roku została opublikowana ta grafika?",
+        "extra": ""
+    },
+    "Post und Telekommunikation": {
+        "answer": "poczta i telekomunikacja",
+        "extra": ""
+    },
+    "Thema der Grafik": {
+        "answer": "motyw graficzny",
+        "extra": ""
+    },
+    "Titel der Grafik": {
+        "answer": "tytuł graficzny",
+        "extra": ""
+    },
+    "Wer ist der Autor?": {
+        "answer": "Kto jest autorem?",
+        "extra": ""
+    },
+    "arm und reich": {
+        "answer": "biedni i bogaci",
+        "extra": ""
+    },
+    "aufbewahren": {
+        "answer": "chować na potem, przechowywać",
+        "extra": "np. jedzenie"
+    },
+    "ausgeben": {
+        "answer": "wydawać, wręczać",
+        "extra": "np. jedzenie"
+    },
+    "bar bezahlen": {
+        "answer": "płacić gotówką",
+        "extra": ""
+    },
+    "danach": {
+        "answer": "po tym",
+        "extra": ""
+    },
+    "dann": {
+        "answer": "następnie",
+        "extra": ""
+    },
+    "dann kommen": {
+        "answer": "następnie przychodzi",
+        "extra": ""
+    },
+    "das Bargeld": {
+        "answer": "gotówka",
+        "extra": "pieniądze"
+    },
+    "das Brot": {
+        "answer": "chleb",
+        "extra": ""
+    },
+    "das Geld": {
+        "answer": "pieniądze",
+        "extra": ""
+    },
+    "das Konto": {
+        "answer": "konto",
+        "extra": ""
+    },
+    "das Papier": {
+        "answer": "papier",
+        "extra": ""
+    },
+    "das Schließfach": {
+        "answer": "skrytka na bagaż",
+        "extra": ""
+    },
+    "das Tauschmittel": {
+        "answer": "środek służący do nabycia [czegoś] drogą wymiany",
+        "extra": "tauschen = zamieniać, wymieniać"
+    },
+    "das Weizen": {
+        "answer": "pszenica",
+        "extra": ""
+    },
+    "das Zahlungsmittel": {
+        "answer": "środki płatnicze",
+        "extra": ""
+    },
+    "der Arbeitslohn": {
+        "answer": "wynagrodzenie",
+        "extra": ""
+    },
+    "der Automat": {
+        "answer": "automat, bankomat",
+        "extra": ""
+    },
+    "der Geldschein": {
+        "answer": "banknot",
+        "extra": ""
+    },
+    "der Geldwert sinkt": {
+        "answer": "wartość pieniężna maleje",
+        "extra": ""
+    },
+    "der Haushalt": {
+        "answer": "gospodarstwo domowe",
+        "extra": ""
+    },
+    "der Schalter": {
+        "answer": "okienko",
+        "extra": "w banku"
+    },
+    "der Schmuck": {
+        "answer": "biżuteria",
+        "extra": ""
+    },
+    "der Verkehr": {
+        "answer": "ruch",
+        "extra": "na drodze"
+    },
+    "der Vorteil": {
+        "answer": "zaleta, korzyść",
+        "extra": ""
+    },
+    "der Wert": {
+        "answer": "wartość",
+        "extra": ""
+    },
+    "die Bekleidung": {
+        "answer": "odzież",
+        "extra": ""
+    },
+    "die Bemessungsgrundlage": {
+        "answer": "podstawa obliczenia",
+        "extra": ""
+    },
+    "die Bildung": {
+        "answer": "edukacja",
+        "extra": ""
+    },
+    "die Dienstleitung": {
+        "answer": "usługa",
+        "extra": "np. doradztwo finansowe"
+    },
+    "die Energie": {
+        "answer": "energia",
+        "extra": ""
+    },
+    "die Freizeit und Kultur": {
+        "answer": "czas wolny i kultura",
+        "extra": ""
+    },
+    "die Geldsorgen": {
+        "answer": "problemy finansowe",
+        "extra": ""
+    },
+    "die Gesundheit": {
+        "answer": "zdrowie",
+        "extra": ""
+    },
+    "die Grafik": {
+        "answer": "grafika, ilustracja",
+        "extra": ""
+    },
+    "die Grafikbeschreibung": {
+        "answer": "opis graficzny",
+        "extra": ""
+    },
+    "die Heizkosten": {
+        "answer": "koszty ogrzewania",
+        "extra": "np. domu"
+    },
+    "die Innenausstattung und Haushaltsgeräte": {
+        "answer": "wyposażenie wnętrz i sprzęt AGD",
+        "extra": ""
+    },
+    "die Instandhaltung": {
+        "answer": "konserwacja",
+        "extra": "np. domu, samochodu"
+    },
+    "die Konsumausgabe": {
+        "answer": "wydatki konsumpcyjne",
+        "extra": ""
+    },
+    "die Miete": {
+        "answer": "czynsz",
+        "extra": ""
+    },
+    "die Möglichkeit": {
+        "answer": "możliwość",
+        "extra": ""
+    },
+    "die Münze": {
+        "answer": "moneta",
+        "extra": ""
+    },
+    "die Reparatur": {
+        "answer": "naprawa",
+        "extra": ""
+    },
+    "die Spardose": {
+        "answer": "skarbonka",
+        "extra": ""
+    },
+    "die Ware": {
+        "answer": "towar",
+        "extra": ""
+    },
+    "die Waren und Dienstleistungen": {
+        "answer": "towary i usługi",
+        "extra": ""
+    },
+    "die Wechselstube": {
+        "answer": "kantor wymiany walut",
+        "extra": ""
+    },
+    "die Wirtschaftswelt": {
+        "answer": "świat biznesu",
+        "extra": ""
+    },
+    "die Währung": {
+        "answer": "waluta",
+        "extra": "pieniądze"
+    },
+    "die Zeitform": {
+        "answer": "forma czasowa, czas gramatyczny",
+        "extra": ""
+    },
+    "die Zinsen": {
+        "answer": "odsetki, procenty",
+        "extra": "w banku"
+    },
+    "die Zusammenfassung": {
+        "answer": "streszczenie, podsumowanie",
+        "extra": ""
+    },
+    "die Nahrungsmittel und Genussmittel": {
+        "answer": "jedzenie i napoje",
+        "extra": ""
+    },
+    "die Übernachtung": {
+        "answer": "nocleg",
+        "extra": ""
+    },
+    "durchschnittlich": {
+        "answer": "przeciętny",
+        "extra": ""
+    },
+    "einen Kredit aufnehmen": {
+        "answer": "wziąć kredyt",
+        "extra": ""
+    },
+    "etwas im Gegenzug bekommen": {
+        "answer": "otrzymać coś w zamian",
+        "extra": ""
+    },
+    "freut euch darauf": {
+        "answer": "z niecierpliwością oczekiwać",
+        "extra": ""
+    },
+    "für Getränke": {
+        "answer": "na drinki",
+        "extra": ""
+    },
+    "für Obst": {
+        "answer": "na owoce",
+        "extra": ""
+    },
+    "für einen schönen Urlaub": {
+        "answer": "na miłe wakacje",
+        "extra": ""
+    },
+    "ich spende Geld": {
+        "answer": "ofiarować pieniądze",
+        "extra": "dotacja"
+    },
+    "in Aktien anlegen": {
+        "answer": "inwestować w akcje",
+        "extra": ""
+    },
+    "kompliziert": {
+        "answer": "skomplikowany",
+        "extra": ""
+    },
+    "kostenlos": {
+        "answer": "darmowy",
+        "extra": ""
+    },
+    "seid gespannt": {
+        "answer": "być ciekawym",
+        "extra": ""
+    },
+    "sich unterhalten": {
+        "answer": "rozmawiać",
+        "extra": ""
+    },
+    "tauschen": {
+        "answer": "zamieniać/wymieniać",
+        "extra": ""
+    },
+    "trennbar": {
+        "answer": "rozdzielny",
+        "extra": ""
+    },
+    "verfallen": {
+        "answer": "wygasać, zanikać, upadać",
+        "extra": ""
+    },
+    "verkaufen": {
+        "answer": "sprzedawać",
+        "extra": ""
+    },
+    "vermuten": {
+        "answer": "przypuszcać, podejrzewać",
+        "extra": ""
+    },
+    "verschenken": {
+        "answer": "darować",
+        "extra": "jako prezent"
+    },
+    "wohnen": {
+        "answer": "mieszkać",
+        "extra": ""
+    },
+    "zurückzahlen": {
+        "answer": "spłacić/oddać pieniądze",
+        "extra": ""
+    }
+}

@@ -1,0 +1,110 @@
+{
+    "Bar zahlen": {
+        "answer": "płacić gotówką",
+        "extra": ""
+    },
+    "Karte zahlen": {
+        "answer": "płacić kartą",
+        "extra": ""
+    },
+    "andere": {
+        "answer": "inny, drugi",
+        "extra": ""
+    },
+    "bedeuten": {
+        "answer": "znaczyć",
+        "extra": "np. to słowo znaczy XYZ po niemiecku"
+    },
+    "beide": {
+        "answer": "obie, jedno i drugie",
+        "extra": "np. obydwa kebaby na wynos"
+    },
+    "bequem": {
+        "answer": "wygodny",
+        "extra": "np. mój fotel jest wygodny"
+    },
+    "das Altertum": {
+        "answer": "starożytność",
+        "extra": ""
+    },
+    "dazu": {
+        "answer": "do tego, oprócz tego, dodatkowo",
+        "extra": "np. do tego napój do kebaba"
+    },
+    "der Eiswürfel": {
+        "answer": "kostka lodu",
+        "extra": ""
+    },
+    "der Kohl": {
+        "answer": "kapusta",
+        "extra": ""
+    },
+    "der Senf": {
+        "answer": "musztarda",
+        "extra": "np. do hotdoga"
+    },
+    "die Bestellung": {
+        "answer": "zamówienie",
+        "extra": "np. w restauracji"
+    },
+    "die Bratwurst": {
+        "answer": "kiełbaska z rusztu, smażona kiełbasa, kiełbasa pieczona",
+        "extra": "aus Schweinefleisch"
+    },
+    "die Pommes frites": {
+        "answer": "frytki",
+        "extra": ""
+    },
+    "die Selbstbedienung": {
+        "answer": "samoobsługa",
+        "extra": ""
+    },
+    "die Speise": {
+        "answer": "potrawa, danie",
+        "extra": "np. ta potrawa mi nie smakuje"
+    },
+    "die Speisekarte": {
+        "answer": "jadłospis, karta dań",
+        "extra": ""
+    },
+    "die Umfrage": {
+        "answer": "ankieta",
+        "extra": ""
+    },
+    "dort": {
+        "answer": "tam",
+        "extra": "np. oni są tam"
+    },
+    "fast": {
+        "answer": "prawie, nieomal, niemalże",
+        "extra": ""
+    },
+    "getrennt": {
+        "answer": "osobno, oddzielnie",
+        "extra": "Zahlen Sie zusammen oder getrennt?"
+    },
+    "häufig": {
+        "answer": "często",
+        "extra": "np. często chodzę na basen"
+    },
+    "mild": {
+        "answer": "łagodny",
+        "extra": "np. sos do kebaba"
+    },
+    "mindestens": {
+        "answer": "przynajmniej",
+        "extra": ""
+    },
+    "regelmäßig": {
+        "answer": "regularny",
+        "extra": "np. regularnie uprawiać sport"
+    },
+    "scharf": {
+        "answer": "ostry, pikantny",
+        "extra": "np. sos do kebaba"
+    },
+    "sofort": {
+        "answer": "natychmiast, zaraz, od razu",
+        "extra": ""
+    }
+}

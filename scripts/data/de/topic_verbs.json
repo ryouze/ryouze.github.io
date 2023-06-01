@@ -1,0 +1,330 @@
+{
+    "backen": {
+        "answer": "piec",
+        "extra": ""
+    },
+    "beginnen": {
+        "answer": "zaczynać (się), rozpoczynać (się)",
+        "extra": ""
+    },
+    "bieten": {
+        "answer": "oferować",
+        "extra": ""
+    },
+    "bitten": {
+        "answer": "prosić",
+        "extra": ""
+    },
+    "bleiben": {
+        "answer": "pozostawać",
+        "extra": "sein"
+    },
+    "bringen": {
+        "answer": "przynosić",
+        "extra": ""
+    },
+    "denken": {
+        "answer": "myśleć",
+        "extra": ""
+    },
+    "dürfen": {
+        "answer": "mieć pozwolenie",
+        "extra": ""
+    },
+    "empfehlen": {
+        "answer": "polecać",
+        "extra": ""
+    },
+    "erschrecken": {
+        "answer": "wystraszyć się",
+        "extra": ""
+    },
+    "essen": {
+        "answer": "jeść",
+        "extra": ""
+    },
+    "fahren": {
+        "answer": "jechać, zawozić",
+        "extra": "sein"
+    },
+    "fallen": {
+        "answer": "upadać",
+        "extra": "sein"
+    },
+    "fangen": {
+        "answer": "łapać, chwytać",
+        "extra": ""
+    },
+    "finden": {
+        "answer": "znajdować",
+        "extra": ""
+    },
+    "fliegen": {
+        "answer": "latać",
+        "extra": "sein"
+    },
+    "fliehen": {
+        "answer": "uciekać, umykać",
+        "extra": "sein"
+    },
+    "fressen": {
+        "answer": "żreć",
+        "extra": ""
+    },
+    "geben": {
+        "answer": "dawać",
+        "extra": ""
+    },
+    "gebären": {
+        "answer": "rodzić",
+        "extra": ""
+    },
+    "gehen": {
+        "answer": "iść",
+        "extra": "sein"
+    },
+    "gelingen": {
+        "answer": "udawać się",
+        "extra": "haben; coś się powiodło"
+    },
+    "geschehen": {
+        "answer": "wydarzyć się",
+        "extra": "sein"
+    },
+    "gewinnen": {
+        "answer": "wygrywać",
+        "extra": ""
+    },
+    "gießen": {
+        "answer": "podlewać, nalewać, zalewać",
+        "extra": ""
+    },
+    "graben": {
+        "answer": "kopać",
+        "extra": ""
+    },
+    "greifen": {
+        "answer": "chwytać",
+        "extra": ""
+    },
+    "halten": {
+        "answer": "trzymać",
+        "extra": ""
+    },
+    "heben": {
+        "answer": "unosić, podnosić",
+        "extra": ""
+    },
+    "heißen": {
+        "answer": "nazywać się",
+        "extra": ""
+    },
+    "helfen": {
+        "answer": "pomagać",
+        "extra": ""
+    },
+    "hängen": {
+        "answer": "wisieć",
+        "extra": ""
+    },
+    "kennen": {
+        "answer": "znać kogoś/coś",
+        "extra": ""
+    },
+    "klingen": {
+        "answer": "brzmieć",
+        "extra": ""
+    },
+    "kommen": {
+        "answer": "przychodzić",
+        "extra": "sein"
+    },
+    "können": {
+        "answer": "móc, umieć",
+        "extra": ""
+    },
+    "laden": {
+        "answer": "ładować",
+        "extra": ""
+    },
+    "lassen": {
+        "answer": "kazać, zostawiać",
+        "extra": ""
+    },
+    "laufen": {
+        "answer": "biec",
+        "extra": "sein"
+    },
+    "leiden": {
+        "answer": "cierpieć",
+        "extra": ""
+    },
+    "leihen": {
+        "answer": "pożyczać",
+        "extra": ""
+    },
+    "lesen": {
+        "answer": "czytać",
+        "extra": ""
+    },
+    "liegen": {
+        "answer": "leżeć",
+        "extra": ""
+    },
+    "lügen": {
+        "answer": "kłamać",
+        "extra": ""
+    },
+    "meiden": {
+        "answer": "unikać",
+        "extra": ""
+    },
+    "messen": {
+        "answer": "mierzyć",
+        "extra": ""
+    },
+    "mögen": {
+        "answer": "lubić",
+        "extra": ""
+    },
+    "müssen": {
+        "answer": "musieć",
+        "extra": ""
+    },
+    "nehmen": {
+        "answer": "brać, wziąć",
+        "extra": ""
+    },
+    "nennen": {
+        "answer": "nazywać, określać, wymieniać",
+        "extra": ""
+    },
+    "pfeifen": {
+        "answer": "gwizdać",
+        "extra": ""
+    },
+    "preisen": {
+        "answer": "wychwalać, cenić",
+        "extra": ""
+    },
+    "raten": {
+        "answer": "radzić",
+        "extra": ""
+    },
+    "reiben": {
+        "answer": "trzeć, ucierać, pocierać",
+        "extra": ""
+    },
+    "reißen": {
+        "answer": "rwać, drzeć",
+        "extra": ""
+    },
+    "rennen": {
+        "answer": "pędzić",
+        "extra": "sein"
+    },
+    "riechen": {
+        "answer": "pachnieć",
+        "extra": ""
+    },
+    "rufen": {
+        "answer": "wzywać, wołać",
+        "extra": ""
+    },
+    "schaffen": {
+        "answer": "tworzyć, kreować",
+        "extra": ""
+    },
+    "scheinen": {
+        "answer": "świecić, promieniować",
+        "extra": ""
+    },
+    "schlafen": {
+        "answer": "spać",
+        "extra": "sein"
+    },
+    "schlagen": {
+        "answer": "bić",
+        "extra": ""
+    },
+    "schließen": {
+        "answer": "zamykać",
+        "extra": ""
+    },
+    "schneiden": {
+        "answer": "kroić, ukroić, ciąć",
+        "extra": ""
+    },
+    "schreiben": {
+        "answer": "pisać",
+        "extra": ""
+    },
+    "schweigen": {
+        "answer": "milczeć",
+        "extra": ""
+    },
+    "schwimmen": {
+        "answer": "pływać",
+        "extra": "sein"
+    },
+    "sehen": {
+        "answer": "widzieć",
+        "extra": ""
+    },
+    "singen": {
+        "answer": "śpiewać",
+        "extra": ""
+    },
+    "trinken": {
+        "answer": "pić",
+        "extra": ""
+    },
+    "tun": {
+        "answer": "czynić",
+        "extra": ""
+    },
+    "verderben": {
+        "answer": "psuć, gnić",
+        "extra": "sein"
+    },
+    "vergessen": {
+        "answer": "zapominać",
+        "extra": ""
+    },
+    "verlieren": {
+        "answer": "stracić, zgubić",
+        "extra": ""
+    },
+    "wachsen": {
+        "answer": "rosnąć",
+        "extra": "sein"
+    },
+    "waschen": {
+        "answer": "myć, prać",
+        "extra": ""
+    },
+    "werden": {
+        "answer": "stawać się",
+        "extra": "sein"
+    },
+    "werfen": {
+        "answer": "rzucać",
+        "extra": ""
+    },
+    "wissen": {
+        "answer": "wiedzieć",
+        "extra": ""
+    },
+    "wollen": {
+        "answer": "chcieć",
+        "extra": ""
+    },
+    "ziehen": {
+        "answer": "ciągnąć",
+        "extra": "sein"
+    },
+    "zwingen": {
+        "answer": "zmuszać",
+        "extra": ""
+    }
+}

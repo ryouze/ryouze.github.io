@@ -1,0 +1,238 @@
+{
+    "andere": {
+        "answer": "inny",
+        "extra": ""
+    },
+    "aufhaben": {
+        "answer": "mieć coś na sobie",
+        "extra": ""
+    },
+    "baden": {
+        "answer": "kąpać się",
+        "extra": ""
+    },
+    "bedeuten": {
+        "answer": "znaczyć",
+        "extra": "np. co to znaczy?"
+    },
+    "beenden": {
+        "answer": "skończyć",
+        "extra": ""
+    },
+    "besichtigen": {
+        "answer": "zwiedzać",
+        "extra": "np. muzea"
+    },
+    "besitzen": {
+        "answer": "posiadać",
+        "extra": ""
+    },
+    "bestellen": {
+        "answer": "zamawiać",
+        "extra": ""
+    },
+    "bewundern": {
+        "answer": "podziwiać",
+        "extra": ""
+    },
+    "bieten": {
+        "answer": "oferować",
+        "extra": ""
+    },
+    "das Kind": {
+        "answer": "dziecko",
+        "extra": ""
+    },
+    "dauern": {
+        "answer": "trwać",
+        "extra": ""
+    },
+    "der Bruder": {
+        "answer": "brat",
+        "extra": ""
+    },
+    "der Cousin": {
+        "answer": "kuzyn",
+        "extra": ""
+    },
+    "der Enkel": {
+        "answer": "wnuk",
+        "extra": ""
+    },
+    "der Großvater/Opa": {
+        "answer": "dziadek",
+        "extra": ""
+    },
+    "der Grund": {
+        "answer": "powód",
+        "extra": ""
+    },
+    "der Mann/Ehemann": {
+        "answer": "mąż",
+        "extra": ""
+    },
+    "der Onkel": {
+        "answer": "wujek",
+        "extra": ""
+    },
+    "der Singlehaushalt": {
+        "answer": "gospodarstwo jedno-osobowe",
+        "extra": ""
+    },
+    "der Sohn": {
+        "answer": "syn",
+        "extra": ""
+    },
+    "der Vater": {
+        "answer": "ojciec",
+        "extra": ""
+    },
+    "der Wohnort": {
+        "answer": "miejsce zamieszkania",
+        "extra": ""
+    },
+    "die Ausgaben": {
+        "answer": "wydatki",
+        "extra": ""
+    },
+    "die Cousine": {
+        "answer": "kuzynka",
+        "extra": ""
+    },
+    "die Eltern": {
+        "answer": "rodzice",
+        "extra": ""
+    },
+    "die Enkelin": {
+        "answer": "wnuczka",
+        "extra": ""
+    },
+    "die Frau/Ehefrau": {
+        "answer": "żona",
+        "extra": ""
+    },
+    "die Geschwister": {
+        "answer": "rodzeństwo",
+        "extra": ""
+    },
+    "die Großeltern": {
+        "answer": "dziadkowie",
+        "extra": ""
+    },
+    "die Großmutter/Oma": {
+        "answer": "babcia",
+        "extra": ""
+    },
+    "die Kindheit": {
+        "answer": "dzieciństwo",
+        "extra": ""
+    },
+    "die Mutter": {
+        "answer": "matka",
+        "extra": ""
+    },
+    "die Schwester": {
+        "answer": "siostra",
+        "extra": ""
+    },
+    "die Tante": {
+        "answer": "ciotka",
+        "extra": ""
+    },
+    "die Tochter": {
+        "answer": "córka",
+        "extra": ""
+    },
+    "die Ursache": {
+        "answer": "przyczyna",
+        "extra": ""
+    },
+    "die Vorlesung": {
+        "answer": "wykład",
+        "extra": ""
+    },
+    "die Vorteile": {
+        "answer": "zalety",
+        "extra": ""
+    },
+    "diktieren": {
+        "answer": "dyktować",
+        "extra": ""
+    },
+    "erwarten": {
+        "answer": "oczekiwać",
+        "extra": ""
+    },
+    "getrennt": {
+        "answer": "oddzielnie, osobno",
+        "extra": ""
+    },
+    "heutzutage": {
+        "answer": "obecnie, dziś, w dzisiejszych czasach",
+        "extra": ""
+    },
+    "immer noch": {
+        "answer": "nadal, ciągle jeszcze",
+        "extra": "coś się dzieje"
+    },
+    "kochen": {
+        "answer": "gotować",
+        "extra": ""
+    },
+    "legen": {
+        "answer": "kłaść, położyć się",
+        "extra": ""
+    },
+    "manche": {
+        "answer": "niektórzy",
+        "extra": "np. ludzie"
+    },
+    "nicht so hoch": {
+        "answer": "nie tak wysokie",
+        "extra": "np. wydatki"
+    },
+    "noch": {
+        "answer": "jeszcze, nadal",
+        "extra": ""
+    },
+    "sich frauen": {
+        "answer": "cieszyć się",
+        "extra": ""
+    },
+    "spezialisieren": {
+        "answer": "specjalizować się",
+        "extra": "w czymś"
+    },
+    "umziehen": {
+        "answer": "przeprowadzać się",
+        "extra": ""
+    },
+    "verletzen": {
+        "answer": "naruszać, złamać",
+        "extra": "przepisy"
+    },
+    "verschieden": {
+        "answer": "różny",
+        "extra": "np. różne sprawy"
+    },
+    "warten": {
+        "answer": "czekać",
+        "extra": ""
+    },
+    "weniger": {
+        "answer": "mniej",
+        "extra": "czegoś jest"
+    },
+    "wählen": {
+        "answer": "wybierać",
+        "extra": ""
+    },
+    "zusammen": {
+        "answer": "razem",
+        "extra": ""
+    },
+    "zusammenleben/zusammenwohnen": {
+        "answer": "współżyć, mieszkać razem",
+        "extra": ""
+    }
+}

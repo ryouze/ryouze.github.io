@@ -1,0 +1,98 @@
+{
+    "das Datum": {
+        "answer": "data",
+        "extra": "np. dzisiejsza data w kalendarzu"
+    },
+    "der April": {
+        "answer": "kwiecień",
+        "extra": ""
+    },
+    "der August": {
+        "answer": "sierpień",
+        "extra": ""
+    },
+    "der Dezember": {
+        "answer": "grudzień",
+        "extra": ""
+    },
+    "der Dienstag": {
+        "answer": "wtorek",
+        "extra": ""
+    },
+    "der Donnerstag": {
+        "answer": "czwartek",
+        "extra": ""
+    },
+    "der Februar": {
+        "answer": "luty",
+        "extra": ""
+    },
+    "der Freitag": {
+        "answer": "piątek",
+        "extra": ""
+    },
+    "der Januar": {
+        "answer": "styczeń",
+        "extra": ""
+    },
+    "der Juli": {
+        "answer": "lipiec",
+        "extra": ""
+    },
+    "der Juni": {
+        "answer": "czerwiec",
+        "extra": ""
+    },
+    "der Mai": {
+        "answer": "maj",
+        "extra": ""
+    },
+    "der Mittwoch": {
+        "answer": "środa",
+        "extra": ""
+    },
+    "der Monat": {
+        "answer": "miesiąc",
+        "extra": ""
+    },
+    "der Montag": {
+        "answer": "poniedziałek",
+        "extra": ""
+    },
+    "der März": {
+        "answer": "marzec",
+        "extra": ""
+    },
+    "der November": {
+        "answer": "listopad",
+        "extra": ""
+    },
+    "der Oktober": {
+        "answer": "październik",
+        "extra": ""
+    },
+    "der Samstag": {
+        "answer": "sobota",
+        "extra": ""
+    },
+    "der September": {
+        "answer": "wrzesień",
+        "extra": ""
+    },
+    "der Sonntag": {
+        "answer": "niedziela",
+        "extra": ""
+    },
+    "der Wochentag": {
+        "answer": "dzień tygodnia",
+        "extra": ""
+    },
+    "entdecken": {
+        "answer": "odkryć",
+        "extra": "coś, co już istnieje"
+    },
+    "erfinden": {
+        "answer": "wynaleźć",
+        "extra": "coś nowego, od zera"
+    }
+}

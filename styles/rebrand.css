@@ -1,0 +1,36 @@
+@import "/styles/base.css";
+@import "/styles/responsive/narrow.css" screen and (max-width: 900px);
+@import "/styles/responsive/mobile_all.css" screen and (max-width: 620px);
+
+/* variables*/
+:root {
+  --nav_button_active: #2466a8;
+}
+
+.full_page_tab img {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.full_page_tab img:last-child {
+  padding-bottom: 0;
+}
+
+article {
+  font-size: 100%;
+}
+
+article p {
+  text-align: left;
+}
+
+article hr {
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+article #wa_logo {
+  width: 25%;
+}

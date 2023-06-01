@@ -1,0 +1,774 @@
+{
+    "Betten machen": {
+        "answer": "pościelić łóżka",
+        "extra": ""
+    },
+    "Donnerstagmittag": {
+        "answer": "czwartek w południe",
+        "extra": ""
+    },
+    "Es tut mir wahnsinnig Leid": {
+        "answer": "bardzo mi przykro",
+        "extra": ""
+    },
+    "Fieber messen": {
+        "answer": "zmierzyć gorączkę",
+        "extra": ""
+    },
+    "Filme sehen": {
+        "answer": "oglądać filmy",
+        "extra": ""
+    },
+    "Freunde treffen": {
+        "answer": "spotykać przyjaciół",
+        "extra": ""
+    },
+    "Geld ausgeben": {
+        "answer": "wydawać pieniądze",
+        "extra": ""
+    },
+    "Geld tauchen": {
+        "answer": "wymienić pieniądze",
+        "extra": ""
+    },
+    "Geschäft betreiben": {
+        "answer": "prowadzić biznes",
+        "extra": ""
+    },
+    "Ich gebe nicht auf": {
+        "answer": "ja nie poddaję się",
+        "extra": ""
+    },
+    "Ich meine da": {
+        "answer": "mam na myśli",
+        "extra": ""
+    },
+    "Ich möchte mal wieder essen gehen": {
+        "answer": "Ja chcę znów wyjść zjeść",
+        "extra": "partykuła „mal“ podkreśla znaczenie"
+    },
+    "Meinst du da": {
+        "answer": "masz ty na myśli",
+        "extra": ""
+    },
+    "Montagmorgen": {
+        "answer": "rano w poniedziałek",
+        "extra": ""
+    },
+    "Musik hören": {
+        "answer": "słuchać muzyki",
+        "extra": ""
+    },
+    "Rad fahren": {
+        "answer": "jeździć na rowerze",
+        "extra": ""
+    },
+    "Rauchen ist verboten": {
+        "answer": "palenie jest zabronione",
+        "extra": ""
+    },
+    "Schau mal": {
+        "answer": "popatrz tutaj",
+        "extra": ""
+    },
+    "Ski fahren": {
+        "answer": "pójść na narty",
+        "extra": ""
+    },
+    "Zeitung lesen": {
+        "answer": "czytać gazetę",
+        "extra": ""
+    },
+    "ab sofort": {
+        "answer": "od zaraz",
+        "extra": ""
+    },
+    "acht Uhr": {
+        "answer": "ósma godzina",
+        "extra": ""
+    },
+    "anfangen": {
+        "answer": "rozpoczynać",
+        "extra": "Das Konzert fängt um drei Uhr an"
+    },
+    "anrufen": {
+        "answer": "dzwonić",
+        "extra": "roździelny „an“"
+    },
+    "aufestehen": {
+        "answer": "wstawiać",
+        "extra": ""
+    },
+    "aufhören": {
+        "answer": "zaprzestać/skończyć",
+        "extra": ""
+    },
+    "aufraumen": {
+        "answer": "sprzątać",
+        "extra": ""
+    },
+    "aufstehen": {
+        "answer": "wstawać",
+        "extra": ""
+    },
+    "außerhalb": {
+        "answer": "tu: poza miastem",
+        "extra": ""
+    },
+    "backen": {
+        "answer": "piec",
+        "extra": ""
+    },
+    "bauen": {
+        "answer": "budować",
+        "extra": ""
+    },
+    "bedienen": {
+        "answer": "obsługiwać",
+        "extra": ""
+    },
+    "bequem": {
+        "answer": "wygodny",
+        "extra": ""
+    },
+    "bezahlen": {
+        "answer": "zapłacić",
+        "extra": ""
+    },
+    "billig": {
+        "answer": "tani",
+        "extra": ""
+    },
+    "bis dann": {
+        "answer": "do zobaczenia",
+        "extra": ""
+    },
+    "das Arbeitszimmer": {
+        "answer": "pokój do pracy",
+        "extra": ""
+    },
+    "das Bad": {
+        "answer": "łazienka",
+        "extra": ""
+    },
+    "das Bett": {
+        "answer": "łózko",
+        "extra": ""
+    },
+    "das Bucherzregal": {
+        "answer": "regał na książki",
+        "extra": ""
+    },
+    "das Cafe": {
+        "answer": "kawiarnia",
+        "extra": ""
+    },
+    "das Duschbad": {
+        "answer": "prysznic",
+        "extra": ""
+    },
+    "das Erdgeschoss": {
+        "answer": "parter",
+        "extra": ""
+    },
+    "das Familieneinkommen": {
+        "answer": "rodzinne dochody",
+        "extra": ""
+    },
+    "das Fensterbrett": {
+        "answer": "parapet",
+        "extra": ""
+    },
+    "das Frühstück vorbeitern": {
+        "answer": "przygotować śniadanie",
+        "extra": ""
+    },
+    "das Gerichtsurteil": {
+        "answer": "wyrok sądowy",
+        "extra": ""
+    },
+    "das Geschäft": {
+        "answer": "sklep",
+        "extra": ""
+    },
+    "das Kinderzimmer": {
+        "answer": "pokój dzieci",
+        "extra": ""
+    },
+    "das Kino": {
+        "answer": "kino",
+        "extra": ""
+    },
+    "das Konzert": {
+        "answer": "koncert",
+        "extra": ""
+    },
+    "das Krankenhaus": {
+        "answer": "szpital",
+        "extra": ""
+    },
+    "das Mittagessen bestellen": {
+        "answer": "zamówić obiad",
+        "extra": ""
+    },
+    "das Reihenhaus": {
+        "answer": "dom szeregowy",
+        "extra": ""
+    },
+    "das Schlafzimmer": {
+        "answer": "sypialnia",
+        "extra": ""
+    },
+    "das Schwimmbad": {
+        "answer": "pływalnia",
+        "extra": ""
+    },
+    "das Tennisspiel": {
+        "answer": "gra w tenisa",
+        "extra": ""
+    },
+    "das Treppenhaus": {
+        "answer": "schody",
+        "extra": ""
+    },
+    "das Wohnzimmer": {
+        "answer": "salon",
+        "extra": ""
+    },
+    "der Abend": {
+        "answer": "wieczór",
+        "extra": ""
+    },
+    "der Aufzug": {
+        "answer": "winda",
+        "extra": ""
+    },
+    "der Ausflug": {
+        "answer": "wycieczka",
+        "extra": ""
+    },
+    "der Balkon": {
+        "answer": "balkon",
+        "extra": ""
+    },
+    "der Dreck": {
+        "answer": "brud",
+        "extra": ""
+    },
+    "der Esstisch": {
+        "answer": "stół do jedzenia",
+        "extra": ""
+    },
+    "der Flur": {
+        "answer": "korytarz",
+        "extra": ""
+    },
+    "der Friseur": {
+        "answer": "fryzjer",
+        "extra": ""
+    },
+    "der Hausmeister": {
+        "answer": "dozorca",
+        "extra": ""
+    },
+    "der Hobbyraum": {
+        "answer": "pokój do hobby",
+        "extra": ""
+    },
+    "der Keller": {
+        "answer": "piwnica",
+        "extra": ""
+    },
+    "der Kleiderschrank": {
+        "answer": "szafa na ubrania",
+        "extra": ""
+    },
+    "der Krach": {
+        "answer": "hałas, kłótnia",
+        "extra": ""
+    },
+    "der Kühlschrank": {
+        "answer": "lodówka",
+        "extra": ""
+    },
+    "der Mietvertrag": {
+        "answer": "umowa najmu",
+        "extra": ""
+    },
+    "der Mittag": {
+        "answer": "południe",
+        "extra": ""
+    },
+    "der Morgen": {
+        "answer": "poranek",
+        "extra": ""
+    },
+    "der Nachmittag": {
+        "answer": "po południu",
+        "extra": ""
+    },
+    "der Postbeamte": {
+        "answer": "urzędnik pocztowy",
+        "extra": ""
+    },
+    "der Schornstein": {
+        "answer": "komin",
+        "extra": ""
+    },
+    "der Schreibtisch": {
+        "answer": "biurka",
+        "extra": ""
+    },
+    "der Sessel": {
+        "answer": "fotel",
+        "extra": ""
+    },
+    "der Spiegel": {
+        "answer": "lustro",
+        "extra": ""
+    },
+    "der Teppich": {
+        "answer": "dywan",
+        "extra": ""
+    },
+    "der Traum": {
+        "answer": "marzenie, sen",
+        "extra": ""
+    },
+    "der Volleyball": {
+        "answer": "siatkówka",
+        "extra": ""
+    },
+    "der Vorhand": {
+        "answer": "firanka",
+        "extra": ""
+    },
+    "der Vortmittag": {
+        "answer": "przedpołudnie",
+        "extra": ""
+    },
+    "der Vortrag": {
+        "answer": "wykład",
+        "extra": ""
+    },
+    "die Arzthelferin": {
+        "answer": "asystentka lekarza, rejestratorka",
+        "extra": ""
+    },
+    "die Außenwand": {
+        "answer": "ściana zewnętrzna budynku",
+        "extra": ""
+    },
+    "die Bank": {
+        "answer": "bank",
+        "extra": ""
+    },
+    "die Bar": {
+        "answer": "bar",
+        "extra": ""
+    },
+    "die Couch": {
+        "answer": "kanapa",
+        "extra": ""
+    },
+    "die Diskothek": {
+        "answer": "dyskoteka",
+        "extra": ""
+    },
+    "die Elektroherd": {
+        "answer": "kuchenka elektryczna",
+        "extra": ""
+    },
+    "die Erlaubnis": {
+        "answer": "pozwolenie",
+        "extra": ""
+    },
+    "die Fußbodenheizung": {
+        "answer": "ogrzewanie podłogowe",
+        "extra": ""
+    },
+    "die Garderobe": {
+        "answer": "garderoba",
+        "extra": ""
+    },
+    "die Hausfrau": {
+        "answer": "gospodyni domowa",
+        "extra": ""
+    },
+    "die Kommode": {
+        "answer": "komoda",
+        "extra": ""
+    },
+    "die Küche": {
+        "answer": "kuchnia",
+        "extra": ""
+    },
+    "die Lampe": {
+        "answer": "lampa",
+        "extra": ""
+    },
+    "die Maschine": {
+        "answer": "maszna/silnik",
+        "extra": ""
+    },
+    "die Miete": {
+        "answer": "czynsz",
+        "extra": ""
+    },
+    "die Nacht": {
+        "answer": "noc",
+        "extra": ""
+    },
+    "die Politparole": {
+        "answer": "hasło polityczne",
+        "extra": ""
+    },
+    "die Ruhe": {
+        "answer": "spokój",
+        "extra": ""
+    },
+    "die Taube": {
+        "answer": "gołąb",
+        "extra": ""
+    },
+    "die Terrasse": {
+        "answer": "taras",
+        "extra": ""
+    },
+    "die Tiefgarage": {
+        "answer": "garaż podziemny",
+        "extra": ""
+    },
+    "die Verkehrs/vebindungen": {
+        "answer": "połączenie komunikacyjne",
+        "extra": ""
+    },
+    "die vier Stuhle": {
+        "answer": "cztery krzesla",
+        "extra": ""
+    },
+    "doch": {
+        "answer": "jednak",
+        "extra": ""
+    },
+    "dunkel": {
+        "answer": "ciemny",
+        "extra": ""
+    },
+    "duschen": {
+        "answer": "brać prysznić",
+        "extra": ""
+    },
+    "eben": {
+        "answer": "właśnie",
+        "extra": ""
+    },
+    "eigentlich": {
+        "answer": "właściwe",
+        "extra": ""
+    },
+    "ein Bier trinken": {
+        "answer": "wypić piwo",
+        "extra": ""
+    },
+    "ein Kleid anziehen": {
+        "answer": "ubierać sukienkę",
+        "extra": ""
+    },
+    "ein Sonnebad nehmen": {
+        "answer": "opalać się",
+        "extra": ""
+    },
+    "eine Bestellung aufschreiben": {
+        "answer": "spisać zamówienie",
+        "extra": ""
+    },
+    "einen Spaziergang machen": {
+        "answer": "pójść na spacer",
+        "extra": ""
+    },
+    "einen Verband machen": {
+        "answer": "zrobić bandaż",
+        "extra": ""
+    },
+    "einkaufen": {
+        "answer": "robić zakupy",
+        "extra": ""
+    },
+    "einladen": {
+        "answer": "zapraszać",
+        "extra": "Ich lade dich zum Dinner ein"
+    },
+    "eintreten": {
+        "answer": "wchodzić",
+        "extra": ""
+    },
+    "einziehen": {
+        "answer": "wprowadzić",
+        "extra": "roździelny „ein“"
+    },
+    "elf Uhr": {
+        "answer": "jedynasta godzina",
+        "extra": ""
+    },
+    "essen": {
+        "answer": "jeść",
+        "extra": ""
+    },
+    "fast": {
+        "answer": "prawie",
+        "extra": ""
+    },
+    "feiern": {
+        "answer": "cieszyć się",
+        "extra": ""
+    },
+    "ferneshen": {
+        "answer": "oglądać telewizję",
+        "extra": "roździelny"
+    },
+    "fotografieren": {
+        "answer": "fotografować",
+        "extra": ""
+    },
+    "frisieren": {
+        "answer": "czesać",
+        "extra": ""
+    },
+    "fruhstucken": {
+        "answer": "jeść śniadanie",
+        "extra": ""
+    },
+    "füttern": {
+        "answer": "karmić",
+        "extra": ""
+    },
+    "gegen": {
+        "answer": "około",
+        "extra": ""
+    },
+    "geschlossen": {
+        "answer": "zamknięte",
+        "extra": ""
+    },
+    "geöffnet": {
+        "answer": "otwarte",
+        "extra": ""
+    },
+    "groß": {
+        "answer": "duży",
+        "extra": ""
+    },
+    "grüß dich": {
+        "answer": "pozdrowienia",
+        "extra": ""
+    },
+    "günstig": {
+        "answer": "korzystnie",
+        "extra": ""
+    },
+    "halb zehn": {
+        "answer": "10:30",
+        "extra": ""
+    },
+    "hell": {
+        "answer": "jasny",
+        "extra": ""
+    },
+    "herrlich": {
+        "answer": "cudownie",
+        "extra": ""
+    },
+    "herstellen": {
+        "answer": "wytwarzać, produkować",
+        "extra": ""
+    },
+    "holen": {
+        "answer": "przynosić",
+        "extra": ""
+    },
+    "hässlich": {
+        "answer": "brzydki",
+        "extra": ""
+    },
+    "immer": {
+        "answer": "zawsze",
+        "extra": ""
+    },
+    "klein": {
+        "answer": "mały",
+        "extra": ""
+    },
+    "kontrollieren": {
+        "answer": "kontrolować",
+        "extra": ""
+    },
+    "laut": {
+        "answer": "głośny",
+        "extra": ""
+    },
+    "lesen": {
+        "answer": "czytać",
+        "extra": ""
+    },
+    "massieren": {
+        "answer": "masować",
+        "extra": ""
+    },
+    "meinen": {
+        "answer": "być zdania, myśleć",
+        "extra": ""
+    },
+    "meistens": {
+        "answer": "przeważnie",
+        "extra": ""
+    },
+    "miete": {
+        "answer": "opłata za wynajem",
+        "extra": ""
+    },
+    "na ja": {
+        "answer": "dobrze",
+        "extra": ""
+    },
+    "na ja es geht so": {
+        "answer": "cóż, tak to wygląda",
+        "extra": ""
+    },
+    "nie": {
+        "answer": "nigdy",
+        "extra": ""
+    },
+    "niemand": {
+        "answer": "nikt",
+        "extra": ""
+    },
+    "rauchen": {
+        "answer": "palić papierosy",
+        "extra": ""
+    },
+    "schlafen": {
+        "answer": "spać",
+        "extra": ""
+    },
+    "schlafen möchten": {
+        "answer": "chcieć spać",
+        "extra": ""
+    },
+    "schneiden": {
+        "answer": "kroić",
+        "extra": ""
+    },
+    "schwimmen": {
+        "answer": "pływać",
+        "extra": ""
+    },
+    "schön": {
+        "answer": "piękny",
+        "extra": ""
+    },
+    "sechs Uhr": {
+        "answer": "szósta godzina",
+        "extra": ""
+    },
+    "selbst": {
+        "answer": "sam",
+        "extra": "ich mache das selbst"
+    },
+    "sogar": {
+        "answer": "nawet",
+        "extra": ""
+    },
+    "spazieren gehen": {
+        "answer": "pójść na spacer",
+        "extra": ""
+    },
+    "spielen": {
+        "answer": "grać",
+        "extra": ""
+    },
+    "stattfinden": {
+        "answer": "mieć miejsce, odbywać się",
+        "extra": "koncert odbywa się o trzeciej godzinie"
+    },
+    "stören": {
+        "answer": "przeszkadzać",
+        "extra": ""
+    },
+    "tanzen": {
+        "answer": "tańczyć",
+        "extra": ""
+    },
+    "teuer": {
+        "answer": "drogi",
+        "extra": ""
+    },
+    "traumen": {
+        "answer": "śnić",
+        "extra": ""
+    },
+    "treffen": {
+        "answer": "spotykać",
+        "extra": ""
+    },
+    "umziehen": {
+        "answer": "przeprowadzać się",
+        "extra": ""
+    },
+    "unbequem": {
+        "answer": "niewygodny",
+        "extra": ""
+    },
+    "unter": {
+        "answer": "pod, tu: poniżej",
+        "extra": ""
+    },
+    "verbieten": {
+        "answer": "zakazać",
+        "extra": ""
+    },
+    "verboten": {
+        "answer": "zakazany",
+        "extra": ""
+    },
+    "verdienen": {
+        "answer": "zarabiać",
+        "extra": "pieniądze"
+    },
+    "vielleicht": {
+        "answer": "być może",
+        "extra": ""
+    },
+    "warten": {
+        "answer": "czekać",
+        "extra": ""
+    },
+    "ziemlich": {
+        "answer": "dosyć",
+        "extra": "ich bin ziemlich hungrig"
+    },
+    "zu Abend essen": {
+        "answer": "jeść kolację",
+        "extra": ""
+    },
+    "zu Mittag essen": {
+        "answer": "jeść obiad",
+        "extra": ""
+    },
+    "zufriefen": {
+        "answer": "zadowolony",
+        "extra": ""
+    },
+    "zwischen": {
+        "answer": "pomiędzy",
+        "extra": ""
+    },
+    "über": {
+        "answer": "ponad, nad",
+        "extra": ""
+    },
+    "über eine Stunde": {
+        "answer": "ponad godzinę",
+        "extra": ""
+    }
+}

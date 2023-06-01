@@ -1,0 +1,58 @@
+{
+    "blau": {
+        "answer": "niebieski",
+        "extra": ""
+    },
+    "braun": {
+        "answer": "brązowy",
+        "extra": ""
+    },
+    "dunkel": {
+        "answer": "ciemny",
+        "extra": "np. ciemnoczerwony"
+    },
+    "gelb": {
+        "answer": "żółty",
+        "extra": ""
+    },
+    "gold": {
+        "answer": "złoty",
+        "extra": ""
+    },
+    "grau": {
+        "answer": "szary",
+        "extra": ""
+    },
+    "grün": {
+        "answer": "zielony",
+        "extra": ""
+    },
+    "hell": {
+        "answer": "jasny",
+        "extra": "np. jasnoczerwony"
+    },
+    "orange": {
+        "answer": "pomarańczowy",
+        "extra": ""
+    },
+    "rosa": {
+        "answer": "różowy",
+        "extra": ""
+    },
+    "rot": {
+        "answer": "czerwony",
+        "extra": ""
+    },
+    "schwarz": {
+        "answer": "czarny",
+        "extra": ""
+    },
+    "violett": {
+        "answer": "fioletowy",
+        "extra": ""
+    },
+    "weiß": {
+        "answer": "biały",
+        "extra": ""
+    }
+}

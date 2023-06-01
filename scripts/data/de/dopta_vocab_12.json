@@ -1,0 +1,66 @@
+{
+    "das Elektroauto": {
+        "answer": "samochód eleketryczny",
+        "extra": ""
+    },
+    "das Erdöl": {
+        "answer": "ropa naftowa",
+        "extra": ""
+    },
+    "das Gas": {
+        "answer": "gas",
+        "extra": ""
+    },
+    "das Klima": {
+        "answer": "klimat",
+        "extra": ""
+    },
+    "der Strom": {
+        "answer": "prąd",
+        "extra": ""
+    },
+    "die Bioenergie": {
+        "answer": "bioenergia",
+        "extra": ""
+    },
+    "die Geothermie": {
+        "answer": "energia geotermalna",
+        "extra": ""
+    },
+    "die Kohle": {
+        "answer": "węgiel",
+        "extra": ""
+    },
+    "die Kosten": {
+        "answer": "koszty",
+        "extra": ""
+    },
+    "die Sonnenenergie": {
+        "answer": "energia słoneczna",
+        "extra": ""
+    },
+    "die Tankstelle": {
+        "answer": "stacja benzynowa",
+        "extra": ""
+    },
+    "die Wasserkraft": {
+        "answer": "energia wodna",
+        "extra": ""
+    },
+    "die Windenergie": {
+        "answer": "energia wiatrowa",
+        "extra": ""
+    },
+    "die Windmühle": {
+        "answer": "wiatrak, młyn",
+        "extra": ""
+    },
+    "es tötet Fische": {
+        "answer": "to zabija ryby",
+        "extra": ""
+    },
+    "sich lohnen": {
+        "answer": "opłaca się",
+        "extra": "np. kupić auto elektryczne"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "der Dienstag": {
+        "answer": "wtorek",
+        "extra": ""
+    },
+    "der Donnerstag": {
+        "answer": "czwartek",
+        "extra": ""
+    },
+    "der Freitag": {
+        "answer": "piątek",
+        "extra": ""
+    },
+    "der Mittwoch": {
+        "answer": "środa",
+        "extra": ""
+    },
+    "der Montag": {
+        "answer": "poniedziałek",
+        "extra": ""
+    },
+    "der Samstag": {
+        "answer": "sobota",
+        "extra": ""
+    },
+    "der Sonntag": {
+        "answer": "niedziela",
+        "extra": ""
+    }
+}

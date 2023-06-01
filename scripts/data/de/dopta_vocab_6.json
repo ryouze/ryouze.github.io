@@ -1,0 +1,186 @@
+{
+    "Familie besuchen": {
+        "answer": "odwiedzać rodzinę",
+        "extra": ""
+    },
+    "aufkleben": {
+        "answer": "naklejać",
+        "extra": "np. znaczek pocztowy"
+    },
+    "ausfüllen": {
+        "answer": "wypełniać",
+        "extra": "np. formularz"
+    },
+    "bezahlen": {
+        "answer": "płacić",
+        "extra": "np. za zakupy w sklepie"
+    },
+    "das Formular": {
+        "answer": "formularz, wzór",
+        "extra": "do wypełnienia"
+    },
+    "das Geschenk": {
+        "answer": "prezent",
+        "extra": ""
+    },
+    "das Osterei": {
+        "answer": "pisanka",
+        "extra": "jajko"
+    },
+    "das Ostern": {
+        "answer": "Wielkanoc",
+        "extra": ""
+    },
+    "das Weihnachtslied": {
+        "answer": "kolęda",
+        "extra": ""
+    },
+    "das Zimt": {
+        "answer": "cynamon",
+        "extra": ""
+    },
+    "dekorieren": {
+        "answer": "dekorować",
+        "extra": ""
+    },
+    "der Absender": {
+        "answer": "nadawca",
+        "extra": ""
+    },
+    "der Brief": {
+        "answer": "list",
+        "extra": "np. na poczcie"
+    },
+    "der Empfänger": {
+        "answer": "odbiorca",
+        "extra": ""
+    },
+    "der Früchtetee": {
+        "answer": "herbata owocowa",
+        "extra": ""
+    },
+    "der Frühling": {
+        "answer": "wiosna",
+        "extra": "pora roku"
+    },
+    "der Herbst": {
+        "answer": "jesień",
+        "extra": "pora roku"
+    },
+    "der Hering": {
+        "answer": "śledź",
+        "extra": "ryba"
+    },
+    "der Ingwer": {
+        "answer": "imbir",
+        "extra": ""
+    },
+    "der Kabeljau, Dorsch": {
+        "answer": "dorsz",
+        "extra": "ryba"
+    },
+    "der Lachs": {
+        "answer": "łosoś",
+        "extra": "ryba"
+    },
+    "der Lebkuchen": {
+        "answer": "piernik",
+        "extra": ""
+    },
+    "der Mohnkuchen": {
+        "answer": "makowiec",
+        "extra": ""
+    },
+    "der Sauerkraut": {
+        "answer": "kapusta kwaszona",
+        "extra": ""
+    },
+    "der Sommer": {
+        "answer": "lato",
+        "extra": "pora roku"
+    },
+    "der Stern": {
+        "answer": "gwiazda",
+        "extra": ""
+    },
+    "der Tod": {
+        "answer": "śmierć",
+        "extra": ""
+    },
+    "der Winter": {
+        "answer": "zima",
+        "extra": "pora roku"
+    },
+    "der Zander": {
+        "answer": "sandacz",
+        "extra": "ryba"
+    },
+    "die Ansichtskarte/Postkarte": {
+        "answer": "pocztówka, widokówka",
+        "extra": "np. z wakacji"
+    },
+    "die Forelle": {
+        "answer": "pstrąg",
+        "extra": "ryba"
+    },
+    "die Geburt": {
+        "answer": "narodziny",
+        "extra": ""
+    },
+    "die Lichter": {
+        "answer": "lampki",
+        "extra": ""
+    },
+    "die Lichterkette": {
+        "answer": "łańcuch z lampkami",
+        "extra": ""
+    },
+    "die Pflaume": {
+        "answer": "śliwka",
+        "extra": ""
+    },
+    "die Plätzchen": {
+        "answer": "ciastka",
+        "extra": ""
+    },
+    "die Rechnung": {
+        "answer": "rachunek",
+        "extra": "np. za prąd"
+    },
+    "einpacken": {
+        "answer": "pakować, zapakować",
+        "extra": "np. paczkę w magazynie"
+    },
+    "ergänzen": {
+        "answer": "uzupełniać, dopowiadać",
+        "extra": "np. formularz"
+    },
+    "erscheinen": {
+        "answer": "pojawić się",
+        "extra": ""
+    },
+    "feiern": {
+        "answer": "świętować",
+        "extra": ""
+    },
+    "schmücken": {
+        "answer": "ozdabiać",
+        "extra": "np. choinkę"
+    },
+    "selbst machen": {
+        "answer": "wykonać samodzielnie",
+        "extra": ""
+    },
+    "unterschreiben": {
+        "answer": "podpisać",
+        "extra": "np. dokumenty"
+    },
+    "verschicken": {
+        "answer": "wysyłać",
+        "extra": "np. list, e-mail"
+    },
+    "verschließen": {
+        "answer": "zamykać, zamykać na klucz",
+        "extra": "np. drzwi"
+    }
+}

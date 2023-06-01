@@ -1,0 +1,82 @@
+{
+    "eins": {
+        "answer": "1",
+        "extra": "erste"
+    },
+    "zehn": {
+        "answer": "10",
+        "extra": "zehnte"
+    },
+    "elf": {
+        "answer": "11",
+        "extra": "elfte"
+    },
+    "zwölf": {
+        "answer": "12",
+        "extra": "zwölfte"
+    },
+    "dreizehn": {
+        "answer": "13",
+        "extra": "dreizehnte"
+    },
+    "vierzehn": {
+        "answer": "14",
+        "extra": "vierzehnte"
+    },
+    "fünfzehn": {
+        "answer": "15",
+        "extra": "fünfzehnte"
+    },
+    "sechzehn": {
+        "answer": "16",
+        "extra": "sechzehnte"
+    },
+    "siebzehn": {
+        "answer": "17",
+        "extra": "siebzehnte"
+    },
+    "achtzehn": {
+        "answer": "18",
+        "extra": "achtzehnte"
+    },
+    "neunzehn": {
+        "answer": "19",
+        "extra": "neunzehnte"
+    },
+    "zwei": {
+        "answer": "2",
+        "extra": "zweite"
+    },
+    "zwanzig": {
+        "answer": "20",
+        "extra": "zwanzigste"
+    },
+    "drei": {
+        "answer": "3",
+        "extra": "dritte"
+    },
+    "vier": {
+        "answer": "4",
+        "extra": "vierte"
+    },
+    "fünf": {
+        "answer": "5",
+        "extra": "fünfte"
+    },
+    "sechs": {
+        "answer": "6",
+        "extra": "sechste"
+    },
+    "sieben": {
+        "answer": "7",
+        "extra": "siebte"
+    },
+    "acht": {
+        "answer": "8",
+        "extra": "achte"
+    },
+    "neun": {
+        "answer": "9",
+        "extra": "neunte"
+    }
+}

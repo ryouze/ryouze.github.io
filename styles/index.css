@@ -1,0 +1,82 @@
+@import "/styles/base.css";
+@import "/styles/responsive/narrow.css" screen and (max-width: 840px);
+@import "/styles/responsive/mobile_all.css" screen and (max-width: 610px);
+
+:root {
+  --table_background: #141414;
+  --table_border: #333333;
+  --table_td_color: #808080;
+  --table_th_border: #1a1a1a;
+  --table_th_color: #bfbfbf;
+}
+
+/* hide english or japanese IDs */
+body.japanese :lang(en) {
+  display: none;
+}
+
+body.english :lang(jp) {
+  display: none;
+}
+
+#lang_flag {
+  height: 15px;
+  margin-right: 2px;
+  transform: translateY(1px);
+  width: 25px;
+}
+
+article #avatar {
+  border-radius: 50%;
+  width: 50%;
+}
+
+article #github {
+  border-radius: 0;
+  margin-bottom: 12px;
+  width: 15%;
+}
+
+.projects .proj_grid {
+  background-color: var(--table_background);
+  border-radius: 15px;
+  border: 2px solid var(--table_border);
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  padding: 15px;
+  place-items: center;
+  width: 100%;
+}
+
+.projects .proj_grid_header {
+  border-bottom: 2px solid var(--table_th_border);
+  color: var(--table_th_color);
+  font-size: 160%;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  padding: 25px;
+}
+
+.projects .proj_grid_body {
+  color: var(--table_td_color);
+  font-size: 90%;
+  letter-spacing: 0.02em;
+  padding: 15px;
+}
+
+.projects .proj_grid a {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  /* doesn't work when i put it in the other file, fix this later */
+  .projects .proj_grid {
+    grid-template-columns: repeat(1, 100%);
+  }
+
+  .projects .proj_grid_header {
+    display: none;
+  }
+}

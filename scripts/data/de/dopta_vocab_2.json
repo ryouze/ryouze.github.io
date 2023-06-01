@@ -1,0 +1,222 @@
+{
+    "Einfach oder hin und zurück?": {
+        "answer": "w jedną, czy w obie strony?",
+        "extra": "bilet na pociąg"
+    },
+    "Erste oder zweite Klasse?": {
+        "answer": "pierwsza, czy druga klasa?",
+        "extra": "bilet na pociąg"
+    },
+    "Ich gehe zu Fuß": {
+        "answer": "idę pieszo",
+        "extra": ""
+    },
+    "bedienen": {
+        "answer": "obsługiwać",
+        "extra": "parkomat"
+    },
+    "benutzen": {
+        "answer": "używać",
+        "extra": ""
+    },
+    "das Angebot": {
+        "answer": "oferta",
+        "extra": "co można kupić w sklepie"
+    },
+    "das Auto": {
+        "answer": "samochód/auto",
+        "extra": "Ich fahre mit dem Auto - jadę samochodem"
+    },
+    "das Fahrrad": {
+        "answer": "rower",
+        "extra": "Ich fahre mit dem Fahrrad - jadę rowerem"
+    },
+    "das Flugzeug": {
+        "answer": "samolot",
+        "extra": "Ich fliege mit dem Flugzeug - lecę samolotem"
+    },
+    "das Motorrad": {
+        "answer": "motor",
+        "extra": "Ich fahre mit dem Motorrad - jadę motorem"
+    },
+    "das Parkticket": {
+        "answer": "bilet parkingowy",
+        "extra": "na parking samochodowy"
+    },
+    "das Rad benutzen": {
+        "answer": "używać roweru",
+        "extra": ""
+    },
+    "das Schiff": {
+        "answer": "statek",
+        "extra": "pływający po wodzie"
+    },
+    "den Fahrschein entwerten": {
+        "answer": "skasować bilet",
+        "extra": "wchodząc do autobusu"
+    },
+    "der Arbeitstag": {
+        "answer": "dzień roboczy",
+        "extra": ""
+    },
+    "der Automat wechselt nicht": {
+        "answer": "automat nie wydaje reszty",
+        "extra": "po wrzuceniu monet"
+    },
+    "der Bahnhof": {
+        "answer": "dworzec kolejowy",
+        "extra": ""
+    },
+    "der Bus": {
+        "answer": "autobus",
+        "extra": "Ich fahre mit dem Bus - jadę autobusem"
+    },
+    "der Fahrausweis/Fahrschein": {
+        "answer": "bilet",
+        "extra": "na tramwaj, autobus"
+    },
+    "der Fahrer": {
+        "answer": "kierowca",
+        "extra": ""
+    },
+    "der Fahrseheinautomat": {
+        "answer": "biletomat",
+        "extra": "do sprzedaży biletów kolejowych"
+    },
+    "der Hubschrauber": {
+        "answer": "helikopter/śmigłowiec",
+        "extra": "Ich fliege mit dem Hubschrauber - lecę helikopterem"
+    },
+    "der Knopf": {
+        "answer": "guzik",
+        "extra": "np. wcisnąć guzik"
+    },
+    "der Nachlass/Rabatt": {
+        "answer": "zniżka",
+        "extra": "ceny w sklepie"
+    },
+    "der Parkautomat": {
+        "answer": "parkomat",
+        "extra": "bilety parkingowe dla samochodu"
+    },
+    "der Parkplatz": {
+        "answer": "parking",
+        "extra": "dla samochodów"
+    },
+    "der Parkschein": {
+        "answer": "bilet parkingowy",
+        "extra": "na parking samochodowy"
+    },
+    "der Radweg": {
+        "answer": "droga rowerowa",
+        "extra": ""
+    },
+    "der Reiseweg": {
+        "answer": "droga podróży",
+        "extra": "pociągiem, autobusem"
+    },
+    "der Scooter": {
+        "answer": "hulajnoga",
+        "extra": "Ich fahre mit dem Scooter - jadę hulajnogą; der Scooter braucht keine Benzin"
+    },
+    "der Umstieg": {
+        "answer": "przesiadka",
+        "extra": "z jednego pociągu do drugiego"
+    },
+    "der Zug": {
+        "answer": "pociąg",
+        "extra": "Ich fahre mit dem Zug - jadę pociągiem"
+    },
+    "die Abfahrt": {
+        "answer": "odjazd",
+        "extra": "pociągu z peronu"
+    },
+    "die Ampel": {
+        "answer": "sygnalizacja świetlna",
+        "extra": ""
+    },
+    "die Ankunft": {
+        "answer": "przyjazd",
+        "extra": "pociągu na peron"
+    },
+    "die Ausfahrt": {
+        "answer": "wyjazd",
+        "extra": "z parkingu"
+    },
+    "die Bezahlung": {
+        "answer": "zapłata",
+        "extra": "np. za zakupy w internecie, zapłata za wykonaną pracę"
+    },
+    "die Einfahrt": {
+        "answer": "wjazd",
+        "extra": "na parking"
+    },
+    "die Einzelfahrt": {
+        "answer": "bilet w jedną stronę",
+        "extra": ""
+    },
+    "die Fähre": {
+        "answer": "prom",
+        "extra": "mit der Fähre fahren"
+    },
+    "die Großstadt": {
+        "answer": "duże miasto",
+        "extra": ""
+    },
+    "die Sehenswürdigkeit": {
+        "answer": "zabytek",
+        "extra": ""
+    },
+    "die Straßenbahn": {
+        "answer": "tramwaj",
+        "extra": "Ich fahre mit der Zug - jadę tramwajem"
+    },
+    "die U-Bahn": {
+        "answer": "metro",
+        "extra": "Ich fahre mit der U-Bahn - jadę metrem"
+    },
+    "die Verbindung": {
+        "answer": "połączenie",
+        "extra": "pociągów między miastami"
+    },
+    "die Verkehrsmittel": {
+        "answer": "środki transportu",
+        "extra": ""
+    },
+    "die Verspätung": {
+        "answer": "opóźnienie",
+        "extra": "przyjazu pociągu"
+    },
+    "hier Parkschein lösen": {
+        "answer": "tutaj kupisz bilet parkingowy",
+        "extra": "tabliczka nad parkometrem"
+    },
+    "lustig": {
+        "answer": "śmieszny/zabawny",
+        "extra": ""
+    },
+    "machmal": {
+        "answer": "czasami",
+        "extra": ""
+    },
+    "praktisch": {
+        "answer": "praktyczny",
+        "extra": ""
+    },
+    "umweltfreundlich": {
+        "answer": "przyjazny dla środowiska",
+        "extra": ""
+    },
+    "vorschlagen": {
+        "answer": "proponować",
+        "extra": "zaproponować komuś coś"
+    },
+    "wählen": {
+        "answer": "wybrać",
+        "extra": "wybierz opcję z listy"
+    },
+    "zusammen": {
+        "answer": "razem",
+        "extra": "np. stać razem, jechać razem"
+    }
+}

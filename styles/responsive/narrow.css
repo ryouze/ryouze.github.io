@@ -1,0 +1,18 @@
+/* narrow */
+header>#header_logo {
+  display: none;
+}
+
+header>nav {
+  width: 100%;
+}
+
+header>nav>*:not(:last-child) {
+  margin-right: 5px;
+}
+
+header>nav>.tab_link {
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 100%;
+}

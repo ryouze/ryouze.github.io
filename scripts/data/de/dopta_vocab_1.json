@@ -1,0 +1,74 @@
+{
+    "Was studierst du?": {
+        "answer": "co studiujesz?",
+        "extra": ""
+    },
+    "das Auslandsstudium": {
+        "answer": "studia zagraniczne",
+        "extra": ""
+    },
+    "das Fernstudium": {
+        "answer": "studia zaoczne",
+        "extra": ""
+    },
+    "das Ingenieurwesen": {
+        "answer": "inżyniera",
+        "extra": "przedmiot szkolny"
+    },
+    "das Rechnungswesen": {
+        "answer": "księgowość",
+        "extra": "przedmiot szkolny"
+    },
+    "das Studienfach": {
+        "answer": "kierunek studiów",
+        "extra": ""
+    },
+    "das Theater": {
+        "answer": "teatr",
+        "extra": "przedmiot szkolny"
+    },
+    "der Jura": {
+        "answer": "prawo",
+        "extra": "przedmiot szkolny"
+    },
+    "die Archäologie": {
+        "answer": "archeologia",
+        "extra": "przedmiot szkolny"
+    },
+    "die Geographie": {
+        "answer": "geografia",
+        "extra": "przedmiot szkolny"
+    },
+    "die Geschichte": {
+        "answer": "historia",
+        "extra": "przedmiot szkolny"
+    },
+    "die Informatik": {
+        "answer": "informatyka",
+        "extra": "przedmiot szkolny"
+    },
+    "die Kunst": {
+        "answer": "sztuka",
+        "extra": "przedmiot szkolny"
+    },
+    "die Medizin": {
+        "answer": "medycyna",
+        "extra": "przedmiot szkolny"
+    },
+    "die Moderne Sprachen": {
+        "answer": "języki nowożytne",
+        "extra": "przedmiot szkolny"
+    },
+    "die Physik": {
+        "answer": "fizyka",
+        "extra": "przedmiot szkolny"
+    },
+    "die Psychologie": {
+        "answer": "psychologia",
+        "extra": "przedmiot szkolny"
+    },
+    "die Wissenschaft": {
+        "answer": "nauka",
+        "extra": "przedmiot szkolny"
+    }
+}

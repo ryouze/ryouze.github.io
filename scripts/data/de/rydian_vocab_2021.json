@@ -1,0 +1,1006 @@
+{
+    "Es hängt von dem Wetter ab": {
+        "answer": "to zależy od pogody",
+        "extra": ""
+    },
+    "Hier kann man Buch lesen": {
+        "answer": "tutaj można czytać książki",
+        "extra": ""
+    },
+    "Hier kann man einen Kaffee trinken": {
+        "answer": "tutaj można napić się kawy",
+        "extra": ""
+    },
+    "Hier lernt man Deutsch": {
+        "answer": "tutaj uczy się niemieckiego",
+        "extra": ""
+    },
+    "Türverriegelungsmechanik": {
+        "answer": "mechanizm blokujący drzwi",
+        "extra": ""
+    },
+    "alt": {
+        "answer": "stary",
+        "extra": ""
+    },
+    "andere": {
+        "answer": "inny",
+        "extra": ""
+    },
+    "angestellt": {
+        "answer": "zatrudniony",
+        "extra": "angestellt sein - być zatrudnionym"
+    },
+    "angestrengt": {
+        "answer": "intensywny",
+        "extra": ""
+    },
+    "anrufen": {
+        "answer": "dzwonić",
+        "extra": ""
+    },
+    "atmen": {
+        "answer": "oddychać",
+        "extra": "atmete, geatmet"
+    },
+    "attraktiv": {
+        "answer": "atrakcyjny",
+        "extra": ""
+    },
+    "aufhören": {
+        "answer": "zaprzestać, skończyć",
+        "extra": ""
+    },
+    "ausgehen": {
+        "answer": "wyjść",
+        "extra": ""
+    },
+    "bald": {
+        "answer": "wkrótce, wnet",
+        "extra": ""
+    },
+    "beschnuppern": {
+        "answer": "obwąchiwać",
+        "extra": "słaby"
+    },
+    "bestimmen": {
+        "answer": "określić, decydować",
+        "extra": ""
+    },
+    "blau": {
+        "answer": "niebieski",
+        "extra": ""
+    },
+    "blond": {
+        "answer": "blond",
+        "extra": "kolor włosów"
+    },
+    "braun": {
+        "answer": "brązowy",
+        "extra": ""
+    },
+    "brummen": {
+        "answer": "mruczeć",
+        "extra": "brummte, gebrummt"
+    },
+    "das Arbeitslosengeld": {
+        "answer": "zapomoga dla bezrobotnych",
+        "extra": ""
+    },
+    "das Auge": {
+        "answer": "oko",
+        "extra": ""
+    },
+    "das Aussehen": {
+        "answer": "wygląd",
+        "extra": ""
+    },
+    "das Bild": {
+        "answer": "obraz",
+        "extra": ""
+    },
+    "das Briefpapier": {
+        "answer": "papier listowy",
+        "extra": ""
+    },
+    "das Buch": {
+        "answer": "książka",
+        "extra": ""
+    },
+    "das Bücherregal": {
+        "answer": "półka na książki",
+        "extra": ""
+    },
+    "das Fahrrad": {
+        "answer": "rower",
+        "extra": ""
+    },
+    "das Feuerzeug": {
+        "answer": "zapalniczka",
+        "extra": ""
+    },
+    "das Gesicht": {
+        "answer": "twarz",
+        "extra": ""
+    },
+    "das Gewicht": {
+        "answer": "waga",
+        "extra": ""
+    },
+    "das Glas": {
+        "answer": "szklanka",
+        "extra": ""
+    },
+    "das Gläser": {
+        "answer": "szklanka",
+        "extra": ""
+    },
+    "das Haar": {
+        "answer": "włos",
+        "extra": ""
+    },
+    "das Hemd": {
+        "answer": "koszula",
+        "extra": ""
+    },
+    "das Herz": {
+        "answer": "serce",
+        "extra": ""
+    },
+    "das Kinn": {
+        "answer": "broda",
+        "extra": "podbródek, nie zarost!"
+    },
+    "das Kleid": {
+        "answer": "sukienka",
+        "extra": ""
+    },
+    "das Kochbuch": {
+        "answer": "książka kucharska",
+        "extra": ""
+    },
+    "das Leben schwer machen": {
+        "answer": "utrudniać życie",
+        "extra": ""
+    },
+    "das Lid": {
+        "answer": "powieka",
+        "extra": ""
+    },
+    "das Parfüm": {
+        "answer": "perfumy",
+        "extra": ""
+    },
+    "das Russland": {
+        "answer": "Rosja",
+        "extra": ""
+    },
+    "das Vorurteil": {
+        "answer": "uprzedzenie",
+        "extra": ""
+    },
+    "das Werkzeug": {
+        "answer": "narzędzia",
+        "extra": "jedno sztuka narzędzia, albo kilka narzędzi"
+    },
+    "das Wörterbuch": {
+        "answer": "słownik",
+        "extra": ""
+    },
+    "das Zelt": {
+        "answer": "namiot",
+        "extra": ""
+    },
+    "der Arbeitgeber": {
+        "answer": "pracodawca",
+        "extra": ""
+    },
+    "der Arbeitslose": {
+        "answer": "bezrobotny",
+        "extra": "ein Arbeitsloser, arbeitslos"
+    },
+    "der Bart": {
+        "answer": "zarost",
+        "extra": ""
+    },
+    "der Beamte": {
+        "answer": "urzędnik",
+        "extra": ""
+    },
+    "der Bär": {
+        "answer": "niedźwiedź",
+        "extra": ""
+    },
+    "der Computer": {
+        "answer": "komputer",
+        "extra": ""
+    },
+    "der DVD-Player": {
+        "answer": "odtwarzacz DVD",
+        "extra": ""
+    },
+    "der Discman": {
+        "answer": "odtwarzacz CD",
+        "extra": "Walkman"
+    },
+    "der Fehler": {
+        "answer": "błąd",
+        "extra": ""
+    },
+    "der Feind": {
+        "answer": "wróg",
+        "extra": ""
+    },
+    "der Film": {
+        "answer": "film",
+        "extra": ""
+    },
+    "der Geburtstag": {
+        "answer": "urodziny",
+        "extra": ""
+    },
+    "der Gefrierpunkt": {
+        "answer": "punkt zamarzania",
+        "extra": ""
+    },
+    "der Geschirrspüler": {
+        "answer": "zmywarka",
+        "extra": ""
+    },
+    "der Hals": {
+        "answer": "szyja",
+        "extra": ""
+    },
+    "der Hund": {
+        "answer": "pies",
+        "extra": ""
+    },
+    "der Hut": {
+        "answer": "kapelusz",
+        "extra": ""
+    },
+    "der Jäger": {
+        "answer": "myśliwy",
+        "extra": ""
+    },
+    "der Koffer": {
+        "answer": "walizka",
+        "extra": ""
+    },
+    "der Kugelschreiber": {
+        "answer": "długopis",
+        "extra": ""
+    },
+    "der Landwirt": {
+        "answer": "gospodarz, rolnik",
+        "extra": ""
+    },
+    "der Lohn": {
+        "answer": "wynagrodzenie",
+        "extra": ""
+    },
+    "der Maurer": {
+        "answer": "murarz",
+        "extra": ""
+    },
+    "der Mund": {
+        "answer": "usta",
+        "extra": ""
+    },
+    "der Mut": {
+        "answer": "odwaga",
+        "extra": "muttig - odważny"
+    },
+    "der Prozess": {
+        "answer": "proces",
+        "extra": ""
+    },
+    "der Quatsch": {
+        "answer": "bzdura",
+        "extra": ""
+    },
+    "der Reiseführer": {
+        "answer": "przewodnik",
+        "extra": "turystyczny"
+    },
+    "der Ring": {
+        "answer": "pierścień",
+        "extra": ""
+    },
+    "der Ritter": {
+        "answer": "rycerz",
+        "extra": ""
+    },
+    "der Rock": {
+        "answer": "spódniczka",
+        "extra": ""
+    },
+    "der Schlafsack": {
+        "answer": "śpiwór",
+        "extra": ""
+    },
+    "der Schmuck": {
+        "answer": "biżuteria",
+        "extra": ""
+    },
+    "der Spaß": {
+        "answer": "zabawa, przyjemność, frajda",
+        "extra": ""
+    },
+    "der Strümpfe": {
+        "answer": "pończocha",
+        "extra": ""
+    },
+    "der Unfall": {
+        "answer": "wypadek",
+        "extra": ""
+    },
+    "der Verbrecher": {
+        "answer": "przestępca",
+        "extra": ""
+    },
+    "der Wald": {
+        "answer": "las",
+        "extra": ""
+    },
+    "der Wecker": {
+        "answer": "budzik",
+        "extra": "urządzenie"
+    },
+    "der Übersetzer": {
+        "answer": "tłumacz",
+        "extra": ""
+    },
+    "deshalb": {
+        "answer": "dlatego, z tego powodu",
+        "extra": "szyk przestawny"
+    },
+    "dezent": {
+        "answer": "delikatny",
+        "extra": "dyskretny"
+    },
+    "dick": {
+        "answer": "gruby",
+        "extra": ""
+    },
+    "die Ausbildung": {
+        "answer": "wykształcenie, nauka",
+        "extra": ""
+    },
+    "die Backe": {
+        "answer": "szczęka",
+        "extra": ""
+    },
+    "die Beeinträchtigung": {
+        "answer": "osłabienie",
+        "extra": ""
+    },
+    "die Blumen": {
+        "answer": "kwiaty",
+        "extra": ""
+    },
+    "die Bluse": {
+        "answer": "bluzka",
+        "extra": ""
+    },
+    "die Braue": {
+        "answer": "brew",
+        "extra": ""
+    },
+    "die Brille": {
+        "answer": "okulary",
+        "extra": ""
+    },
+    "die Buchhandlung": {
+        "answer": "księgarnia",
+        "extra": ""
+    },
+    "die Fahrt": {
+        "answer": "wycieczka, jazda",
+        "extra": ""
+    },
+    "die Frisur": {
+        "answer": "fryzura",
+        "extra": ""
+    },
+    "die Geburtstagskarte": {
+        "answer": "kartka urodzinowa",
+        "extra": ""
+    },
+    "die Haare": {
+        "answer": "włosy",
+        "extra": ""
+    },
+    "die Halskette": {
+        "answer": "naszyjnik",
+        "extra": ""
+    },
+    "die Hose": {
+        "answer": "spodnie",
+        "extra": ""
+    },
+    "die Jacke": {
+        "answer": "kurtka",
+        "extra": ""
+    },
+    "die Kaffeemaschine": {
+        "answer": "ekspres do kawy",
+        "extra": ""
+    },
+    "die Kamera": {
+        "answer": "kamera",
+        "extra": ""
+    },
+    "die Katze": {
+        "answer": "kot",
+        "extra": ""
+    },
+    "die Kleidung": {
+        "answer": "ubrania",
+        "extra": "odzież"
+    },
+    "die Kontaktlinsen": {
+        "answer": "soczewki kontaktowe",
+        "extra": ""
+    },
+    "die Leistung": {
+        "answer": "wydajność, moc",
+        "extra": ""
+    },
+    "die Leute": {
+        "answer": "ludzie",
+        "extra": ""
+    },
+    "die Lippen": {
+        "answer": "usta",
+        "extra": ""
+    },
+    "die Lufthansa": {
+        "answer": "lotnictwo",
+        "extra": "niemieckie towarzystwo lotnicze"
+    },
+    "die Meinung": {
+        "answer": "opinia",
+        "extra": "zdanie, mniemanie"
+    },
+    "die Mikrowelle": {
+        "answer": "mikrofalówka",
+        "extra": ""
+    },
+    "die Nase": {
+        "answer": "nos",
+        "extra": ""
+    },
+    "die Pfeife": {
+        "answer": "fajka",
+        "extra": ""
+    },
+    "die Praxis": {
+        "answer": "gabinet lekarski",
+        "extra": ""
+    },
+    "die Schläfe": {
+        "answer": "skroń",
+        "extra": ""
+    },
+    "die Schuhe": {
+        "answer": "buty",
+        "extra": ""
+    },
+    "die Skibrille": {
+        "answer": "gogle",
+        "extra": "do nart"
+    },
+    "die Stelle": {
+        "answer": "posada, praca, zajęcie",
+        "extra": ""
+    },
+    "die Stellenangebote": {
+        "answer": "oferty pracy",
+        "extra": ""
+    },
+    "die Stellensuche": {
+        "answer": "poszukiwanie pracy",
+        "extra": ""
+    },
+    "die Stirn": {
+        "answer": "czoło",
+        "extra": ""
+    },
+    "die Strümpfe": {
+        "answer": "rajstopy",
+        "extra": ""
+    },
+    "die Tante": {
+        "answer": "ciotka",
+        "extra": ""
+    },
+    "die Tasche": {
+        "answer": "torba",
+        "extra": ""
+    },
+    "die Tennisbälle": {
+        "answer": "piłka tenisowa",
+        "extra": ""
+    },
+    "die Vase": {
+        "answer": "wazon",
+        "extra": ""
+    },
+    "die Wange": {
+        "answer": "policzek",
+        "extra": ""
+    },
+    "die Weingläser": {
+        "answer": "szklanka wina",
+        "extra": ""
+    },
+    "die Wimpern": {
+        "answer": "rzęsy",
+        "extra": ""
+    },
+    "die Witterung": {
+        "answer": "przeczucie, pogoda",
+        "extra": ""
+    },
+    "die Zigarette": {
+        "answer": "papieros",
+        "extra": ""
+    },
+    "die Zähne": {
+        "answer": "zęby",
+        "extra": ""
+    },
+    "dumm": {
+        "answer": "głupi",
+        "extra": ""
+    },
+    "dunkel": {
+        "answer": "ciemny",
+        "extra": ""
+    },
+    "dunkelrot": {
+        "answer": "ciemnoczerwony",
+        "extra": ""
+    },
+    "dünn": {
+        "answer": "chudy",
+        "extra": "jak patyk"
+    },
+    "eigentlich": {
+        "answer": "właściwie",
+        "extra": ""
+    },
+    "eindringen": {
+        "answer": "przenikać, wnikać",
+        "extra": ""
+    },
+    "eingehen": {
+        "answer": "wejść",
+        "extra": ""
+    },
+    "einlanden": {
+        "answer": "zaprosić",
+        "extra": "na urodziny"
+    },
+    "erben": {
+        "answer": "dziedziczyć",
+        "extra": ""
+    },
+    "erklären": {
+        "answer": "wytłumaczyć",
+        "extra": "wyjaśnić"
+    },
+    "es geht mir gut": {
+        "answer": "wiedzie mi się dobrze",
+        "extra": "Dativ"
+    },
+    "flüstern": {
+        "answer": "szeptać",
+        "extra": "flüsterte, geflüstert"
+    },
+    "folgen": {
+        "answer": "nastąpić",
+        "extra": ""
+    },
+    "freundlich": {
+        "answer": "przyjazny",
+        "extra": ""
+    },
+    "fröhlich": {
+        "answer": "radosny",
+        "extra": ""
+    },
+    "führen": {
+        "answer": "prowadzić",
+        "extra": ""
+    },
+    "ganz": {
+        "answer": "całkiem",
+        "extra": "e.g. ganz sicher - całkowicie pewny"
+    },
+    "gefährlich": {
+        "answer": "niebezpieczny",
+        "extra": ""
+    },
+    "gehen": {
+        "answer": "chodzić",
+        "extra": "ging, gegangen"
+    },
+    "gelb": {
+        "answer": "żółty",
+        "extra": ""
+    },
+    "gemütlich": {
+        "answer": "przytulny",
+        "extra": ""
+    },
+    "geschieden": {
+        "answer": "rozwiedziony",
+        "extra": ""
+    },
+    "glasweise": {
+        "answer": "szklankami",
+        "extra": ""
+    },
+    "grau": {
+        "answer": "szary",
+        "extra": ""
+    },
+    "groß": {
+        "answer": "duży",
+        "extra": ""
+    },
+    "grün": {
+        "answer": "zielony",
+        "extra": ""
+    },
+    "hart": {
+        "answer": "twardy",
+        "extra": ""
+    },
+    "hell": {
+        "answer": "jasny",
+        "extra": ""
+    },
+    "hellrot": {
+        "answer": "jasnoczerwony",
+        "extra": ""
+    },
+    "herzlich": {
+        "answer": "serdecznie",
+        "extra": ""
+    },
+    "hinzugekommen": {
+        "answer": "nadchodzić, przyłączać się",
+        "extra": ""
+    },
+    "hässlich": {
+        "answer": "brzydki",
+        "extra": ""
+    },
+    "hübsch": {
+        "answer": "piękny",
+        "extra": ""
+    },
+    "im Augenblick": {
+        "answer": "chwilowo, w tej chwili",
+        "extra": ""
+    },
+    "im Gegenteil": {
+        "answer": "przeciwnie",
+        "extra": ""
+    },
+    "immer gut angezogen": {
+        "answer": "zawsze dobrze ubrany",
+        "extra": ""
+    },
+    "immer zu spät aufstehen": {
+        "answer": "zawsze wstawać późno",
+        "extra": ""
+    },
+    "in der Folge": {
+        "answer": "w rezultacie",
+        "extra": ""
+    },
+    "in der Mitte": {
+        "answer": "pośrodku",
+        "extra": ""
+    },
+    "in der Straße": {
+        "answer": "na ulicy",
+        "extra": ""
+    },
+    "in diesem Zusammenhang": {
+        "answer": "w tym kontekście",
+        "extra": ""
+    },
+    "intelligent": {
+        "answer": "inteligentny",
+        "extra": ""
+    },
+    "irgendwer": {
+        "answer": "ktokolwiek",
+        "extra": ""
+    },
+    "irgendwo": {
+        "answer": "gdziekolwiek",
+        "extra": ""
+    },
+    "irgendwohin": {
+        "answer": "dokądkolwiek",
+        "extra": ""
+    },
+    "jung": {
+        "answer": "młody",
+        "extra": ""
+    },
+    "kleiden": {
+        "answer": "ubierać",
+        "extra": ""
+    },
+    "klein": {
+        "answer": "mały",
+        "extra": ""
+    },
+    "klettern": {
+        "answer": "wspinać się",
+        "extra": "kletterte, geklettert"
+    },
+    "komisch": {
+        "answer": "komiczny, dziwny",
+        "extra": ""
+    },
+    "kurz": {
+        "answer": "krótki",
+        "extra": ""
+    },
+    "können": {
+        "answer": "móc",
+        "extra": "konnte, gekonnt; e.g. kam zu zukommen, kam zu zugekommen"
+    },
+    "kündigen": {
+        "answer": "złożyć wymówienie",
+        "extra": ""
+    },
+    "lang": {
+        "answer": "długi",
+        "extra": ""
+    },
+    "langhaarig": {
+        "answer": "długowłosy",
+        "extra": ""
+    },
+    "langweilig": {
+        "answer": "nudny",
+        "extra": ""
+    },
+    "leider": {
+        "answer": "niestety",
+        "extra": ""
+    },
+    "literweise": {
+        "answer": "litrami",
+        "extra": ""
+    },
+    "losgehen": {
+        "answer": "wyruszyć, zacząć się",
+        "extra": ""
+    },
+    "lustig": {
+        "answer": "zabawny",
+        "extra": ""
+    },
+    "lügen": {
+        "answer": "kłamać",
+        "extra": ""
+    },
+    "nahe": {
+        "answer": "blisko",
+        "extra": ""
+    },
+    "nervös": {
+        "answer": "nerwowy",
+        "extra": ""
+    },
+    "nett": {
+        "answer": "miły",
+        "extra": ""
+    },
+    "obwohl": {
+        "answer": "choć, pomimo że",
+        "extra": ""
+    },
+    "plötzlich": {
+        "answer": "nagle",
+        "extra": ""
+    },
+    "reichen": {
+        "answer": "wystarczać",
+        "extra": ""
+    },
+    "rot": {
+        "answer": "czerwony",
+        "extra": ""
+    },
+    "ruhig": {
+        "answer": "spokojny",
+        "extra": ""
+    },
+    "rund": {
+        "answer": "okrągły",
+        "extra": ""
+    },
+    "sauber": {
+        "answer": "czysty",
+        "extra": ""
+    },
+    "schenken": {
+        "answer": "dać",
+        "extra": "podarować w prezencie"
+    },
+    "schießen": {
+        "answer": "strzelać",
+        "extra": "schoß, geschossen"
+    },
+    "schlank": {
+        "answer": "sczupły",
+        "extra": "smukły"
+    },
+    "schmutzig": {
+        "answer": "brudny",
+        "extra": ""
+    },
+    "schwarz": {
+        "answer": "czarny",
+        "extra": ""
+    },
+    "schwer": {
+        "answer": "ciężki",
+        "extra": "waga"
+    },
+    "schwierig": {
+        "answer": "trudny",
+        "extra": "poziom trudności"
+    },
+    "schön": {
+        "answer": "piękny",
+        "extra": ""
+    },
+    "selbständig": {
+        "answer": "samodzielny",
+        "extra": ""
+    },
+    "selten": {
+        "answer": "rzadko",
+        "extra": ""
+    },
+    "sich erholen von seinem Schrecken": {
+        "answer": "otrząsnąć się ze strachu",
+        "extra": ""
+    },
+    "sich rühren": {
+        "answer": "ruszać się",
+        "extra": "rührte, gerührt"
+    },
+    "sich trauen": {
+        "answer": "odważyć się",
+        "extra": "traute, getraut"
+    },
+    "sonnst": {
+        "answer": "w przeciwnym razie",
+        "extra": ""
+    },
+    "sportlich": {
+        "answer": "sportowy",
+        "extra": ""
+    },
+    "spülen": {
+        "answer": "myć naczynia",
+        "extra": ""
+    },
+    "stellen": {
+        "answer": "postawić",
+        "extra": "umieścić"
+    },
+    "stimmen": {
+        "answer": "zgadzać",
+        "extra": ""
+    },
+    "ständig": {
+        "answer": "wiecznie, ciągle",
+        "extra": ""
+    },
+    "sympathisch": {
+        "answer": "sympatyczny",
+        "extra": ""
+    },
+    "toll": {
+        "answer": "fajny",
+        "extra": ""
+    },
+    "tragen": {
+        "answer": "nosić",
+        "extra": "er trägt"
+    },
+    "traurig": {
+        "answer": "smutny",
+        "extra": ""
+    },
+    "unsympathisch": {
+        "answer": "niesympatyczny",
+        "extra": ""
+    },
+    "verdienen": {
+        "answer": "zarabiać",
+        "extra": ""
+    },
+    "verlangen": {
+        "answer": "domagać się, żądać",
+        "extra": ""
+    },
+    "verrückt": {
+        "answer": "szalony",
+        "extra": ""
+    },
+    "von Beruf": {
+        "answer": "z zawodu",
+        "extra": ""
+    },
+    "vor sich": {
+        "answer": "przed sobą",
+        "extra": ""
+    },
+    "wahre Freunde": {
+        "answer": "prawdziwi przyjaciele",
+        "extra": ""
+    },
+    "weich": {
+        "answer": "miękki",
+        "extra": ""
+    },
+    "weiß": {
+        "answer": "biały",
+        "extra": ""
+    },
+    "wichtig": {
+        "answer": "ważny",
+        "extra": ""
+    },
+    "wie geht es dir?": {
+        "answer": "jak ci się wiedzie?",
+        "extra": "Dativ"
+    },
+    "wiegen": {
+        "answer": "ważyć",
+        "extra": "ja ważę X kilogramów"
+    },
+    "wirklich": {
+        "answer": "naprawdę",
+        "extra": ""
+    },
+    "während": {
+        "answer": "podczas gdy",
+        "extra": ""
+    },
+    "während der Fahrt": {
+        "answer": "podczas jazdy",
+        "extra": "III, Dativ"
+    },
+    "zeigen": {
+        "answer": "pokazywać",
+        "extra": ""
+    },
+    "zu": {
+        "answer": "zbyt",
+        "extra": ""
+    },
+    "zuletzt": {
+        "answer": "na koniec, ostatnio",
+        "extra": ""
+    },
+    "ärgern": {
+        "answer": "denerwować",
+        "extra": ""
+    }
+}

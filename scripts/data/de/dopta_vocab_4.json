@@ -1,0 +1,446 @@
+{
+    "bestellen": {
+        "answer": "zamawiać",
+        "extra": "np. pizzę"
+    },
+    "bezahlen": {
+        "answer": "płacić",
+        "extra": "np. w sklepie"
+    },
+    "das Angebot": {
+        "answer": "oferta",
+        "extra": ""
+    },
+    "das Bargeld": {
+        "answer": "gotówka",
+        "extra": "do płacenia"
+    },
+    "das Bier": {
+        "answer": "piwo",
+        "extra": ""
+    },
+    "das Brot": {
+        "answer": "chleb",
+        "extra": ""
+    },
+    "das Ei": {
+        "answer": "jajko",
+        "extra": "np. od kury"
+    },
+    "das Eis": {
+        "answer": "lody",
+        "extra": "np. na patyku"
+    },
+    "das Fass": {
+        "answer": "beczka",
+        "extra": "np. piwa"
+    },
+    "das Fleisch": {
+        "answer": "mięso",
+        "extra": ""
+    },
+    "das Geld": {
+        "answer": "pieniądze",
+        "extra": ""
+    },
+    "das Gemüse": {
+        "answer": "warzywa",
+        "extra": ""
+    },
+    "das Geschäft/der Laden": {
+        "answer": "sklep",
+        "extra": "np. Biedronka"
+    },
+    "das Getränk": {
+        "answer": "napój",
+        "extra": ""
+    },
+    "das Gewürz": {
+        "answer": "przyprawa",
+        "extra": ""
+    },
+    "das Glas": {
+        "answer": "słoik",
+        "extra": "np. ogórków"
+    },
+    "das Hähnchen": {
+        "answer": "kurczak",
+        "extra": ""
+    },
+    "das Mehl": {
+        "answer": "mąka",
+        "extra": ""
+    },
+    "das Müsli": {
+        "answer": "musli",
+        "extra": "płatki z mlekiem"
+    },
+    "das Obst": {
+        "answer": "owoce",
+        "extra": ""
+    },
+    "das Radieschen": {
+        "answer": "rzodzkiewka",
+        "extra": ""
+    },
+    "das Salz": {
+        "answer": "sól",
+        "extra": ""
+    },
+    "das Schaufenster": {
+        "answer": "wystawa sklepowa, witryna",
+        "extra": "widać towar z ulicy"
+    },
+    "das Stück": {
+        "answer": "kawałek, sztuka",
+        "extra": "np. sera"
+    },
+    "das Wasser": {
+        "answer": "woda",
+        "extra": ""
+    },
+    "das Wein": {
+        "answer": "wino",
+        "extra": ""
+    },
+    "das Öl": {
+        "answer": "olej",
+        "extra": "np. do gotowania"
+    },
+    "der Apfel": {
+        "answer": "jabłko",
+        "extra": ""
+    },
+    "der Blumenkohl": {
+        "answer": "kalafior",
+        "extra": ""
+    },
+    "der Brokkoli": {
+        "answer": "brokół",
+        "extra": ""
+    },
+    "der Einkaufswagen": {
+        "answer": "wózek sklepowy",
+        "extra": "na kółkach"
+    },
+    "der Einkaufszettel": {
+        "answer": "lista zakupów",
+        "extra": ""
+    },
+    "der Fisch": {
+        "answer": "ryba",
+        "extra": ""
+    },
+    "der Honig": {
+        "answer": "miód",
+        "extra": ""
+    },
+    "der Jogurt": {
+        "answer": "jogurt",
+        "extra": "do jedzenia łyżką"
+    },
+    "der Juwelier": {
+        "answer": "jubiler",
+        "extra": "sklep"
+    },
+    "der Kaffee": {
+        "answer": "kawa",
+        "extra": ""
+    },
+    "der Karton": {
+        "answer": "karton",
+        "extra": ""
+    },
+    "der Kassenzettel": {
+        "answer": "paragon",
+        "extra": "za zakupy"
+    },
+    "der Kassierer": {
+        "answer": "kasjer",
+        "extra": "w sklepie"
+    },
+    "der Keks": {
+        "answer": "biszkopt",
+        "extra": ""
+    },
+    "der Korb": {
+        "answer": "kosz, koszyk",
+        "extra": "np. na gazety, na piłki"
+    },
+    "der Krug": {
+        "answer": "kufel, dzban",
+        "extra": ""
+    },
+    "der Kunde": {
+        "answer": "klient",
+        "extra": ""
+    },
+    "der Käse": {
+        "answer": "ser",
+        "extra": ""
+    },
+    "der Kürbis": {
+        "answer": "dynia",
+        "extra": ""
+    },
+    "der Markt": {
+        "answer": "rynek, targ",
+        "extra": "np. z warzywami"
+    },
+    "der Nachteil": {
+        "answer": "wada",
+        "extra": "produktu"
+    },
+    "der Pfeffer": {
+        "answer": "pieprz",
+        "extra": ""
+    },
+    "der Pilz": {
+        "answer": "grzyb",
+        "extra": "np. zupa grzybowa"
+    },
+    "der Reis": {
+        "answer": "ryż",
+        "extra": ""
+    },
+    "der Sack": {
+        "answer": "worek",
+        "extra": "np. ziemniaków"
+    },
+    "der Saft": {
+        "answer": "sok",
+        "extra": ""
+    },
+    "der Salat": {
+        "answer": "sałata",
+        "extra": ""
+    },
+    "der Secondhandladen": {
+        "answer": "sklep z rzeczami używanymi",
+        "extra": "np. ubrania"
+    },
+    "der Supermarkt": {
+        "answer": "supermarket",
+        "extra": ""
+    },
+    "der Tante-Emma-Laden": {
+        "answer": "sklep osiedlowy",
+        "extra": ""
+    },
+    "der Tee": {
+        "answer": "herbata",
+        "extra": ""
+    },
+    "der Teller": {
+        "answer": "talerz",
+        "extra": ""
+    },
+    "der Verkäufer": {
+        "answer": "sprzedawca",
+        "extra": ""
+    },
+    "der Vorteil": {
+        "answer": "zaleta",
+        "extra": "produktu"
+    },
+    "der Zucker": {
+        "answer": "cukier",
+        "extra": ""
+    },
+    "die Ananas": {
+        "answer": "ananas",
+        "extra": ""
+    },
+    "die Apotheke": {
+        "answer": "apteka",
+        "extra": ""
+    },
+    "die Banane": {
+        "answer": "banan",
+        "extra": ""
+    },
+    "die Becher": {
+        "answer": "kubek",
+        "extra": "np. kawy, jogurtu"
+    },
+    "die Birne": {
+        "answer": "gruszka",
+        "extra": ""
+    },
+    "die Bohne": {
+        "answer": "fasola",
+        "extra": ""
+    },
+    "die Buchhandlung": {
+        "answer": "księgarnia",
+        "extra": ""
+    },
+    "die Butter/Margarine": {
+        "answer": "masło, margaryna",
+        "extra": ""
+    },
+    "die Bäckerei": {
+        "answer": "piekarnia",
+        "extra": ""
+    },
+    "die Cashewnuss": {
+        "answer": "nerkowiec",
+        "extra": "odmiana orzecha"
+    },
+    "die Dose": {
+        "answer": "puszka",
+        "extra": "np. pepsi"
+    },
+    "die Einkaufstasche": {
+        "answer": "torba na zakupy",
+        "extra": "np. foliowa"
+    },
+    "die Erdbeere": {
+        "answer": "truskawka",
+        "extra": ""
+    },
+    "die Erdnuss": {
+        "answer": "orzech ziemny",
+        "extra": ""
+    },
+    "die Flasche": {
+        "answer": "butelka",
+        "extra": "np. mleka, piwa"
+    },
+    "die Garnele": {
+        "answer": "krewetka",
+        "extra": ""
+    },
+    "die Gurke": {
+        "answer": "ogórek",
+        "extra": ""
+    },
+    "die Haselnuss": {
+        "answer": "orzech laskowy",
+        "extra": ""
+    },
+    "die Karotte": {
+        "answer": "marchew",
+        "extra": ""
+    },
+    "die Kartoffel": {
+        "answer": "ziemniak",
+        "extra": ""
+    },
+    "die Kasse": {
+        "answer": "kasa",
+        "extra": "sklepowa, przy wyjściu"
+    },
+    "die Kastanie": {
+        "answer": "kasztan",
+        "extra": ""
+    },
+    "die Kirsche": {
+        "answer": "wiśnia",
+        "extra": ""
+    },
+    "die Kiste": {
+        "answer": "skrzynka",
+        "extra": "np. piwa"
+    },
+    "die Mandel": {
+        "answer": "migdał",
+        "extra": ""
+    },
+    "die Marmelade": {
+        "answer": "marmolada",
+        "extra": ""
+    },
+    "die Milch": {
+        "answer": "mleko",
+        "extra": ""
+    },
+    "die Orange": {
+        "answer": "pomarańcza",
+        "extra": ""
+    },
+    "die Packung": {
+        "answer": "opakowanie, paczka",
+        "extra": "np. kawa, papierosy"
+    },
+    "die Paprika": {
+        "answer": "papryka",
+        "extra": ""
+    },
+    "die Schachtel": {
+        "answer": "pudełko",
+        "extra": "np. małych czekoladek"
+    },
+    "die Scheibe": {
+        "answer": "plasterek",
+        "extra": "np. szynki, sera"
+    },
+    "die Schokolade": {
+        "answer": "czekolada",
+        "extra": ""
+    },
+    "die Schüssel": {
+        "answer": "miska, salaterka",
+        "extra": ""
+    },
+    "die Tafel": {
+        "answer": "tabliczka",
+        "extra": "np. czekolady"
+    },
+    "die Tasse": {
+        "answer": "filiżanka",
+        "extra": "np. kawy"
+    },
+    "die Tomate": {
+        "answer": "pomidor",
+        "extra": ""
+    },
+    "die Tube": {
+        "answer": "tubka",
+        "extra": "np. pasty do zębów"
+    },
+    "die Tüte": {
+        "answer": "torba",
+        "extra": "np. papierowa na cukierki"
+    },
+    "die Walnuss": {
+        "answer": "orzech włoski",
+        "extra": ""
+    },
+    "die Warteschlange": {
+        "answer": "kolejka",
+        "extra": "w sklepie do kasy"
+    },
+    "die Wassermelone": {
+        "answer": "arbuz",
+        "extra": ""
+    },
+    "die Wurst": {
+        "answer": "kiełbasa",
+        "extra": ""
+    },
+    "geschlossen": {
+        "answer": "zamknięty",
+        "extra": "np. sklep, biuro"
+    },
+    "geöffnet": {
+        "answer": "otwarty",
+        "extra": "np. sklep, biuro"
+    },
+    "kosten": {
+        "answer": "kosztować",
+        "extra": ""
+    },
+    "umtauschen": {
+        "answer": "wymienić",
+        "extra": "np. pieniądze"
+    },
+    "vergleichen": {
+        "answer": "porównywać",
+        "extra": "np. dwa samochody"
+    },
+    "zurückschicken": {
+        "answer": "odesłać",
+        "extra": "np. uszkodzony towar"
+    }
+}

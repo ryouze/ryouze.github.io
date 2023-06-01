@@ -1,0 +1,111 @@
+@import "/styles/base.css";
+@import "/styles/responsive/narrow.css" screen and (max-width: 700px);
+@import "/styles/responsive/mobile_all.css" screen and (max-width: 610px);
+
+/* variables*/
+:root {
+  --history_background: #141414;
+  --history_border: #333333;
+  --input_background: #0d0d0d;
+  --input_border: #bb4b4b;
+  --nav_button_active: #E94560;
+}
+
+.tutorial {
+  font-size: 100%;
+  text-align: left;
+}
+
+article p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+article hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#learn_container>#learn_question {
+  background-color: var(--history_background);
+  border-radius: 10px;
+  border: 2px solid var(--history_border);
+  color: white;
+  font-size: 150%;
+  letter-spacing: 0.1em;
+  padding: 5px;
+  width: 100%;
+}
+
+#learn_container>#learn_input {
+  background-color: var(--input_background);
+  border-radius: 10px;
+  border: 2px solid var(--input_border);
+  color: var(--almost_white);
+  font-size: 16px;
+  outline: none;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+}
+
+#learn_container>#history_container {
+  background-color: var(--history_background);
+  border-radius: 10px;
+  border: 2px solid var(--history_border);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 80%;
+  height: 320px;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+}
+
+#history_container>.history_entry {
+  border-radius: 5px;
+  ;
+}
+
+#history_container>.correct {
+  color: #77DD77;
+}
+
+#history_container>.wrong {
+  color: #ff6961;
+}
+
+form {
+  margin-top: 30px;
+}
+
+form select {
+  background-color: var(--history_background);
+  border-radius: 5px;
+  border: 2px solid gray;
+  color: var(--almost_white);
+  margin-bottom: 10px;
+  margin-left: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 50%;
+}
+
+#container_checkbox {
+  -webkit-user-select: none;
+  margin-top: 10px;
+  user-select: none;
+}
+
+#container_checkbox>#checkbox_use_both_languages {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+}
+
+#learn_container {
+  display: none;
+}

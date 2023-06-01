@@ -1,0 +1,70 @@
+{
+    "das Geschwister": {
+        "answer": "rodzeństwo",
+        "extra": ""
+    },
+    "das Kind": {
+        "answer": "dziecko",
+        "extra": ""
+    },
+    "der Bruder": {
+        "answer": "brat",
+        "extra": ""
+    },
+    "der Ehemann": {
+        "answer": "małżonek",
+        "extra": ""
+    },
+    "der Großvater/Opa": {
+        "answer": "dziadek",
+        "extra": ""
+    },
+    "der Onkel": {
+        "answer": "wujek",
+        "extra": ""
+    },
+    "der Sohn": {
+        "answer": "syn",
+        "extra": ""
+    },
+    "der Vater": {
+        "answer": "ojciec",
+        "extra": ""
+    },
+    "die Ehe": {
+        "answer": "małżeństwo",
+        "extra": ""
+    },
+    "die Ehefrau": {
+        "answer": "żona",
+        "extra": ""
+    },
+    "die Eltern": {
+        "answer": "rodzice",
+        "extra": ""
+    },
+    "die Großmutter/Oma": {
+        "answer": "babcia",
+        "extra": ""
+    },
+    "die Kinder": {
+        "answer": "dzieci",
+        "extra": ""
+    },
+    "die Mutter": {
+        "answer": "matka",
+        "extra": ""
+    },
+    "die Schwester": {
+        "answer": "siostra",
+        "extra": ""
+    },
+    "die Tante": {
+        "answer": "ciocia",
+        "extra": ""
+    },
+    "die Tochter": {
+        "answer": "córka",
+        "extra": ""
+    }
+}

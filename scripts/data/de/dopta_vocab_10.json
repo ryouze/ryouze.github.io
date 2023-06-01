@@ -1,0 +1,130 @@
+{
+    "Lust haben auf": {
+        "answer": "mieć ochotę na",
+        "extra": ""
+    },
+    "abhängen": {
+        "answer": "zależeć",
+        "extra": "od czegoś"
+    },
+    "abraten": {
+        "answer": "odradzać",
+        "extra": ""
+    },
+    "achten": {
+        "answer": "szanować, cenić",
+        "extra": ""
+    },
+    "aufhören": {
+        "answer": "przestawać, kończyć",
+        "extra": ""
+    },
+    "bedanken für": {
+        "answer": "dziękować za",
+        "extra": "coś"
+    },
+    "bitten um": {
+        "answer": "prosić o",
+        "extra": "coś"
+    },
+    "das Wetter": {
+        "answer": "pogoda",
+        "extra": ""
+    },
+    "denken an": {
+        "answer": "myśleć o",
+        "extra": "czymś"
+    },
+    "der Frühling": {
+        "answer": "wiosna",
+        "extra": ""
+    },
+    "der Herbst": {
+        "answer": "jesień",
+        "extra": ""
+    },
+    "der Sommer": {
+        "answer": "lato",
+        "extra": ""
+    },
+    "der Stau": {
+        "answer": "korek drogowy",
+        "extra": "tj. samochód"
+    },
+    "der Winter": {
+        "answer": "zima",
+        "extra": ""
+    },
+    "einladen zu": {
+        "answer": "zapraszać na",
+        "extra": "czas. rozdzielny"
+    },
+    "glauben an": {
+        "answer": "wierzyć, sądzić",
+        "extra": "w"
+    },
+    "helfen bei": {
+        "answer": "pomagać przy",
+        "extra": "czymś"
+    },
+    "hoffen auf": {
+        "answer": "mieć nadzieje na",
+        "extra": ""
+    },
+    "leider nicht": {
+        "answer": "niestety nie",
+        "extra": ""
+    },
+    "sich anmelden": {
+        "answer": "zameldować/zalogować się",
+        "extra": "np. się do lekarza"
+    },
+    "sich beschweren über": {
+        "answer": "skarżyć się",
+        "extra": "na coś"
+    },
+    "sich erinnern an": {
+        "answer": "być przypominianym o",
+        "extra": ""
+    },
+    "sich freuen auf": {
+        "answer": "czekać na",
+        "extra": ""
+    },
+    "sich gewöhnen": {
+        "answer": "przyzwyczajać się",
+        "extra": "np. do pogody"
+    },
+    "sich interessieren für": {
+        "answer": "interesować się",
+        "extra": "czymś, np. hobby"
+    },
+    "sich kümmern um": {
+        "answer": "troszczyć się o",
+        "extra": ""
+    },
+    "sich treffen mit": {
+        "answer": "spotykać się z",
+        "extra": ""
+    },
+    "sich ärgern über": {
+        "answer": "być zdenerwowanym o",
+        "extra": "Akkusativ"
+    },
+    "sprechen mit": {
+        "answer": "rozmawiać z",
+        "extra": ""
+    },
+    "träumen von": {
+        "answer": "śnić o",
+        "extra": ""
+    },
+    "warten auf": {
+        "answer": "czekać na",
+        "extra": ""
+    },
+    "zufrieden sein mit": {
+        "answer": "być zadowolonym z",
+        "extra": "czegoś"
+    }
+}
