@@ -56,8 +56,8 @@ function add_history_entry(history_counter, content, is_correct) {
     p_tag.classList.add("history_entry");
     p_tag.classList.add(is_correct ? "correct" : "wrong");
     DIV_HISTORY_CONTAINER.prepend(p_tag);
-    // remove entries older than 5
-    if (DIV_HISTORY_CONTAINER.childElementCount > 5) {
+    // remove entries older than 8
+    if (DIV_HISTORY_CONTAINER.childElementCount > 8) {
         DIV_HISTORY_CONTAINER.removeChild(DIV_HISTORY_CONTAINER.lastChild);
     }
 }
