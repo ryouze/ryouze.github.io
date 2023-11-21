@@ -1,61 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
+    <html>
 
-<head>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta charset="UTF-8">
-    <title>404</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/styles/index.css">
-    <meta name="description" content="missing page fallback">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script>
-        /* prevent Firefox FOUC (Flash of unstyled content) warning */
-        let FF_FOUC_FIX;
-    </script>
-    <!-- I don't care enough to make this a separate CSS file -->
-    <style>
-        article {
-            background-color: var(--tab_background);
-            border-radius: 25px;
-            border: 2px solid var(--tab_border);
-            box-shadow: 0px 0px 15px var(--tab_shadow);
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 100px;
-            overflow-wrap: break-word;
-            padding-bottom: 50px;
-            padding-top: 50px;
-            width: 400px;
-        }
+        <head>
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+            <meta charset="UTF-8">
+            <title>404</title>
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="/styles/index.css">
+            <meta name="description" content="missing page fallback">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script>
+                /* prevent Firefox FOUC (Flash of unstyled content) warning */
+                let FF_FOUC_FIX;
+            </script>
+            <!-- I don't care enough to make this a separate CSS file -->
+            <style>
+                article {
+                    background-color: var(--tab_background);
+                    border-radius: 25px;
+                    border: 2px solid var(--tab_border);
+                    box-shadow: 0px 0px 15px var(--tab_shadow);
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 100px;
+                    overflow-wrap: break-word;
+                    padding-bottom: 50px;
+                    padding-top: 50px;
+                    width: 400px;
+                }
 
-        @media only screen and (max-width: 410px) {
-            article {
+                @media only screen and (max-width: 410px) {
+                    article {
 
-                width: 100%;
-            }
-        }
+                        width: 100%;
+                    }
+                }
 
-        h1 {
-            font-size: 200%;
-        }
+                h1 {
+                    font-size: 200%;
+                }
 
-        p {
-            font-size: 120%;
-        }
+                p {
+                    font-size: 120%;
+                }
+            </style>
 
-    </style>
+        </head>
 
-</head>
+        <body>
 
-<body>
+            <article>
+                <h1>404</h1>
+                <p>Click <a class="link" title="Open main page" href="/">here</a> to go back.</p>
+            </article>
 
-    <article>
-        <h1>404</h1>
-        <p>Click <a class="link" title="Open main page" href="/">here</a> to go back.</p>
-    </article>
+        </body>
 
-</body>
-
-</html>
+    </html>

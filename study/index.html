@@ -1,131 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
+    <html>
 
-<head>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta charset="UTF-8">
-    <title>study</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/styles/study.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="description" content="study foreign languages">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="./main.js" defer></script>
-    <script>
-        /* prevent Firefox FOUC (Flash of unstyled content) warning */
-        let FF_FOUC_FIX;
-    </script>
-</head>
+        <head>
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+            <meta charset="UTF-8">
+            <title>study</title>
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="/styles/study.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta name="description" content="study foreign languages">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script type="module" src="./main.js" defer></script>
+            <script>
+                /* prevent Firefox FOUC (Flash of unstyled content) warning */
+                let FF_FOUC_FIX;
+            </script>
+        </head>
 
-<body>
+        <body>
 
-    <!-- popups hidden by default, shown with javascript -->
-    <div id="top_alert">default</div>
+            <!-- popups hidden by default, shown with javascript -->
+            <div id="top_alert">default</div>
 
-    <!-- header with links at the top -->
-    <header draggable="false" ondragstart="return false;">
-        <a id="header_logo" title="Open main tab" onclick="open_tab('tutorial'); return false;" href="?tab=tutorial">study</a>
-        <!-- mobile hamburger menu -->
-        <!-- flags source (public domain): https://github.com/hampusborgos/country-flags -->
-        <input type="checkbox" id="mobile_menu_toggle">
-        <label for="mobile_menu_toggle" id="hamburger"><i class="fa fa-align-justify"></i></label>
-        <nav>
-            <a id="tutorial_button" class="tab_link" title="Open tutorial tab" onclick="open_tab('tutorial'); return false;" href="?tab=tutorial"> <i class="fa fa-question-circle-o"></i> Tutorial</a>
-            <a id="play_button" class="tab_link" title="Open play tab" onclick="open_tab('play'); return false;" href="?tab=play"> <i class="fa fa-play-circle"></i> Play</a>
-            <div class="navbar_splitter"></div>
-            <a class="tab_link" title="Open main in new tab" href="/" target="_blank"><i class="fa fa-paperclip"></i> Main</a>
-        </nav>
-    </header>
+            <!-- header with links at the top -->
+            <header draggable="false" ondragstart="return false;">
+                <a id="header_logo" title="Open main tab" onclick="open_tab('tutorial'); return false;" href="?tab=tutorial">study</a>
+                <!-- mobile hamburger menu -->
+                <!-- flags source (public domain): https://github.com/hampusborgos/country-flags -->
+                <input type="checkbox" id="mobile_menu_toggle">
+                <label for="mobile_menu_toggle" id="hamburger"><i class="fa fa-align-justify"></i></label>
+                <nav>
+                    <a id="tutorial_button" class="tab_link" title="Open tutorial tab" onclick="open_tab('tutorial'); return false;" href="?tab=tutorial"> <i class="fa fa-question-circle-o"></i> Tutorial</a>
+                    <a id="play_button" class="tab_link" title="Open play tab" onclick="open_tab('play'); return false;" href="?tab=play"> <i class="fa fa-play-circle"></i> Play</a>
+                    <div class="navbar_splitter"></div>
+                    <a class="tab_link" title="Open main in new tab" href="/" target="_blank"><i class="fa fa-paperclip"></i> Main</a>
+                </nav>
+            </header>
 
-    <!-- tab: tutorial -->
-    <div id="tutorial_tab" class="full_page_tab">
-        <!-- title -->
-        <div class="tab_title">
-            <h1 class="enable_select">Tutorial</h1>
-            <hr>
-        </div>
-        <!-- content -->
-        <article class="enable_select tutorial">
-            <p>1. Open the Play tab (or click <a class="link" title="Open play tab" onclick="open_tab('play'); show_top_alert('Opened play tab.'); return false;" href="?tab=play">here</a>).</p>
-            <p>2. Choose vocabulary using the menu at the bottom.</p>
-            <p>3. Enter translation for the word listed, and press <i>Enter</i>.</p>
-            <hr>
-            <p>&#9655; If you don't know the word, simply press <i>Enter</i> without inputting anything.</p>
-            <p>&#9655; If you are lazy, you can type only the first letter of the answer (e.g., <u>a</u>pple).</p>
-            <p>&#9655; If "Questions in both languages" is enabled, the questions will be served in both languages (50% chance).</p>
-            <p>&#9655; For answers, the Polish characters are NOT required - e.g., "anschließen" -> "polaczyc" (instead of "połączyć").</p>
-        </article>
-    </div>
-
-    <!-- tab: play -->
-    <div id="play_tab" class="full_page_tab">
-        <!-- title -->
-        <div class="tab_title">
-            <h1 class="enable_select">Play</h1>
-            <hr>
-        </div>
-        <article class="enable_select">
-            <!-- game -->
-            <div id="learn_container">
-                <p id="learn_question">Loading...</p>
-                <input id="learn_input" type="text" name="learn_input" autofocus="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
-                <div id="history_container"></div>
+            <!-- tab: tutorial -->
+            <div id="tutorial_tab" class="full_page_tab">
+                <!-- title -->
+                <div class="tab_title">
+                    <h1 class="enable_select">Tutorial</h1>
+                    <hr>
+                </div>
+                <!-- content -->
+                <article class="enable_select tutorial">
+                    <p>1. Open the Play tab (or click <a class="link" title="Open play tab" onclick="open_tab('play'); show_top_alert('Opened play tab.'); return false;" href="?tab=play">here</a>).</p>
+                    <p>2. Choose vocabulary using the menu at the bottom.</p>
+                    <p>3. Enter translation for the word listed, and press <i>Enter</i>.</p>
+                    <hr>
+                    <p>&#9655; If you don't know the word, simply press <i>Enter</i> without inputting anything.</p>
+                    <p>&#9655; If you are lazy, you can type only the first letter of the answer (e.g., <u>a</u>pple).</p>
+                    <p>&#9655; If "Questions in both languages" is enabled, the questions will be served in both languages (50% chance).</p>
+                    <p>&#9655; For answers, the Polish characters are NOT required - e.g., "anschließen" -> "polaczyc" (instead of "połączyć").</p>
+                </article>
             </div>
-            <!-- customization -->
-            <form>
-                <div id="db_selector_container">
-                    <label for="db_selector">Vocabulary:</label>
-                    <select name="db_selector" id="db_selector" title="the database to load">
-                        <optgroup label="Dopta Exam (2023)">
-                            <!-- make it pick always the latest using js -->
-                            <option value="dopta_exam_freizeit">Podcast 2 - Freizeit (85 words)</option>
-                            <option value="dopta_exam_geld">Podcast 1 - Geld (98 words)</option>
-                        </optgroup>
-                        <optgroup label="Dopta (2022-2023)">
-                            <option value="dopta_vocab_12">Vocab 12 - Energie (16 words)</option>
-                            <option value="dopta_vocab_11">Vocab 11 - Tiere (70 words)</option>
-                            <option value="dopta_vocab_10">Vocab 10 - Präpositionen (32 words)</option>
-                            <option value="dopta_vocab_9">Vocab 9 - Familie (59 words)</option>
-                            <option value="dopta_vocab_8">Vocab 8 - Berlin Mauer, Urlaub (65 words)</option>
-                            <option value="dopta_vocab_7">Vocab 7 - Datum, Wochentag, Monat (24 words)</option>
-                            <option value="dopta_vocab_6">Vocab 6 - Post und Feiern (46 words)</option>
-                            <option value="dopta_vocab_5">Vocab 5 - Fast Food (27 words)</option>
-                            <option value="dopta_vocab_4">Vocab 4 - Im Geschäft (111 words)</option>
-                            <option value="dopta_vocab_3">Vocab 3 - Nach dem Weg fragen (54 words)</option>
-                            <option value="dopta_vocab_2">Vocab 2 - Verkehrsmittel (55 words)</option>
-                            <option value="dopta_vocab_1">Vocab 1 - Oktoberfest und Studien (18 words)</option>
-                        </optgroup>
-                        <optgroup label="Rydian (2019-2021)">
-                            <option value="rydian_vocab_2021">Vocab 2021 (251 words)</option>
-                            <option value="rydian_vocab_2020">Vocab 2020 (463 words)</option>
-                            <option value="rydian_vocab_2019">Vocab 2019 (193 words)</option>
-                        </optgroup>
-                        <optgroup label="By topic">
-                            <option value="topic_week">Days (7 words)</option>
-                            <option value="topic_months">Months (12 words)</option>
-                            <option value="topic_numbers">Numbers (20 words)</option>
-                            <option value="topic_colors">Colors (14 words)</option>
-                            <option value="topic_prepositions">Prepositions (27 words)</option>
-                            <option value="topic_family">Family (17 words)</option>
-                            <option value="topic_verbs">Common Verbs (82 words)</option>
-                        </optgroup>
-                    </select>
+
+            <!-- tab: play -->
+            <div id="play_tab" class="full_page_tab">
+                <!-- title -->
+                <div class="tab_title">
+                    <h1 class="enable_select">Play</h1>
+                    <hr>
                 </div>
-                <div id="container_checkbox" title="serve questions in both languages (50% chance)">
-                    <input id="checkbox_use_both_languages" type="checkbox" value="false">
-                    <label for="checkbox_use_both_languages">Questions in both languages</label>
-                </div>
-            </form>
-        </article>
-    </div>
+                <article class="enable_select">
+                    <!-- game -->
+                    <div id="learn_container">
+                        <p id="learn_question">Loading...</p>
+                        <input id="learn_input" type="text" name="learn_input" autofocus="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" />
+                        <div id="history_container"></div>
+                    </div>
+                    <!-- customization -->
+                    <form>
+                        <div id="db_selector_container">
+                            <label for="db_selector">Vocabulary:</label>
+                            <select name="db_selector" id="db_selector" title="the database to load">
+                                <optgroup label="Dopta Exam (2023)">
+                                    <!-- make it pick always the latest using js -->
+                                    <option value="dopta_exam_freizeit">Podcast 2 - Freizeit (85 words)</option>
+                                    <option value="dopta_exam_geld">Podcast 1 - Geld (98 words)</option>
+                                </optgroup>
+                                <optgroup label="Dopta (2022-2023)">
+                                    <option value="dopta_vocab_12">Vocab 12 - Energie (16 words)</option>
+                                    <option value="dopta_vocab_11">Vocab 11 - Tiere (70 words)</option>
+                                    <option value="dopta_vocab_10">Vocab 10 - Präpositionen (32 words)</option>
+                                    <option value="dopta_vocab_9">Vocab 9 - Familie (59 words)</option>
+                                    <option value="dopta_vocab_8">Vocab 8 - Berlin Mauer, Urlaub (65 words)</option>
+                                    <option value="dopta_vocab_7">Vocab 7 - Datum, Wochentag, Monat (24 words)</option>
+                                    <option value="dopta_vocab_6">Vocab 6 - Post und Feiern (46 words)</option>
+                                    <option value="dopta_vocab_5">Vocab 5 - Fast Food (27 words)</option>
+                                    <option value="dopta_vocab_4">Vocab 4 - Im Geschäft (111 words)</option>
+                                    <option value="dopta_vocab_3">Vocab 3 - Nach dem Weg fragen (54 words)</option>
+                                    <option value="dopta_vocab_2">Vocab 2 - Verkehrsmittel (55 words)</option>
+                                    <option value="dopta_vocab_1">Vocab 1 - Oktoberfest und Studien (18 words)</option>
+                                </optgroup>
+                                <optgroup label="Rydian (2019-2021)">
+                                    <option value="rydian_vocab_2021">Vocab 2021 (251 words)</option>
+                                    <option value="rydian_vocab_2020">Vocab 2020 (463 words)</option>
+                                    <option value="rydian_vocab_2019">Vocab 2019 (193 words)</option>
+                                </optgroup>
+                                <optgroup label="By topic">
+                                    <option value="topic_week">Days (7 words)</option>
+                                    <option value="topic_months">Months (12 words)</option>
+                                    <option value="topic_numbers">Numbers (20 words)</option>
+                                    <option value="topic_colors">Colors (14 words)</option>
+                                    <option value="topic_prepositions">Prepositions (27 words)</option>
+                                    <option value="topic_family">Family (17 words)</option>
+                                    <option value="topic_verbs">Common Verbs (82 words)</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div id="container_checkbox" title="serve questions in both languages (50% chance)">
+                            <input id="checkbox_use_both_languages" type="checkbox" value="false">
+                            <label for="checkbox_use_both_languages">Questions in both languages</label>
+                        </div>
+                    </form>
+                </article>
+            </div>
 
-    <!-- display warning message and show all tabs if javascript disabled -->
-    <noscript>
-        <link rel="stylesheet" href="/styles/no_js.css">
-        <p id="js_disabled">Warning: <wbr>JavaScript is disabled, displaying all tabs as fallback.</p>
-    </noscript>
+            <!-- display warning message and show all tabs if javascript disabled -->
+            <noscript>
+                <link rel="stylesheet" href="/styles/no_js.css">
+                <p id="js_disabled">Warning: <wbr>JavaScript is disabled, displaying all tabs as fallback.</p>
+            </noscript>
 
-</body>
+        </body>
 
-</html>
+    </html>

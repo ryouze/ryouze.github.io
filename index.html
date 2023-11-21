@@ -1,159 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
+    <html>
 
-<head>
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta charset="UTF-8">
-    <title>ryouze</title>
-    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="description" content="ryouze's personal website">
-    <meta name="keywords" content="ryouze, ryouze github, personal website, portfolio website">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="./main.js" defer></script>
-    <script>
-        /* prevent Firefox FOUC (Flash of unstyled content) warning */
-        let FF_FOUC_FIX;
-    </script>
-</head>
+        <head>
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+            <meta charset="UTF-8">
+            <title>ryouze</title>
+            <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico">
+            <link rel="stylesheet" type="text/css" href="/styles/index.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta name="description" content="ryouze's personal website">
+            <meta name="keywords" content="ryouze, ryouze github, personal website, portfolio website">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <script type="module" src="./main.js" defer></script>
+            <script>
+                /* prevent Firefox FOUC (Flash of unstyled content) warning */
+                let FF_FOUC_FIX;
+            </script>
+        </head>
 
-<body class="english">
+        <body class="english">
 
-    <!-- popups hidden by default, shown with javascript -->
-    <div id="top_alert">default</div>
+            <!-- popups hidden by default, shown with javascript -->
+            <div id="top_alert">default</div>
 
-    <!-- header with links at the top -->
-    <header draggable="false" ondragstart="return false;">
-        <a id="header_logo" title="Open main tab" onclick="open_tab('about'); return false;" href="?tab=about">ryouze</a>
-        <!-- mobile hamburger menu -->
-        <input type="checkbox" id="mobile_menu_toggle">
-        <label for="mobile_menu_toggle" id="hamburger"><i class="fa fa-align-justify"></i></label>
-        <nav>
-            <a id="about_button" class="tab_link" title="Open about tab" onclick="open_tab('about'); return false;" href="?tab=about"><i class="fa fa-user"></i> About</a>
-            <a id="projects_button" class="tab_link" title="Open projects tab" onclick="open_tab('projects'); return false;" href="?tab=projects"><i class="fa fa-code"></i> Projects</a>
-            <a id="contact_button" class="tab_link" title="Open contact tab" onclick="open_tab('contact'); return false;" href="?tab=contact"><i class="fa fa-envelope-o"></i> Contact</a>
-            <div class="navbar_splitter"></div>
-            <a class="tab_link" title="Open in new tab" href="/study/" target="_blank"><i class="fa fa-paperclip"></i> Study</a>
-            <div class="navbar_splitter"></div>
-            <a class="tab_link" title="Toggle language (English, Japanese)" href="#" onclick="toggle_language(); return false"><img id="lang_flag" src="/images/root/us.png" alt="American or Japanese flag" width="25" height="15" /> Language</a>
-        </nav>
-    </header>
+            <!-- header with links at the top -->
+            <header draggable="false" ondragstart="return false;">
+                <a id="header_logo" title="Open main tab" onclick="open_tab('about'); return false;" href="?tab=about">ryouze</a>
+                <!-- mobile hamburger menu -->
+                <input type="checkbox" id="mobile_menu_toggle">
+                <label for="mobile_menu_toggle" id="hamburger"><i class="fa fa-align-justify"></i></label>
+                <nav>
+                    <a id="about_button" class="tab_link" title="Open about tab" onclick="open_tab('about'); return false;" href="?tab=about"><i class="fa fa-user"></i> About</a>
+                    <a id="projects_button" class="tab_link" title="Open projects tab" onclick="open_tab('projects'); return false;" href="?tab=projects"><i class="fa fa-code"></i> Projects</a>
+                    <a id="contact_button" class="tab_link" title="Open contact tab" onclick="open_tab('contact'); return false;" href="?tab=contact"><i class="fa fa-envelope-o"></i> Contact</a>
+                    <div class="navbar_splitter"></div>
+                    <a class="tab_link" title="Open in new tab" href="/study/" target="_blank"><i class="fa fa-paperclip"></i> Study</a>
+                    <div class="navbar_splitter"></div>
+                    <a class="tab_link" title="Toggle language (English, Japanese)" href="#" onclick="toggle_language(); return false"><img id="lang_flag" src="/images/root/us.png" alt="American or Japanese flag" width="25" height="15" /> Language</a>
+                </nav>
+            </header>
 
-    <!-- tab: about -->
-    <div id="about_tab" class="full_page_tab">
-        <!-- title -->
-        <div class="tab_title">
-            <h1 lang="en" class="enable_select">About</h1>
-            <h1 lang="jp" class="enable_select">について</h1>
-            <hr>
-        </div>
-        <!-- content -->
-        <article class="enable_select">
-            <a title="Open in new tab" href="https://github.com/ryouze/" target="_blank"><img id="avatar" src="https://avatars.githubusercontent.com/u/98982999" alt="Github avatar" width="248" height="248" /></a>
-            <h1 lang="en">ryouze</h1>
-            <h1 lang="jp">リョウゼ</h1>
-            <p lang="en">LMT university student</p>
-            <p lang="jp">LMTの<ruby>大学生<rt>だいがくせい</rt></ruby></p>
-            <ul>
-                <li>Python</li>
-                <li>C/C++</li>
-                <li>JavaScript</li>
-                <li>SQL</li>
-                <li>Shell</li>
-                <li>R</li>
-            </ul>
-            <p lang="en">&#187; Check out my <a class="link" title="Open projects tab" onclick="open_tab('projects'); show_top_alert('Opened projects tab.'); return false;" href="?tab=projects">projects</a> &#171;</p>
-            <p lang="jp">&#187; <ruby>私<rt>わたし</rt></ruby>の<wbr><a class="link" title="projectsタブを開き" onclick="open_tab('projects'); show_top_alert('projectsタブを開き'); return false;" href="?tab=projects">プロジェクト</a>を<wbr><ruby>見<rt>み</rt></ruby>て &#171;</p>
-        </article>
-    </div>
+            <!-- tab: about -->
+            <div id="about_tab" class="full_page_tab">
+                <!-- title -->
+                <div class="tab_title">
+                    <h1 lang="en" class="enable_select">About</h1>
+                    <h1 lang="jp" class="enable_select">について</h1>
+                    <hr>
+                </div>
+                <!-- content -->
+                <article class="enable_select">
+                    <a title="Open in new tab" href="https://github.com/ryouze/" target="_blank"><img id="avatar" src="https://avatars.githubusercontent.com/u/98982999" alt="Github avatar" width="248" height="248" /></a>
+                    <h1 lang="en">ryouze</h1>
+                    <h1 lang="jp">リョウゼ</h1>
+                    <p lang="en">LMT university student</p>
+                    <p lang="jp">LMTの<ruby>大学生<rt>だいがくせい</rt></ruby></p>
+                    <ul>
+                        <li>Python</li>
+                        <li>C/C++</li>
+                        <li>JavaScript</li>
+                        <li>SQL</li>
+                        <li>Shell</li>
+                        <li>R</li>
+                    </ul>
+                    <p lang="en">&#187; Check out my <a class="link" title="Open projects tab" onclick="open_tab('projects'); show_top_alert('Opened projects tab.'); return false;" href="?tab=projects">projects</a> &#171;</p>
+                    <p lang="jp">&#187; <ruby>私<rt>わたし</rt></ruby>の<wbr><a class="link" title="projectsタブを開き" onclick="open_tab('projects'); show_top_alert('projectsタブを開き'); return false;" href="?tab=projects">プロジェクト</a>を<wbr><ruby>見<rt>み</rt></ruby>て &#171;</p>
+                </article>
+            </div>
 
-    <!-- tab: projects -->
-    <div id="projects_tab" class="full_page_tab">
-        <!-- title -->
-        <div class="tab_title">
-            <h1 lang="en" class="enable_select">Projects</h1>
-            <h1 lang="jp" class="enable_select">プロジェクト</h1>
-            <hr>
-        </div>
-        <!-- content -->
-        <div class="projects enable_select">
-            <div class="proj_grid">
-                <!-- header -->
-                <div class="proj_grid_header">
-                    <p lang="en">Name</p>
-                    <p lang="jp">ネー<wbr>ム</p>
+            <!-- tab: projects -->
+            <div id="projects_tab" class="full_page_tab">
+                <!-- title -->
+                <div class="tab_title">
+                    <h1 lang="en" class="enable_select">Projects</h1>
+                    <h1 lang="jp" class="enable_select">プロジェクト</h1>
+                    <hr>
                 </div>
-                <div class="proj_grid_header">
-                    <p lang="en">Description</p>
-                    <p lang="jp"><ruby>説明<rt>せつめい</rt></ruby></p>
-                </div>
-                <!-- body -->
-                <div class="proj_grid_body">
-                    <p><a class="link" title="Open in new tab" href="https://github.com/ryouze/yt-table/" target="_blank">yt-table</a></p>
-                </div>
-                <div class="proj_grid_body">
-                    <p>C++:<wbr> YouTube <wbr>subscriptions <wbr>manager.</p>
-                </div>
-                <div class="proj_grid_body">
-                    <p><a class="link" title="Open in new tab" href="https://github.com/ryouze/wa_color/" target="_blank">wa color</a></p>
-                </div>
-                <div class="proj_grid_body">
-                    <p>Python:<wbr> Lesson plan<wbr> webscraper.</p>
-                </div>
-                <div class="proj_grid_body">
-                    <p><a class="link" title="Open in new tab" href="/study/" target="_blank">study</a></p>
-                </div>
-                <div class="proj_grid_body">
-                    <p>Web:<wbr> Study<wbr> german vocabulary.</p>
-                </div>
-                <div class="proj_grid_body">
-                    <p><a class="link" title="Open in new tab" href="https://prodis-opus19.github.io/" target="_blank">prodis-opus19</a></p>
-                </div>
-                <div class="proj_grid_body">
-                    <p>Web:<wbr> University's<wbr> speech project<wbr> portfolio &<wbr> interactive experiment<wbr> webapp.</p>
-                </div>
-                <div class="proj_grid_body">
-                    <p><a class="link" title="Open in new tab" href="https://inogabinet.pl/" target="_blank">inogabinet</a></p>
-                </div>
-                <div class="proj_grid_body">
-                    <p>Web:<wbr> Family's company<wbr> portfolio.</p>
-                </div>
-                <div class="proj_grid_body">
-                    <p><a class="link" title="Open in new tab" href="/rebrand/" target="_blank">rebrand</a></p>
-                </div>
-                <div class="proj_grid_body">
-                    <p>Web:<wbr> 3BA final <wbr>group assignment (implemented).</p>
+                <!-- content -->
+                <div class="projects enable_select">
+                    <div class="proj_grid">
+                        <!-- header -->
+                        <div class="proj_grid_header">
+                            <p lang="en">Name</p>
+                            <p lang="jp">ネー<wbr>ム</p>
+                        </div>
+                        <div class="proj_grid_header">
+                            <p lang="en">Description</p>
+                            <p lang="jp"><ruby>説明<rt>せつめい</rt></ruby></p>
+                        </div>
+                        <!-- body -->
+                        <div class="proj_grid_body">
+                            <p><a class="link" title="Open in new tab" href="https://github.com/ryouze/yt-table/" target="_blank">yt-table</a></p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p>C++:<wbr> YouTube <wbr>subscriptions <wbr>manager.</p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p><a class="link" title="Open in new tab" href="https://github.com/ryouze/wa_color/" target="_blank">wa color</a></p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p>Python:<wbr> Lesson plan<wbr> webscraper.</p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p><a class="link" title="Open in new tab" href="/study/" target="_blank">study</a></p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p>Web:<wbr> Study<wbr> german vocabulary.</p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p><a class="link" title="Open in new tab" href="https://prodis-opus19.github.io/" target="_blank">prodis-opus19</a></p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p>Web:<wbr> University's<wbr> speech project<wbr> portfolio &<wbr> interactive experiment<wbr> webapp.</p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p><a class="link" title="Open in new tab" href="https://inogabinet.pl/" target="_blank">inogabinet</a></p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p>Web:<wbr> Family's company<wbr> portfolio.</p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p><a class="link" title="Open in new tab" href="/rebrand/" target="_blank">rebrand</a></p>
+                        </div>
+                        <div class="proj_grid_body">
+                            <p>Web:<wbr> 3BA final <wbr>group assignment (implemented).</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- tab: contact -->
-    <div id="contact_tab" class="full_page_tab">
-        <!-- title -->
-        <div class="tab_title">
-            <h1 lang="en" class="enable_select">Contact</h1>
-            <h1 lang="jp" class="enable_select">コンタクト</h1>
-            <hr>
-        </div>
-        <!-- content -->
-        <article class="enable_select">
-            <p lang="en">I don't use social media :S</p>
-            <p lang="jp">SNSをやらない :S</p>
-            <a title="Open github profile in new tab" href="https://github.com/ryouze/" target="_blank"><img id="github" src="/images/root/github.png" alt="Github logo" width="74.4" height="74.4" /></a>
-            <p lang="en">Send me a message on <a title="Open in new tab" class="link" href="https://github.com/ryouze/" target="_blank">Github</a></p>
-            <p lang="jp"><a title="Open in new tab" class="link" href="https://github.com/ryouze/" target="_blank">Github</a>でメッセージを<ruby>送<rt>おく</rt></ruby>って</p>
-        </article>
-    </div>
+            <!-- tab: contact -->
+            <div id="contact_tab" class="full_page_tab">
+                <!-- title -->
+                <div class="tab_title">
+                    <h1 lang="en" class="enable_select">Contact</h1>
+                    <h1 lang="jp" class="enable_select">コンタクト</h1>
+                    <hr>
+                </div>
+                <!-- content -->
+                <article class="enable_select">
+                    <p lang="en">I don't use social media :S</p>
+                    <p lang="jp">SNSをやらない :S</p>
+                    <a title="Open github profile in new tab" href="https://github.com/ryouze/" target="_blank"><img id="github" src="/images/root/github.png" alt="Github logo" width="74.4" height="74.4" /></a>
+                    <p lang="en">Send me a message on <a title="Open in new tab" class="link" href="https://github.com/ryouze/" target="_blank">Github</a></p>
+                    <p lang="jp"><a title="Open in new tab" class="link" href="https://github.com/ryouze/" target="_blank">Github</a>でメッセージを<ruby>送<rt>おく</rt></ruby>って</p>
+                </article>
+            </div>
 
-    <!-- display warning message and show all tabs if javascript disabled -->
-    <noscript>
-        <link rel="stylesheet" href="/styles/no_js.css">
-        <p id="js_disabled">Warning: <wbr>JavaScript is disabled, displaying all tabs as fallback.</p>
-    </noscript>
+            <!-- display warning message and show all tabs if javascript disabled -->
+            <noscript>
+                <link rel="stylesheet" href="/styles/no_js.css">
+                <p id="js_disabled">Warning: <wbr>JavaScript is disabled, displaying all tabs as fallback.</p>
+            </noscript>
 
-</body>
+        </body>
 
-</html>
+    </html>
