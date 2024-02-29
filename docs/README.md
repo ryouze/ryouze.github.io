@@ -1,38 +1,27 @@
 # ryouze.net
 
-Personal website.
+My personal website.
 
-* Link: [ryouze.net](https://ryouze.net/)
-* Fallback link: [ryouze.github.io](https://ryouze.github.io/)
-
-
----
+You can access it at [ryouze.net](https://ryouze.net/).
 
 
-# Features
-* Single HTML file, multiple tabs (with history API).
-* Hand-made CSS (no Frameworks).
-* Responsive / mobile friendly.
+## Features
+
+- Single HTML file with multiple tabs (using history API).
+- Custom CSS without the use of any frameworks.
+- Responsive, mobile-friendly design.
 
 
----
+## Setup
 
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/ryouze/ryouze.github.io.git
+   ```
 
-# Setup
-
-
-### 1. Clone the repository.
-
-```bash
-git clone https://github.com/ryouze/ryouze.github.io/
-```
 
 That's it.
 
+## Credits
 
----
-
-
-# Credits
-
-Country flags: https://github.com/hampusborgos/country-flags
+Country flags: [github.com/hampusborgos/country-flags](https://github.com/hampusborgos/country-flags)
