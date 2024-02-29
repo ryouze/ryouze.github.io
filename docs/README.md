@@ -22,6 +22,17 @@ You can access it at [ryouze.net](https://ryouze.net/).
 
 That's it.
 
+
+## Contributing
+
+All contributions are welcome.
+
+
+## License
+
+This project is licensed under the MIT License.
+
+
 ## Credits
 
 Country flags: [github.com/hampusborgos/country-flags](https://github.com/hampusborgos/country-flags)
