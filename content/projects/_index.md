@@ -6,7 +6,9 @@ type = "page"
 
 ### Personal:
 
+- [shogun](https://github.com/ryouze/shogun) - Learn Japanese kanji in the terminal.
 - [header-warden](https://github.com/ryouze/header-warden) - Identify and report missing standard library headers in C++ code.
+- [hate-speech-detection](https://github.com/ryouze/hate-speech-detection) - Detect hate speech using machine learning.
 - [yt-table](https://github.com/ryouze/yt-table) - YouTube subscriptions manager.
 - [dotfiles](https://github.com/ryouze/dotfiles) - Configuration files for MacOS, GNU/Linux and Windows.
 - [google-usa-search](https://github.com/ryouze/google-usa-search) -  Enforce US Google search results.
