@@ -138,7 +138,7 @@ You should have the following directory structure.
 Add the following to `CMakeLists.txt`.
 
 ```cmake
-# Set minimum required version of CMake (3.20.1 properly supports Apple Sillicon)
+# Set minimum required version of CMake (3.20.1 properly supports Apple Silicon)
 cmake_minimum_required(VERSION 3.20.1)
 
 # Set project name and language
@@ -194,7 +194,7 @@ if(NOT WIN32)
 endif()
 
 # Add install target (for "sudo cmake --install .")
-install(TARGETS ${PROJECT_NAME})
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # Print the build type
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}.")
@@ -273,7 +273,7 @@ Now let's go step by step through the `CMakeLists.txt`.
 
 8. Add install target, so that the program can be installed using `sudo cmake --install .`.
     ```cmake
-    install(TARGETS ${PROJECT_NAME})
+    install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
     ```
 
 9. Print the build type to the console as a sanity check.
@@ -345,15 +345,14 @@ Once you have generated the build system, you don't need to run `cmake ..` again
 
 ## Add 3rd Party Libraries
 
-If you want to add a 3rd party library, you can use `FetchContent` to download the library during the configuration step. You can use it to download a Git repository or a URL. Refer to [this](https://www.foonathan.net/2022/06/cmake-fetchcontent/) for more information on `FetchContent`. [Git submodules](https://lchsk.com/how-to-use-git-submodules-and-cmake-to-install-c-libraries) are also quite convenient, but they are beyond the scope of this tutorial.
+If you want to add a 3rd party library, you can use `FetchContent` to download it during the configuration step. `FetchContent` is quite flexible and can even download a Git repository at a specific tag - refer to [this](https://www.foonathan.net/2022/06/cmake-fetchcontent/) for more information. [Git submodules](https://lchsk.com/how-to-use-git-submodules-and-cmake-to-install-c-libraries) are also quite convenient, but they are beyond the scope of this tutorial.
 
-The basic usage is as follows - you download the [cli](https://github.com/daniele77/cli) library from GitHub and link it to your project.
+The basic usage is as follows - you download a [3rd party library](https://github.com/daniele77/cli) and link it to your project.
 
 ```cmake
 include(FetchContent)
 
-FetchContent_Declare(
-  cli
+FetchContent_Declare(cli
   GIT_REPOSITORY https://github.com/daniele77/cli.git
   GIT_TAG v2.1.0
 )
@@ -364,18 +363,25 @@ target_link_libraries(
 )
 ```
 
+The same goes for downloading content using a URL.
+
+```cmake
+FetchContent_Declare(json
+  URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz
+)
+```
+
 Once you run `cmake ..` inside the `build` directory, the `cli` library will be downloaded, built, and linked to your project.
 
-However, you can also enable verbose mode, disable updates on every configure, and set the download directory to `deps` instead of storing it in the `build` directory. This makes it easier to `rm -rf` the `build` directory if something goes wrong.
+However, you can also disable updates on every configure and set the download directory to `deps` instead of storing it in the `build` directory. This makes it easier to `rm -rf` the `build` directory if something goes wrong.
 
 ```cmake
 include(FetchContent)
-set(FETCHCONTENT_QUIET OFF)
+
 set(FETCHCONTENT_UPDATES_DISCONNECTED ON)
 set(FETCHCONTENT_BASE_DIR ${CMAKE_SOURCE_DIR}/deps)
 
-FetchContent_Declare(
-  cli
+FetchContent_Declare(cli
   GIT_REPOSITORY https://github.com/daniele77/cli.git
   GIT_TAG v2.1.0
 )
@@ -392,7 +398,7 @@ target_link_libraries(
 Here is the final `CMakeLists.txt` with the `cli` library added.
 
 ```cmake
-# Set minimum required version of CMake (3.20.1 properly supports Apple Sillicon)
+# Set minimum required version of CMake (3.20.1 properly supports Apple Silicon)
 cmake_minimum_required(VERSION 3.20.1)
 
 # Set project name and language
@@ -447,16 +453,14 @@ if(NOT WIN32)
   )
 endif()
 
-# Setup dependency management, enable verbose mode, disable updates on every configure, set the download directory to "deps"
+# Setup dependency management, disable updates on every configure, set the download directory to "deps"
 include(FetchContent)
-set(FETCHCONTENT_QUIET OFF)
 set(FETCHCONTENT_UPDATES_DISCONNECTED ON)
 set(FETCHCONTENT_BASE_DIR ${CMAKE_SOURCE_DIR}/deps)
 message(STATUS "Setting up dependencies.")
 
 # Add cli as a dependency
-FetchContent_Declare(
-  cli
+FetchContent_Declare(cli
   GIT_REPOSITORY https://github.com/daniele77/cli.git
   GIT_TAG v2.1.0
 )
@@ -468,7 +472,7 @@ target_link_libraries(
 )
 
 # Add install target (for "sudo cmake --install .")
-install(TARGETS ${PROJECT_NAME})
+install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # Print the build type
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}.")
