@@ -10,6 +10,7 @@ type = "page"
 - [header-warden](https://github.com/ryouze/header-warden) - Identify and report missing standard library headers in C++ code.
 - [hate-speech-detection](https://github.com/ryouze/hate-speech-detection) - Detect hate speech using machine learning.
 - [yt-table](https://github.com/ryouze/yt-table) - YouTube subscriptions manager.
+- [pathmaster](https://github.com/ryouze/pathmaster) - Get the absolute path to the current executable in C++.
 - [dotfiles](https://github.com/ryouze/dotfiles) - Configuration files for MacOS, GNU/Linux and Windows.
 - [google-usa-search](https://github.com/ryouze/google-usa-search) -  Enforce US Google search results.
 
