@@ -370,6 +370,7 @@ The same goes for downloading content using a URL.
 ```cmake
 FetchContent_Declare(json
   URL https://github.com/nlohmann/json/releases/download/v3.11.3/json.tar.xz
+  EXCLUDE_FROM_ALL
 )
 ```
 
