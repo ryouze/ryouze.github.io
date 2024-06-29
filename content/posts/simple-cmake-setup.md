@@ -347,14 +347,16 @@ Once you have generated the build system, you don't need to run `cmake ..` again
 
 If you want to add a 3rd party library, you can use `FetchContent` to download it during the configuration step. `FetchContent` is quite flexible and can even download a Git repository at a specific tag - refer to [this](https://www.foonathan.net/2022/06/cmake-fetchcontent/) for more information. [Git submodules](https://lchsk.com/how-to-use-git-submodules-and-cmake-to-install-c-libraries) are also quite convenient, but they are beyond the scope of this tutorial.
 
-The basic usage is as follows - you download a [3rd party library](https://github.com/daniele77/cli) and link it to your project.
+The basic usage is as follows - you download a [3rd party library](https://github.com/daniele77/cli) and link it to your project. The `GIT_SHALLOW` option is used to download only the latest commit and not the entire history. The `EXCLUDE_FROM_ALL` option is used to exclude the library from the default build target, so that you don't have to build it every time you run `make`.
 
 ```cmake
 include(FetchContent)
 
 FetchContent_Declare(cli
   GIT_REPOSITORY https://github.com/daniele77/cli.git
-  GIT_TAG v2.1.0
+  GIT_TAG        v2.1.0
+  GIT_SHALLOW    TRUE
+  EXCLUDE_FROM_ALL
 )
 FetchContent_MakeAvailable(cli)
 
@@ -383,7 +385,9 @@ set(FETCHCONTENT_BASE_DIR ${CMAKE_SOURCE_DIR}/deps)
 
 FetchContent_Declare(cli
   GIT_REPOSITORY https://github.com/daniele77/cli.git
-  GIT_TAG v2.1.0
+  GIT_TAG        v2.1.0
+  GIT_SHALLOW    TRUE
+  EXCLUDE_FROM_ALL
 )
 FetchContent_MakeAvailable(cli)
 
@@ -462,7 +466,9 @@ message(STATUS "Setting up dependencies.")
 # Add cli as a dependency
 FetchContent_Declare(cli
   GIT_REPOSITORY https://github.com/daniele77/cli.git
-  GIT_TAG v2.1.0
+  GIT_TAG        v2.1.0
+  GIT_SHALLOW    TRUE
+  EXCLUDE_FROM_ALL
 )
 FetchContent_MakeAvailable(cli)
 
