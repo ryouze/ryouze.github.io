@@ -465,6 +465,7 @@ set(FETCHCONTENT_BASE_DIR ${CMAKE_SOURCE_DIR}/deps)
 message(STATUS "Setting up dependencies.")
 
 # Add cli as a dependency
+message(STATUS "Setting up cli...")
 FetchContent_Declare(cli
   GIT_REPOSITORY https://github.com/daniele77/cli.git
   GIT_TAG        v2.1.0
