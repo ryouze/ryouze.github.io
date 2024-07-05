@@ -310,10 +310,10 @@ Generate the build files using the `CMakeLists.txt` in the directory above.
 cmake ..
 ```
 
-Compile the project. The `-j` flag is used to enable parallel compilation for all threads.
+Compile the project.
 
 ```bash
-make -j
+make
 ```
 
 Run the program.
@@ -337,10 +337,10 @@ Now let's go step by step through what you did.
 
 3. You used the generated build system to compile the project.
     ```bash
-    make -j
+    make
     ```
 
-Once you have generated the build system, you don't need to run `cmake ..` again. You only need to run `make -j` to compile the project. The regeneration will only be required if you modify the `CMakeLists.txt` (e.g., add more source files).
+Once you have generated the build system, you don't need to run `cmake ..` again. You only need to run `make` to compile the project. The regeneration will only be required if you modify the `CMakeLists.txt` (e.g., add more source files).
 
 
 ## Add 3rd Party Libraries
@@ -486,7 +486,7 @@ install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}.")
 ```
 
-Once you run `mkdir build && cd build && cmake .. && make -j`, the final directory structure will look similar to this.
+Once you run `mkdir build && cd build && cmake .. && make`, the final directory structure will look similar to this.
 
 ```
 [~/sample-project] $ tree
