@@ -43,7 +43,7 @@ This project has been tested on the following systems:
 
 ## Requirements
 
-To run this project, you'll need:
+To build this project, you'll need:
 
 - Hugo
 
@@ -53,18 +53,21 @@ To run this project, you'll need:
 Follow these steps to build the project:
 
 1. **Clone the repository**:
+
     ```bash
     git clone https://github.com/ryouze/ryouze.github.io.git
     ```
 
-2. **Update the Gokarna theme**:
+2. **Update the Gokarna theme (optional)**:
+
     ```bash
     cd ryouze.github.io
     chmod +x update-theme.sh
     ./update-theme.sh
     ```
 
-3. **Build the project (generate static files)**:
+3. **Build the project**:
+
     ```bash
     hugo
     ```
