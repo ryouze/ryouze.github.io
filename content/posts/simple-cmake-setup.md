@@ -316,6 +316,18 @@ Compile the project.
 make
 ```
 
+For significantly faster compilation times, use all available cores by passing the `-j` flag with the number of cores available on your system:
+
+```bash
+# MacOS
+make -j$(sysctl -n hw.ncpu)
+```
+
+```bash
+# GNU/Linux
+make -j$(nproc)
+```
+
 Run the program.
 
 ```bash
@@ -337,7 +349,8 @@ Now let's go step by step through what you did.
 
 3. You used the generated build system to compile the project.
     ```bash
-    make
+    # 8-core M1 Pro on MacOS
+    make -j8
     ```
 
 Once you have generated the build system, you don't need to run `cmake ..` again. You only need to run `make` to compile the project. The regeneration will only be required if you modify the `CMakeLists.txt` (e.g., add more source files).
