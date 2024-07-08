@@ -138,8 +138,8 @@ You should have the following directory structure.
 Add the following to `CMakeLists.txt`.
 
 ```cmake
-# Set minimum required version of CMake (3.20.1 properly supports Apple Silicon)
-cmake_minimum_required(VERSION 3.20.1)
+# Set minimum required version of CMake
+cmake_minimum_required(VERSION 3.24)
 
 # Set project name and language
 project(
@@ -204,7 +204,7 @@ Now let's go step by step through the `CMakeLists.txt`.
 
 1. Set the minimum required version of CMake. As a rule of thumb, you should set this to the version you have installed, but refer to [this](https://cliutils.gitlab.io/modern-cmake/chapters/intro/dodonot.html) for more information.
     ```cmake
-    cmake_minimum_required(VERSION 3.20.1)
+    cmake_minimum_required(VERSION 3.24)
     ```
 
 2. Set the project's name to `sample-project` and the language to C++. You can replace `sample-project` with your project's name, e.g., `my-awesome-project`.
@@ -403,8 +403,8 @@ target_link_libraries(
 Here is the final `CMakeLists.txt` with the `cli` library added.
 
 ```cmake
-# Set minimum required version of CMake (3.20.1 properly supports Apple Silicon)
-cmake_minimum_required(VERSION 3.20.1)
+# Set minimum required version of CMake
+cmake_minimum_required(VERSION 3.24)
 
 # Set project name and language
 project(
