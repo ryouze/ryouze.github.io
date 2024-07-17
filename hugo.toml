@@ -31,7 +31,7 @@ enableGitInfo = true
 
   # Misc
   ## SEO
-  metaKeywords = ["ryouze", "github", "tutorial", "blog"]
+  metaKeywords = ["ryouze", "github", "tutorial", "blog", "c++", "python"]
 
 
 [menu]
@@ -66,5 +66,5 @@ enableGitInfo = true
 [markup]
   [markup.tableOfContents]
     startLevel = 1
-    endLevel = 3
+    endLevel = 4
     ordered = false
