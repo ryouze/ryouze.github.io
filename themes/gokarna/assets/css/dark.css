@@ -28,12 +28,12 @@ a:hover .feather-moon {
   color: white;
 }
 
-.gk-social-icons-list .social-icon,
-.gk-social-icons-list .social-icon a:visited  {
+.social-gokarna-icons-list .social-icon,
+.social-gokarna-icons-list .social-icon a:visited {
   fill: var(--dark-text-color);
 }
 
-.gk-social-icons-list .social-icon a:hover {
+.social-gokarna-icons-list .social-icon a:hover {
   fill: var(--accent-color);
 }
 
