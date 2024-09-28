@@ -108,10 +108,14 @@ Add the following to `lib.cpp`.
 
 #include <string>  // for std::string
 
-std::string lib::get_hello_world()
+namespace lib {
+
+std::string get_hello_world()
 {
     return "Hello World!";
 }
+
+}  // namespace lib
 ```
 
 
