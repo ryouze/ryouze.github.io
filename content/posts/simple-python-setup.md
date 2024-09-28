@@ -207,7 +207,10 @@ Add the following to `src/io/disk.py`.
 from src.core import config
 
 
-def write_to_disk(file_path: str, data: str) -> None:
+def write_to_disk(
+    file_path: str,
+    data: str,
+) -> None:
     with open(file_path, mode="w", encoding="utf-8") as f:
         if config.verbose:
             print(f"Writing data to '{file_path}'")
