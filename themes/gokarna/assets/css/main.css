@@ -420,14 +420,14 @@ table td {
   text-align: center;
 }
 
-.social-icons .social-icons-list {
+.social-icons .gk-social-icons-list {
   display: inline-block;
   list-style-type: none;
   padding: 0;
   text-align: center;
 }
 
-.social-icons-list .social-icon {
+.gk-social-icons-list .social-icon {
   box-sizing: border-box;
   display: inline-block;
   fill: var(--light-text-color);
@@ -673,7 +673,7 @@ table td {
 }
 
 .arrow-logo:hover {
-  fill:  var(--accent-color); 
+  fill:  var(--accent-color);
 }
 
 @media screen and (max-width: 600px) {
