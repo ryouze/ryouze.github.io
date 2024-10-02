@@ -1,6 +1,8 @@
-# ryouze.net
+# ryouze.github.io
 
-ryouze.net is a personal website built using [Hugo](https://gohugo.io/).
+[![Deploy Hugo site to Pages](https://github.com/ryouze/ryouze.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/ryouze/ryouze.github.io/actions/workflows/hugo.yml)
+
+ryouze.github.io is a personal website built using [Hugo](https://gohugo.io/).
 
 The website is hosted on [GitHub Pages](https://pages.github.com/) and is accessible at the custom domain [ryouze.net](https://ryouze.net/).
 
