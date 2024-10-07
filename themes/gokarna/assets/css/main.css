@@ -138,7 +138,6 @@ img {
 .header a {
   text-decoration: none;
 }
-
 .header .header-nav {
   height: 50px;
   margin-top: 0;
@@ -150,7 +149,6 @@ img {
   height: 100%;
   margin-left: 15px;
 }
-
 .header-nav .avatar img {
   border-radius: 100%;
   display: block;
@@ -159,59 +157,49 @@ img {
   overflow: hidden;
   width: 38px;
 }
-
 .header-nav .nav-title {
   display: inline-block;
   height: 100%;
   line-height: 50px;
   padding-left: 15px;
 }
-
 .nav-title a {
   height: 50px;
 }
-
 .header-nav .nav-links {
   float: right;
   line-height: 50px;
   margin-right: 10px;
 }
-
 .nav-links .nav-link {
   display: inline-block;
   padding: 0 2px;
 }
-
 .nav-links .nav-link a {
   display: block;
   padding: 0 6px;
 }
-
 .nav-link a svg {
   height: 20px;
   margin: -3px auto;
   stroke-width: 2;
   width: 20px;
 }
-
 .nav-item a svg {
   height: 20px;
   margin: -3px auto;
   stroke-width: 2;
   width: 20px;
 }
-
 .nav-links .nav-link.icon a {
   padding: 0 8px;
 }
-
 .nav-links .nav-icons-divider {
   border-color: inherit;
   border-left: 1.5px solid;
   color: var(--light-secondary-color);
   margin: 0 10px;
 }
-
 .nav-links .dark-theme-toggle:hover {
   cursor: pointer;
 }
@@ -227,18 +215,15 @@ a:hover .feather-sun {
   stroke-linejoin: round;
   width: 22px;
 }
-
 #hamburger-menu-toggle {
   display: none;
 }
-
 #hamburger-menu-toggle .feather {
   height: 24px;
   stroke-linecap: round;
   stroke-linejoin: round;
   width: 24px;
 }
-
 .nav-hamburger-list {
   background: rgb(var(--light-primary-color));
   border-bottom: solid 1.5px var(--light-secondary-color);
@@ -252,7 +237,6 @@ a:hover .feather-sun {
   width: 100%;
   z-index: 5;
 }
-
 .nav-hamburger-list a:hover {
   text-decoration: underline;
 }
@@ -297,7 +281,6 @@ a:hover .feather-sun {
   list-style-type: none;
   padding: 0;
 }
-
 .post-tags .post-tag {
   border: 1.5px solid;
   border-radius: 4px;
@@ -306,12 +289,10 @@ a:hover .feather-sun {
   display: inline-block;
   font-size: 14px;
 }
-
 .post-tags .post-tag:hover {
   background-color: var(--light-text-color);
   color: rgb(var(--light-primary-color));
 }
-
 .post-tag a {
   color: inherit;
   display: block;
@@ -435,18 +416,18 @@ table td {
   font-size: 2em;
 }
 
-.social-icons {
+.gk-social-icons {
   text-align: center;
 }
 
-.social-icons .social-gokarna-icons-list {
+.gk-social-icons .gk-social-icons-list {
   display: inline-block;
   list-style-type: none;
   padding: 0;
   text-align: center;
 }
 
-.social-gokarna-icons-list .social-icon {
+.gk-social-icons-list .gk-social-icon {
   box-sizing: border-box;
   display: inline-block;
   fill: var(--light-text-color);
@@ -455,7 +436,7 @@ table td {
   width: 24px;
 }
 
-.social-icon a svg path {
+.gk-social-icon a svg path {
   transition: fill 0.15s ease;
 }
 
@@ -476,51 +457,36 @@ table td {
   font-size: 1.1em;
   font-style: italic;
 }
-
 .post {
   /* Prevent long strings from overflowing */
   overflow-wrap: break-word;
 }
-
-.post .post-date,
-.prev-post-date,
-.next-post-date {
+.post .post-date, .prev-post-date, .next-post-date {
   color: gray;
 }
-
 .post .post-content {
   line-height: 1.7;
   margin-top: 50px;
   letter-spacing: 0.5px;
 }
-
-.post-content h1,
-.post-content h2,
-.post-content h3,
-.post-content h4 {
+.post-content h1, .post-content h2, .post-content h3, .post-content h4 {
   scroll-margin-top: 55px;
 }
-
 .post-content h1 {
   margin-top: 40px;
 }
-
 .post-content h2 {
   margin-top: 35px;
 }
-
 .post-content h3 {
   margin-top: 30px;
 }
-
 .post-content h4 {
   margin-top: 25px;
 }
-
 .post-content h5 {
   margin-top: 20px;
 }
-
 .post-content img {
   display: block;
   margin-left: auto;
@@ -531,24 +497,19 @@ table td {
 .list-posts .list-title {
   text-align: center;
 }
-
 .list-posts .posts-year {
   margin-top: 70px;
 }
-
 .list-posts .post-title {
   margin: 18px 0 0 15px;
 }
-
 .list-posts a {
   text-decoration: none;
 }
-
 .post-title .post-link,
 .post-title .post-date {
   display: inline-block;
 }
-
 .post-title .post-link {
   /* This magic number is the largest width that keeps the post-date div from
    *  causing the line to wrap with the longest possible date string
@@ -556,29 +517,23 @@ table td {
    */
   width: 73%;
 }
-
 .tags-list .post-tags {
   margin-top: 50px;
 }
-
 .tags-list .post-tags .post-tag {
   margin: 2px 5px;
   padding: 0;
 }
-
 .tags-list .post-tags .post-tag a {
   border-radius: inherit;
   padding: 0;
 }
-
 .tags-list .post-tags .post-tag a div {
   display: inline-block;
 }
-
 .tags-list .post-tags .post-tag a .tag-name {
   padding: 5px 8px;
 }
-
 .tags-list .post-tags .post-tag a .tag-posts-count {
   background-color: var(--light-secondary-color);
   border-radius: inherit;
@@ -588,7 +543,6 @@ table td {
   position: relative;
   z-index: 0;
 }
-
 .tags-list .post-tags .post-tag:hover a .tag-posts-count {
   background-color: var(--light-text-color);
   color: rgb(var(--light-primary-color));
@@ -635,8 +589,7 @@ table td {
     width: auto;
   }
 
-  .markdown-content,
-  .home-posts {
+  .markdown-content, .home-posts {
     width: auto;
     margin: 0;
   }
@@ -650,7 +603,7 @@ table td {
   }
 
   #toc {
-    display: none;
+    display:none;
   }
 
   .list-posts {
@@ -693,8 +646,7 @@ table td {
   text-align: right;
 }
 
-.prev-post,
-.next-post {
+.prev-post, .next-post {
   max-width: 33%;
 }
 
@@ -716,16 +668,16 @@ table td {
   height: 25px;
 }
 
-.arrow-logo path {
+.arrow-logo path{
   fill: var(--light-secondary-color)
 }
 
 .arrow-logo:hover {
-  fill: var(--accent-color);
+  fill:  var(--accent-color);
 }
 
 @media screen and (max-width: 600px) {
   #btt-button {
-    visibility: hidden;
+      visibility: hidden;
   }
 }
