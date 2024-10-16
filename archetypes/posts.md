@@ -1,9 +1,12 @@
 +++
 date = {{ .Date }}
 title = "{{ replace .File.ContentBaseName "-" " " | title }}"
-type = "page"
+description = "Short description"
+tags = ["tag"]
+type = "post"
+showTableOfContents = true
 +++
 
 ## Introduction
 
-This is my page.
+This is my post.
