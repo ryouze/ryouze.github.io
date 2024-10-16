@@ -58,7 +58,6 @@ enableGitInfo = true
     url = "/posts/"
     weight = 3
 
-
   [[menu.main]]
     name = "Github"
     pre = "<span data-feather='github'></span>"
@@ -67,6 +66,7 @@ enableGitInfo = true
 
     [menu.main.params]
       newPage = true
+
 
 [markup]
   [markup.tableOfContents]
