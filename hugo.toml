@@ -36,7 +36,7 @@ enableGitInfo = true
 
   # Misc
   ## SEO
-  metaKeywords = ["ryouze", "github", "tutorial", "blog", "c++", "python"]
+  metaKeywords = ["ryouze", "GitHub", "Tutorial", "Programming", "Blog", "C++", "Python", "macOS", "GNU/Linux"]
 
 
 [menu]
