@@ -155,14 +155,14 @@ if(APPLE)
 
     # Copy all frameworks into the app bundle
     add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-        COMMAND rsync -a ${CMAKE_BINARY_DIR}/_deps/sfml-src/extlibs/libs-osx/Frameworks/
+        COMMAND rsync -a ${SFML_SOURCE_DIR}/extlibs/libs-osx/Frameworks/
             $<TARGET_BUNDLE_DIR:${PROJECT_NAME}>/Contents/Frameworks/
         COMMENT "Copying all SFML frameworks into the app bundle"
     )
 
     # # Copy only the SFML freetype framework into the app bundle
     # add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-    #     COMMAND rsync -a ${CMAKE_BINARY_DIR}/_deps/sfml-src/extlibs/libs-osx/Frameworks/freetype.framework
+    #     COMMAND rsync -a ${SFML_SOURCE_DIR}/extlibs/libs-osx/Frameworks/freetype.framework
     #         $<TARGET_BUNDLE_DIR:${PROJECT_NAME}>/Contents/Frameworks/
     #     COMMENT "Copying SFML freetype framework into the app bundle"
     # )
@@ -249,14 +249,14 @@ We added a conditional block that checks if the platform is macOS. If it is, we 
 ```cmake
 # Copy all frameworks into the app bundle
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-    COMMAND rsync -a ${CMAKE_BINARY_DIR}/_deps/sfml-src/extlibs/libs-osx/Frameworks/
+    COMMAND rsync -a ${SFML_SOURCE_DIR}/extlibs/libs-osx/Frameworks/
         $<TARGET_BUNDLE_DIR:${PROJECT_NAME}>/Contents/Frameworks/
     COMMENT "Copying all SFML frameworks into the app bundle"
 )
 
 # # Copy only the SFML freetype framework into the app bundle
 # add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-#     COMMAND rsync -a ${CMAKE_BINARY_DIR}/_deps/sfml-src/extlibs/libs-osx/Frameworks/freetype.framework
+#     COMMAND rsync -a ${SFML_SOURCE_DIR}/extlibs/libs-osx/Frameworks/freetype.framework
 #         $<TARGET_BUNDLE_DIR:${PROJECT_NAME}>/Contents/Frameworks/
 #     COMMENT "Copying SFML freetype framework into the app bundle"
 # )
@@ -265,14 +265,14 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
 ```cmake
 # # Copy all frameworks into the app bundle
 # add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-#     COMMAND rsync -a ${CMAKE_BINARY_DIR}/_deps/sfml-src/extlibs/libs-osx/Frameworks/
+#     COMMAND rsync -a ${SFML_SOURCE_DIR}/extlibs/libs-osx/Frameworks/
 #         $<TARGET_BUNDLE_DIR:${PROJECT_NAME}>/Contents/Frameworks/
 #     COMMENT "Copying all SFML frameworks into the app bundle"
 # )
 
 # Copy only the SFML freetype framework into the app bundle
 add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
-    COMMAND rsync -a ${CMAKE_BINARY_DIR}/_deps/sfml-src/extlibs/libs-osx/Frameworks/freetype.framework
+    COMMAND rsync -a ${SFML_SOURCE_DIR}/extlibs/libs-osx/Frameworks/freetype.framework
         $<TARGET_BUNDLE_DIR:${PROJECT_NAME}>/Contents/Frameworks/
     COMMENT "Copying SFML freetype framework into the app bundle"
 )
