@@ -13,7 +13,7 @@ The [CMake SFML Project Template](https://github.com/SFML/cmake-sfml-project) is
 
 For simple command-line applications that are linked statically (`set(BUILD_SHARED_LIBS OFF)`), you can use `install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})` to make the app install to `/usr/local/bin` with `sudo cmake --install .`. Unfortunately, if you install a SFML app this way, it will complain about missing dynamically-linked dependencies, such as [FreeType](https://freetype.org/). Moreover, the app must be started from the command line, which is not user-friendly.
 
-GUI apps are typically distributed as an app bundle that users can drag and drop into their `Applications` folder. App bundles are directories with a `.app` extension that contain the app's executable, resources, and metadata. For example, your SFML `example.app` app bundle might look like this:
+GUI apps are typically distributed as an app bundle that users can drag and drop into their `Applications` folder. App bundles are directories with a `.app` extension that contain the app's executable, resources, and metadata. For example, your SFML `CMakeSFMLProject.app` app bundle might look like this:
 
 ```sh
 [/Applications] $ tree -l CMakeSFMLProject.app/
@@ -61,7 +61,7 @@ Follow these steps to download the project template.
     ```
 
 
-## Modify the CMakeLists.txt File
+### Modify the CMakeLists.txt File
 
 We only need to make a few changes to the `CMakeLists.txt` file to package the app as an app bundle.
 
@@ -279,7 +279,7 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
 ```
 
 
-## Building the App Bundle
+### Building the App Bundle
 
 Follow these steps to build the project:
 
@@ -338,7 +338,7 @@ open bin/CMakeSFMLProject.app
 ```
 
 
-## Installing the App Bundle
+### Installing the App Bundle
 
 To install the app bundle to `/Applications`, use the following command while in the `build` directory:
 
@@ -370,11 +370,258 @@ CMakeSFMLProject.app/
 
 As you can see, I only copied the freetype framework into the app bundle.
 
-TODO:
-- Add a section on how to create a DMG file for distribution.
-- Add building and packaging with GitHub Actions (already done, just need to fix caching).
+
+## Cross-platform CI/CD
+
+Building the app on your local machine is fine. However, Github Actions can build and package your app for macOS, GNU/Linux, and Windows, all at the same time. Setting up a CI/CD pipeline is pretty easy if you're already using a cross-platform build system like CMake.
+
+The CMake SFML Project Template already includes a simple `.github/workflows/ci.yml` file, but we can extend it a bit.
+
+Original `.github/workflows/ci.yml`:
+
+```yml
+name: CI
+
+on: [push, pull_request]
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    name: ${{ matrix.platform.name }} ${{ matrix.config.name }}
+    runs-on: ${{ matrix.platform.os }}
+
+    strategy:
+      fail-fast: false
+      matrix:
+        platform:
+        - { name: Windows VS2019, os: windows-2019  }
+        - { name: Windows VS2022, os: windows-2022  }
+        - { name: Linux GCC,      os: ubuntu-latest }
+        - { name: Linux Clang,    os: ubuntu-latest, flags: -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ }
+        - { name: macOS,          os: macos-latest  }
+        config:
+        - { name: Shared, flags: -DBUILD_SHARED_LIBS=TRUE }
+        - { name: Static, flags: -DBUILD_SHARED_LIBS=FALSE }
+
+    steps:
+    - name: Install Linux Dependencies
+      if: runner.os == 'Linux'
+      run: sudo apt-get update && sudo apt-get install libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev
+
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Configure
+      run: cmake -B build ${{matrix.platform.flags}} ${{matrix.config.flags}}
+
+    - name: Build
+      run: cmake --build build --config Release
+```
+
+Modified `.github/workflows/ci.yml`:
+
+```yml
+# This starter workflow is for a CMake project running on multiple platforms. There is a different starter workflow if you just want a single platform.
+# See: https://github.com/actions/starter-workflows/blob/main/ci/cmake-single-platform.yml
+name: CI
+
+on:
+  push:
+    paths-ignore:
+      - "LICENSE"
+      - "README.md"
+  pull_request:
+    paths-ignore:
+      - "LICENSE"
+      - "README.md"
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      # If true, cancel the workflow run if any matrix job fails.
+      # If false, continue to run the workflow and complete all matrix jobs, even if one or more jobs fail.
+      fail-fast: false
+
+      matrix:
+        include:
+          - os: macos-latest
+            build_type: Release
+            # c_compiler: clang
+            cpp_compiler: clang++
+          - os: ubuntu-latest
+            build_type: Release
+            # c_compiler: gcc
+            cpp_compiler: g++
+          - os: windows-latest
+            build_type: Release
+            # c_compiler: cl
+            cpp_compiler: cl
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set reusable strings
+      # Turn repeated input strings (such as the build output directory) into step outputs. These step outputs can be used throughout the workflow file.
+      id: strings
+      shell: bash
+      run: |
+        echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
+        echo "build-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
+
+    - name: Cache CMake build directory
+      uses: actions/cache@v4
+      with:
+        path: ${{ steps.strings.outputs.build-dir }}
+        key: ${{ runner.os }}-build-${{ hashFiles('CMakeLists.txt') }}-${{ hashFiles('cmake/**') }}
+        restore-keys: |
+          ${{ runner.os }}-build-
+
+    - name: Install GNU/Linux dependencies
+      if: runner.os == 'Linux'
+      run: sudo apt-get update && sudo apt-get install libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev
+
+    - name: Configure CMake
+      # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+      # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+      # Set "-DCMAKE_C_COMPILER=${{ matrix.c_compiler }}" for C/C++ projects, otherwise use CXX for C++ only projects.
+      run: >
+        cmake -B ${{ steps.strings.outputs.build-output-dir }}
+        -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }}
+        -DCMAKE_BUILD_TYPE=${{ matrix.build_type }}
+        -S ${{ github.workspace }}
+
+    - name: Build
+      # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
+      run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config ${{ matrix.build_type }}
+```
+
+I have based my CI setup on the [CMake multi-platform starter](https://github.com/actions/starter-workflows/blob/main/ci/cmake-multi-platform.yml) workflow. I have also added caching for the `build` directory, as we're building SFML from source, which normally takes ages. I also removed the `BUILD_SHARED_LIBS` option, compile flags and other stuff that I'd typically set in the `CMakeLists.txt` file (refer to [Final Thoughts](#final-thoughts) for a working example).
+
+Now let's create a release action that will package the app bundle for all platforms - `.github/workflows/release.yml`.
+
+```yml
+name: Release
+
+on:
+  release:
+    types: [created]
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-upload:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      # If true, cancel the workflow run if any matrix job fails.
+      # If false, continue to run the workflow and complete all matrix jobs, even if one or more jobs fail.
+      fail-fast: true
+
+      matrix:
+        include:
+          - os: macos-latest
+            # c_compiler: clang
+            cpp_compiler: clang++
+            input_name: bin/CMakeSFMLProject.app
+            output_name: CMakeSFMLProject-macos-arm64.app
+            archive_name: CMakeSFMLProject-macos-arm64.tar.gz
+            archive_type: tar
+          - os: ubuntu-latest
+            # c_compiler: gcc
+            cpp_compiler: g++
+            input_name: bin/CMakeSFMLProject
+            output_name: CMakeSFMLProject-linux-x86_64
+            archive_name: CMakeSFMLProject-linux-x86_64.tar.gz
+            archive_type: tar
+          - os: windows-latest
+            # c_compiler: cl
+            cpp_compiler: cl
+            input_name: bin/Release/CMakeSFMLProject.exe
+            output_name: CMakeSFMLProject-windows-x86_64.exe
+            archive_name: CMakeSFMLProject-windows-x86_64.zip
+            archive_type: zip
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set reusable strings
+        # Turn repeated input strings (such as the build output directory) into step outputs. These step outputs can be used throughout the workflow file.
+        id: strings
+        shell: bash
+        run: |
+          echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
+          echo "deps-dir=${{ github.workspace }}/deps" >> "$GITHUB_OUTPUT"
+
+      - name: Cache dependencies
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.strings.outputs.deps-dir }}
+          key: ${{ runner.os }}-deps-${{ hashFiles('CMakeLists.txt') }}-${{ hashFiles('cmake/**') }}
+          restore-keys: |
+            ${{ runner.os }}-deps-
+
+      - name: Install GNU/Linux dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev
+
+      - name: Configure CMake
+        # Configure CMake in a 'build' subdirectory. `CMAKE_BUILD_TYPE` is only required if you are using a single-configuration generator such as make.
+        # See https://cmake.org/cmake/help/latest/variable/CMAKE_BUILD_TYPE.html?highlight=cmake_build_type
+        # Set the project version to the tag name instead of git commit.
+        # Set "-DCMAKE_C_COMPILER=${{ matrix.c_compiler }}" for C/C++ projects, otherwise use CXX for C++ only projects.
+        run: >
+          cmake -B ${{ steps.strings.outputs.build-output-dir }}
+          -DCMAKE_CXX_COMPILER=${{ matrix.cpp_compiler }}
+          -DCMAKE_BUILD_TYPE=Release
+          -DPROJECT_VERSION="${{ github.ref_name }}"
+          -S ${{ github.workspace }}
+
+      - name: Build
+        # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
+        run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config Release
+
+      - name: Rename binary
+        # Rename the binary to match the platform, otherwise the binaries will overwrite each other.
+        working-directory: ${{ steps.strings.outputs.build-output-dir }}
+        shell: bash
+        run: |
+          echo "Renaming '${{ matrix.input_name }}' to '${{ matrix.output_name }}'"
+          mv "${{ matrix.input_name }}" "${{ matrix.output_name }}"
+
+      - name: Archive binary
+        uses: thedoctor0/zip-release@0.7.6
+        with:
+          type: ${{ matrix.archive_type }}
+          filename: "${{ matrix.archive_name }}"
+          directory: ${{ steps.strings.outputs.build-output-dir }}
+          path: ${{ matrix.output_name }}
+
+      - name: Release
+        # Upload the binary to the release page.
+        uses: softprops/action-gh-release@v2
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: ${{ steps.strings.outputs.build-output-dir }}/${{ matrix.archive_name }}
+```
+
+This workflow will build the app, rename it to append the platform name and architecture, then archive it and upload it to the release page. I have hardcoded the names, because inferring them from the project name is a bit complicated for something you only need to setup once.
+
+To trigger it, go to your project's releases page and click `Draft a new release`. Then, create a new git tag (e.g., `v0.0.1`) and click `Publish release`. The workflow will start automatically, and the packaged binaries for macOS, GNU/Linux and Windows will be uploaded automatically.
+
+Notably, the app bundle for macOS must be a `.tar.gz` archive, because the `.zip` archive will not preserve the symlinks in the app bundle. Instead, each symlink will become a copy, resulting in a bloated app bundle (for `freetype`, this is around +5 MB of useless copies).
+
+<!-- TODO:
+- Add a section on how to create a DMG file for distribution. -->
 
 
 ## Final Thoughts
 
 Packaging an SFML app as an app bundle on macOS is relatively straightforward. You just need to copy the necessary frameworks into the app bundle.
+
+If you want to see a working example, check out my [aegyo](https://github.com/ryouze/aegyo) project. It's cross-platform SFML app for learning Korean Hangul.
