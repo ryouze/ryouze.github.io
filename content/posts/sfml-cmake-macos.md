@@ -471,12 +471,11 @@ jobs:
       shell: bash
       run: |
         echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
-        echo "build-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
 
     - name: Cache CMake build directory
       uses: actions/cache@v4
       with:
-        path: ${{ steps.strings.outputs.build-dir }}
+        path: ${{ steps.strings.outputs.build-output-dir }}
         key: ${{ runner.os }}-build-${{ hashFiles('CMakeLists.txt') }}-${{ hashFiles('cmake/**') }}
         restore-keys: |
           ${{ runner.os }}-build-
@@ -556,15 +555,14 @@ jobs:
         shell: bash
         run: |
           echo "build-output-dir=${{ github.workspace }}/build" >> "$GITHUB_OUTPUT"
-          echo "deps-dir=${{ github.workspace }}/deps" >> "$GITHUB_OUTPUT"
 
-      - name: Cache dependencies
+      - name: Cache CMake build directory
         uses: actions/cache@v4
         with:
-          path: ${{ steps.strings.outputs.deps-dir }}
-          key: ${{ runner.os }}-deps-${{ hashFiles('CMakeLists.txt') }}-${{ hashFiles('cmake/**') }}
+          path: ${{ steps.strings.outputs.build-output-dir }}
+          key: ${{ runner.os }}-build-${{ hashFiles('CMakeLists.txt') }}-${{ hashFiles('cmake/**') }}
           restore-keys: |
-            ${{ runner.os }}-deps-
+            ${{ runner.os }}-build-
 
       - name: Install GNU/Linux dependencies
         if: runner.os == 'Linux'
