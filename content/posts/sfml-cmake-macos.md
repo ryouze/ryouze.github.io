@@ -430,10 +430,14 @@ name: CI
 
 on:
   push:
+    branches:
+      - main
     paths-ignore:
       - "LICENSE"
       - "README.md"
   pull_request:
+    branches:
+      - main
     paths-ignore:
       - "LICENSE"
       - "README.md"
