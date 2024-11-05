@@ -259,7 +259,7 @@ Now let's go step by step through the `CMakeLists.txt`.
     )
     ```
 
-7. Allow including headers relative to the `src` directory. This allows includes to be relative to the `src` directory instead of the `.cpp` file. For example, if you wanted to include `src/core/header.hpp` inside `src/utils/string.cpp`, you'd write `#include "core/header.hpp"` (relative to `src`) instead of `#include "../core/header.hpp"` (relative to `src/utils/string.cpp`).
+7. Allow including headers relative to the `src` directory. This allows includes to be relative to the `src` directory instead of the `.cpp` file. For example, if you wanted to include `src/core/header.hpp` inside `src/utils/string.cpp`, you'd write `#include "core/header.hpp"` (relative to `src`) instead of `#include "../core/header.hpp"` (relative to `src/utils/string.cpp`). Normally, you'd use it to include headers from a different directory, e.g., `root/include/myapp`, but I prefer to keep everything in the `src` directory. It's a matter of preference, *unless* you're creating a library, in which case you should put the headers in a separate directory.
     ```cmake
     target_include_directories(${PROJECT_NAME} PRIVATE src)
     ```
