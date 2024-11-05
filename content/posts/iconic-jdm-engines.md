@@ -25,7 +25,7 @@ P.S. If you find any mistakes, please send me an e-mail or open an issue on [Git
 - **Tuning Considerations:** Handles the demands of drifting well without significant modifications. Regular maintenance is advised due to high-revving use, especially checking the condition of piston rings and valves to ensure stability under stress.
 - **Cars:** Toyota AE86 Corolla (1983–1987).
 - **Cars' Cost**: Original: $11,000, Adjusted: $32,000 / 128,000 PLN (2024).
-- **Popularity:** The AE86, powered by the 4A-GE, became a drifting legend after its prominent role in the anime and manga series *Initial D*. Its balanced chassis and responsiveness make it a favorite in the drift scene.
+- **Popularity:** The AE86, powered by the 4A-GE, became a drifting legend after its prominent role in the anime and manga series *Initial D*. Known for its balanced chassis and responsiveness, it's often referred to as the "hachiroku" (Japanese for "86") and remains a favorite in the drift scene.
 
 #### Nissan SR20DET (1989–2002)
 
@@ -69,8 +69,7 @@ P.S. If you find any mistakes, please send me an e-mail or open an issue on [Git
 - **Tuning Considerations:** Designed to handle high RPMs but may require stronger rod bolts for sustained high-RPM use in drifting. Turbocharging can add the torque needed for drifting, though frequent oil checks are essential to avoid oil starvation at high revs.
 - **Cars:** Honda Civic (EG6) (1992–1995), Civic Type R (EK9) (1997–2000), Integra Type R (DC2) (1995–2001).
 - **Cars' Cost**: Original: $22,000, Adjusted: $42,000 / 168,000 PLN (2024).
-- **Popularity:** Featured in movies like *The Fast and the Furious* and games like *Need for Speed*, these engines are admired for tuning flexibility and performance in lightweight platforms, offering an affordable entry point into the drift scene.
-
+- **Popularity:** Featured in movies like *The Fast and the Furious* and games like *Need for Speed*, these engines are admired for tuning flexibility and performance in lightweight platforms, offering an affordable entry point into the drift scene. There is a running joke that Civic owners remove the muffler for a "free extra 10 hp", often disturbing neighborhoods at 3 A.M.
 
 ### 1990s
 
@@ -89,9 +88,7 @@ P.S. If you find any mistakes, please send me an e-mail or open an issue on [Git
 
 - **Specs:** Flat-four, 2.0L (EJ20) or 2.5L (EJ25), turbocharged.
 - **Stock Power:** EJ20T – approximately 280 PS (276 hp) at 6,000 RPM; torque around 350 Nm at 4,000 RPM.
-- **Fuel Consumption
-
-:** 11–13 L/100 km.
+- **Fuel Consumption:** 11–13 L/100 km.
 - **Stock Reliability:** Generally reliable but notorious for head gasket issues, especially under high boost. Regular maintenance is crucial.
 - **Tuning Considerations:** The AWD setup offers unique drifting capabilities, but upgraded internals and careful tuning are necessary for high-power applications. Using aftermarket head gaskets and studs is recommended, along with an oil cooler to handle increased load and heat.
 - **Cars:** Subaru Impreza WRX GC8 (1992–2000), WRX STI GC8 (1994–2000).
@@ -107,7 +104,7 @@ P.S. If you find any mistakes, please send me an e-mail or open an issue on [Git
 - **Tuning Considerations:** Capable of handling 500+ hp on stock internals. Regular timing belt checks and replacements are crucial for preventing catastrophic failure at higher power levels. Regular maintenance and cooling upgrades are advised for sustained high-power drifting.
 - **Cars:** Toyota Supra MKIV (A80) (1993–2002), Toyota Aristo (1991–1997).
 - **Cars' Cost**: Original: $45,000, Adjusted: $92,000 / 369,000 PLN (2024).
-- **Popularity:** The Supra MKIV became a cultural icon after featuring in *The Fast and the Furious* movies and the *Gran Turismo* game series. The 2JZ is commonly swapped into platforms like the Nissan Silvia and BMW E46 for its immense tuning potential. A common joke in the car community is that the Supra comes with 1,000 hp straight from the factory.
+- **Popularity:** The Supra MKIV became a cultural icon after featuring in *The Fast and the Furious* movies and the *Gran Turismo* game series. The 2JZ is commonly swapped into platforms like the Nissan Silvia and BMW E46 for its immense tuning potential. The joke that "Supras come with 1,000 hp stock" has become so widespread that it’s practically a meme in the car community.
 
 #### Toyota 1JZ-GTE (1991–2001)
 
