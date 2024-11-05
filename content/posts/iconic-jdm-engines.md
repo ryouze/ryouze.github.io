@@ -2,7 +2,7 @@
 date = 2024-11-04T22:55:00+01:00
 title = "An Introduction to Iconic JDM Engines (2JZ GTE, SR20DET, and More)"
 description = "A quick overview of popular JDM engines, with a focus on the European drift scene."
-tags = ["cars", "jdm", "car engines", "japan", "guide", "drifting"]
+tags = ["cars", "car", "jdm", "car engines", "japan", "guide", "drift"]
 type = "post"
 showTableOfContents = true
 +++
