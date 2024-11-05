@@ -1,7 +1,7 @@
 +++
 date = 2024-11-04T22:55:00+01:00
 title = "An Introduction to Iconic JDM Engines"
-description = "Personal notes/guide on iconic JDM engines like the 2JZ-GTE, SR20DET, and RB26DETT."
+description = "A quick overview of popular JDM engines, with a focus on the drift scene and video examples."
 tags = ["cars", "jdm", "car engines", "japan", "guide", "drifting"]
 type = "post"
 showTableOfContents = true
@@ -10,6 +10,9 @@ showTableOfContents = true
 ## Introduction
 
 Japanese Domestic Market (JDM) engines are legendary among car enthusiasts for their performance, reliability, and cultural impact—especially in the drift scene. These are my personal notes on some of the most iconic JDM engines, covering their specifications, reliability, and the cars they powered. Putting this together taught me a lot, and I hope it offers helpful insights for anyone diving into the world of JDM engines.
+
+P.S. If you find any mistakes, please send me an e-mail or open an issue on [GitHub](https://github.com/ryouze/ryouze.github.io).
+
 
 ### 1980–1985
 
@@ -64,18 +67,6 @@ Japanese Domestic Market (JDM) engines are legendary among car enthusiasts for t
 - **Cars:** Nissan Skyline GT-R R32 (1989–1994), R33 (1995–1998), R34 (1999–2002).
 - **Price Range:** $70,000–$90,000 today.
 - **Popularity:** Known as "Godzilla," the RB26DETT-powered Skyline GT-R gained fame through victories in motorsports and appearances in media like *The Fast and the Furious* franchise and the *Gran Turismo* game series. Its performance and tuning potential make it an icon in the drift scene.
-
-#### Mitsubishi 4G63T
-
-- **Specs:** Inline-four, 2.0L, turbocharged.
-- **Stock Power:** Approximately 250–280 PS (247–276 hp) at 6,500 RPM; torque around 309 Nm at 3,500 RPM.
-- **Fuel Consumption:** 12–13 L/100 km.
-- **Reliability:**
-  - **Stock:** Reliable with strong internals suitable for daily use.
-  - **Drifting:** Highly tunable and durable, but some models may experience crankwalk under heavy loads. Upgraded parts are recommended for long-term drifting.
-- **Cars:** Mitsubishi Lancer Evolution I–III (1992–1995), Galant VR-4 (1988–1992).
-- **Price Range:** $40,000–$50,000 today.
-- **Popularity:** The 4G63T-powered Lancer Evolutions gained recognition through rally championships and appearances in games like *Colin McRae Rally* and *Gran Turismo*. Their tuning potential and AWD capabilities make them versatile in the drift scene.
 
 #### Mazda 13B-REW
 
