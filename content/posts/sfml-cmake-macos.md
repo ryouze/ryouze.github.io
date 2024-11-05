@@ -5,7 +5,13 @@ description = "How to package a cross-platform C++ SFML app as an app bundle on 
 tags = ["tutorial", "cmake", "c++", "macos", "sfml"]
 type = "post"
 showTableOfContents = true
+image = "/images/sfml-cmake-macos-preview.webp"
 +++
+
+![Preview](/images/sfml-cmake-macos-preview.webp)
+
+> **DALL·E:** A young blonde Korean woman standing outdoors in trendy, casual clothing, holding a MacBook Air in her hands in a natural, comfortable position. She wears round, pastel gold-framed glasses. The lighting is natural and realistic, resembling a social media photo. The background is modern and natural, with bright lighting that highlights the playful and relaxed atmosphere.
+
 
 ## Introduction
 
