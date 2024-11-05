@@ -12,6 +12,7 @@ image = "/images/iconic-jdm-engines-preview.webp"
 
 > **DALL·E:** A detailed scene of a Nissan Silvia S14 drifting on a mountain road (touge), surrounded by lush, dense forest and steep rocky cliffs. The car is mid-drift with smoke trailing from the rear tires, capturing the dynamic motion of the drift. The Nissan Silvia S14 has a lowered stance, aggressive front bumper, and wide fenders, with headlights on and a slightly worn look for added realism. The mountain road is narrow and winding with a dramatic drop on one side, under soft sunlight filtering through the trees. The background shows layers of mountains with a misty, atmospheric effect.
 
+
 ## Introduction
 
 Japanese Domestic Market (JDM) engines are legendary among car enthusiasts for their performance, reliability, and cultural impact – especially in the drift scene. These are my personal notes on some of the most iconic JDM engines, covering their specifications, reliability, and the cars they powered. Putting this together taught me a lot, and I hope it offers helpful insights for anyone diving into the world of JDM engines.
