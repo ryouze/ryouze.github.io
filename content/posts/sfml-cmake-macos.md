@@ -12,6 +12,36 @@ image = "/images/sfml-cmake-macos-preview.webp"
 
 > **DALL·E:** A young blonde Korean woman standing outdoors in trendy, casual clothing, holding a MacBook Air in her hands in a natural, comfortable position. She wears round, pastel gold-framed glasses. The lighting is natural and realistic, resembling a social media photo. The background is modern and natural, with bright lighting that highlights the playful and relaxed atmosphere.
 
+## Note
+
+This guide is temporarily outdated since the release of SFML 3.
+
+In particular, the part about bundling frameworks is only applicable to SFML 2, as SFML 3 bundles all the required frameworks into the static library. It even bundles the audio on Windows, which was previously a separate DLL :heart:
+
+I will try to update this guide for SFML 3 once I finish my bullet-hell/shoot-em-up SFML game. However, as a workaround, you can probably scrap the following:
+
+```
+INSTALL_RPATH "@executable_path/../Frameworks"
+BUILD_WITH_INSTALL_RPATH TRUE
+
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E remove_directory $<TARGET_BUNDLE_DIR:${PROJECT_NAME}>/Contents/Frameworks
+  COMMAND ${CMAKE_COMMAND} -E make_directory $<TARGET_BUNDLE_DIR:${PROJECT_NAME}>/Contents/Frameworks
+  COMMENT "Cleaning Frameworks directory"
+)
+
+# Copy all frameworks into the app bundle
+add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+  COMMAND rsync -a ${SFML_SOURCE_DIR}/extlibs/libs-osx/Frameworks/
+      $<TARGET_BUNDLE_DIR:${PROJECT_NAME}>/Contents/Frameworks/
+  COMMENT "Copying all SFML frameworks into the app bundle"
+)
+```
+
+There is some difference in targets, e.g., `sfml-main` became `SFML::Main`.
+
+As mentioned earlier, I will get back to this once I finish my game. I added this note to help you out in the meantime.
+
 
 ## Introduction
 
@@ -506,7 +536,7 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
-      run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config ${{ matrix.build_type }}
+      run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config Release
 ```
 
 I have based my CI setup on the [CMake multi-platform starter](https://github.com/actions/starter-workflows/blob/main/ci/cmake-multi-platform.yml) workflow. I have also added caching for the `build` directory, as we're building SFML from source, which normally takes ages. I also removed the `BUILD_SHARED_LIBS` option, compile flags and other stuff that I'd typically set in the `CMakeLists.txt` file (refer to [Final Thoughts](#final-thoughts) for a working example).
@@ -595,7 +625,7 @@ jobs:
         run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config Release
 
       - name: Rename binary
-        # Rename the binary to match the platform, otherwise the binaries will overwrite each other.
+        # Rename the binary to match the platform.
         working-directory: ${{ steps.strings.outputs.build-output-dir }}
         shell: bash
         run: |
