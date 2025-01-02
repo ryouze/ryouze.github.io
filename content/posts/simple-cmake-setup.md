@@ -371,35 +371,19 @@ You should have the following directory structure.
     └── main.cpp
 ```
 
-Generate the build files using the `CMakeLists.txt` in the directory above with the `Debug` build type.
+Generate the build files using the `CMakeLists.txt` in the directory above with the `Debug` build type (while still in the `build` directory).
 
 ```sh
 cmake .. -DCMAKE_BUILD_TYPE=Debug
 ```
 
-Compile the project.
+Compile the project (while still in the `build` directory).
 
 ```sh
-make
+cmake --build . --parallel
 ```
 
-For significantly faster compilation times, use all available cores by passing the `-j` flag with the number of cores available on your system:
-
-```sh
-# macOS
-make -j$(sysctl -n hw.ncpu)
-```
-
-```sh
-# GNU/Linux
-make -j$(nproc)
-```
-```sh
-# 8-core CPU
-make -j8
-```
-
-Run the program.
+Run the program (while still in the `build` directory).
 
 ```sh
 ./myapp
@@ -418,10 +402,9 @@ Now let's go step by step through what you did.
     cmake .. -DCMAKE_BUILD_TYPE=Debug
     ```
 
-3. You used the generated build system to compile the project.
+3. You used the generated build system to compile the project. The `-parallel` flag is used to speed up the compilation process by utilizing multiple cores.
     ```sh
-    # 8-core CPU
-    make -j8
+    cmake --build . --parallel
     ```
 
 Once you have generated the build system, you don't need to run `cmake ..` again. You only need to run `make` to compile the project. The regeneration will only be required if you modify the `CMakeLists.txt` (e.g., add more source files).
