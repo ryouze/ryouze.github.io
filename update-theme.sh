@@ -16,8 +16,12 @@ cd themes/gokarna
 
 # Remove useless directories
 rm -rf .git
+rm -rf .github
 rm -rf exampleSite
 rm -rf images
+
+# Remove all the languages except English
+find i18n -type f ! -iname "en.toml" -delete
 
 # Remove useless files
 rm Containerfile
