@@ -331,7 +331,7 @@ Follow these steps to build the project:
     To compile the project, use the following command:
 
     ```sh
-    make -j
+    cmake --build . --parallel
     ```
 
 Now the app is compiled.
@@ -536,7 +536,7 @@ jobs:
 
     - name: Build
       # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
-      run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config Release
+      run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config Release --parallel
 ```
 
 I have based my CI setup on the [CMake multi-platform starter](https://github.com/actions/starter-workflows/blob/main/ci/cmake-multi-platform.yml) workflow. I have also added caching for the `build` directory, as we're building SFML from source, which normally takes ages. I also removed the `BUILD_SHARED_LIBS` option, compile flags and other stuff that I'd typically set in the `CMakeLists.txt` file (refer to [Final Thoughts](#final-thoughts) for a working example).
@@ -622,7 +622,7 @@ jobs:
 
       - name: Build
         # Build your program with the given configuration. Note that --config is needed because the default Windows generator is a multi-config generator (Visual Studio generator).
-        run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config Release
+        run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config Release --parallel
 
       - name: Rename binary
         # Rename the binary to match the platform.
