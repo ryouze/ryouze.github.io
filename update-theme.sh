@@ -14,17 +14,15 @@ git clone https://github.com/526avijitgupta/gokarna.git themes/gokarna
 # Go to themes/gokarna directory
 cd themes/gokarna
 
-# Remove the .git directory
+# Remove useless directories
 rm -rf .git
-
-# Remove exampleSite directory
 rm -rf exampleSite
-
-# Remove images directory
 rm -rf images
 
-# Remove README.md
+# Remove useless files
+rm Containerfile
 rm README.md
+rm requirements.txt
 
 # Remove screenshot.py
 rm screenshot.py
