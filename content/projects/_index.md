@@ -18,5 +18,4 @@ type = "page"
 ### Work
 
 - [prodis-opus19.github.io](https://github.com/prodis-opus19/prodis-opus19.github.io) - Project's website built using plain HTML and CSS.
-- `formants` - Collection of scripts to extract formants from audio files using TextGrids.
-- `model` - Collection of scripts to train a character-level GPT that predicts surprisal in Polish text.
+- `model` - Collection of scripts to train and predict surprisal using a phoneme-level GPT, with formant extraction and overlap detection.
