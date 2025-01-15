@@ -40,7 +40,7 @@ The project is organized as follows:
 
 This project has been tested on the following systems:
 
-- macOS 14.4 (Sonoma)
+- macOS 15.2 (Sonoma)
 
 Automated builds are performed on the latest versions of GNU/Linux.
 
