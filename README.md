@@ -24,16 +24,16 @@ I also included a manual theme update script (`update-theme.sh`), because I coul
 
 The project is organized as follows:
 
-- `.github`: Contains GitHub Actions workflows (for automatic rebuilds).
-- `archetypes`: Contains templates for new posts (e.g., title, date).
-- `assets`: Contains static assets (e.g., images).
-- `content`: Contains the actual content of the website (posts).
-- `data`: Contains configuration files (e.g., JSON, TOML, YAML).
-- `i18n`: Contains internationalization files for multilingual websites.
-- `layouts`: Contains templates for the website.
-- `public`: Contains the generated static files.
-- `static`: Contains static files (e.g., CSS, JavaScript).
-- `themes`: Contains the theme used by the website.
+- `.github`: GitHub Actions workflows (for automatic rebuilds).
+- `archetypes`: Templates for new posts (e.g., title, date).
+- `assets`: Static assets (e.g., images).
+- `content`: Actual content of the website (posts).
+- `data`: Configuration files (e.g., JSON, TOML, YAML).
+- `i18n`: Internationalization files for multilingual websites.
+- `layouts`: Templates for the website.
+- `public`: Generated static files.
+- `static`: Static files (e.g., CSS, JavaScript).
+- `themes`: Theme used by the website.
 
 
 ## Tested Systems
