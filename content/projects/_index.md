@@ -18,4 +18,4 @@ type = "page"
 ### Work
 
 - [prodis-opus19.github.io](https://github.com/prodis-opus19/prodis-opus19.github.io) - Project's website built using plain HTML and CSS.
-- `model` - Collection of scripts to train and predict surprisal using a phoneme-level GPT, with formant extraction and overlap detection.
+- `model` -  Collection of scripts to train and predict surprisal using a phoneme-level GPT model. It includes tools for formant extraction, overlap detection, and stress annotation, all integrated into a modular, multithreaded pipeline.
