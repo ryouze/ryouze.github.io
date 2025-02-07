@@ -24,8 +24,16 @@
 	{{ end }}
 
 	{{ if $displayDate }}
-          <p class="post-date">{{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date}}
-           {{ if lt .Date .Lastmod }} | Updated {{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Lastmod }}{{ end }}
+          <p class="post-date">
+              {{ if (eq .Site.Params.DisplayReadingTime true) }}
+                  {{ .ReadingTime }} min read |
+              {{ end }}
+
+              {{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Date }}
+
+              {{ if lt .Date .Lastmod }}
+                  | Updated {{ dateFormat (or .Site.Params.dateFormat "January 2, 2006") .Lastmod }}
+              {{ end }}
           </p>
 	{{ end }}
 
@@ -48,7 +56,7 @@
     </div>
 
     <div class="prev-next">
-        {{ if eq .Site.Params.TogglePreviousAndNextButtons "true" }}
+        {{ if (eq .Site.Params.TogglePreviousAndNextButtons true) }}
             {{ if or .PrevInSection .NextInSection }}
                 {{ partial "prev-next.html" . }}
             {{ end }}

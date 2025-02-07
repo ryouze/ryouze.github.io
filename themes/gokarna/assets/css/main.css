@@ -24,7 +24,7 @@ html {
   background-color: rgb(var(--light-primary-color));
   color: var(--light-text-color);
   font-family: "Lato", sans-serif;
-  font-size: 17.5px;
+  font-size: var(--font-size);
   min-height: 100%;
   position: relative;
   scroll-behavior: smooth;
@@ -444,7 +444,7 @@ table td {
   transition: fill 0.15s ease;
 }
 
-.markdown-content {
+.home-content {
   line-height: 1.25;
   width: 80%;
   margin: 0 auto;
@@ -593,7 +593,7 @@ table td {
     width: auto;
   }
 
-  .markdown-content, .home-posts {
+  .home-content, .home-posts {
     width: auto;
     margin: 0;
   }
