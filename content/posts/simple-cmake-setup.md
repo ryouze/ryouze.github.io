@@ -10,8 +10,6 @@ image = "/images/simple-cmake-setup-preview.webp"
 
 ![Preview](/images/simple-cmake-setup-preview.webp)
 
-> **DALL·E:** A frustrated man hitting a completely destroyed laptop with a hammer. The man has an intense expression, wearing casual clothing, in a simple office or home setting. The laptop on the desk is fully broken, with shattered pieces, cracks, and parts strewn across the desk. The hammer is mid-swing as if about to hit the laptop again. The scene conveys frustration or anger, with a few scattered papers and broken items on the desk for added realism. The background is minimalist, focusing on the man and the destroyed laptop.
-
 
 ## Introduction
 
