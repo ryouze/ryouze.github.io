@@ -32,4 +32,4 @@ After doing this, you should see a message saying:
 
 Perfect. Time to update from 15.2.
 
-![Loona Go Won GIF](/images/loona-go-won.gif)
+![Loona Go Won GIF](/videos/loona-go-won.gif)
