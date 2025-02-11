@@ -205,9 +205,11 @@ if(NOT MSVC)
 else()
   # MSVC
   target_compile_options(${PROJECT_NAME} PRIVATE
-    /W4     # Enable high warning level
-    /WX     # Treat warnings as errors
-    /utf-8  # Use UTF-8 encoding for source and execution
+    /W4              # Enable high warning level
+    /WX              # Treat warnings as errors
+    /utf-8           # Use UTF-8 encoding for source and execution
+    /permissive-     # Enforce strict C++ standard conformance
+    /Zc:__cplusplus  # Set __cplusplus macro to correct value
   )
 endif()
 
@@ -329,9 +331,11 @@ Now let's go step by step through the `CMakeLists.txt`.
     else()
       # MSVC
       target_compile_options(${PROJECT_NAME} PRIVATE
-        /W4     # Enable high warning level
-        /WX     # Treat warnings as errors
-        /utf-8  # Use UTF-8 encoding for source and execution
+        /W4              # Enable high warning level
+        /WX              # Treat warnings as errors
+        /utf-8           # Use UTF-8 encoding for source and execution
+        /permissive-     # Enforce strict C++ standard conformance
+        /Zc:__cplusplus  # Set __cplusplus macro to correct value
       )
     endif()
     ```
@@ -533,9 +537,11 @@ if(NOT MSVC)
 else()
   # MSVC
   target_compile_options(${PROJECT_NAME} PRIVATE
-    /W4     # Enable high warning level
-    /WX     # Treat warnings as errors
-    /utf-8  # Use UTF-8 encoding for source and execution
+    /W4              # Enable high warning level
+    /WX              # Treat warnings as errors
+    /utf-8           # Use UTF-8 encoding for source and execution
+    /permissive-     # Enforce strict C++ standard conformance
+    /Zc:__cplusplus  # Set __cplusplus macro to correct value
   )
 endif()
 
