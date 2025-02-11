@@ -2,7 +2,7 @@
 date = 2025-02-10T20:14:59+01:00
 title = "Block Apple Intelligence in macOS 15.3"
 description = "How to block Apple Intelligence from being enabled by default in macOS 15.3 (Sequoia)"
-tags = ["tutorial", "macos", "ai"]
+tags = ["Tutorial", "macOS", "AI"]
 type = "post"
 showTableOfContents = true
 image = "/images/block-apple-intelligence-preview.webp"

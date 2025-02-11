@@ -2,7 +2,7 @@
 date = 2024-10-16T16:33:00+02:00
 title = "Building C++ SFML App Bundles on macOS (CMake)"
 description = "How to package a cross-platform C++ SFML app as an app bundle on macOS using CMake"
-tags = ["tutorial", "cmake", "c++", "macos", "sfml"]
+tags = ["Tutorial", "CMake", "C++", "macOS", "SFML"]
 type = "post"
 showTableOfContents = true
 image = "/images/sfml-cmake-macos-preview.webp"

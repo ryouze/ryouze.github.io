@@ -2,7 +2,7 @@
 date = 2024-05-19T18:17:13+02:00
 title = "Simple C++ App Setup (CMake)"
 description = "How to setup a simple project for C++ apps"
-tags = ["tutorial", "cmake", "c++", "macos", "linux"]
+tags = ["Tutorial", "CMake", "C++", "macOS", "Linux"]
 type = "post"
 showTableOfContents = true
 image = "/images/simple-cmake-setup-preview.webp"
