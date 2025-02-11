@@ -14,7 +14,7 @@ image = "/images/block-apple-intelligence-preview.webp"
 
 With macOS 15.3, **Apple Intelligence is enabled by default**.
 
-If you’re not interested in beta-testing for free, there is a simple workaround to prevent it from being opt-out (at least for now).
+If you're not interested in beta-testing for free, there is a simple workaround to prevent it from being opt-out (at least for now).
 
 
 ## How to Disable Apple Intelligence
@@ -24,7 +24,7 @@ If you’re not interested in beta-testing for free, there is a simple workaroun
 1. Open **System Settings** > **Apple Intelligence & Siri**.
 2. **Enable Siri** (you can't change the language without enabling Siri first).
 3. Change the Siri language to **something other than your primary language**. Some regional variations (e.g., English (UK)) *may* work, but for extra safety, I chose **Korean**.
-4. (Optional) **Disable Siri** again if you don’t use it.
+4. (Optional) **Disable Siri** again if you don't use it.
 
 After doing this, you should see a message saying:
 
