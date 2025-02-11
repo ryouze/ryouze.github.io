@@ -411,14 +411,14 @@ Now let's go step by step through what you did.
     cmake --build . --parallel
     ```
 
-Once you have generated the build system, you don't need to run `cmake ..` again. You only need to run `make` to compile the project. The regeneration will only be required if you modify the `CMakeLists.txt` (e.g., add more source files).
+Once you have generated the build system, you don't need to run `cmake ..` again. You only need to run `cmake --build . --parallel` to compile the project. The regeneration will only be required if you modify the `CMakeLists.txt` (e.g., add more source files).
 
 
 ## Add 3rd Party Libraries
 
 If you want to add a 3rd party library, you can use `FetchContent` to download it during the configuration step. `FetchContent` is quite flexible and can even download a Git repository at a specific tag - refer to [this](https://www.foonathan.net/2022/06/cmake-fetchcontent/) for more information. [Git submodules](https://lchsk.com/how-to-use-git-submodules-and-cmake-to-install-c-libraries) are also quite convenient, but they are beyond the scope of this tutorial.
 
-The basic usage is as follows - you download a [3rd party library](https://github.com/daniele77/cli) and link it to your project. The `GIT_SHALLOW` option is used to download only the latest commit and not the entire history. The `EXCLUDE_FROM_ALL` option is used to exclude the library from the default build target, so that you don't have to build it every time you run `make`. The `SYSTEM` option is used to tell CMake that the library is a system library, which prevents compile warnings from being applied to it. You don't want to see warnings from 3rd party libraries, as they are out of your control.
+The basic usage is as follows - you download a [3rd party library](https://github.com/daniele77/cli) and link it to your project. The `GIT_SHALLOW` option is used to download only the latest commit and not the entire history. The `EXCLUDE_FROM_ALL` option is used to exclude the library from the default build target, so that you don't have to build it every time you run `cmake --build . --parallel`. The `SYSTEM` option is used to tell CMake that the library is a system library, which prevents compile warnings from being applied to it. You don't want to see warnings from 3rd party libraries, as they are out of your control.
 
 ```cmake
 include(FetchContent)
@@ -576,7 +576,7 @@ install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 message(STATUS "Build type: ${CMAKE_BUILD_TYPE}.")
 ```
 
-Once you run `mkdir build && cd build && cmake .. && make`, the final directory structure will look similar to this.
+Once you run `mkdir build && cd build && cmake .. && cmake --build . --parallel`, the final directory structure will look similar to this.
 
 ```
 [~/myapp] $ tree
