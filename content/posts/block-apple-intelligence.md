@@ -14,7 +14,7 @@ image = "/images/block-apple-intelligence-preview.webp"
 
 With macOS 15.3, **Apple Intelligence is enabled by default**.
 
-If you’re not interested in beta-testing for a corp, you’re in luck - there’s a simple workaround to prevent it from being opt-out (at least for now).
+If you’re not interested in beta-testing for free, there is a simple workaround to prevent it from being opt-out (at least for now).
 
 
 ## How to Disable Apple Intelligence
