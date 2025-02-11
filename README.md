@@ -26,13 +26,9 @@ The project is organized as follows:
 
 - `.github`: GitHub Actions workflows (for automatic rebuilds).
 - `archetypes`: Templates for new posts (e.g., title, date).
-- `assets`: Static assets (e.g., images).
-- `content`: Actual content of the website (posts).
-- `data`: Configuration files (e.g., JSON, TOML, YAML).
-- `i18n`: Internationalization files for multilingual websites.
-- `layouts`: Templates for the website.
-- `public`: Generated static files.
-- `static`: Static files (e.g., CSS, JavaScript).
+- `content`: Actual content of the website (posts, projects).
+- `public`: Hugo-generated output website (will be built on Push by CI/CD).
+- `static`: Static files (e.g., images, GIFs, videos).
 - `themes`: Theme used by the website.
 
 
