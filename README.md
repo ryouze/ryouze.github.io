@@ -40,7 +40,7 @@ The project is organized as follows:
 
 This project has been tested on the following systems:
 
-- macOS 15.2 (Sonoma)
+- macOS 15.3 (Sonoma)
 
 Automated builds are performed on the latest versions of GNU/Linux.
 
@@ -104,6 +104,9 @@ To update the Gokarna theme:
 ```sh
 ./update-theme.sh
 ```
+
+> [!TIP]
+> Consider using [imageresizer.com](https://imageresizer.com/) to turn images into WebPs. They are faster to load.
 
 
 ## Credits
