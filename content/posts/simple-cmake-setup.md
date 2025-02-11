@@ -214,6 +214,7 @@ else()
 endif()
 
 # Add install target (for "sudo cmake --install .")
+include(GNUInstallDirs)
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # Print the build type
@@ -342,6 +343,7 @@ Now let's go step by step through the `CMakeLists.txt`.
 
 9.  Add install target, so that the program can be installed using `sudo cmake --install .`.
     ```cmake
+    include(GNUInstallDirs)
     install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
     ```
 
@@ -567,6 +569,7 @@ FetchContent_MakeAvailable(cli)
 target_link_libraries(${PROJECT_NAME} PRIVATE cli::cli)
 
 # Add install target (for "sudo cmake --install .")
+include(GNUInstallDirs)
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # Print the build type
