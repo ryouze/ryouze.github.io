@@ -33,3 +33,15 @@ After doing this, you should see a message saying:
 Perfect. Time to update from 15.2.
 
 ![Loona Go Won GIF](/videos/loona-go-won.gif)
+
+
+## Bonus
+
+You can also use the **Content & Privacy** settings to disable Apple Intelligence. This approach, however, enables content restrictions, so it might be not suitable for everyone.
+
+1. Open **System Settings** > **Screen Time** > **Content & Privacy**.
+2. Enable **Content & Privacy**.
+3. Open **Intelligence & Siri**.
+4. Turn all Apple Intelligence settings off.
+
+![Screenshot of Content & Privacy in System Settings](/images/apple-intelligence-content-and-privacy.webp)
