@@ -42,6 +42,9 @@ You can also use the **Content & Privacy** settings to disable Apple Intelligenc
 1. Open **System Settings** > **Screen Time** > **Content & Privacy**.
 2. Enable **Content & Privacy**.
 3. Open **Intelligence & Siri**.
-4. Turn all Apple Intelligence settings off.
+4. Turn all Apple Intelligence settings off:
+   - Image Creation
+   - Writing Tools
+   - ChatGPT Extension
 
 ![Screenshot of Content & Privacy in System Settings](/images/apple-intelligence-content-and-privacy.webp)
