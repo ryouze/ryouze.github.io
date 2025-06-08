@@ -59,26 +59,25 @@ enableGitInfo = true
     weight = 2
 
   [[menu.main]]
+    name = "Github"
+    pre = "<span data-feather='github'></span>"
+    url = "https://github.com/ryouze/"
+    weight = 3
+
+    [menu.main.params]
+      newPage = true
+
+  [[menu.main]]
     name = "Posts"
     pre = "<span data-feather='book'></span>"
     url = "/posts/"
-    weight = 3
+    weight = 4
 
   [[menu.main]]
     name = "Contact"
     pre = "<span data-feather='mail'></span>"
     url = "/contact/"
-    weight = 4
-
-  [[menu.main]]
-    name = "Github"
-    pre = "<span data-feather='github'></span>"
-    url = "https://github.com/ryouze/"
     weight = 5
-
-    [menu.main.params]
-      newPage = true
-
 
 [markup]
   [markup.tableOfContents]
