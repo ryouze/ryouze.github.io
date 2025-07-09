@@ -17,7 +17,7 @@ enableGitInfo = true
   AvatarAltText = "avatar"
   avatarSize = "size-l"  # size-xs, size-s, size-m, size-l & size-xl (default: size-m)
   ## Title
-  description = "Researcher | Programmer"
+  description = "Jan Foremski"
   ## Icons with links below the avatar the title / description: https://github.com/526avijitgupta/gokarna/tree/main/static/svg/icons
   socialIcons = [
     {name = "github", url = "https://github.com/ryouze"},

@@ -1,4 +1,4 @@
-I am a graduate of the [Language, Mind, Technology](https://anglistyka.amu.edu.pl/en/for-candidates/full-time-ma-programmes/language-mind-technology) program at Adam Mickiewicz University.
+I hold an M.A. in [Language, Mind, Technology](https://anglistyka.amu.edu.pl/en/for-candidates/full-time-ma-programmes/language-mind-technology) from Adam Mickiewicz University. This interdisciplinary program combined linguistics with computer science, cognitive science, and AI to study language using both theoretical and experimental methods.
 
 For over three years, I worked as a researcher on the [2020/37/B/HS2/04161](https://prodis-opus19.github.io/) project, where I built and trained a [first-of-its-kind phoneme-level GPT language model for predicting surprisal in Polish](https://arxiv.org/abs/2404.10112).
 
