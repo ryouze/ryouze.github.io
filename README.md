@@ -11,13 +11,13 @@ The website is hosted on [GitHub Pages](https://pages.github.com/) and is access
 
 I wanted a personal blog to share my programming tutorials. I chose Hugo because it allows me to write content in Markdown and generate static HTML files that can be hosted on GitHub Pages with minimal effort.
 
-I also included a manual theme update script (`update-theme.sh`), because I couldn't get the theme to update automatically using git submodules when using GitHub Actions.
+I included a manual theme update script (`update-theme.sh`) because I could not get the theme to update automatically using Git submodules when running GitHub Actions.
 
 
 ## Features
 
 - Automatic rebuilds using GitHub Actions.
-- Easy content management with Markdown.
+- Simple content management with Markdown.
 
 
 ## Project Structure
@@ -25,9 +25,9 @@ I also included a manual theme update script (`update-theme.sh`), because I coul
 The project is organized as follows:
 
 - `.github`: GitHub Actions workflows (for automatic rebuilds).
-- `archetypes`: Templates for new posts (e.g., title, date).
-- `content`: Actual content of the website (posts, projects).
-- `public`: Hugo-generated output website (will be built on Push by CI/CD).
+- `archetypes`: Templates for new posts (e.g., title and date).
+- `content`: Actual website content (posts and projects).
+- `public`: Hugo-generated output website (will be built by CI/CD on push).
 - `static`: Static files (e.g., images, GIFs, videos).
 - `themes`: Theme used by the website.
 
@@ -38,7 +38,7 @@ This project has been tested on the following systems:
 
 - macOS 15.3 (Sonoma)
 
-Automated builds are performed on the latest versions of GNU/Linux.
+Automated builds are performed on the latest versions of Linux.
 
 
 ## Requirements
@@ -83,7 +83,7 @@ To create a new post:
 hugo new posts/title.md
 ```
 
-To start the Hugo server locally and view changes in real-time:
+To start the Hugo server locally and view changes in real time:
 
 ```sh
 hugo server
@@ -102,7 +102,7 @@ To update the Gokarna theme:
 ```
 
 > [!TIP]
-> Consider using [imageresizer.com](https://imageresizer.com/) to turn images into WebPs. They are faster to load.
+> Consider using [imageresizer.com](https://imageresizer.com/) to convert images to WebP format for faster loading.
 
 
 ## Credits

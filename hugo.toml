@@ -23,13 +23,13 @@ enableGitInfo = true
     {name = "github", url = "https://github.com/ryouze"},
     {name = "email", url = "mailto:mirai@ryouze.net"}
   ]
-  ## Posts: "popular" (order posts by weight), "recent" (order posts by date) or "" (do not display, default option)
+  ## Posts: "popular" (order posts by weight), "recent" (order posts by date), or "" (do not display, default option)
   showPostsOnHomePage = "recent"
-  ## Number of posts to show on homepage
+  ## Number of posts to show on the homepage
   NumberPostsOnHomePage = 6
 
   # Appearance
-  ## Display "back to top" button on posts
+  ## Display a "back to top" button on posts
   ShowBackToTopButton = true
   ## Display reading time on posts
   DisplayReadingTime = true
@@ -40,7 +40,7 @@ enableGitInfo = true
 
   # Misc
   ## SEO
-  metaKeywords = ["ryouze", "GitHub", "Tutorial", "Programming", "Blog", "C++", "Python", "macOS", "GNU/Linux"]
+  metaKeywords = ["ryouze", "GitHub", "Tutorial", "Programming", "Blog", "C++", "Python", "macOS", "Linux"]
   ## Author information for structured data
   author = "ryouze"
 
@@ -59,7 +59,7 @@ enableGitInfo = true
     weight = 2
 
   [[menu.main]]
-    name = "Github"
+    name = "GitHub"
     pre = "<span data-feather='github'></span>"
     url = "https://github.com/ryouze/"
     weight = 3

@@ -13,11 +13,11 @@ image = "/images/sfml-cmake-macos-preview.webp"
 
 ## Note
 
-This guide is temporarily outdated since the release of SFML 3.
+This guide is temporarily outdated due to the release of SFML 3.
 
-In particular, the part about bundling frameworks is only applicable to SFML 2, as SFML 3 bundles all the required frameworks into the static library. It even bundles the audio on Windows, which was previously a separate DLL :heart:
+In particular, the section about bundling frameworks applies only to SFML 2, as SFML 3 bundles all the required frameworks into the static library. It even bundles the audio on Windows, which was previously a separate DLL.
 
-I will try to update this guide for SFML 3 once I finish my bullet-hell/shoot-em-up SFML game. However, as a workaround, you can probably scrap the following:
+I will update this guide for SFML 3 once I finish my [2D drift racing game](https://github.com/ryouze/vroom). In the meantime, as a workaround, you can probably remove the following:
 
 ```
 INSTALL_RPATH "@executable_path/../Frameworks"
@@ -37,18 +37,18 @@ add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
 )
 ```
 
-There is some difference in targets, e.g., `sfml-main` became `SFML::Main`.
+There are some differences in targets, for example, `sfml-main` became `SFML::Main`.
 
-As mentioned earlier, I will get back to this once I finish my game. I added this note to help you out in the meantime.
+As mentioned earlier, I will update this once my game is finished. I have added this note to help you out in the meantime.
 
 
 ## Introduction
 
-The [CMake SFML Project Template](https://github.com/SFML/cmake-sfml-project) is a great starter template for creating cross-platform applications with SFML. Unfortunately, it doesn't include a way to package the application for native macOS deployment, i.e., as an app bundle.
+The [CMake SFML Project Template](https://github.com/SFML/cmake-sfml-project) is a great starter template for creating cross-platform applications with SFML. Unfortunately, it does not include a method to package the application for native macOS deployment, i.e., as an app bundle.
 
-For simple command-line applications that are linked statically (`set(BUILD_SHARED_LIBS OFF)`), you can use `install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})` to make the app install to `/usr/local/bin` with `sudo cmake --install .`. Unfortunately, if you install a SFML app this way, it will complain about missing dynamically-linked dependencies, such as [FreeType](https://freetype.org/). Moreover, the app must be started from the command line, which is not user-friendly.
+For simple command-line applications that are statically linked (`set(BUILD_SHARED_LIBS OFF)`), you can use `install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})` to install the app to `/usr/local/bin` with `sudo cmake --install .`. However, if you install an SFML app this way, it will complain about missing dynamically linked dependencies such as [FreeType](https://freetype.org/). Moreover, the app must be started from the command line, which is not user-friendly.
 
-GUI apps are typically distributed as an app bundle that users can drag and drop into their `Applications` folder. App bundles are directories with a `.app` extension that contain the app's executable, resources, and metadata. For example, your SFML `CMakeSFMLProject.app` app bundle might look like this:
+GUI apps are typically distributed as app bundles that users can drag and drop into their `Applications` folder. App bundles are directories with a `.app` extension that contain the app's executable, resources, and metadata. For example, your SFML `CMakeSFMLProject.app` app bundle might look like this:
 
 ```sh
 [/Applications] $ tree -l CMakeSFMLProject.app/
@@ -73,7 +73,7 @@ CMakeSFMLProject.app/
 
 ## Download the CMake SFML Project Template
 
-Follow these steps to download the project template.
+Follow these steps to download the project template:
 
 1. **Clone the repository**:
 
@@ -87,9 +87,9 @@ Follow these steps to download the project template.
     cd cmake-sfml-project
     ```
 
-3. **Change to the commit used in this tutorial**:
+3. **Check out the commit used in this tutorial**:
 
-    This is for simplicity, use the latest commit when building your own app (i.e., don't checkout to this specific commit).
+    This is for simplicity. Use the latest commit when building your own app (i.e., do not check out this specific commit).
 
     ```sh
     git checkout 969c5cd70278bd7316742bd27d9ccd7a363196e5
@@ -98,7 +98,7 @@ Follow these steps to download the project template.
 
 ### Modify the CMakeLists.txt File
 
-We only need to make a few changes to the `CMakeLists.txt` file to package the app as an app bundle.
+You only need to make a few changes to the `CMakeLists.txt` file to package the app as an app bundle.
 
 Original `CMakeLists.txt`:
 
@@ -218,7 +218,7 @@ if(WIN32)
 endif()
 ```
 
-We also need `Info.plist.in` in the root directory to generate the `Info.plist` file:
+You also need `Info.plist.in` in the root directory to generate the `Info.plist` file:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -267,9 +267,9 @@ We also need `Info.plist.in` in the root directory to generate the `Info.plist` 
     └── main.cpp
 ```
 
-Ok, so what's new?
+Ok, so what is new?
 
-We changed all instances of `main` into `${PROJECT_NAME}` to make the output executable name match the project name. This is personal preference, you can put `SET(EXECUTABLE_NAME "example")` somewhere below `project()` and replace `${PROJECT_NAME}` with `${EXECUTABLE_NAME}` if you prefer.
+We changed all instances of `main` to `${PROJECT_NAME}` to make the output executable name match the project name. This is personal preference; you can set `SET(EXECUTABLE_NAME "example")` below `project()` and replace `${PROJECT_NAME}` with `${EXECUTABLE_NAME}` if you prefer.
 
 ```cmake
 cmake_minimum_required(VERSION 3.28)
@@ -277,9 +277,9 @@ project(CMakeSFMLProject LANGUAGES CXX)
 set(EXECUTABLE_NAME "hello")
 ```
 
-We added a conditional block that checks if the platform is macOS. If it is, we set the `MACOSX_BUNDLE` property to `TRUE` and provide the path to the `Info.plist` file. We also set the `INSTALL_RPATH` property to `@executable_path/../Frameworks` to tell the app where to find the SFML frameworks. We then copy all the SFML frameworks into the app bundle using `add_custom_command`. The `rsync` command ensures that we preserve symlinks, so we don't make unnecessary copies of the frameworks. Finally, we add an install target for the macOS app bundle.
+We added a conditional block that checks if the platform is macOS. If it is, we set the `MACOSX_BUNDLE` property to `TRUE` and provide the path to the `Info.plist` file. We also set the `INSTALL_RPATH` property to `@executable_path/../Frameworks` to tell the app where to find the SFML frameworks. We then copy all the SFML frameworks into the app bundle using `add_custom_command`. The `rsync` command preserves symlinks, so unnecessary copies of the frameworks are not made. Finally, we add an install target for the macOS app bundle.
 
-**Note:** The uncommented `# Copy all frameworks into the app bundle` block copies all frameworks (graphics, audio, etc.) into the app bundle. If you don't use audio, you can comment out the `# Copy all frameworks into the app bundle` block and uncomment the `# Copy only the SFML freetype framework into the app bundle` block to copy only the freetype framework. This will greatly reduce the size of the app bundle. But if you're just starting out, copying all frameworks is a good idea.
+**Note:** The uncommented `# Copy all frameworks into the app bundle` block copies all frameworks (graphics, audio, etc.) into the app bundle. If you do not use audio, you can comment out the `# Copy all frameworks into the app bundle` block and uncomment the `# Copy only the SFML freetype framework into the app bundle` block to copy only the freetype framework. This will greatly reduce the size of the app bundle. However, if you are just starting out, copying all frameworks is a good idea.
 
 ```cmake
 # Copy all frameworks into the app bundle
@@ -327,13 +327,11 @@ Follow these steps to build the project:
 
 2. **Compile the project**:
 
-    To compile the project, use the following command:
-
     ```sh
     cmake --build . --parallel
     ```
 
-Now the app is compiled.
+The app is now compiled.
 
 ```sh
 [~/dev/cmake-sfml-project/build] $ tree -L2
@@ -364,9 +362,9 @@ Now the app is compiled.
 └── cmake_install.cmake
 ```
 
-As you can see, the `Info.plist` file was generated based on the variables we set in the `CMakeLists.txt` file. We now also have an app bundle in the `bin` directory.
+As you can see, the `Info.plist` file was generated based on the variables set in the `CMakeLists.txt` file. There is now also an app bundle in the `bin` directory.
 
-Let's run it. You can either double-click the app bundle in Finder (`bin/CMakeSFMLProject.app`) or run it from the command line:
+To run it, you can either double-click the app bundle in Finder (`bin/CMakeSFMLProject.app`) or run it from the command line:
 
 ```sh
 open bin/CMakeSFMLProject.app
@@ -381,7 +379,7 @@ To install the app bundle to `/Applications`, use the following command while in
 sudo cmake --install .
 ```
 
-We can now find the app in `/Applications`:
+You can now find the app in `/Applications`:
 
 ```sh
 [/Applications] $ tree -l CMakeSFMLProject.app/
@@ -403,14 +401,14 @@ CMakeSFMLProject.app/
         └── CMakeSFMLProject
 ```
 
-As you can see, I only copied the freetype framework into the app bundle.
+As shown, only the freetype framework was copied into the app bundle.
 
 
 ## Cross-platform CI/CD
 
-Building the app on your local machine is fine. However, Github Actions can build and package your app for macOS, GNU/Linux, and Windows, all at the same time. Setting up a CI/CD pipeline is pretty easy if you're already using a cross-platform build system like CMake.
+Building the app on your local machine is sufficient for development, but GitHub Actions can build and package your app for macOS, Linux, and Windows, all at the same time. Setting up a CI/CD pipeline is straightforward if you are already using a cross-platform build system like CMake.
 
-The CMake SFML Project Template already includes a simple `.github/workflows/ci.yml` file, but we can extend it a bit.
+The CMake SFML Project Template already includes a simple `.github/workflows/ci.yml` file, but you can extend it.
 
 Original `.github/workflows/ci.yml`:
 
@@ -519,7 +517,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-build-
 
-    - name: Install GNU/Linux dependencies
+    - name: Install Linux dependencies
       if: runner.os == 'Linux'
       run: sudo apt-get update && sudo apt-get install libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev
 
@@ -538,9 +536,9 @@ jobs:
       run: cmake --build ${{ steps.strings.outputs.build-output-dir }} --config Release --parallel
 ```
 
-I have based my CI setup on the [CMake multi-platform starter](https://github.com/actions/starter-workflows/blob/main/ci/cmake-multi-platform.yml) workflow. I have also added caching for the `build` directory, as we're building SFML from source, which normally takes ages. I also removed the `BUILD_SHARED_LIBS` option, compile flags and other stuff that I'd typically set in the `CMakeLists.txt` file (refer to [Final Thoughts](#final-thoughts) for a working example).
+I have based my CI setup on the [CMake multi-platform starter](https://github.com/actions/starter-workflows/blob/main/ci/cmake-multi-platform.yml) workflow. I have also added caching for the `build` directory, since building SFML from source normally takes a long time. I also removed the `BUILD_SHARED_LIBS` option, compile flags, and other settings that I typically set in the `CMakeLists.txt` file (see [Final Thoughts](#final-thoughts) for a working example).
 
-Now let's create a release action that will package the app bundle for all platforms - `.github/workflows/release.yml`.
+Now let's create a release action that will package the app bundle for all platforms: `.github/workflows/release.yml`.
 
 ```yml
 name: Release
@@ -603,7 +601,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-build-
 
-      - name: Install GNU/Linux dependencies
+      - name: Install Linux dependencies
         if: runner.os == 'Linux'
         run: sudo apt-get update && sudo apt-get install libxrandr-dev libxcursor-dev libudev-dev libopenal-dev libflac-dev libvorbis-dev libgl1-mesa-dev libegl1-mesa-dev
 
@@ -647,11 +645,11 @@ jobs:
           files: ${{ steps.strings.outputs.build-output-dir }}/${{ matrix.archive_name }}
 ```
 
-This workflow will build the app, rename it to append the platform name and architecture, then archive it and upload it to the release page. I have hardcoded the names, because inferring them from the project name is a bit complicated for something you only need to setup once.
+This workflow builds the app, renames it to append the platform name and architecture, then archives it and uploads it to the release page. I have hardcoded the names, because inferring them from the project name is complicated for something you only need to set up once.
 
-To trigger it, go to your project's releases page and click `Draft a new release`. Then, create a new git tag (e.g., `v0.0.1`) and click `Publish release`. The workflow will start automatically, and the packaged binaries for macOS, GNU/Linux and Windows will be uploaded automatically.
+To trigger it, go to your project's releases page and click "Draft a new release." Then, create a new git tag (e.g., `v0.0.1`) and click "Publish release." The workflow will start automatically, and the packaged binaries for macOS, Linux, and Windows will be uploaded automatically.
 
-Notably, the app bundle for macOS must be a `.tar.gz` archive, because the `.zip` archive will not preserve the symlinks in the app bundle. Instead, each symlink will become a copy, resulting in a bloated app bundle (for `freetype`, this is around +5 MB of useless copies).
+Notably, the app bundle for macOS must be a `.tar.gz` archive, because a `.zip` archive will not preserve the symlinks in the app bundle. Instead, each symlink will become a copy, resulting in a bloated app bundle (for `freetype`, this adds about 5 MB of unnecessary copies).
 
 <!-- TODO:
 - Add a section on how to create a DMG file for distribution. -->
@@ -661,4 +659,4 @@ Notably, the app bundle for macOS must be a `.tar.gz` archive, because the `.zip
 
 Packaging an SFML app as an app bundle on macOS is relatively straightforward. You just need to copy the necessary frameworks into the app bundle.
 
-If you want to see a working example, check out my [aegyo](https://github.com/ryouze/aegyo) project. It's cross-platform SFML app for learning Korean Hangul.
+If you want to see a working example, check out my [vroom](https://github.com/ryouze/vroom) project. It is a 2D drift racing game that uses SFML 3 and CMake. The CI/CD pipeline builds the app for macOS, Linux, and Windows.
