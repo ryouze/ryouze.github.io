@@ -21,6 +21,7 @@ enableGitInfo = true
   ## Icons with links below the avatar the title / description: https://github.com/526avijitgupta/gokarna/tree/main/static/svg/icons
   socialIcons = [
     {name = "github", url = "https://github.com/ryouze"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/jan-foremski-ab60122b8/"},
     {name = "email", url = "mailto:mirai@ryouze.net"}
   ]
   ## Posts: "popular" (order posts by weight), "recent" (order posts by date), or "" (do not display, default option)
