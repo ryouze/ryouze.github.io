@@ -6,7 +6,7 @@ description = "A collection of my personal and professional projects, ranging fr
 
 This page showcases my software development work across a range of domains, including system utilities, programming tools, video games, machine learning research, and web development.
 
-Projects are listed in alphabetical order, with the most notable ones highlighted in bold.
+Projects are listed in alphabetical order, not by importance or recency.
 
 
 ### Personal Projects
