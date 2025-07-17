@@ -21,7 +21,7 @@ Projects are listed in alphabetical order, not by importance or recency.
 - [yt-table](https://github.com/ryouze/yt-table) - Cross-platform CLI tool for managing YouTube subscriptions locally through a shell-like interface.
 
 
-### Research & Professional Work
+### Professional Work
 
 Most of this code is not publicly available (subject to change). Some parts must remain private due to legal constraints (e.g., the `survey` repository contains personal data protected under the GDPR).
 
