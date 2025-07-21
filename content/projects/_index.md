@@ -4,12 +4,14 @@ type = "page"
 description = "Personal and professional projects spanning cross-platform apps, developer tools, automation pipelines, and machine learning systems."
 +++
 
-This page highlights my work as a software developer, covering a broad range of domains such as system utilities, backend tooling, cross-platform applications, game development, and machine learning infrastructure.
+This page highlights my work as a software developer, covering a broad range of domains such as system utilities, backend tooling, cross-platform applications, game development, and machine learning.
 
 Projects are listed in alphabetical order, not by importance or recency.
 
 
 ### Personal Projects
+
+Notable projects include `vroom` (a work-in-progress 2D racing game engine) and `header-warden` (a static C++ dependency checker). The latter is part of my daily C++ workflow.
 
 - [aegyo](https://github.com/ryouze/aegyo) - Cross-platform GUI app for learning Korean Hangul.
 - [applefetch](https://github.com/ryouze/applefetch) - macOS CLI system information tool, inspired by neofetch.
