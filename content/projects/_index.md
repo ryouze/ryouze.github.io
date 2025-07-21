@@ -1,10 +1,10 @@
 +++
 title = "Projects"
 type = "page"
-description = "A collection of my personal and professional projects, ranging from GUI applications to CLI tools and research work."
+description = "Personal and professional projects spanning cross-platform apps, developer tools, automation pipelines, and machine learning systems."
 +++
 
-This page showcases my software development work across a range of domains, including system utilities, programming tools, video games, machine learning research, and web development.
+This page highlights my work as a software developer, covering a broad range of domains such as system utilities, backend tooling, cross-platform applications, game development, and machine learning infrastructure.
 
 Projects are listed in alphabetical order, not by importance or recency.
 
