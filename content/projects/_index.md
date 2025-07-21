@@ -23,9 +23,9 @@ Projects are listed in alphabetical order, not by importance or recency.
 
 ### Professional Work
 
-Most of this code is not publicly available (subject to change). Some parts must remain private due to legal constraints (e.g., the `survey` repository contains personal data protected under the GDPR).
+The majority of this code is not publicly available due to legal and privacy constraints (e.g., the `survey` repository processes GDPR-protected personal data). Some components may be open-sourced in the future.
 
-For a complete overview, please refer to the [scientific paper](https://arxiv.org/abs/2404.10112) or the [project website](https://prodis-opus19.github.io/).
+For a broader overview, visit the [project website](https://prodis-opus19.github.io/) or see my [paper](https://arxiv.org/abs/2404.10112).
 
 - [`prodis-opus19.github.io`](https://prodis-opus19.github.io/) - Main website for the PRODIS project, built using plain HTML and CSS. It outlines the research goals, provides news updates, and introduces the team members.
   - `/experiment` subpage - Web-based, keyboard-driven interface used in the recording studio to administer three phonetic tasks (conversation, reading, and answering). All logic runs client-side.
