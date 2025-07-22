@@ -34,6 +34,10 @@ body {
   margin-bottom: 170px;
 }
 
+body.blog-post.has-post-navigation {
+  margin-bottom: 80px;
+}
+
 b,
 strong {
   font-weight: bold;
@@ -638,6 +642,16 @@ table td {
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+.post-navigation {
+  padding: 40px 0;
+}
+
+.post-navigation::after {
+  clear: both;
+  content: "";
+  display: table;
 }
 
 .prev-post {
