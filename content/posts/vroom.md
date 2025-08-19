@@ -1,8 +1,8 @@
 +++
 date = 2025-08-19T21:21:26+02:00
-title = "How I built a C++20 Game Engine from Scratch (vroom)"
-description = "How I built a cross-platform 2D racing game with arcade drift physics, procedurally-generated tracks, and waypoint AI using C++20, SFML3, and Dear ImGui"
-tags = ["C++", "SFML", "Game Development", "CMake", "Dear ImGui", "Procedural Generation", "Cross-Platform", "Modern C++", "Game Physics", "AI Programming"]
+title = "How I Built a C++20 Game Engine from Scratch (vroom)"
+description = "How I built a cross-platform 2D racing game with arcade drift physics, procedurally generated tracks, and waypoint AI using C++20, SFML3, and Dear ImGui"
+tags = ["C++", "CMake", "SFML", "Dear ImGui", "Game Development"]
 type = "post"
 showTableOfContents = true
 image = "/images/vroom.webp"
@@ -12,7 +12,7 @@ image = "/images/vroom.webp"
 
 ## Introduction
 
-I wanted to build a 2D racing game from scratch, without relying on existing game engines like Godot or Unity. To achieve this, I chose to build my own game engine in C++, allowing me to improve my understanding of C++ and game development.
+I wanted to build a 2D racing game from scratch without relying on existing game engines like Godot or Unity. To achieve this, I chose to build my own game engine in C++, allowing me to improve my understanding of C++ and game development.
 
 The result is *vroom*, an arcade-style racing game featuring drift physics, procedurally generated tracks, and waypoint-based AI.
 
@@ -22,11 +22,11 @@ Everything is cross-platform, with pre-built binaries available for macOS, GNU/L
 
 ## Learning by Building
 
-Looking at the git history, the project started with a basic 2D world in SFML, then gradually gained features like car movement, track generation, AI, menus, sounds, and persistent configuration.
+Looking at the Git history, the project started with a basic 2D world in SFML, then gradually gained features such as car movement, track generation, AI, menus, sounds, and persistent configuration.
 
 ### Project Structure
 
-I decided to keep core engine functionality (window management, UI, audio, etc.) separate from game-specific logic (car physics, AI). Files in `src/core/` cannot include each other by design.
+I decided to keep core engine functionality (window management, UI, audio, etc.) separate from game-specific logic (car physics, AI). Files in `src/core/` are intentionally designed not to include each other.
 
 ```cpp
 // Core modules are independent building blocks
@@ -143,11 +143,11 @@ void place_detour_bubbles(float main_x, float detour_x)
 
 ### Car Physics
 
-Car physics were another major challenge. I aimed for arcade-style handling: fun, simple, responsive, not realistic. Cars are treated as points with velocity and rotation. Each frame applies input, acceleration, drag, slip, steering, and movement, with delta time keeping it consistent.
+Car physics was another major challenge. I aimed for arcade-style handling: fun, simple, responsive, and not realistic. Cars are treated as points with velocity and rotation. Each frame applies input, acceleration, drag, slip, steering, and movement, with delta time keeping it consistent.
 
 The result is fast acceleration and easy drifting. It doesn't take much skill, but it's fun to play, which was the goal.
 
-Physics are applied inside the `Car` class. A full physics engine might be something I build later.
+Physics is applied inside the `Car` class. A full physics engine might be something I build later.
 
 ```cpp
 // Simplified physics implementation (runs on every frame)
@@ -273,7 +273,7 @@ The AI system was one of the most complex parts.
 
 While building the track, the system also creates waypoints for the AI to follow. Each tile gets a waypoint at its center, and the system marks them as either straight sections or corners based on the tile type. After the track is built, the waypoints get reordered to start from the finish line so the AI cars can follow them in the right racing order.
 
-Thus, regardless of track configuration, the AI can always find its way around the track. The difficult part is making sure it won't just drive into walls due to excessive speed while also not being too slow.
+Thus, regardless of configuration, the AI can always find its way around the track. The difficult part is making sure it doesn't just drive into walls due to excessive speed while also not being too slow.
 
 The cars follow a sequence of waypoints placed along the track.
 
@@ -285,11 +285,11 @@ To steer, the AI compares the car's current heading to the direction of the next
 
 The AI sets a target speed depending on whether the car is approaching a corner or traveling on a straight. If the current speed exceeds the target, the AI decelerates; if it is below the target, it accelerates. If the speed is close to the target, the AI coasts, relying on drag.
 
-To avoid collisions, the AI scans ahead for potential wall impacts. If a crash is likely, it applies the handbrake and increases steering. The current, somewhat conservative values seem to prevent the AI from crashing into walls completely, but feedback is welcome.
+To avoid collisions, the AI scans ahead for potential wall impacts. If a crash is likely, it applies the handbrake and increases steering. The current, somewhat conservative values seem to prevent the AI from crashing into walls, but feedback is welcome.
 
 To prevent AI cars from behaving identically, each instance uses its own random number generator. This introduces small variations in reaction distances, turn sensitivity, and target speeds.
 
-AI logic updates at 30 Hz. Testing shows that 20 Hz is acceptable, while 10 Hz causes frequent wall collisions. Physics simulation runs at the current frame rate and uses delta time to maintain consistent behavior across different refresh rates.
+The AI logic updates at 30 Hz. Testing shows that 20 Hz is acceptable, while 10 Hz causes frequent wall collisions. Physics simulation runs at the current frame rate and uses delta time to maintain consistent behavior across different refresh rates.
 
 ### Sound Effects
 
@@ -301,7 +301,7 @@ On top of that, tire screeching plays when you're drifting, using a [tire squeal
 
 Lastly, every button click and menu interaction plays a sound effect from [UI sound packs](https://opengameart.org/content/ui-and-item-sound-effect-jingles-sample-2).
 
-For all sounds, the volume controls work in real-time and save to the config file using [toml++](https://github.com/marzer/tomlplusplus).
+For all sounds, the volume controls work in real time and are saved to the config file using [toml++](https://github.com/marzer/tomlplusplus).
 
 ### Window Management
 
@@ -313,7 +313,7 @@ I ended up recreating the window whenever the user changes any setting for simpl
 
 ### Settings System
 
-The settings system loads configuration at startup and saves it when the app closes. All the values are validated to prevent crashes if someone manually edits the config file or if there are corrupted values. For example, FPS values get checked against a list of supported frame rates.
+The settings system loads configuration at startup and saves it when the app closes. All the values are validated to prevent crashes if someone manually edits the config file or if there are corrupted values. For example, FPS values are checked against a list of supported frame rates.
 
 Notably, getting the game to work on different operating systems meant figuring out where to save config files. Each OS has different conventions for where applications should store user data.
 
@@ -323,7 +323,7 @@ I wrote platform-specific code that uses the native APIs to find the right direc
 - macOS: Uses the Foundation framework's `NSSearchPathForDirectoriesInDomains` to get the Application Support directory.
 - Linux: Follows the XDG Base Directory Specification by checking `XDG_DATA_HOME` first, falling back to `~/.local/share` if not set.
 
-This makes sure config files end up in the right places:
+This ensures config files end up in the right places:
 
 - macOS: `~/Library/Application Support/vroom/config.toml`
 - Linux: `$XDG_DATA_HOME/vroom/config.toml` (or `~/.local/share/vroom/config.toml`)
@@ -333,7 +333,7 @@ This makes sure config files end up in the right places:
 
 The UI uses Dear ImGui with the [Moonlight theme](https://github.com/Madam-Herta/Moonlight). It looks more like a game UI than a debug panel.
 
-To integrate ImGui with SFML, I used the [ImGui‑SFML](https://github.com/SFML/imgui-sfml), creating a RAII `ImGuiContext` class that initializes the binding on construction and cleans up on scope exit. It's completely seamless.
+To integrate ImGui with SFML, I used the [ImGui‑SFML](https://github.com/SFML/imgui-sfml), creating an RAII `ImGuiContext` class that initializes the binding on construction and cleans up on scope exit. It's completely seamless.
 
 #### Widgets
 
@@ -341,24 +341,24 @@ I built several ImGui widgets to show real-time game information:
 
 * **FPS Counter:** Shows current frame rate.
 * **Minimap:** One of the more complex widgets - it renders the entire game scene to an SFML render texture, then displays that texture in an ImGui window. Features include configurable refresh rate and adjustable resolution (256x256, 512x512, or 1024x1024).
-* **Leaderboard:** Tracks drift scores all cars. It automatically sorts by score.
+* **Leaderboard:** Tracks drift scores for all cars. It automatically sorts by score.
 * **Speedometer:** Displays current speed in kilometers per hour (km/h).
 
 #### Settings Menu
 
-Tabbed layout with five sections. All changes apply immediately.
+A tabbed layout with five sections. All changes apply immediately.
 
 * **Game:** Track generation (width, height, tile size, detour probability), camera zoom, followed car.
 * **Graphics:** Window/fullscreen, resolution, anti-aliasing, V-sync, FPS cap.
 * **Controls:** Toggle between keyboard and gamepad, with full gamepad remapping alongside live input display.
-* **Audio:** Engine, tire, wall hit and UI volumes. Changes apply instantly.
+* **Audio:** Engine, tire, wall hit, and UI volumes. Changes apply instantly.
 * **About:** Build and system info.
 
-The aforementioned settings system saves everything on scope exit (i.e., game exit). And on the next boot, all values are validated when loaded to prevent crashes from corrupted config files.
+The aforementioned settings system saves everything on exit (i.e., when the game closes). On the next boot, all values are validated when loaded to prevent crashes from corrupted config files.
 
 ### UI Sound Feedback
 
-I added sound effects to every UI interaction to make it feel more polished. Every button click, checkbox toggle, and menu navigation plays an appropriate sound effect. A volume slider is, of course, available in the UI.
+I added sound effects to every UI interaction to make it feel more polished. Every button click, checkbox toggle, and menu navigation plays an appropriate sound effect. A volume slider is available in the UI.
 
 ### Testing
 
@@ -368,9 +368,9 @@ The project uses [snitch](https://github.com/snitch-org/snitch) for unit testing
 
 ## What I Learned
 
-I used RAII throughout the project to avoid manual memory management, as per modern C++ best practices. The embedded asset system eliminates file I/O issues, which simplifies distrubtion.
+I used RAII throughout the project to avoid manual memory management, following modern C++ best practices. The embedded asset system allows for a single binary distribution across platforms, simplifying deployment.
 
-I learned how to use SFML to build a complete game engine, with graphics, sounds, and input handling (including gamepad support). I also learned how to build a user interface using Dear ImGui.
+All in all, I learned how to use C++ and SFML to build a complete game engine, with graphics, sound, and input handling (including gamepad support). I also learned how to build a user interface using Dear ImGui.
 
 ## Final Thoughts
 
