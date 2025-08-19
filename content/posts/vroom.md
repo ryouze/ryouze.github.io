@@ -1,7 +1,7 @@
 +++
 date = 2025-08-19T21:21:26+02:00
-title = "Building vroom: A C++20 Racing Game from Scratch"
-description = "How I built a complete 2D racing game using modern C++20 features, SFML3, procedural track generation, AI behavior, and cross-platform development techniques"
+title = "How I built a C++20 Game Engine from Scratch (vroom)"
+description = "How I built a cross-platform 2D racing game with arcade drift physics, procedurally-generated tracks, and waypoint AI using C++20, SFML3, and Dear ImGui"
 tags = ["C++", "SFML", "Game Development", "CMake", "Dear ImGui", "Procedural Generation", "Cross-Platform", "Modern C++", "Game Physics", "AI Programming"]
 type = "post"
 showTableOfContents = true
@@ -10,25 +10,23 @@ image = "/images/vroom.webp"
 
 ![Preview](/images/vroom.webp)
 
-
 ## Introduction
 
 I wanted to build a 2D racing game from scratch, without relying on existing game engines like Godot or Unity. To achieve this, I chose to build my own game engine in C++, allowing me to improve my understanding of C++ and game development.
 
-The end result is *vroom*, an arcade-style racing game that features arcade drift physics, procedurally-generated tracks, and waypoint AI.
+The result is *vroom*, an arcade-style racing game featuring drift physics, procedurally generated tracks, and waypoint-based AI.
 
-It's built using C++20 and [SFML3](https://github.com/SFML/SFML). The UI itself is built uses [Dear ImGui](https://github.com/ocornut/imgui) (with [ImGui‑SFML](https://github.com/SFML/imgui-sfml)) and I'm using [toml++](https://github.com/marzer/tomlplusplus) for persistent configuration storage on disk. Logging is handled by [spdlog](https://github.com/gabime/spdlog) and I'm also using [snitch](https://github.com/snitch-org/snitch) for unit testing.
+It's built with C++20 and [SFML3](https://github.com/SFML/SFML). The UI is written with [Dear ImGui](https://github.com/ocornut/imgui) (using [ImGui-SFML](https://github.com/SFML/imgui-sfml)). Persistent configuration storage is handled by [toml++](https://github.com/marzer/tomlplusplus), logging by [spdlog](https://github.com/gabime/spdlog), and unit testing by [snitch](https://github.com/snitch-org/snitch).
 
-Everything is cross-platform - pre-built binaries are available macOS, GNU/Linux, and Windows.
-
+Everything is cross-platform, with pre-built binaries available for macOS, GNU/Linux, and Windows.
 
 ## Learning by Building
 
-Looking at the git history, I can see how the project evolved over time. It started with just getting a basic 2D game world SFML, then gradually added features like car movement, track generation, AI behavior, and eventually a full UI with menus, sounds, and persistent configuration.
+Looking at the git history, the project started with a basic 2D world in SFML, then gradually gained features like car movement, track generation, AI, menus, sounds, and persistent configuration.
 
 ### Project Structure
 
-The first thing I had to figure out was how to organize the code. I decided to keep core engine stuff (like window management and UI) separate from game-specific code (like car physics). All the files in `src/core/` are independent - they cannot include each other as a rule.
+I decided to keep core engine functionality (window management, UI, audio, etc.) separate from game-specific logic (car physics, AI). Files in `src/core/` cannot include each other by design.
 
 ```cpp
 // Core modules are independent building blocks
@@ -38,16 +36,12 @@ The first thing I had to figure out was how to organize the code. I decided to k
 #include "core/world.hpp"    // Track generation
 ```
 
-The `src/game/` directory contains game-specific logic that can import core modules but remains independent from other game modules.
-
-
 ### Using C++20
 
-I have built previous projects in C++17, because C++20 wasn't supported by some runners on GitHub Actions at the time. Setting them up to use C++20 wouldn't be difficult, but I wanted to stick to what I had at hand for the time being since even the latest version of SFML (SFML3) also uses C++17.
-
-After completing my C++17 [aegyo](https://github.com/ryouze/aegyo) project (GUI Korean learning app), I wanted to move to C++20. Here are the key features I used:
+Previous projects of mine used C++17, mainly because GitHub Actions runners didn't fully support C++20 at the time, and SFML3 was also on C++17. After finishing my C++17 project [aegyo](https://github.com/ryouze/aegyo) (a GUI Korean learning app), I wanted to move to C++20. Key features I used include:
 
 *Mathematical constants (`std::numbers`):*
+
 ```cpp
 #include <numbers>
 const float heading_difference =
@@ -55,14 +49,16 @@ const float heading_difference =
         std::numbers::pi_v<float>);
 ```
 
-*`std::format` for string formatting:*
+*`std::format` for type-safe string formatting:*
+
 ```cpp
 #include <format>
-// Type-safe string formatting
-mode_names.emplace_back(std::format("{}x{} ({}-bit)", mode.size.x, mode.size.y, mode.bitsPerPixel));
+std::format("{}x{} ({}-bit)",
+            mode.size.x, mode.size.y, mode.bitsPerPixel);
 ```
 
 *`[[likely]]` and `[[unlikely]]` attributes:*
+
 ```cpp
 if (current_state == core::states::GameState::Playing) [[likely]] {
     // Game logic runs most of the time
@@ -71,14 +67,11 @@ if (current_state == core::states::GameState::Playing) [[likely]] {
 }
 ```
 
-Not a whole lot, but `std::format` allowed me to replace the 3rd party `fmt` library completely. It's very convienient, although not as convienient as Python's f-strings.
-
+It's not a huge list, but `std::format` allowed me to remove the third-party `fmt` library. It's convenient, though not quite as nice as Python f-strings.
 
 ### CMake and Assets
 
-Of course, I used CMake to manage the build process and dependencies. The configuration automatically downloads all the libraries I need using CMake's FetchContent, rather than Git submodules, so a regular `git clone` is all you need to get started.
-
-The project uses strict compile flags across all compilers, although that, and other options, can be easily toggled.
+I used CMake to manage the build and dependencies. As always, libraries are pulled automatically via `FetchContent` rather than Git submodules, so a normal `git clone` is all you need. Strict compile flags are enabled by default, but options are configurable:
 
 ```cmake
 # Project options with sensible defaults
@@ -89,27 +82,25 @@ option(ENABLE_LTO "Enable Link Time Optimization" ON)
 option(ENABLE_CCACHE "Enable ccache for faster builds" ON)
 ```
 
-The assets (textures and sounds) are embedded directly into the executable as headers. To do that, I have written a custom CLI tool in C called [asset-packer](https://github.com/ryouze/asset-packer). There is a plethora of similar tools available, but let's learn by building.
-
+Assets (textures and sounds) are embedded directly into the executable as headers. To achieve this, I wrote [asset-packer](https://github.com/ryouze/asset-packer), a simple CLI tool in C. Plenty of alternatives exist, but I keep everything in the spirit of learning by building.
 
 ### Track Generation
 
-Getting the procedural track generation working was one of the hardest part of this project. It took me a really long time to get the detours right because they use different textures of corners based on orientation. I actually add ASCII art of how the textures look to the code as comments to help me visualize which texture I am using.
+Procedural track generation was one of the hardest parts. Handling detours was tricky since different corner textures had to be placed depending on orientation. To help, I added ASCII art diagrams inside comments to visualize how tiles fit together.
 
-The track uses tile-based textures from [Kenney's Racing Pack](https://kenney.nl/assets/racing-pack). I upscaled them using [Waifu2x](https://unlimited.waifu2x.net/) to make them look better at higher resolutions. The algorithm builds rectangular track layouts with optional "detour bubbles" that create outward detours. Both the vertical and horizontal width of the track is configurable in the GUI. The detour percentage can also be configured. The AI, will of course, adapt to any track configuration.
-
+The track uses textures from [Kenney's Racing Pack](https://kenney.nl/assets/racing-pack), upscaled with [Waifu2x](https://unlimited.waifu2x.net/). The algorithm builds rectangular layouts with optional "detour bubbles" along the edges. Width, height, and detour probability are configurable in the UI, and the AI adapts to any configuration.
 
 #### Bubble Detours
 
-The track is built in several phases:
+The track is built in phases:
 
-1. Layout Planning: Calculate the grid dimensions and tile positioning based on user parameters (width, height, tile size)
-2. Corner Placement: Place the four corner tiles that define the track's outer boundary
-3. Edge Processing: Process each edge (top, right, bottom, left) while placing optional detour bubbles
-4. Bubble Generation: Use probability-based detour placement with height validation to ensure structural integrity
-5. Waypoint Creation: Generate AI navigation waypoints at each tile center with proper driving type classification
+1. Layout Planning: Calculate grid dimensions and tile placement.
+2. Corner Placement: Place four corners for the outer boundary.
+3. Edge Processing: Place edge tiles with optional detour bubbles.
+4. Bubble Generation: Place detours probabilistically with validation.
+5. Waypoint Creation: Generate AI waypoints with straight/corner classification.
 
-The most complex part is the "bubble detour" system. Each vertical edge can have random "bubbles" that create wider sections and interesting corners. The algorithm walks along each edge and randomly decides whether to place a detour based on a probability setting. When placing a detour, it has to make sure the bubble fits in the remaining track space and connects properly with the main track.
+Vertical edges can sprout "bubbles" that widen sections and add corners. The algorithm checks available space before placing one, ensuring proper connection back to the main track.
 
 ```cpp
 // Simplified vertical edge bubble placement algorithm (runs on track generation)
@@ -150,18 +141,13 @@ void place_detour_bubbles(float main_x, float detour_x)
 }
 ```
 
-
 ### Car Physics
 
-Getting the car physics to feel right was another big challenge. I wanted arcade-style physics that were fun to play rather than realistic simulation. I wanted a simple, fun and responsive game.
+Car physics were another major challenge. I aimed for arcade-style handling: fun, simple, responsive, not realistic. Cars are treated as points with velocity and rotation. Each frame applies input, acceleration, drag, slip, steering, and movement, with delta time keeping it consistent.
 
-So how does it work? The system treats each car as a point with velocity and rotation.
+The result is fast acceleration and easy drifting. It doesn't take much skill, but it's fun to play, which was the goal.
 
-Every frame, each car updates its physics in several steps. Player input (or AI decisions) determine acceleration and steering. The car's velocity gets updated based on acceleration, then position gets updated based on velocity. I use delta time to make sure the physics work consistently regardless of frame rate.
-
-I had to get a lof of help from ChatGPT, because I have never written a game engine before. But the end result is fun to drive, in fact, the acceleration is a bit ridicolous, and it's easy to just hold gas and drift around corners, it doesn't require a lot of skill to play (or any, but perhaps that comes from my experience in playing racing games a lot, I really like them). But I'm not developing a realistic game, and it's fun to play, so I think it works well.
-
-The key goal is that physics are only applied to the cars themselves; it is a method of the Car class. A full physics engine does seem like a challenging and fun project to work in the future, though.
+Physics are applied inside the `Car` class. A full physics engine might be something I build later.
 
 ```cpp
 // Simplified physics implementation (runs on every frame)
@@ -283,7 +269,7 @@ void Car::apply_physics_step(const float dt)
 
 ### AI Behavior
 
-The AI system was probably the most complex part to get working well.
+The AI system was one of the most complex parts.
 
 While building the track, the system also creates waypoints for the AI to follow. Each tile gets a waypoint at its center, and the system marks them as either straight sections or corners based on the tile type. After the track is built, the waypoints get reordered to start from the finish line so the AI cars can follow them in the right racing order.
 
@@ -305,7 +291,6 @@ To prevent AI cars from behaving identically, each instance uses its own random 
 
 AI logic updates at 30 Hz. Testing shows that 20 Hz is acceptable, while 10 Hz causes frequent wall collisions. Physics simulation runs at the current frame rate and uses delta time to maintain consistent behavior across different refresh rates.
 
-
 ### Sound Effects
 
 I used SFML's audio system for all the sound effects. All the audio files come from [OpenGameArt.org](https://opengameart.org/), which has lots of free game assets.
@@ -316,18 +301,15 @@ On top of that, tire screeching plays when you're drifting, using a [tire squeal
 
 Lastly, every button click and menu interaction plays a sound effect from [UI sound packs](https://opengameart.org/content/ui-and-item-sound-effect-jingles-sample-2).
 
-
 For all sounds, the volume controls work in real-time and save to the config file using [toml++](https://github.com/marzer/tomlplusplus).
-
 
 ### Window Management
 
-Getting a window from SFML is easy. Creating a game-engine like system that can handle switching between fullscreen and windowed modes, different resolutions, and anti-aliasing settings is a bit more complex. On top of that, I wanted to support V-sync and frame rate limiting. And all of these settings should be configurable in the UI, and then saved to a config file on disk.
+Getting a window from SFML is easy. Creating a game-engine-like system that can handle switching between fullscreen and windowed modes, different resolutions, and anti-aliasing settings is a bit more complex. On top of that, I wanted to support V-sync and frame rate limiting. All of these settings should be configurable in the UI and saved to a config file on disk.
 
 The tricky part is that when you change certain settings like anti-aliasing, you have to completely recreate the SFML window because those properties can only be set when the window is first created. Changing the frame rate limit or V-sync does not require a window recreation, but they cannot be enabled at the same time, so I had to handle that as well.
 
 I ended up recreating the window whenever the user changes any setting for simplicity, as it allows me to apply all changes at once.
-
 
 ### Settings System
 
@@ -338,53 +320,45 @@ Notably, getting the game to work on different operating systems meant figuring 
 I wrote platform-specific code that uses the native APIs to find the right directories:
 
 - Windows: Uses `SHGetFolderPath` to get the Local AppData folder.
-- macOS: Uses Foundation framework's `NSSearchPathForDirectoriesInDomains` to get the Application Support directory.
+- macOS: Uses the Foundation framework's `NSSearchPathForDirectoriesInDomains` to get the Application Support directory.
 - Linux: Follows the XDG Base Directory Specification by checking `XDG_DATA_HOME` first, falling back to `~/.local/share` if not set.
 
 This makes sure config files end up in the right places:
+
 - macOS: `~/Library/Application Support/vroom/config.toml`
 - Linux: `$XDG_DATA_HOME/vroom/config.toml` (or `~/.local/share/vroom/config.toml`)
 - Windows: `%LOCALAPPDATA%/vroom/config.toml`
 
-
 ### ImGui User Interface
 
-The entire interface is built using Dear ImGui with [ImGui-SFML bindings](https://github.com/SFML/imgui-sfml), which makes it easy to integrate immediate-mode GUI with SFML's rendering. I used the [Moonlight theme](https://github.com/Madam-Herta/Moonlight) to make it look a little less like a development tool and more like a game UI.
+The UI uses Dear ImGui with the [Moonlight theme](https://github.com/Madam-Herta/Moonlight). It looks more like a game UI than a debug panel.
 
+To integrate ImGui with SFML, I used the [ImGui‑SFML](https://github.com/SFML/imgui-sfml), creating a RAII `ImGuiContext` class that initializes the binding on construction and cleans up on scope exit. It's completely seamless.
 
 #### Widgets
 
 I built several ImGui widgets to show real-time game information:
 
-- FPS Counter: Shows current frame rate, frame time in milliseconds, and V-sync status. The colors change automatically - green for good performance (60+ FPS), yellow for moderate (30-60 FPS), and red for poor performance (below 30 FPS).
-- Minimap: One of the more complex widgets - it renders the entire game scene to an SFML render texture, then displays that texture in an ImGui window. Features include configurable refresh rate (defaults to 10Hz for performance), and adjustable resolution (256x256, 512x512, or 1024x1024).
-- Leaderboard: Tracks lap times and positions for all cars. It automatically sorts by position and highlights the player's current standing, including best lap times and current lap progress.
-- Speedometer: Displays current speed in kilometers per hour (km/h).
-
+* **FPS Counter:** Shows current frame rate.
+* **Minimap:** One of the more complex widgets - it renders the entire game scene to an SFML render texture, then displays that texture in an ImGui window. Features include configurable refresh rate and adjustable resolution (256x256, 512x512, or 1024x1024).
+* **Leaderboard:** Tracks drift scores all cars. It automatically sorts by score.
+* **Speedometer:** Displays current speed in kilometers per hour (km/h).
 
 #### Settings Menu
 
-The settings menu uses a tabbed interface with five sections. Every setting change gets immediately saved to disk as a TOML file.
+Tabbed layout with five sections. All changes apply immediately.
 
-- Game Tab: Controls the core racing settings. You can adjust track generation parameters like track width (3-20 tiles), track height (3-20 tiles), tile size (256-2048 pixels), and detour probability (0.0-1.0) for variety. Camera settings include zoom level (1x-15x) and which vehicle the camera follows. Changes trigger immediate track regeneration.
-- Controls Tab: Handles both keyboard and gamepad input with full customization. For gamepad users: Live display of all available gamepad axes when a controller is connected, any axis can be mapped to steering, gas, or brake, undividual invert toggles for each axis, handbrake can be mapped to any gamepad button, automatic fallback to keyboard when gamepad is disconnected.
-- Graphics Tab: Visual quality and performance settings: Toggle between windowed and fullscreen modes, full list of supported resolutions, anti-aliasing options from disabled to 16x samples, v-sync toggle and manual FPS limiting (30, 60, 90, 120, 144, unlimited), real-time FPS and frame time display, changes to anti-aliasing or display mode require window recreation, which happens automatically.
-- Audio Tab: Volume controls for all sound categories: Master volume, engine volume, effects volume, UI volume, individual mute toggles for each category, volume changes are applied in real-time with sample sounds for feedback
-- About Tab: System information and diagnostics: Game version, build configuration and time, compiler, C++ standard, platform details, and build options
+* **Game:** Track generation (width, height, tile size, detour probability), camera zoom, followed car.
+* **Graphics:** Window/fullscreen, resolution, anti-aliasing, V-sync, FPS cap.
+* **Controls:** Toggle between keyboard and gamepad, with full gamepad remapping alongside live input display.
+* **Audio:** Engine, tire, wall hit and UI volumes. Changes apply instantly.
+* **About:** Build and system info.
 
-The aforementioned settings system saves everything on scope exit (i.e., game exit). And on the next boot, all values are validated when loaded to prevent crashes from corrupted config files. Settings are stored in the platform-appropriate location and survive between sessions.
-
+The aforementioned settings system saves everything on scope exit (i.e., game exit). And on the next boot, all values are validated when loaded to prevent crashes from corrupted config files.
 
 ### UI Sound Feedback
 
-I added sound effects to every UI interaction to make it feel more polished. Every button click, checkbox toggle, and menu navigation plays an appropriate sound effect. The sounds respect the UI volume setting, and volume changes trigger a sample sound at the new level for immediate feedback.
-
-### Cross-Platform Support
-
-The game runs on macOS, Linux, and Windows. It performs well - I get 90 FPS while using only 3 watts on the Steam Deck OLED.
-
-Platform-specific code is kept in the `core/platform/` directory; everything is abstracted away.
-
+I added sound effects to every UI interaction to make it feel more polished. Every button click, checkbox toggle, and menu navigation plays an appropriate sound effect. A volume slider is, of course, available in the UI.
 
 ### Testing
 
@@ -398,9 +372,8 @@ I used RAII throughout the project to avoid manual memory management, as per mod
 
 I learned how to use SFML to build a complete game engine, with graphics, sounds, and input handling (including gamepad support). I also learned how to build a user interface using Dear ImGui.
 
-
 ## Final Thoughts
 
-Building vroom from scratch was a great learning experience.
+Building vroom from scratch was a valuable learning experience.
 
-The complete source code is available on [GitHub](https://github.com/ryouze/vroom), and there are pre-built binaries for macOS, Linux and Windows.
+The complete source code is on [GitHub](https://github.com/ryouze/vroom), with pre-built binaries for macOS, Linux, and Windows.
