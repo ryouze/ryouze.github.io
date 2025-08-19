@@ -8,6 +8,9 @@ showTableOfContents = true
 image = "/images/vroom.webp"
 +++
 
+![Preview](/images/vroom.webp)
+
+
 ## Introduction
 
 I wanted to build a 2D racing game from scratch, without relying on existing game engines like Godot or Unity. To achieve this, I chose to build my own game engine in C++, allowing me to improve my understanding of C++ and game development.
