@@ -299,7 +299,7 @@ The AI logic updates at 30 Hz. Testing shows that 20 Hz is acceptable, while 10 
 
 I used SFML's audio system for all the sound effects. All the audio files come from [OpenGameArt.org](https://opengameart.org/), which has lots of free game assets.
 
-The most complicated audio feature is the engine sound system. I took a basic engine loop sound from [OpenGameArt](https://opengameart.org/content/car-engine-loop-96khz-4s) and looped it. The code then simulates a 5-gear transmission by calculating fake RPM values based on car speed, figuring out what gear the car should be in, and adjusting the pitch and volume accordingly.
+The most complicated audio feature is the car engine sound itself. I took a basic car engine loop sound from [OpenGameArt](https://opengameart.org/content/car-engine-loop-96khz-4s) and looped it. The code then simulates a 5-gear transmission by calculating fake RPM values based on car speed, figuring out what gear the car should be in, and adjusting the pitch and volume accordingly.
 
 On top of that, tire screeching plays when you're drifting, using a [tire squeal sample](https://opengameart.org/content/car-tire-squeal-skid-loop) that fades in and out based on how much you're sliding. When you hit walls, it plays a [collision sound](https://opengameart.org/content/ingame-samples-audio) that I slowed down to 60% speed for more impact, with volume based on how hard you hit.
 
@@ -361,10 +361,6 @@ A tabbed layout with five sections. All changes apply immediately.
 * **About:** Build and system info.
 
 The aforementioned settings system saves everything on exit (i.e., when the game closes). On the next boot, all values are validated when loaded to prevent crashes from corrupted config files.
-
-### UI Sound Feedback
-
-I added sound effects to every UI interaction to make it feel more polished. Every button click, checkbox toggle, and menu navigation plays an appropriate sound effect. A volume slider is available in the UI.
 
 ### Testing
 
