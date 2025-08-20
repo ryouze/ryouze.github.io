@@ -14,7 +14,9 @@ image = "/images/vroom.webp"
 
 I wanted to build a 2D racing game from scratch without relying on existing game engines like Godot or Unity. To achieve this, I chose to build my own game engine in C++, allowing me to improve my understanding of C++ and game development.
 
-The result is *vroom*, an arcade-style racing game featuring drift physics, procedurally generated tracks, and waypoint-based AI.
+The result is [vroom](https://github.com/ryouze/vroom), an arcade-style racing game featuring drift physics, procedurally generated tracks, and waypoint-based AI.
+
+![Gameplay 1](https://raw.githubusercontent.com/ryouze/vroom/main/assets/gameplay1.gif)
 
 It's built with C++20 and [SFML3](https://github.com/SFML/SFML). The UI is written with [Dear ImGui](https://github.com/ocornut/imgui) (using [ImGui-SFML](https://github.com/SFML/imgui-sfml)). Persistent configuration storage is handled by [toml++](https://github.com/marzer/tomlplusplus), logging by [spdlog](https://github.com/gabime/spdlog), and unit testing by [snitch](https://github.com/snitch-org/snitch).
 
@@ -89,6 +91,8 @@ Assets (textures and sounds) are embedded directly into the executable as header
 Procedural track generation was one of the hardest parts. Handling detours was tricky since different corner textures had to be placed depending on orientation. To help, I added ASCII art diagrams inside comments to visualize how tiles fit together.
 
 The track uses textures from [Kenney's Racing Pack](https://kenney.nl/assets/racing-pack), upscaled with [Waifu2x](https://unlimited.waifu2x.net/). The algorithm builds rectangular layouts with optional "detour bubbles" along the edges. Width, height, and detour probability are configurable in the UI, and the AI adapts to any configuration.
+
+![Gameplay 2](https://raw.githubusercontent.com/ryouze/vroom/main/assets/gameplay2.gif)
 
 #### Bubble Detours
 
