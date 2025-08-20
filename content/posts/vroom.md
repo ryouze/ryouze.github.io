@@ -151,7 +151,7 @@ Car physics was another major challenge. I aimed for arcade-style handling: fun,
 
 The result is fast acceleration and easy drifting. It doesn't take much skill, but it's fun to play, which was the goal.
 
-Physics is applied inside the `Car` class. A full physics engine might be something I build later.
+Physics is applied inside the `Car` class. A full physics engine might be something I build later in a future project.
 
 ```cpp
 // Simplified physics implementation (runs on every frame)
@@ -338,6 +338,8 @@ This ensures config files end up in the right places:
 The UI uses Dear ImGui with the [Moonlight theme](https://github.com/Madam-Herta/Moonlight). It looks more like a game UI than a debug panel.
 
 To integrate ImGui with SFML, I used the [ImGui‑SFML](https://github.com/SFML/imgui-sfml), creating an RAII `ImGuiContext` class that initializes the binding on construction and cleans up on scope exit. It's completely seamless.
+
+![Graphics](/images/vroom_graphics.webp)
 
 #### Widgets
 
