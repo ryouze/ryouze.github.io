@@ -59,14 +59,14 @@ To install IPython, you can use pip:
 pip install ipython
 ```
 
-### Input and output caching
+### Caching
 
 - IPython stores the input and output of each command in the current session
 - It also stores the input (and output - if enabled in the settings) of previous sessions
 
 If you don't want to cache the input for a given command, you can put a semicolon at the end of the line (e.g., `1+2;`). IPython won't print the results and it also won't store the results in cache.
 
-### Input caching
+### Input Caching
 
 You access them through global variables.
 
@@ -92,7 +92,7 @@ Out[13]: '1+2'
 In [14]:
 ```
 
-### Output caching
+### Output Caching
 
 You also access them through global variables.
 
@@ -102,7 +102,7 @@ Output commands are stored in:
 - `_oh[<cell_number>]`
 - `Out[<cell_number>]`
 
-### Commands
+### Common Commands
 
 - CTRL + R = Search command history
 - `?command` or `command?` = Show help for command (e.g., `?pandas`)
@@ -150,7 +150,7 @@ The most useful magic functions are (according to the talk):
 - `%who` / `%whos`
 - `%xmode`
 
-#### Line Magics in detail
+#### Cool Line Magics
 
 Let's explain some of the most interesting ones in detail:
 
@@ -200,7 +200,7 @@ Bonus:
 9. `%store` - save macros, variables or aliases in IPython storage. This is because once you close IPython, everything is lost, so we can save them in the database and retrieve them back in another session.
 10. `%who` and `%whos` - print all interactive variables in a nicely formatted way.
 
-#### Cell magics for different programming languages
+#### Cell Magics for Other Languages
 
 So far all of the magic functions mentioned were line magics. But using cell magics, you can run code in other programming languages too.
 
@@ -231,7 +231,7 @@ In [4]:
 
 And it will even correctly highlight the Ruby syntax!
 
-### Writing magic functions
+### Writing Your Own Magic Functions
 
 So what if those hundreds of magic functions are not enough?
 
@@ -267,7 +267,7 @@ Extensions in IPython are an easy way to make your magic functions reusable and 
 
 That is to say, they are not limited only to the magic functions - you can for example write some code that modifies any part of IPython - from custom key bindings, custom colors, modifications to the configuration, and you can very easily turn that into an extension.
 
-#### Writing an extension
+#### How to Write Extensions
 
 - To create an extension you need to create a file containing `load_ipython_extension` function (and optionally the `unload_ipython_extension`)
 
@@ -317,7 +317,7 @@ All the `%load_ext` magic method does is to find a file with a matching name and
 
 So you probably notice this deprecation warning and might be thinking why am I showing you something that is deprecated. Well it's not really deprecated, it's just a subtle way of IPython telling you like - hey I see you have created an extension, how about you share it with others, and publish it on PyPI?
 
-### Where to find extensions?
+#### Downloading 3rd Party Extensions
 
 - Extensions Index - a wiki page in IPython repository (some extensions are *old* and you might have problems installing them)
 - `Framework::IPython` filter on PyPI - the recommended way to share extensions
@@ -331,11 +331,11 @@ So you probably notice this deprecation warning and might be thinking why am I s
 
 However, the popularity of those extensions is not very high, many of them are below version 1.0 or have been abandoned a long time ago. But sometimes you can actually find something useful.
 
-### Other cool features
+#### Additional Features
 
 So what else can you do with IPython?
 
-#### Shell commands
+##### Using Shell Commands
 
 - Commands starting with `!` are treated as shell commands
 - Some common commands don't require `!` prefix (`cd`, `ls`, `pwd`, etc.)
@@ -351,7 +351,7 @@ hello world
 In [5]: 1
 ```
 
-#### Aliases
+##### Creating Aliases
 
 `%alias` - Similar to Linux alias command, they let you call a system command under a different name:
 
@@ -368,7 +368,7 @@ In [4]: %print hello world
 hello world
 ```
 
-#### Path
+##### Managing Paths with `%rehashx`
 
 Speaking of aliases there is actually a cool and probably not very well known magic function called `rehashx`.
 
@@ -376,7 +376,7 @@ Speaking of aliases there is actually a cool and probably not very well known ma
 
 It will load all the executables from the path variable into the IPython session which basically means that now you can call any shell command right from IPython which is pretty cool. Little curiosity: here I'm starting a node REPL inside IPython REPL. I wanted to go deep down and start more REPLs but I failed.
 
-#### Setting verbosity of exceptions
+##### Adjusting Exception Verbosity
 
 IPython has four different settings for how verbose the exceptions should be.
 
@@ -446,7 +446,7 @@ x = 4
 IndexError: list index out of range
 ```
 
-### Autowait
+### Async Code
 
 Asynchronous code in REPL - you can execute asynchronous code by using `await` wherever you want.
 
@@ -487,7 +487,7 @@ Out[5]:
 
 ```
 
-### Demo mode
+### Demo Mode
 
 There is a demo mode in IPython.
 
@@ -534,7 +534,7 @@ So you will have access to all the variables and functions that were created in 
 
 But if you live in a terminal and you want to impress your colleagues with a pretty cool coding demo for your next presentation this is a great tool!
 
-### Configuration
+### Configuration Options
 
 So IPython comes with a lot of good defaults. In fact I never actually felt I needed to modify the configuration file.
 
@@ -562,7 +562,7 @@ For example, you can:
 - enable output caching between sessions
 - restore all variables from `%store` on startup
 
-### Startup files
+### Using Startup Files
 
 If you look at what else is inside the IPython profile default folder you will see a bunch of directories, most of them are internal to IPython.
 
@@ -627,7 +627,7 @@ So for example you can have a profile just for debugging and profiling your code
 
 But since you are not debugging your code all the time, instead of putting all those things into the default configuration you can create a separate profile for that.
 
-## Events
+## Events and Hooks
 
 So we talked about magic functions and extensions before and I told you that a lot of extensions define magic functions that you can use but that's not the only thing you can do with the extensions.
 
@@ -646,7 +646,7 @@ To add a callback to an event:
   - Register callback with `ip.events.register()`
 - Load the extension (with `%load_ext` function)
 
-### Writing a custom event
+### Writing Custom Events
 
 Let's see how it works in practice - let's say we want to make a function that will print the variables after the execution of each cell.
 
@@ -818,7 +818,7 @@ In [2]:
 
 ipdb debugger is just a wrapper around the standard pdb debugger that adds some features from IPython like syntax highlighting, tab completion and other small improvements.
 
-### Post mortem debugger
+#### Using the Post-Mortem Debugger
 
 So imagine you're running a Python script - a long running Python script - almost there and suddenly it crashes because that's what programs do!
 
@@ -860,7 +860,7 @@ ipdb» varsO
 ipdb>
 ```
 
-### Automatic debugger
+#### Automatic debugger
 
 Finally, if you want to automatically start the debugger when the exception happens there is a magic function called `%pdb` that you can use to enable this behavior.
 
@@ -875,16 +875,16 @@ ZeroDivisionError: division by zero
 › <ipython-input-2-9e1622b385b6>(1) ‹module>O
 ----> 1 1/0
 ipdb»
-Traceback (most recent call last)
+Traceback (most recent call last):
 ```
 
-## Profiling
+## Profiling Code
 
 So that was debugging. Another interesting set of functions is related to profiling code.
 
 If you're curious how slow your code is or more importantly where the bottleneck is, IPython has a few magic tricks up its sleeve.
 
-### Time
+### Measuring Execution Time with `%time`
 
 The first magic function is called `%time`.
 
@@ -899,7 +899,7 @@ Out [2]: 166616670000
 
 It's the simplest way to measure the execution time of a piece of code. It will just run your code once and print how long it took according to the CPU clock and the wall clock. Kind of boring.
 
-### Timeit
+### Using `%timeit` for Timing
 
 So there is a much more interesting function called `%timeit`.
 
@@ -933,7 +933,7 @@ It's more convenient if you want to profile code that has multiple lines.
 One nice thing about the cell magic version is that after the arguments you can pass some setup code that will be executed but it won't be part of the measurement.
 
 
-### Prun
+### Profiling with `%prun`
 
 Once we know that our code is slow we probably want to see why exactly it's slow - what's taking so much time?
 
@@ -959,11 +959,11 @@ ncalls  tottime  percall  cumtime  percall filename:lineno(function)
 
 ```
 
-So here we can see that our slow function is running for 12 seconds and is performing 50 million function calls and most of the time is spent in a function called `check_factor` in a file called `my_file.py`.
+So here we can see that our slow function is running for 12 seconds and is performing 50 million function calls and most of the time is spent in a function called `check_factor` in a file called `my_file`.
 
 So now we can go there and check what's wrong with this function and if we can make it better.
 
-### Line profiler
+### Line-by-Line Profiling with `%lprun`
 
 Another interesting type of profiler is line profiler.
 
@@ -1019,7 +1019,7 @@ So here I'm running a function called `long_running_script` and I want my profil
 
 So line profiler will generate this nice report for each function that I specify where I can see how many times each line was run, how much time Python spent on this line and what percentage of the total running time was spent on that particular line.
 
-### Memory Profiler
+### Memory Profiling with `%mprun`
 
 The last profiler I want to mention is called memory profiler.
 
@@ -1057,7 +1057,7 @@ Filename: /Users/switowski/workspace/playground/my_file.py
 
 You see how the memory usage has changed between each line of your code.
 
-## Kernels
+## Working with Kernels
 
 - In IPython REPL, the "E" (Evaluation) happens in a separate process called kernel
 - You can use a different kernel than the default (Python) one
@@ -1090,7 +1090,7 @@ As you can see the REPL still looks the same but now you can use Julia syntax an
 
 So the new kernel will work with both IPython REPL and Jupyter notebooks and while installing a custom kernel to use with the notebooks is a pretty good idea, installing a custom kernel just to use with IPython might be a bit of an overkill - nowadays programming languages have a very solid REPL of their own so it's probably easier to use that instead. Unless you really really want to use IPython all the time!
 
-## Other Cool Features
+## Exploring Additional Features
 
 And if you really really love IPython there is still a bunch of crazy stuff that you can do but I don't have time to discuss them all so I'm just gonna quickly show some of them.
 
@@ -1114,7 +1114,7 @@ And since this is already a talk about the Python REPL replacement it wouldn't b
 - ptpython
 - xonsh shell
 
-### bpython
+### Overview of bpython
 
 The first alternative is bpython.
 
@@ -1129,7 +1129,7 @@ In the quest of making a replacement for the default Python REPL, bpython took a
 
 And it has a very interesting feature called rewind that basically lets you remove the last command from the history like it never happened.
 
-### ptpython
+### Overview of ptpython
 
 Next there is ptpython - a Python REPL built on top of the prompt toolkit.
 
@@ -1145,7 +1145,7 @@ It's slightly more advanced than bpython as it contains a bit more features:
 
 The obvious ones are the syntax highlighting, multiline editing with smart indentation, autocompletion or shell commands. But there are some more innovative ones like syntax validation that checks your code if it's correct before executing it, Vim or Emacs key bindings, or those nice menus for configuration or the history.
 
-### xonsh shell
+### Overview of xonsh
 
 And finally there is xonsh - it's quite different than IPython, bpython or ptpython because it's not really a Python REPL.
 
