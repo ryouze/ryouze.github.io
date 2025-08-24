@@ -14,11 +14,11 @@ image = "/images/ipython-cheatsheet.webp"
 
 I recently started working as a machine learning engineer and was told to learn IPython. Until then, I had only seen it bundled with Jupyter Notebook. When I tried it, it looked like a normal Python REPL with syntax highlighting, and I didn't see much value in it.
 
-After looking into it, I realized it is more powerful than it first appears. Jupyter Notebooks feel slow and bloated to me, but IPython itself is a different story.
+After looking into it, I realized that it does *quite a lot*, actually.
 
 IPython began in 2001 as an enhanced interactive Python shell with tab completion, introspection, and inline help. Over time, it grew into the project that created the web-based notebook interface. In 2014-2015, that notebook component was [split into Jupyter](https://blog.jupyter.org/the-big-split-9d7b88a031a7), which generalized notebooks to support many languages through kernels. Today, IPython continues as the Python kernel for Jupyter and as a standalone REPL.
 
-In short: Jupyter provides the notebook interface, while IPython is the engine behind it. Running IPython directly gives you notebook-like power without the heavy web UI.
+In short: Jupyter provides the notebook interface, while IPython is the engine behind it. Running IPython directly gives you notebook-like power without the heavy web UI. Sounds good, right?
 
 This post is a cheatsheet of useful IPython commands and features, based on [Sebastian Witowski's talk](https://www.youtube.com/watch?v=S9rgGJYAQ8o) *IPython can do that?!* from freeCodeCamp Talks. I've added some nuggets of my own, but most of the credit goes to him.
 
@@ -32,15 +32,13 @@ pip install ipython
 
 ## Core Concepts
 
+IPython extends the standard Python REPL with several useful features, starting with caching.
+
 ### Caching
 
-IPython caches the [input and output of each command](https://ipython.org/ipython-doc/3/interactive/reference.html#input-caching-system), which can be accessed via global variables.
+IPython caches the [input and output of each command](https://ipython.org/ipython-doc/3/interactive/reference.html#input-caching-system) as global variables.
 
-To prevent storing an output in the cache, end the line with a semicolon (`;`). This [hides the result](https://ipython.readthedocs.io/en/stable/interactive/tips.html#suppress-output) and excludes it from `Out`.
-
-#### Input Caching
-
-Input commands are stored in global variables for easy access.
+#### Input commands
 
 | Variable             | Description                     | Example  |
 | -------------------- | ------------------------------- | -------- |
@@ -60,9 +58,9 @@ In [11]: _i9
 Out[11]: '1+2'
 ```
 
-#### Output Caching
+**Tip**: To search through your input history, use **CTRL + R**.
 
-Output results are also stored in global variables.
+#### Output Commands
 
 | Variable             | Description                               |
 | -------------------- | ----------------------------------------- |
@@ -71,14 +69,27 @@ Output results are also stored in global variables.
 | `_oh[<cell_number>]` | Dictionary of all outputs (1-indexed).    |
 | `Out[<cell_number>]` | Same as `_oh`.                            |
 
+
+**Tip**: To prevent storing an output in the cache, put a semicolon (`;`) at the end of the line. This [hides the result](https://ipython.readthedocs.io/en/stable/interactive/tips.html#suppress-output) and excludes it from `Out`.
+
 ### Help and Introspection
 
-| Command                | Description                                                                                                                                     |
-| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| `?object` or `object?` | Show [help](https://ipython.readthedocs.io/en/stable/interactive/python-ipython-diff.html#accessing-help) for an object (e.g., `?str.replace`). |
-| `object??`             | Show source code for an object (when available).                                                                                                |
-| `*text*?`              | Search for objects with [wildcards](https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.wildcard.html) (e.g., `os.*dir*?`).    |
-| **CTRL + R**           | Search command history.                                                                                                                         |
+To view help and source code via introspection, use the `?`
+
+| Command                  | Description                                                                                                                                     |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| `?object` or `object?`   | Show [help](https://ipython.readthedocs.io/en/stable/interactive/python-ipython-diff.html#accessing-help) for an object (e.g., `?str.replace`). |
+| `??object` or `object??` | Show source code for an object (when available).                                                                                                |
+
+```ipython
+In [1]: import pandas
+
+In [2]: pandas.DataFrame?
+
+In [3]: pandas.DataFrame??
+```
+
+**Tip**: You can also search for objects with [wildcards](https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.wildcard.html) (e.g., `os.*dir*?`).
 
 ### Shell Interaction
 
@@ -86,22 +97,25 @@ You can run shell commands directly from IPython. Commands starting with `!` are
 
 ```ipython
 In [1]: !echo "hello world" > new_file
+
 In [2]: !cat new_file
 hello world
 ```
 
 #### Aliases
 
-Create aliases for shell commands using the [`%alias`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#alias) magic function.
+It is also possible to create aliases for shell commands via the [`%alias`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#alias) magic function.
 
 ```ipython
 In [1]: %alias lr ls -alrt
+
 In [2]: lr
 total 8
 -rw-r--r--   1 user  staff    12 May 26 20:17 new_file
 -rw-r--r--   1 user  staff     0 May 26 20:16 test_file
 
 In [3]: %alias print_args echo %s %s
+
 In [4]: %print_args hello world
 hello world
 ```
@@ -112,7 +126,9 @@ The [`%rehashx`](https://ipython.readthedocs.io/en/stable/interactive/magics.htm
 
 ## Magic Functions
 
-Magic functions are special commands prefixed with `%` (line magics) or `%%` (cell magics).
+Magic functions are one of IPython's standout features.
+
+They are special commands prefixed with `%` (line magics) or `%%` (cell magics).
 
 * **Line Magics (`%`):** Operate on a single line of input.
 * **Cell Magics (`%%`):** Operate on the entire cell (multiple lines of input).
@@ -120,6 +136,8 @@ Magic functions are special commands prefixed with `%` (line magics) or `%%` (ce
 Use [`%lsmagic`](https://ipython.readthedocs.io/en/stable/interactive/magics.html) to list all available magic functions.
 
 ### Common Magic Commands
+
+Here are some of the most commonly used magic commands.
 
 | Magic                                                                                                                                                                   | Description                                                       |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
@@ -140,7 +158,7 @@ Use [`%lsmagic`](https://ipython.readthedocs.io/en/stable/interactive/magics.htm
 
 ### Top 3 Magic Commands
 
-Out of that list, here are the top 3 most interesting / useful ones.
+Out of the many magic commands available, these three are particularly useful.
 
 #### `%history`
 
@@ -176,7 +194,9 @@ Executes a Python script. Useful for testing modules without repeated imports.
 
 ### Cell Magics for Other Languages
 
-IPython can execute other languages via the `%%script` family and helpers like `%%bash`, which run external interpreters as subprocesses. These do not require separate Jupyter kernels. Display-oriented magics like `%%javascript`, `%%html`, and `%%latex` render rich outputs and are most useful in notebooks.
+IPython isn't limited to Python.
+
+It can execute also other languages via the `%%script` family and helpers like `%%bash`, which run external interpreters as subprocesses. These do not require separate Jupyter kernels.
 
 ```ipython
 In [2]: %%script python2
@@ -197,10 +217,14 @@ As a side-note, IPython's architecture separates the frontend (REPL) from the ba
 
 ## Customization
 
+IPython can be extended quite easily, starting with custom magic functions.
+
 ### Writing Your Own Magic Functions
 
 1. Write a Python function that accepts at least one parameter (the string passed to the magic).
 2. Decorate it with `@register_line_magic` or `@register_cell_magic`.
+
+(You do this directly within the IPython shell.)
 
 ```python
 from IPython.core.magic import register_line_magic
@@ -223,7 +247,7 @@ Docs: [Defining custom magics](https://ipython.readthedocs.io/en/stable/config/c
 
 ### Extensions
 
-Package your magic functions into reusable extensions.
+Obviously, you can package your magic functions into files for reuse across different sessions.
 
 1. **Create an extension file**: Create a Python file (e.g., `reverser.py`)
 2. **Define `load_ipython_extension`**: This function is the entry point for your extension.
@@ -245,8 +269,11 @@ def load_ipython_extension(ipython):
 
 3. **Load the extension**:
 
+(You do this manually within each IPython session.)
+
 ```ipython
 In [1]: %load_ext reverser
+
 In [2]: %reverse Hello world!
 Out[2]: '!dlrow olleH'
 ```
@@ -257,7 +284,7 @@ Docs: [IPython extensions and `load_ipython_extension`](https://ipython.readthed
 
 ### Startup Files
 
-For simpler customizations, place Python scripts (`.py` or `.ipy`) in `~/.ipython/profile_default/startup/`. These scripts run every time IPython starts, making it easy to define helper functions or import common modules.
+To load extensions automatically on startup, you can place Python scripts (`.py` or `.ipy`) in `~/.ipython/profile_default/startup/`.
 
 ```python
 # Example: ~/.ipython/profile_default/startup/my_magic.py
@@ -274,6 +301,10 @@ Docs: [Configuration intro, profiles, and startup files](https://ipython.readthe
 
 ### Configuration and Profiles
 
+Loading a bunch of extensions on startup can make startup slow.
+
+Instead, consider using profiles to create separate configurations for different workflows (e.g., debugging).
+
 * **Configuration File**: Run `ipython profile create` to generate the default configuration file at `~/.ipython/profile_default/ipython_config.py`. This file contains a vast number of options to customize IPython's behavior.
 * **Profiles**: Create separate profiles for different workflows using `ipython profile create <profile_name>`. Launch IPython with a specific profile using `ipython --profile=<profile_name>`. This allows you to have different startup files, extensions, and configurations for different tasks.
 
@@ -281,7 +312,7 @@ Docs: [Configuration intro](https://ipython.readthedocs.io/en/stable/config/intr
 
 ## Debugging
 
-IPython provides powerful, integrated debugging capabilities.
+IPython includes several on-the-fly debugging tools.
 
 ### Embedding IPython
 
@@ -384,7 +415,7 @@ ipdb> print(a_list)
 
 #### Automatic Debugger with `%pdb`
 
-Run the [`%pdb`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#pdb) magic command to toggle automatic debugger activation. When it's ON, IPython will automatically start the debugger whenever an unhandled exception occurs.
+You can also run the [`%pdb`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#pdb) magic command to toggle automatic debugger activation. When it's ON, IPython will automatically start the debugger whenever an unhandled exception occurs.
 
 ```ipython
 In [1]: %pdb
@@ -403,18 +434,16 @@ ipdb>
 
 ### Exception Verbosity (`%xmode`)
 
-Control the level of detail in exception tracebacks.
+The verbosity of exception tracebacks can be adjusted with the [`%xmode`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#xmode) magic command.
 
 * `%xmode Minimal`: Most concise, shows only the exception type and message.
 * `%xmode Plain`: Standard traceback.
 * `%xmode Context`: Default, shows context around the error line.
 * `%xmode Verbose`: Most detailed, includes local and global variables for each frame in the stack trace.
 
-Docs: [`%xmode`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#xmode).
-
 ## Profiling
 
-IPython provides excellent tools to measure code execution time and identify performance bottlenecks.
+IPython also makes it quite easy to profile your code.
 
 ### Measuring Execution Time with `%time` and `%timeit`
 
@@ -445,7 +474,9 @@ Docs: [`%time` and `%timeit`](https://ipython.readthedocs.io/en/stable/interacti
 
 ### Function Profiling with `%prun`
 
-When you know your code is slow, `%prun` helps you find out *why*. It runs your code with the standard Python `cProfile` profiler and provides a detailed report showing how many times each function was called and the total time spent inside each one. This is invaluable for pinpointing bottlenecks.
+When you know your code is slow, `%prun` helps you find out *why*.
+
+It runs your code with the standard Python `cProfile` profiler and provides a detailed report showing how many times each function was called and the total time spent inside each one.
 
 ```ipython
 In [1]: %prun a_slow_function()
@@ -493,7 +524,7 @@ Docs: [`line_profiler` and `%lprun`](https://kernprof.readthedocs.io/en/latest/)
 
 ### Memory Profiling with `%mprun`
 
-Similar to the line profiler, the memory profiler (`%mprun`) analyzes memory usage on a line-by-line basis, helping you find memory leaks or inefficient memory usage.
+Similar to the line profiler, the memory profiler (`%mprun`) analyzes memory usage on a line-by-line basis.
 
 1. **Install**: `pip install memory_profiler`
 2. **Load extension**: `%load_ext memory_profiler`
@@ -512,18 +543,25 @@ Filename: /path/to/my_file.py
  5    618.1 MiB      0.0 MiB       return a
 ```
 
-Docs: [`memory_profiler` and `%mprun` on PyPI](https://pypi.org/project/memory-profiler/). Note: the function generally needs to live in a module on disk; memory measurement can vary by OS. ([PyPI][13])
+Docs: [`memory_profiler` and `%mprun` on PyPI](https://pypi.org/project/memory-profiler/). Note: the function generally needs to live in a module on disk; memory measurement can vary by OS.
 
 ## Advanced Features
+
+IPython offers advanced features for asynchronous code, event handling, and more. This is a non-exhaustive overview.
 
 ### Asynchronous Code
 
 IPython supports top-level `await`, allowing you to run asynchronous code directly in the REPL, which is a `SyntaxError` in the standard Python REPL.
 
+Keep in mind, however, that this is implemented in a hacky way and may not work perfectly in all scenarios.
+
 ```ipython
 In [1]: import aiohttp
+
 In [2]: session = aiohttp.ClientSession()
+
 In [3]: response = await session.get("https://api.github.com")
+
 In [4]: response
 Out[4]: <ClientResponse(https://api.github.com) [200 OK]>
 ```
@@ -561,3 +599,7 @@ Docs: [Event loop integration](https://ipython.readthedocs.io/en/stable/config/e
 * **bpython**: A lightweight REPL with syntax highlighting, autocompletion, and a "rewind" feature.
 * **ptpython**: A more advanced REPL built on `prompt_toolkit`, offering multiline editing, syntax validation, and Vim/Emacs modes.
 * **xonsh**: A Python-powered shell language that is a superset of Python, combining shell and Python syntax.
+
+## Final Thoughts
+
+It's cool. Would recommend.
