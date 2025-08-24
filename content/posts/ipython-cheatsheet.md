@@ -34,7 +34,7 @@ pip install ipython
 ## Core Concepts
 
 ### Caching
-IPython caches the input and output of each command, which can be accessed via global variables. To prevent caching for a specific command, end the line with a semicolon (`;`).
+IPython caches the input and output of each command, which can be accessed via global variables. To prevent storing an output in the cache, end the line with a semicolon (`;`). This hides the result and excludes it from `Out`.
 
 #### Input Caching
 Input commands are stored in global variables for easy access.
@@ -64,21 +64,21 @@ Output results are also stored in global variables.
 | -------------------- | ----------------------------------------- |
 | `_`, `__`, `___`     | Last three output results.                |
 | `_<cell_number>`     | Output from a specific cell (e.g., `_9`). |
-| `_oh[<cell_number>]` | List of all outputs (1-indexed).          |
+| `_oh[<cell_number>]` | Dictionary of all outputs (1-indexed).    |
 | `Out[<cell_number>]` | Same as `_oh`.                            |
 
 ### Help and Introspection
 
-| Command                | Description                                              |
-| ---------------------- | -------------------------------------------------------- |
-| `?object` or `object?` | Show help for an object (e.g., `?str.replace`).          |
-| `object??`             | Show source code for an object (e.g., `os.path.join??`). |
-| `*text*?`              | Search for objects with wildcards (e.g., `os.*dir*?`).   |
-| **CTRL + R**           | Search command history.                                  |
+| Command                | Description                                            |
+| ---------------------- | ------------------------------------------------------ |
+| `?object` or `object?` | Show help for an object (e.g., `?str.replace`).        |
+| `object??`             | Show source code for an object (when available).       |
+| `*text*?`              | Search for objects with wildcards (e.g., `os.*dir*?`). |
+| **CTRL + R**           | Search command history.                                |
 
 ### Shell Interaction
 
-You can run shell commands directly from IPython. Commands starting with `!` are treated as shell commands, and some common commands (`cd`, `ls`, `pwd`, etc.) don't require the `!` prefix.
+You can run shell commands directly from IPython. Commands starting with `!` are treated as shell commands, and some common ones (`cd`, `ls`, `pwd`, etc.) are available as magics without the `!`.
 
 ```ipython
 In [1]: !echo "hello world" > new_file
@@ -100,8 +100,8 @@ In [4]: %print_args hello world
 hello world
 ```
 
-#### `%rehashx`
-The `%rehashx` magic loads all executables from your `$PATH` into the IPython alias table, allowing you to call any shell command without the `!` prefix.
+#### Rehashing
+The `%rehashx` magic loads all executables from your `$PATH` into the IPython alias table, allowing you to call them without the `!` prefix.
 
 ## Magic Functions
 
@@ -113,22 +113,22 @@ Use `%lsmagic` to list all available magic functions.
 
 ### Common & Useful Magics
 
-| Magic            | Description                                                       |
-| ---------------- | ----------------------------------------------------------------- |
-| `%history`       | Print input history with powerful filtering options.              |
-| `%edit`          | Open an editor to write and execute code.                         |
-| `%run`           | Run a Python script and load its data into the current namespace. |
-| `%rerun`         | Rerun a command or a range of commands from history.              |
-| `%recall`        | Recall and edit a command from history before executing.          |
-| `%macro`         | Define a macro from previous input commands.                      |
-| `%save`          | Save a range of input history to a file.                          |
-| `%pastebin`      | Upload code to a pastebin service (e.g., Gist).                   |
-| `%store`         | Store variables, aliases, or macros for use in future sessions.   |
-| `%who` / `%whos` | List all interactive variables.                                   |
-| `%xmode`         | Control the verbosity of exception tracebacks.                    |
-| `%debug`         | Activate the interactive post-mortem debugger.                    |
-| `%timeit`        | Time the execution of code for performance measurement.           |
-| `%prun`          | Run code with the Python code profiler.                           |
+| Magic               | Description                                                       |
+| ------------------- | ----------------------------------------------------------------- |
+| `%history`          | Print input history with powerful filtering options.              |
+| `%edit`             | Open an editor to write and execute code.                         |
+| `%run`              | Run a Python script and load its data into the current namespace. |
+| `%rerun`            | Rerun a command or a range of commands from history.              |
+| `%recall` / `%rep`  | Recall or re-execute a command from history.                      |
+| `%macro`            | Define a macro from previous input commands.                      |
+| `%save`             | Save a range of input history to a file.                          |
+| `%pastebin`         | Upload code to a pastebin service.                                |
+| `%store`            | Store variables, aliases, or macros for use in future sessions.   |
+| `%who` / `%whos`    | List all interactive variables.                                   |
+| `%xmode`            | Control the verbosity of exception tracebacks.                    |
+| `%debug` / `%pdb`   | Debug code interactively.                                         |
+| `%time` / `%timeit` | Time code execution.                                              |
+| `%prun`             | Run code with the Python profiler.                                |
 
 ### In-Depth Magic Commands
 
@@ -149,6 +149,7 @@ Opens a temporary file in your default editor (`$EDITOR`). The code is executed 
 
 #### `%run`
 Executes a Python script. Useful for testing modules without repeated imports.
+
 - `%run my_script.py`
 - Combine with the `%autoreload` extension to automatically reload modules before execution:
   ```ipython
@@ -159,17 +160,19 @@ Executes a Python script. Useful for testing modules without repeated imports.
 ### Cell Magics for Other Languages
 IPython can execute code in other languages if the corresponding kernel is installed.
 - `%%bash`
-- `%%ruby`
 - `%%javascript`
-- `%%python2`
+- `%%html`
+- `%%latex`
+- `%%script ruby`
+- `%%script python2` (if installed)
 
 ```ipython
-In [2]: %%python2
+In [2]: %%script python2
 ...: print "but" "this" "will"
 ...:
 but this will
 
-In [3]: %%ruby
+In [3]: %%script ruby
 ...: puts "hello from Ruby!"
 ...:
 hello from Ruby!
@@ -178,8 +181,8 @@ hello from Ruby!
 ## Customization
 
 ### Writing Your Own Magic Functions
-1.  Write a Python function that accepts at least one parameter (the string passed to the magic).
-2.  Decorate it with `@register_line_magic` or `@register_cell_magic`.
+1. Write a Python function that accepts at least one parameter (the string passed to the magic).
+2. Decorate it with `@register_line_magic` or `@register_cell_magic`.
 
 ```python
 from IPython.core.magic import register_line_magic
@@ -198,8 +201,8 @@ Out[2]: 'drow olleh'
 ### Extensions
 Package your magic functions into reusable extensions.
 
-1.  **Create an extension file**: Create a Python file (e.g., `reverser.py`)
-2.  **Define `load_ipython_extension`**: This function is the entry point for your extension.
+1. **Create an extension file**: Create a Python file (e.g., `reverser.py`)
+2. **Define `load_ipython_extension`**: This function is the entry point for your extension.
 
 ```python
 # ~/.ipython/extensions/reverser.py
@@ -215,7 +218,7 @@ def load_ipython_extension(ipython):
     # You can also define an unload_ipython_extension(ipython) function.
 ```
 
-3.  **Load the extension**:
+3. **Load the extension**:
 ```ipython
 In [1]: %load_ext reverser
 In [2]: %reverse Hello world!
@@ -260,9 +263,9 @@ IPython's debugger, `ipdb`, is an enhanced version of `pdb` with features like s
 - **Run with Debugger**: `%run -d my_file.py`
   - This command starts the script under the debugger and places a breakpoint at the first line.
 - **Post-Mortem Debugging**: `%debug`
-  - If your code crashes with an exception, run `%debug` immediately after. It will open the debugger at the exact point where the exception occurred, allowing you to inspect the call stack and variables.
+  - If your code crashes with an exception, run `%debug` immediately after. It will open the debugger at the exact point where the exception occurred.
 - **Automatic Debugger**: `%pdb`
-  - Run `%pdb` to toggle automatic debugger activation. When ON, IPython will automatically start the debugger on any unhandled exception.
+  * Run `%pdb` to toggle automatic debugger activation. When ON, IPython will automatically start the debugger on any unhandled exception.
 
 ### Exception Verbosity (`%xmode`)
 Control the level of detail in exception tracebacks.
@@ -278,11 +281,11 @@ Identify performance bottlenecks in your code.
 ### Timing Code
 - `%time <statement>`: Measures the wall clock and CPU time of a single execution.
 - `%%timeit`: A cell magic that is more convenient for multiline code. It can also take setup code that is not included in the timing.
-- `%timeit <statement>`: Runs a statement multiple times to get a reliable average execution time. It intelligently determines the number of runs.
+- `%timeit <statement>`: Runs a statement multiple times to get a reliable average execution time It intelligently determines the number of runs.
 
 ```ipython
 In [5]: %timeit run_calculations()
-2.82 s $ 124 ms per loop (mean $ std. dev. of 7 runs, 1 loop each)
+2.82 s +/- 124 ms per loop (mean +/- std. dev. of 7 runs, 1 loop each)
 ```
 
 ### Function Profiling with `%prun`
@@ -302,9 +305,9 @@ In [1]: %prun a_slow_function()
 
 ### Line-by-Line Profiling with `%lprun`
 For a more granular view, `%lprun` profiles code line by line.
-1.  Install: `pip install line_profiler`
-2.  Load extension: `%load_ext line_profiler`
-3.  Run: `%lprun -f function_to_profile code_to_run()`
+1. Install: `pip install line_profiler`
+2. Load extension: `%load_ext line_profiler`
+3. Run: `%lprun -f function_to_profile code_to_run()`
 
 ```ipython
 In [1]: %lprun -f important_function long_running_script()
@@ -324,9 +327,11 @@ Function: important_function at line 1
 
 ### Memory Profiling with `%mprun`
 Profile memory usage line by line.
-1.  Install: `pip install memory_profiler`
-2.  Load extension: `%load_ext memory_profiler`
-3.  Run: `%mprun -f function_to_profile code_to_run()`
+1. Install: `pip install memory_profiler`
+2. Load extension: `%load_ext memory_profiler`
+3. Run: `%mprun -f function_to_profile code_to_run()`
+
+**Note**: `%mprun` only works on functions defined in files, not inline in the REPL.
 
 ```ipython
 In [1]: %mprun -f memory_intensive memory_intensive()
@@ -349,10 +354,9 @@ IPython supports top-level `await`, allowing you to run asynchronous code direct
 ```ipython
 In [1]: import aiohttp
 In [2]: session = aiohttp.ClientSession()
-In [3]: result = session.get("https://api.github.com")
-In [4]: response = await result
-In [5]: response
-Out[5]: <ClientResponse(https://api.github.com) [200 OK]>
+In [3]: response = await session.get("https://api.github.com")
+In [4]: response
+Out[4]: <ClientResponse(https://api.github.com) [200 OK]>
 ```
 
 ### Events and Hooks
