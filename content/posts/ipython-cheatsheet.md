@@ -207,9 +207,10 @@ As a side-note, IPython's architecture separates the frontend (REPL) from the ba
 ```python
 from IPython.core.magic import register_line_magic
 
+
 @register_line_magic("reverse")  # The name of the magic function
 def lmagic(line):
-    "Line magic to reverse a string"
+    """Line magic to reverse a string."""
     return line[::-1]
 ```
 
@@ -233,10 +234,11 @@ Package your magic functions into reusable extensions.
 # ~/.ipython/extensions/reverser.py
 from IPython.core.magic import register_line_magic
 
+
 def load_ipython_extension(ipython):
     @register_line_magic("reverse")
     def lmagic(line):
-        "Line magic to reverse a string"
+        """Line magic to reverse a string."""
         return line[::-1]
 
     # The 'ipython' argument is the active InteractiveShell instance.
@@ -259,13 +261,14 @@ Docs: [IPython extensions and `load_ipython_extension`](https://ipython.readthed
 
 For simpler customizations, place Python scripts (`.py` or `.ipy`) in `~/.ipython/profile_default/startup/`. These scripts run every time IPython starts, making it easy to define helper functions or import common modules.
 
-```bash
+```python
 # Example: ~/.ipython/profile_default/startup/my_magic.py
 from IPython.core.magic import register_line_magic
 
+
 @register_line_magic("reverse")
 def lmagic(line):
-    "Line magic to reverse a string"
+    """Line magic to reverse a string."""
     return line[::-1]
 ```
 
@@ -350,11 +353,13 @@ If your code crashes with an exception, you can run the [`%debug`](https://ipyth
 def function2(n):
     a_list = [1, 2, 3, 4]
     total = sum(a_list)
-    total += a_list[n] # This will raise an IndexError
+    total += a_list[n]  # This will raise an IndexError
     return total
+
 
 def function1():
     return function2(5)
+
 
 function1()
 ```
@@ -542,6 +547,7 @@ class VarPrinter:
     def post_run_cell(self, result):
         print("--- Variables after cell execution: ---")
         self.ip.run_line_magic("whos", "")
+
 
 def load_ipython_extension(ip):
     vp = VarPrinter(ip)
