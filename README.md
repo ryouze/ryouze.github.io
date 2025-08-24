@@ -36,7 +36,7 @@ The project is organized as follows:
 
 This project has been tested on the following systems:
 
-- macOS 15.3 (Sonoma)
+- macOS 15.6 (Sonoma)
 
 Automated builds are performed on the latest versions of Linux.
 
