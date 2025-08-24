@@ -247,25 +247,110 @@ def lmagic(line):
 IPython provides powerful, integrated debugging capabilities.
 
 ### Embedding IPython
-Embed an IPython shell anywhere in your code to inspect its state at that point.
+You can embed an IPython shell anywhere in your code to inspect its state at that point. This is useful for pausing execution and exploring variables interactively.
+
+To do this, import the `embed` function from IPython and call it.
 ```python
 # embedding_example.py
 a = 10
 b = 15
-from IPython import embed; embed() # Embed shell here
+
+from IPython import embed; embed()  # Embed shell here
 print(f"a+b = {a + b}")
 ```
-When you run `python embedding_example.py`, an IPython shell will open. You can inspect and even change variables before exiting to continue the script's execution.
+Placing `from IPython import embed;` and `embed()` on a single line makes it easy to remove later because it often triggers a linting warning, reminding you to remove it before committing your code.
+
+When you run the script, an IPython shell will open at the `embed()` call. You can inspect and even change variables. Exiting the embedded shell (with `exit` or `Ctrl-D`) will resume the script's execution.
+```
+$ python embedding_example.py
+IPython 9.4.0 -- An enhanced Interactive Python.
+
+In [1]: a
+Out[1]: 10
+
+In [2]: b = 100
+
+In [3]: exit
+a+b = 110
+```
 
 ### The `ipdb` Debugger
-IPython's debugger, `ipdb`, is an enhanced version of `pdb` with features like syntax highlighting and tab completion.
+IPython's debugger, `ipdb`, is an enhanced version of Python's standard `pdb` with features like syntax highlighting, tab completion, and better tracebacks.
 
-- **Run with Debugger**: `%run -d my_file.py`
-  - This command starts the script under the debugger and places a breakpoint at the first line.
-- **Post-Mortem Debugging**: `%debug`
-  - If your code crashes with an exception, run `%debug` immediately after. It will open the debugger at the exact point where the exception occurred.
-- **Automatic Debugger**: `%pdb`
-  * Run `%pdb` to toggle automatic debugger activation. When ON, IPython will automatically start the debugger on any unhandled exception.
+#### Running a Script with the Debugger
+Use the `%run -d` magic command to run a script from the beginning with the debugger. It will place a breakpoint on the first line.
+```ipython
+In [1]: %run -d my_file.py
+Breakpoint 1 at /path/to/my_file.py:1
+NOTE: Enter 'c' at the ipdb> prompt to continue execution.
+> /path/to/my_file.py(1)<module>()
+----> 1 a = 10
+      2 b = 15
+      3 print(f"a+b = {a+b}")
+
+ipdb> next
+> /path/to/my_file.py(2)<module>()
+      1 a = 10
+----> 2 b = 15
+      3 print(f"a+b = {a+b}")
+
+ipdb> continue
+a+b = 25
+```
+
+#### Post-Mortem Debugging with `%debug`
+If your code crashes with an exception, you can run the `%debug` magic command immediately afterward. This will start the debugger at the exact point where the exception occurred, allowing you to inspect the call stack and variables to understand the cause of the error. This is incredibly useful for diagnosing issues without having to re-run a long script with the debugger enabled from the start.
+
+```python
+# my_broken_function.py
+def function2(n):
+    a_list = [1, 2, 3, 4]
+    total = sum(a_list)
+    total += a_list[n] # This will raise an IndexError
+    return total
+
+def function1():
+    return function2(5)
+
+function1()
+```
+```ipython
+In [1]: %run my_broken_function.py
+---------------------------------------------------------------------------
+IndexError                                Traceback (most recent call last)
+...
+IndexError: list index out of range
+
+In [2]: %debug
+> /path/to/my_broken_function.py(4)function2()
+      2     a_list = [1, 2, 3, 4]
+      3     total = sum(a_list)
+----> 4     total += a_list[n] # This will raise an IndexError
+      5     return total
+
+ipdb> print(n)
+5
+ipdb> print(a_list)
+[1, 2, 3, 4]
+```
+
+#### Automatic Debugger with `%pdb`
+Run the `%pdb` magic command to toggle automatic debugger activation. When it's ON, IPython will automatically start the debugger whenever an unhandled exception occurs, saving you the step of typing `%debug`.
+
+```ipython
+In [1]: %pdb
+Automatic pdb calling has been turned ON
+
+In [2]: 1/0
+---------------------------------------------------------------------------
+ZeroDivisionError                         Traceback (most recent call last)
+...
+ZeroDivisionError: division by zero
+> <ipython-input-2-9e1622b385b6>(1)<module>()
+----> 1 1/0
+
+ipdb>
+```
 
 ### Exception Verbosity (`%xmode`)
 Control the level of detail in exception tracebacks.
@@ -276,20 +361,31 @@ Control the level of detail in exception tracebacks.
 - `%xmode Verbose`: Most detailed, includes local and global variables for each frame in the stack trace.
 
 ## Profiling
-Identify performance bottlenecks in your code.
+IPython provides excellent tools to measure code execution time and identify performance bottlenecks.
 
-### Timing Code
-- `%time <statement>`: Measures the wall clock and CPU time of a single execution.
-- `%%timeit`: A cell magic that is more convenient for multiline code. It can also take setup code that is not included in the timing.
-- `%timeit <statement>`: Runs a statement multiple times to get a reliable average execution time It intelligently determines the number of runs.
-
-```ipython
-In [5]: %timeit run_calculations()
-2.82 s +/- 124 ms per loop (mean +/- std. dev. of 7 runs, 1 loop each)
-```
+### Measuring Execution Time with `%time` and `%timeit`
+- **`%time`**: A simple magic to measure the execution time of a single statement. It runs the code once and reports the CPU and wall clock time.
+  ```ipython
+  In [2]: %time run_calculations()
+  CPU times: user 2.68 s, sys: 10.9 ms, total: 2.69 s
+  Wall time: 2.71 s
+  ```
+- **`%timeit`**: A more robust tool for timing. It automatically runs a statement multiple times to get a reliable average execution time and standard deviation. It's smart enough to adjust the number of loops based on how long the code takes to run.
+  ```ipython
+  In [5]: %timeit run_calculations()
+  2.82 s ± 124 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+  ```
+- **`%%timeit`**: The cell magic version of `timeit`, which is convenient for timing multiline code blocks. You can also provide setup code that runs once but is not included in the timing measurement.
+  ```ipython
+  In [1]: %%timeit
+     ...: total = 0
+     ...: for x in range(10000):
+     ...:     total += x
+  2.7 s ± 25.7 ms per loop (mean ± std. dev. of 7 runs, 1 loop each)
+  ```
 
 ### Function Profiling with `%prun`
-`%prun` runs your code with the `cProfile` profiler and provides a detailed report of time spent in each function.
+When you know your code is slow, `%prun` helps you find out *why*. It runs your code with the standard Python `cProfile` profiler and provides a detailed report showing how many times each function was called and the total time spent inside each one. This is invaluable for pinpointing bottlenecks.
 
 ```ipython
 In [1]: %prun a_slow_function()
@@ -302,13 +398,16 @@ In [1]: %prun a_slow_function()
  49995000    3.956    0.000    3.956    0.000 my_file.py:15(check_factor)
 ...
 ```
+The output shows that most of the time is spent in `helper_function`, making it the primary candidate for optimization.
 
 ### Line-by-Line Profiling with `%lprun`
-For a more granular view, `%lprun` profiles code line by line.
-1. Install: `pip install line_profiler`
-2. Load extension: `%load_ext line_profiler`
-3. Run: `%lprun -f function_to_profile code_to_run()`
+For an even more granular view, the `%lprun` magic profiles your code on a line-by-line basis. It shows how much time was spent executing each line of a function.
 
+1.  **Install**: `pip install line_profiler`
+2.  **Load extension**: `%load_ext line_profiler`
+3.  **Run**: `%lprun -f function_to_profile code_to_run()`
+
+You must specify which function(s) to profile with the `-f` flag.
 ```ipython
 In [1]: %lprun -f important_function long_running_script()
 Timer unit: 1e-06 s
@@ -324,14 +423,14 @@ Function: important_function at line 1
  3   10000     11686.0      1.2    0.0        b += 10
  4   10000      3560.0      0.4    0.0        return b
 ```
+This report clearly shows that line 2, the call to `helper_function`, is responsible for 99.9% of the execution time within `important_function`.
 
 ### Memory Profiling with `%mprun`
-Profile memory usage line by line.
-1. Install: `pip install memory_profiler`
-2. Load extension: `%load_ext memory_profiler`
-3. Run: `%mprun -f function_to_profile code_to_run()`
+Similar to the line profiler, the memory profiler (`%mprun`) analyzes memory usage on a line-by-line basis, helping you find memory leaks or inefficient memory usage.
 
-**Note**: `%mprun` only works on functions defined in files, not inline in the REPL.
+1.  **Install**: `pip install memory_profiler`
+2.  **Load extension**: `%load_ext memory_profiler`
+3.  **Run**: `%mprun -f function_to_profile code_to_run()`
 
 ```ipython
 In [1]: %mprun -f memory_intensive memory_intensive()
@@ -345,6 +444,7 @@ Filename: /path/to/my_file.py
  4    618.1 MiB  -1540.9 MiB       del b
  5    618.1 MiB      0.0 MiB       return a
 ```
+The output shows the total memory usage after each line is executed and the incremental change, making it easy to spot which lines are allocating or deallocating significant amounts of memory.
 
 ## Advanced Features
 
