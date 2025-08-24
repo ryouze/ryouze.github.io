@@ -12,17 +12,15 @@ image = "/images/ipython-cheatsheet.webp"
 
 ## Introduction
 
-I recently started a job as a machine learning engineer and was told to learn IPython. Until now, I had only seen it bundled with Jupyter Notebook, and when I tried it, it looked like a regular Python REPL with syntax highlighting. I didn't see the point.
+I recently started working as a machine learning engineer and was told to learn IPython. Until then, I had only seen it bundled with Jupyter Notebook. When I tried it, it looked like a normal Python REPL with syntax highlighting, and I didn't see much value in it.
 
-After some research, I realized it's actually quite useful. Allow me to explain.
+After looking into it, I realized it is more powerful than it first appears. Jupyter Notebooks feel slow and bloated to me, but IPython itself is a different story.
 
-I don't like Jupyter Notebooks because they feel bloated and take a long time to start. Thankfully, VSCode can open them, so at least my formatter and linter combo (Ruff) still works.
+IPython began in 2001 as an enhanced interactive Python shell with tab completion, introspection, and inline help. Over time, it grew into the project that created the web-based notebook interface. In 2014-2015, that notebook component was [split into Jupyter](https://blog.jupyter.org/the-big-split-9d7b88a031a7), which generalized notebooks to support many languages through kernels. Today, IPython continues as the Python kernel for Jupyter and as a standalone REPL.
 
-IPython started in 2001 as an enhanced interactive Python shell with features like tab completion, rich introspection, and inline help. Over time it grew into the project that created the web-based notebook interface. In 2014, that notebook component was [split into Jupyter](https://blog.jupyter.org/the-big-split-9d7b88a031a7), which generalized the idea of interactive notebooks beyond Python to support many languages through "kernels." IPython itself continues as the Python kernel for Jupyter, while also being available as a standalone REPL in your terminal.
+In short: Jupyter provides the notebook interface, while IPython is the engine behind it. Running IPython directly gives you notebook-like power without the heavy web UI.
 
-In other words: Jupyter gives you the notebook interface, IPython provides the engine behind it. Running IPython directly feels like using a Notebook without the clunky web UI. On top of that, it offers powerful magic commands, including built-in ones that make debugging easier.
-
-This post is a cheatsheet of useful IPython commands and features, based on [Sebastian Witowski's talk](https://www.youtube.com/watch?v=S9rgGJYAQ8o) *IPython can do that?!* from freeCodeCamp Talks. I've added some extra notes, but full credit goes to him. Thanks, Sebastian!
+This post is a cheatsheet of useful IPython commands and features, based on [Sebastian Witowski's talk](https://www.youtube.com/watch?v=S9rgGJYAQ8o) *IPython can do that?!* from freeCodeCamp Talks. I've added some nuggets of my own, but most of the credit goes to him.
 
 ## Installation
 
