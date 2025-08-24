@@ -8,9 +8,9 @@ showTableOfContents = true
 image = "/images/block-apple-intelligence-preview.webp"
 +++
 
-## Introduction
-
 ![Preview](/images/block-apple-intelligence-preview.webp)
+
+## Introduction
 
 With macOS 15.3, **Apple Intelligence is [enabled by default](https://arstechnica.com/gadgets/2025/01/ios-18-3-disables-controversial-ai-generated-news-app-notifications/)**.
 
