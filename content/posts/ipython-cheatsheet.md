@@ -602,4 +602,4 @@ Docs: [Event loop integration](https://ipython.readthedocs.io/en/stable/config/e
 
 ## Final Thoughts
 
-It's cool. Would recommend.
+IPython is basically Jupyter notebooks without the web interface. I like it.
