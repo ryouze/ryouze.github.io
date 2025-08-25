@@ -12,7 +12,7 @@ image = "/images/ipython-cheatsheet.webp"
 
 ## Introduction
 
-I just started working as a machine learning engineer, and one of the first things I was told was to learn IPython. Until then, I had only seen it bundled with Jupyter notebooks. When I tried it briefly a couple of years ago, it looked like nothing more than a Python REPL with syntax highlighting, so I didn't see much value in it.
+I recently started working as a machine learning engineer, and one of the first things I was told was to learn IPython. Until then, I had only seen it bundled with Jupyter notebooks. When I tried it briefly a couple of years ago, it looked like nothing more than a Python REPL with syntax highlighting, so I didn't see much value in it.
 
 This time, digging deeper, I realized that IPython does *a lot* more than I expected.
 
@@ -74,7 +74,7 @@ Out[11]: '1+2'
 
 ### Help and Introspection
 
-To view help and source code via introspection, use the `?`
+To view help and source code via introspection, use the `?` and `??` operators.
 
 | Command                  | Description                                                                                                                                     |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -602,4 +602,4 @@ Docs: [Event loop integration](https://ipython.readthedocs.io/en/stable/config/e
 
 ## Final Thoughts
 
-IPython is basically Jupyter notebooks without the web interface. I like it.
+Jupyter Notebooks without the web interface. I like it.
