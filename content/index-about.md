@@ -1,7 +1,7 @@
-I hold an M.A. in [Language, Mind, Technology](https://anglistyka.amu.edu.pl/en/for-candidates/full-time-ma-programmes/language-mind-technology) from Adam Mickiewicz University. This interdisciplinary program combines linguistics with computer science, cognitive science, and AI to study language using both theoretical and experimental methods.
+I am a machine learning engineer with over three years of experience in software development.
 
-During a 3-year paid research internship on the [PRODIS project](https://prodis-opus19.github.io), I built and maintained the full machine learning and data processing stack. This included a first-of-its-kind [phoneme-level GPT model for Polish](https://arxiv.org/abs/2404.10112), CI pipelines for survey processing, transcription QA tools, a batch ASR wrapper, and a custom web interface for data collection. I also developed an internal GUI tool to track the progress of data collection.
+I currently work at [EPR Labs](https://epr-labs.com), where I develop software and data pipelines for training, evaluating, and deploying predictive and generative machine learning models in Python.
 
-Outside of research, I build cross-platform tools, games, and backend infrastructure in Python and C++. My projects emphasize automation, reproducibility, and performance. I've used Linux since 2016 and maintain a home server for self-hosting.
+During a three-year paid research internship with the [PRODIS project](https://prodis-opus19.github.io), I designed and maintained the full machine learning and data processing stack. My work included developing a first-of-its-kind [phoneme-level GPT model for Polish](https://arxiv.org/abs/2404.10112), CI pipelines for survey processing, transcription QA tools, a batch ASR wrapper, and a custom web interface for data collection. I also built an internal GUI tool to monitor data collection progress.
 
-A full list of my projects can be found [here]({{< ref "projects" >}}).
+Outside of work, I develop cross-platform tools and games in C++ and maintain a Linux home server for self-hosting.
