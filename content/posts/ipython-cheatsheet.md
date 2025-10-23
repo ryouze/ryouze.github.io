@@ -16,7 +16,7 @@ I recently started working as a machine learning engineer, and one of the first 
 
 This time, digging deeper, I realized that IPython does *a lot* more than I expected.
 
-IPython began in 2001 as an enhanced interactive Python shell with tab completion, introspection, and inline help. Over time, it grew into the project that created the web-based *notebook* interface. In 2014–2015, that notebook component was [split into Jupyter](https://blog.jupyter.org/the-big-split-9d7b88a031a7), which expanded support to many languages through kernels. Today, IPython continues as the Python kernel for Jupyter and as a standalone REPL.
+IPython began in 2001 as an enhanced interactive Python shell with tab completion, introspection, and inline help. Over time, it grew into the project that created the web-based *notebook* interface. In 2014-2015, that notebook component was [split into Jupyter](https://blog.jupyter.org/the-big-split-9d7b88a031a7), which expanded support to many languages through kernels. Today, IPython continues as the Python kernel for Jupyter and as a standalone REPL.
 
 In short: Jupyter provides the notebook interface, while IPython is the engine behind it. Running IPython directly gives you notebook-like power without the browser overhead.
 

@@ -337,7 +337,7 @@ This ensures config files end up in the right places:
 
 The UI uses Dear ImGui with the [Moonlight theme](https://github.com/Madam-Herta/Moonlight). It looks more like a game UI than a debug panel.
 
-To integrate ImGui with SFML, I used the [ImGui‑SFML](https://github.com/SFML/imgui-sfml), creating an RAII `ImGuiContext` class that initializes the binding on construction and cleans up on scope exit. It's completely seamless.
+To integrate ImGui with SFML, I used the [ImGui-SFML](https://github.com/SFML/imgui-sfml), creating an RAII `ImGuiContext` class that initializes the binding on construction and cleans up on scope exit. It's completely seamless.
 
 ![Graphics](/images/vroom_graphics.webp)
 

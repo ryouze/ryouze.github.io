@@ -55,16 +55,16 @@ GUI apps are typically distributed as app bundles that users can drag and drop i
 CMakeSFMLProject.app/
 └── Contents
     ├── Frameworks
-    │   └── freetype.framework
-    │       ├── Resources -> Versions/Current/Resources
-    │       │   └── Info.plist
-    │       ├── Versions
-    │       │   ├── A
-    │       │   │   ├── Resources
-    │       │   │   │   └── Info.plist
-    │       │   │   └── freetype
-    │       │   └── Current -> A  [recursive, not followed]
-    │       └── freetype -> Versions/Current/freetype
+    │   └── freetype.framework
+    │       ├── Resources -> Versions/Current/Resources
+    │       │   └── Info.plist
+    │       ├── Versions
+    │       │   ├── A
+    │       │   │   ├── Resources
+    │       │   │   │   └── Info.plist
+    │       │   │   └── freetype
+    │       │   └── Current -> A  [recursive, not followed]
+    │       └── freetype -> Versions/Current/freetype
     ├── Info.plist
     └── MacOS
         └── CMakeSFMLProject
@@ -386,16 +386,16 @@ You can now find the app in `/Applications`:
 CMakeSFMLProject.app/
 └── Contents
     ├── Frameworks
-    │   └── freetype.framework
-    │       ├── Resources -> Versions/Current/Resources
-    │       │   └── Info.plist
-    │       ├── Versions
-    │       │   ├── A
-    │       │   │   ├── Resources
-    │       │   │   │   └── Info.plist
-    │       │   │   └── freetype
-    │       │   └── Current -> A  [recursive, not followed]
-    │       └── freetype -> Versions/Current/freetype
+    │   └── freetype.framework
+    │       ├── Resources -> Versions/Current/Resources
+    │       │   └── Info.plist
+    │       ├── Versions
+    │       │   ├── A
+    │       │   │   ├── Resources
+    │       │   │   │   └── Info.plist
+    │       │   │   └── freetype
+    │       │   └── Current -> A  [recursive, not followed]
+    │       └── freetype -> Versions/Current/freetype
     ├── Info.plist
     └── MacOS
         └── CMakeSFMLProject
