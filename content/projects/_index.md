@@ -10,9 +10,11 @@ This page showcases my work as a machine learning engineer and software develope
 
 ## Professional Work
 
-My professional work centers on machine learning research and data processing pipelines for linguistic analysis. During my 3-year paid internship on the [PRODIS project](https://prodis-opus19.github.io), I built the complete ML and data processing infrastructure, including a first-of-its-kind [phoneme-level GPT model for Polish](https://arxiv.org/abs/2404.10112).
+My prior work focused on applied machine learning and large-scale linguistic data processing.
 
-The majority of this code is not publicly available due to legal and privacy constraints (e.g., GDPR-protected personal data). Some components may be open-sourced in the future.
+During a 3-year paid internship on the [PRODIS project](https://prodis-opus19.github.io), I developed the project's complete ML and data infrastructure, including the first [phoneme-level GPT model for Polish](https://arxiv.org/abs/2404.10112).
+
+Due to legal and privacy restrictions involving GDPR-protected data, most source code cannot be released publicly. Select components may be open-sourced later.
 
 | Name                                                       | Stack                               | Type        | Description                                                                                                                 |
 | ---------------------------------------------------------- | ----------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------- |
@@ -29,9 +31,9 @@ The majority of this code is not publicly available due to legal and privacy con
 
 ## Personal Projects
 
-I believe in the saying "if you want to understand how something works, build it yourself." My personal projects thus tackle challenging programming problems from the ground up. A notable example is `vroom`, a 2D game engine built from scratch.
+My independent work focuses on low-level system design and automation.
 
-As a developer, I also build tools to eliminate repeating problems that slow down my workflow. One such project is `header-warden`, a static C++ dependency checker that's now part of my C++ workflow.
+A representative example is `vroom`, a 2D game engine developed from scratch. Other projects, such as `header-warden`, have become part of my regular C++ development workflow.
 
 | Name                                                             | Stack               | Type              | Description                                                                                                     |
 | ---------------------------------------------------------------- | ------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------- |
