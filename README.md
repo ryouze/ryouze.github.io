@@ -36,7 +36,7 @@ The project is organized as follows:
 
 This project has been tested on the following systems:
 
-- macOS 15.6 (Sonoma)
+- macOS 15.7 (Sonoma)
 
 Automated builds are performed on the latest versions of Linux.
 
@@ -58,24 +58,33 @@ Follow these steps to build the project:
     git clone https://github.com/ryouze/ryouze.github.io.git
     ```
 
-2. **Update the Gokarna theme (optional)**:
+2. **Change into the project directory**:
 
     ```sh
     cd ryouze.github.io
-    chmod +x update-theme.sh
+    ```
+
+3. **(Optional) Update the Gokarna theme**:
+
+    ```sh
     ./update-theme.sh
     ```
 
-3. **Build the project**:
+    This script fetches the latest theme files using `git`.
+
+4. **Build the project**:
 
     ```sh
-    hugo --minify
+    hugo --gc --minify
     ```
 
-After successful build, you can access the generated static files in the `public` directory.
+    - `--gc` cleans Hugo's resource cache so no outdated assets are published.
+    - `--minify` compresses HTML/CSS/JS.
+
+After successful build, the generated static files are written to the `public` directory.
 
 
-## Usage
+## Development
 
 To create a new post:
 
@@ -83,17 +92,16 @@ To create a new post:
 hugo new posts/title.md
 ```
 
+> [!NOTE]
+> Hugo creates new content as drafts. Set `draft = false` before publishing so CI includes the page.
+
 To start the Hugo server locally and view changes in real time:
 
 ```sh
-hugo server
+hugo server -D
 ```
 
-To build the site and generate static files:
-
-```sh
-hugo
-```
+`-D` serves content marked as drafts, which is handy while editing new posts.
 
 To update the Gokarna theme:
 
