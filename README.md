@@ -11,7 +11,7 @@ The website is hosted on [GitHub Pages](https://pages.github.com/) and is access
 
 I wanted a personal blog to share my programming tutorials. I chose Hugo because it allows me to write content in Markdown and generate static HTML files that can be hosted on GitHub Pages with minimal effort.
 
-I included a manual theme update script (`update-theme.sh`) because I could not get the theme to update automatically using Git submodules when running GitHub Actions.
+I included a manual theme update script (`update-theme.sh`) because I could not get the theme to update automatically using Git submodules when running GitHub Actions. Perhaps this will be fixed in the future.
 
 
 ## Features
