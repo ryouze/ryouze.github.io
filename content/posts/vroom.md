@@ -12,7 +12,7 @@ image = "/images/vroom.webp"
 
 ## Introduction
 
-I wanted to build a 2D racing game from scratch without relying on existing game engines like Godot or Unity. To achieve this, I chose to build my own game engine in C++, allowing me to improve my understanding of C++ and game development.
+I wanted to build a 2D racing game from scratch without relying on existing game engines like Godot or Unity. To achieve this, I chose to build my own game engine in C++.
 
 The result is [vroom](https://github.com/ryouze/vroom), an arcade-style racing game featuring drift physics, procedurally generated tracks, and waypoint-based AI.
 
@@ -26,21 +26,9 @@ Everything is cross-platform, with pre-built binaries available for macOS, GNU/L
 
 Looking at the Git history, the project started with a basic 2D world in SFML, then gradually gained features such as car movement, track generation, AI, menus, sounds, and persistent configuration.
 
-### Project Structure
-
-I decided to keep core engine functionality (window management, UI, audio, etc.) separate from game-specific logic (car physics, AI). Files in `src/core/` are intentionally designed not to include each other.
-
-```cpp
-// Core modules are independent building blocks
-#include "core/backend.hpp"  // Window management (SFML)
-#include "core/sfx.hpp"      // Sound effects (SFML)
-#include "core/widgets.hpp"  // UI components (ImGui)
-#include "core/world.hpp"    // Track generation
-```
-
 ### Using C++20
 
-Previous projects of mine used C++17, mainly because GitHub Actions runners didn't fully support C++20 at the time, and SFML3 was also on C++17. After finishing my C++17 project [aegyo](https://github.com/ryouze/aegyo) (a GUI Korean learning app), I wanted to move to C++20. Key features I used include:
+My previous projects used C++17, mainly because GitHub Actions runners didn't fully support C++20 at the time, and SFML3 was also on C++17. After finishing my C++17 project [aegyo](https://github.com/ryouze/aegyo) (a GUI Korean learning app), I wanted to move to C++20. Key features I used include:
 
 *Mathematical constants (`std::numbers`):*
 
@@ -84,11 +72,11 @@ option(ENABLE_LTO "Enable Link Time Optimization" ON)
 option(ENABLE_CCACHE "Enable ccache for faster builds" ON)
 ```
 
-Assets (textures and sounds) are embedded directly into the executable as headers. To achieve this, I wrote [asset-packer](https://github.com/ryouze/asset-packer), a simple CLI tool in C. Plenty of alternatives exist, but I keep everything in the spirit of learning by building.
+Assets (textures and sounds) are embedded directly into the executable as headers. To achieve this, I wrote [asset-packer](https://github.com/ryouze/asset-packer), a simple CLI tool in C. Plenty of alternatives do exist, but I keep everything in the spirit of learning by building.
 
 ### Track Generation
 
-Procedural track generation was one of the hardest parts. Handling detours was tricky since different corner textures had to be placed depending on orientation. To help, I added ASCII art diagrams inside comments to visualize how tiles fit together.
+Procedural track generation was one of the hardest parts. Handling detours was tricky since different corner textures had to be placed depending on orientation.
 
 The track uses textures from [Kenney's Racing Pack](https://kenney.nl/assets/racing-pack), upscaled with [Waifu2x](https://unlimited.waifu2x.net/). The algorithm builds rectangular layouts with optional "detour bubbles" along the edges. Width, height, and detour probability are configurable in the UI, and the AI adapts to any configuration.
 
@@ -147,11 +135,13 @@ void place_detour_bubbles(float main_x, float detour_x)
 
 ### Car Physics
 
-Car physics was another major challenge. I aimed for arcade-style handling: fun, simple, responsive, and not realistic. Cars are treated as points with velocity and rotation. Each frame applies input, acceleration, drag, slip, steering, and movement, with delta time keeping it consistent.
+Car physics were another major challenge. I aimed for arcade-style handling: fun, simple, responsive, and not realistic. Cars are treated as points with velocity and rotation. Each frame applies input, acceleration, drag, slip, steering, and movement, with delta time keeping it consistent.
 
-The result is fast acceleration and easy drifting. It doesn't take much skill, but it's fun to play, which was the goal.
+The result is fast acceleration and easy drifting. It doesn't require a lot skill, but it's fun to play, which was the goal.
 
 Physics is applied inside the `Car` class. A full physics engine might be something I build later in a future project.
+
+In fact, I don't like how it runs on every frame, I'd prefer to optimize it further but that'd require a major refactor and at that point, I might as well develop a full physics engine.
 
 ```cpp
 // Simplified physics implementation (runs on every frame)
@@ -277,9 +267,9 @@ The AI system was one of the most complex parts.
 
 While building the track, the system also creates waypoints for the AI to follow. Each tile gets a waypoint at its center, and the system marks them as either straight sections or corners based on the tile type. After the track is built, the waypoints get reordered to start from the finish line so the AI cars can follow them in the right racing order.
 
-Thus, regardless of configuration, the AI can always find its way around the track. The difficult part is making sure it doesn't just drive into walls due to excessive speed while also not being too slow.
+Thus, regardless of configuration, the AI can always find its way around the track. The difficult part is making sure it doesn't just drive into walls due to excessive speed while also not being slow and boring.
 
-The cars follow a sequence of waypoints placed along the track.
+So how does the AI work? They follow a sequence of waypoints placed along the track.
 
 On every frame, each car (including the player) runs an `update()` function. For AI cars, it sets the AI inputs based on the car's position, velocity, and the direction of the next waypoint.
 
@@ -289,11 +279,11 @@ To steer, the AI compares the car's current heading to the direction of the next
 
 The AI sets a target speed depending on whether the car is approaching a corner or traveling on a straight. If the current speed exceeds the target, the AI decelerates; if it is below the target, it accelerates. If the speed is close to the target, the AI coasts, relying on drag.
 
-To avoid collisions, the AI scans ahead for potential wall impacts. If a crash is likely, it applies the handbrake and increases steering. The current, somewhat conservative values seem to prevent the AI from crashing into walls, but feedback is welcome.
+To avoid collisions, the AI scans ahead for potential wall impacts. If a crash is likely, it applies the handbrake and increases steering. The current, somewhat conservative values seem to prevent the AI from crashing into walls.
 
 To prevent AI cars from behaving identically, each instance uses its own random number generator. This introduces small variations in reaction distances, turn sensitivity, and target speeds.
 
-The AI logic updates at 30 Hz. Testing shows that 20 Hz is acceptable, while 10 Hz causes frequent wall collisions. Physics simulation runs at the current frame rate and uses delta time to maintain consistent behavior across different refresh rates.
+The AI logic updates at 30 Hz. I did quite a bit of testing and found that 20 Hz is acceptable, while 10 Hz causes frequent wall collisions. Physics simulation runs at the current frame rate and uses delta time to maintain consistent behavior across different refresh rates. I don't like that part, I'd rather have a fixed timestep for physics, but as I've said, that would require a major refactor.
 
 ### Sound Effects
 
@@ -301,7 +291,7 @@ I used SFML's audio system for all the sound effects. All the audio files come f
 
 The most complicated audio feature is the car engine sound itself. I took a basic car engine loop sound from [OpenGameArt](https://opengameart.org/content/car-engine-loop-96khz-4s) and looped it. The code then simulates a 5-gear transmission by calculating fake RPM values based on car speed, figuring out what gear the car should be in, and adjusting the pitch and volume accordingly.
 
-On top of that, tire screeching plays when you're drifting, using a [tire squeal sample](https://opengameart.org/content/car-tire-squeal-skid-loop) that fades in and out based on how much you're sliding. When you hit walls, it plays a [collision sound](https://opengameart.org/content/ingame-samples-audio) that I slowed down to 60% speed for more impact, with volume based on how hard you hit.
+On top of that, tire screeching plays when you're drifting, using a [tire squeal sample](https://opengameart.org/content/car-tire-squeal-skid-loop) that fades in and out based on how much you're sliding. When you hit walls, it plays a [collision sound](https://opengameart.org/content/ingame-samples-audio) that I slowed down to 60% speed in Audacity for more impact, with volume based on how hard you hit.
 
 Lastly, every button click and menu interaction plays a sound effect from [UI sound packs](https://opengameart.org/content/ui-and-item-sound-effect-jingles-sample-2).
 
@@ -335,7 +325,7 @@ This ensures config files end up in the right places:
 
 ### ImGui User Interface
 
-The UI uses Dear ImGui with the [Moonlight theme](https://github.com/Madam-Herta/Moonlight). It looks more like a game UI than a debug panel.
+The UI uses Dear ImGui with the [Moonlight theme](https://github.com/Madam-Herta/Moonlight). It looks more like a game UI than a debug panel but I built it with mouse and keyboard in mind, so gamepad support is pretty bad outside of just driving the car. If I were to build it again, I'd start with gamepad first, then add mouse/keyboard support later.
 
 To integrate ImGui with SFML, I used the [ImGui-SFML](https://github.com/SFML/imgui-sfml), creating an RAII `ImGuiContext` class that initializes the binding on construction and cleans up on scope exit. It's completely seamless.
 
