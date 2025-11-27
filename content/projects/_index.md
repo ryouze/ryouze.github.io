@@ -10,7 +10,7 @@ This page showcases my work as a machine learning engineer and software develope
 
 ## Professional Work
 
-My prior work focused on applied machine learning and large-scale linguistic data processing.
+I currently work at EPR Labs. My prior work focused on applied machine learning and large-scale linguistic data processing.
 
 During a 3-year paid internship on the [PRODIS project](https://prodis-opus19.github.io), I developed the project's complete ML and data infrastructure, including the first [phoneme-level GPT model for Polish](https://arxiv.org/abs/2404.10112).
 
@@ -18,8 +18,8 @@ Due to legal and privacy restrictions involving GDPR-protected data, most source
 
 | Name                                                       | Stack                               | Type        | Description                                                                                                                 |
 | ---------------------------------------------------------- | ----------------------------------- | ----------- | --------------------------------------------------------------------------------------------------------------------------- |
-| model                                                      | Python, PyTorch, Pandas, Matplotlib | CLI tool    | Pipeline for training a phoneme-level GPT model on Polish IPA with custom tokenizer and multithreaded postprocessing tools. |
-| asr                                                        | Python, Whisper                     | CLI tool    | CLI wrapper around OpenAI Whisper for batch automatic speech recognition with stereo-to-mono conversion.                    |
+| model                                                      | Python, PyTorch, Pandas, Matplotlib | CLI tool    | Pipeline for training a phoneme-level GPT model to predict surprisal in Polish. Custom IPA tokenizer, parallelized steps for formant extraction, alignment, and stress annotation. |
+| asr                                                        | Python, Whisper                     | CLI tool    | Pipeline for batch automatic speech recognition with stereo-to-mono conversion.                    |
 | datasets                                                   | Python, Pandas                      | CLI tool    | Data processing scripts for downloading, cleaning, and phonemizing OpenSubtitles, OSCAR, and Wikipedia corpora into IPA.    |
 | survey                                                     | Python, Pandas                      | CLI tool    | CI-based tool for cleaning and standardizing Microsoft Forms exports with translation and data validation.                  |
 | transcriptions                                             | Python                              | CLI tool    | CI-based repository scanner that verifies audio transcription structure and generates verification status reports.          |
@@ -37,8 +37,8 @@ A representative example is `vroom`, a 2D game engine developed from scratch. Ot
 
 | Name                                                             | Stack               | Type              | Description                                                                                                     |
 | ---------------------------------------------------------------- | ------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------- |
-| [vroom](https://github.com/ryouze/vroom)                         | C++20, SFML3, ImGui | Game Engine       | Cross-platform 2D racing game with arcade drift physics, procedurally generated tracks, and waypoint AI.        |
-| [header-warden](https://github.com/ryouze/header-warden)         | C++17               | CLI tool          | Cross-platform multithreaded CLI tool that identifies and reports missing standard library headers in C++ code. |
+| [vroom](https://github.com/ryouze/vroom)                         | C++20, SFML3, ImGui | Game Engine       | Cross-platform 2D racing game with arcade drift physics, procedurally-generated tracks, and waypoint AI.        |
+| [header-warden](https://github.com/ryouze/header-warden)         | C++17               | CLI tool          | Cross-platform multithreaded static analysis tool that reports missing standard library headers in C++ code. |
 | [aegyo](https://github.com/ryouze/aegyo)                         | C++17, SFML3        | Desktop app       | Cross-platform GUI app for learning Korean Hangul with mouse and keyboard input.                                |
 | [ungpt](https://github.com/ryouze/ungpt)                         | C++20, SFML3        | Desktop app       | Cross-platform GUI app that converts ChatGPT's smart punctuation and symbols to plain ASCII.                    |
 | [yt-table](https://github.com/ryouze/yt-table)                   | C++17               | CLI tool          | Cross-platform CLI tool for managing YouTube subscriptions locally through a shell-like interface.              |
