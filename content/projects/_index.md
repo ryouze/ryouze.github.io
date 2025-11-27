@@ -1,10 +1,10 @@
 +++
 title = "Projects"
 type = "page"
-description = "Personal and professional projects spanning cross-platform apps, developer tools, automation pipelines, and machine learning systems."
+description = "Personal and professional projects spanning machine learning, data science, and cross-platform applications."
 +++
 
-This page showcases my work as a machine learning engineer and software developer, spanning data science, automation pipelines, cross-platform applications, and developer tooling.
+This page showcases my work, spanning machine learning, data science, and cross-platform applications.
 
 ---
 
