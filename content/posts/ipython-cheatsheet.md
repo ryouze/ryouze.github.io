@@ -1,7 +1,7 @@
 +++
 date = 2025-08-24T14:23:55+02:00
 title = "IPython Cheatsheet: Commands, Magics, and Hidden Features"
-description = "A cheatsheet of useful IPython commands, magics, and features for faster interactive Python work."
+description = "A cheatsheet of useful IPython commands, magics, and features for interactive Python development."
 tags = ["Python", "IPython", "Notes", "Cheatsheet"]
 type = "post"
 showTableOfContents = true
@@ -12,13 +12,7 @@ image = "/images/ipython-cheatsheet.webp"
 
 ## Introduction
 
-I recently started working as a machine learning engineer, and one of the first things I was told was to learn IPython. Until then, I had only seen it bundled with Jupyter notebooks. When I tried it briefly a couple of years ago, it looked like nothing more than a Python REPL with syntax highlighting, so I didn't see much value in it.
-
-This time, digging deeper, I realized that IPython does *a lot* more than I expected.
-
-IPython began in 2001 as an enhanced interactive Python shell with tab completion, introspection, and inline help. Over time, it grew into the project that created the web-based *notebook* interface. In 2014-2015, that notebook component was [split into Jupyter](https://blog.jupyter.org/the-big-split-9d7b88a031a7), which expanded support to many languages through kernels. Today, IPython continues as the Python kernel for Jupyter and as a standalone REPL.
-
-In short: Jupyter provides the notebook interface, while IPython is the engine behind it. Running IPython directly gives you notebook-like power without the browser overhead.
+IPython began in 2001 as an enhanced interactive Python shell with tab completion, introspection, and inline help. Over time, it grew into the project that created the famous web-based *notebook* interface. In 2014-2015, that notebook component was [split into Jupyter](https://blog.jupyter.org/the-big-split-9d7b88a031a7), which expanded support to many languages through kernels. Today, IPython continues as the Python kernel for Jupyter and as a standalone REPL.
 
 This cheatsheet collects useful IPython commands and features, based on [Sebastian Witowski's talk](https://www.youtube.com/watch?v=S9rgGJYAQ8o) *IPython can do that?!*, with a few additions of my own.
 
@@ -599,7 +593,3 @@ Docs: [Event loop integration](https://ipython.readthedocs.io/en/stable/config/e
 * **bpython**: A lightweight REPL with syntax highlighting, autocompletion, and a "rewind" feature.
 * **ptpython**: A more advanced REPL built on `prompt_toolkit`, offering multiline editing, syntax validation, and Vim/Emacs modes.
 * **xonsh**: A Python-powered shell language that is a superset of Python, combining shell and Python syntax.
-
-## Final Thoughts
-
-Jupyter Notebooks without the web interface. I like it.

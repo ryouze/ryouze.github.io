@@ -35,7 +35,7 @@ Perfect. Time to update from 15.2.
 
 ## Bonus
 
-You can also use the **Content & Privacy** settings to disable other Apple Intelligence features for good measure. This approach, however, enables content restrictions, so it might not be suitable for everyone.
+You can also use the **Content & Privacy** settings to disable other Apple Intelligence features for extra safety:
 
 1. Open **System Settings** > **Screen Time** > **Content & Privacy**.
 2. Enable **Content & Privacy**.
