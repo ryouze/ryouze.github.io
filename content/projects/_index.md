@@ -1,16 +1,16 @@
 +++
 title = "Projects"
 type = "page"
-description = "Personal and professional projects spanning machine learning, data science, and cross-platform applications."
+description = "Portfolio of my work, including CLI tools, desktop applications, and machine learning projects."
 +++
 
-This page showcases my work, spanning machine learning, data science, and cross-platform applications.
+This page contains a portfolio of my work, including CLI tools, desktop applications, and machine learning projects.
 
 ---
 
 ## Professional Work
 
-I currently work at EPR Labs. My prior work focused on applied machine learning and large-scale linguistic data processing.
+I currently work at [EPR Labs](https://epr-labs.com/). My prior work focused on machine learning and large-scale linguistic data processing.
 
 During a 3-year paid internship on the [PRODIS project](https://prodis-opus19.github.io), I developed the project's complete ML and data infrastructure, including the first [phoneme-level GPT model for Polish](https://arxiv.org/abs/2404.10112).
 
@@ -31,13 +31,9 @@ Due to legal and privacy restrictions involving GDPR-protected data, most source
 
 ## Personal Projects
 
-My independent work focuses on low-level system design and automation.
-
-A representative example is `vroom`, a 2D game engine developed from scratch. Other projects, such as `header-warden`, have become part of my regular C++ development workflow.
-
 | Name                                                             | Stack               | Type              | Description                                                                                                     |
 | ---------------------------------------------------------------- | ------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------- |
-| [vroom](https://github.com/ryouze/vroom)                         | C++20, SFML3, ImGui | Game Engine       | Cross-platform 2D racing game with arcade drift physics, procedurally-generated tracks, and waypoint AI.        |
+| [vroom](https://github.com/ryouze/vroom)                         | C++20, SFML3, ImGui | Game              | Cross-platform 2D racing game with arcade drift physics, procedurally-generated tracks, and waypoint AI.        |
 | [header-warden](https://github.com/ryouze/header-warden)         | C++17               | CLI tool          | Cross-platform multithreaded static analysis tool that reports missing standard library headers in C++ code. |
 | [aegyo](https://github.com/ryouze/aegyo)                         | C++17, SFML3        | Desktop app       | Cross-platform GUI app for learning Korean Hangul with mouse and keyboard input.                                |
 | [ungpt](https://github.com/ryouze/ungpt)                         | C++20, SFML3        | Desktop app       | Cross-platform GUI app that converts ChatGPT's smart punctuation and symbols to plain ASCII.                    |
