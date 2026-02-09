@@ -1,7 +1,7 @@
 +++
 date = 2025-08-24T14:23:55+02:00
 title = "IPython Cheatsheet: Commands, Magics, and Hidden Features"
-description = "A cheatsheet of useful IPython commands, magics, and features for interactive Python development."
+description = "A cheatsheet of useful IPython commands, magics, and features."
 tags = ["Python", "IPython", "Notes", "Cheatsheet"]
 type = "post"
 showTableOfContents = true
