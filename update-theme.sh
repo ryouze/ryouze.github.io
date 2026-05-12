@@ -20,7 +20,7 @@ rm -rf .github
 rm -rf exampleSite
 rm -rf images
 
-# Remove all the languages except English
+# Remove all languages except English
 find i18n -type f ! -iname "en.toml" -delete
 
 # Remove unwanted files
