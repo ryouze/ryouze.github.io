@@ -32,8 +32,8 @@ jobs:
       - name: Initialize Git submodules
         run: git submodule update --init --recursive
 
-      - name: Setup GitHub Pages
-        id: pages
+      - name: Configure GitHub Pages
+        id: configure_pages
         uses: actions/configure-pages@v6
 
       - name: Install Hugo
@@ -44,13 +44,13 @@ jobs:
           tar -C "${HOME}/.local/hugo" -xf "${{ runner.temp }}/hugo_${HUGO_VERSION}_linux-amd64.tar.gz"
           echo "${HOME}/.local/hugo" >> "${GITHUB_PATH}"
 
-      - name: Build
+      - name: Build website
         run: |
           hugo build \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${{ steps.configure_pages.outputs.base_url }}/"
 
-      - name: Upload artifact
+      - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
@@ -65,9 +65,9 @@ jobs:
 
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deploy_pages.outputs.page_url }}
 
     steps:
       - name: Deploy to GitHub Pages
-        id: deployment
+        id: deploy_pages
         uses: actions/deploy-pages@v5
