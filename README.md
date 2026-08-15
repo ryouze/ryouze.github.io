@@ -34,7 +34,7 @@ After successful build, the generated static files are written to the `public` d
 To create a new post:
 
 ```sh
-hugo new posts/title.md
+hugo new content posts/title.md
 ```
 
 > [!NOTE]
