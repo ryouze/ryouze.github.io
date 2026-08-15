@@ -29,9 +29,6 @@ jobs:
           submodules: recursive
           persist-credentials: false
 
-      - name: Initialize Git submodules
-        run: git submodule update --init --recursive
-
       - name: Configure GitHub Pages
         id: configure_pages
         uses: actions/configure-pages@v6
