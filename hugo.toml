@@ -1,11 +1,10 @@
 baseURL = "https://ryouze.net/"
 title = "ryouze"
 theme = "gokarna"
-languageCode = "en"
+locale = "en"
 defaultContentLanguage = "en"
 enableEmoji = true
 enableRobotsTXT = true
-pygmentsStyle = "monokai"  # Code highlighting style
 contentDir = "content"
 enableGitInfo = true
 
@@ -81,6 +80,9 @@ enableGitInfo = true
     weight = 5
 
 [markup]
+  [markup.highlight]
+    style = "monokai"
+
   [markup.tableOfContents]
     startLevel = 1
     endLevel = 4
