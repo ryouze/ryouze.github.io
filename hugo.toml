@@ -1,12 +1,14 @@
-baseURL = "https://ryouze.net/"
-title = "ryouze"
 theme = "gokarna"
+
+title = "ryouze"
+baseURL = "https://ryouze.net/"
+
 locale = "en"
 defaultContentLanguage = "en"
+
 enableEmoji = true
-enableRobotsTXT = true
-contentDir = "content"
 enableGitInfo = true
+enableRobotsTXT = true
 
 
 [params]
