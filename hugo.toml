@@ -12,80 +12,66 @@ enableRobotsTXT = true
 
 
 [params]
-  # Landing page
-  ## Avatar
+  description = "Jan Foremski"
   avatarURL = "https://avatars.githubusercontent.com/u/98982999"
+
   AvatarAltText = "avatar"
   avatarSize = "size-l"  # size-xs, size-s, size-m, size-l & size-xl (default: size-m)
-  ## Title
-  description = "Jan Foremski"
-  ## Icons with links below the avatar the title / description: https://github.com/526avijitgupta/gokarna/tree/main/static/svg/icons
+
   socialIcons = [
+    # https://github.com/526avijitgupta/gokarna/tree/main/static/svg/icons
     {name = "github", url = "https://github.com/ryouze"},
     {name = "linkedin", url = "https://www.linkedin.com/in/jan-foremski-ab60122b8/"},
     {name = "email", url = "mailto:mirai@ryouze.net"}
   ]
-  ## Posts: "popular" (order posts by weight), "recent" (order posts by date), or "" (do not display, default option)
-  showPostsOnHomePage = "recent"
-  ## Number of posts to show on the homepage
+
   NumberPostsOnHomePage = 6
 
-  # Appearance
-  ## Display a "back to top" button on posts
-  ShowBackToTopButton = true
-  ## Display reading time on posts
   DisplayReadingTime = true
-  ## Date format
+  ShowBackToTopButton = true
   dateFormat = "2006-01-02 15:04"
-  ## Previous and Next buttons (will not work with the ".Weight" parameter)
-  TogglePreviousAndNextButtons = true
+  TogglePreviousAndNextButtons = true  # Will not work with the ".Weight" parameter
+  showPostsOnHomePage = "recent"  # "popular" (order posts by weight), "recent" (order posts by date), or "" (do not display, default)
 
-  # Misc
-  ## SEO
+  # SEO
+  author = "Jan Foremski"
   metaKeywords = ["ryouze", "GitHub", "Tutorial", "Programming", "Blog", "C++", "Python", "macOS", "Linux"]
-  ## Author information for structured data
-  author = "ryouze"
 
 
-[menu]
-  [[menu.main]]
-    name = "Home"
-    pre = "<span data-feather='home'></span>"
-    url = "/"
+[menus]
+  [[menus.main]]
     weight = 1
+    name = "Home"
+    pageRef = "/"
+    pre = "<span data-feather='home'></span>"
 
-  [[menu.main]]
-    name = "Projects"
-    pre = "<span data-feather='code'></span>"
-    url = "/projects/"
+  [[menus.main]]
     weight = 2
+    name = "Projects"
+    pageRef = "/projects"
+    pre = "<span data-feather='code'></span>"
 
-  [[menu.main]]
-    name = "GitHub"
-    pre = "<span data-feather='github'></span>"
-    url = "https://github.com/ryouze/"
+  [[menus.main]]
     weight = 3
+    name = "GitHub"
+    url = "https://github.com/ryouze/"
+    pre = "<span data-feather='github'></span>"
 
-    [menu.main.params]
+    [menus.main.params]
       newPage = true
 
-  [[menu.main]]
-    name = "Posts"
-    pre = "<span data-feather='book'></span>"
-    url = "/posts/"
+  [[menus.main]]
     weight = 4
+    name = "Posts"
+    pageRef = "/posts"
+    pre = "<span data-feather='book'></span>"
 
-  [[menu.main]]
-    name = "Contact"
-    pre = "<span data-feather='mail'></span>"
-    url = "/contact/"
+  [[menus.main]]
     weight = 5
+    name = "Contact"
+    pageRef = "/contact"
+    pre = "<span data-feather='mail'></span>"
 
 [markup]
   [markup.highlight]
     style = "monokai"
-
-  [markup.tableOfContents]
-    startLevel = 1
-    endLevel = 4
-    ordered = false
