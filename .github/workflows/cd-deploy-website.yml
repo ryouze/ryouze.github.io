@@ -6,12 +6,9 @@ on:
       - README.md
   workflow_dispatch:
 
-concurrency:
-  group: github-pages
-
 env:
   TZ: Europe/Warsaw
-  HUGO_VERSION: 0.165.0
+  HUGO_VERSION: 0.167.0
 
 jobs:
   build:
