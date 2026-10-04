@@ -2,7 +2,7 @@
 
 [![CD: Deploy website to GitHub Pages](https://github.com/ryouze/ryouze.github.io/actions/workflows/cd-deploy-website.yml/badge.svg)](https://github.com/ryouze/ryouze.github.io/actions/workflows/cd-deploy-website.yml)
 
-Personal website built using [Hugo](https://gohugo.io/), available at [ryouze.net](https://ryouze.net/).
+A personal website built using [Hugo](https://gohugo.io/), available at [ryouze.net](https://ryouze.net/).
 
 ## Build
 
