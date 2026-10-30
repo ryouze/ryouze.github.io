@@ -21,7 +21,7 @@ enableRobotsTXT = true
   socialIcons = [
     # https://github.com/526avijitgupta/gokarna/tree/main/static/svg/icons
     {name = "github", url = "https://github.com/ryouze"},
-    {name = "linkedin", url = "https://www.linkedin.com/in/jan-foremski-ab60122b8/"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/jforemski"},
     {name = "email", url = "mailto:mirai@ryouze.net"}
   ]
 
