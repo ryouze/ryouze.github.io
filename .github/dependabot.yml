@@ -1,0 +1,18 @@
+version: 2
+
+updates:
+  # Check the Gokarna Hugo theme for updates once per month
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+
+  # Check GitHub Actions monthly and combine all updates into one PR
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    groups:
+      actions:
+        patterns:
+          - "*"
