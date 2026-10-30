@@ -1,9 +1,12 @@
 name: "CD: Deploy website to GitHub Pages"
 
 on:
+  # Run on pushes to `main` (avoid duplicate runs on feature branches) and on pull requests
+  # Also allow manual runs from the `Actions` tab
   push:
-    paths-ignore:
-      - README.md
+    branches:
+      - main
+  pull_request:
   workflow_dispatch:
 
 env:
@@ -22,6 +25,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
         with:
+          # This downloads the entire Git history
+          # With `enableGitInfo = true` in `hugo.toml`, we can use Git to tell when files were last modified
           fetch-depth: 0
           submodules: recursive
           persist-credentials: false
@@ -45,11 +50,16 @@ jobs:
             --baseURL "${{ steps.configure_pages.outputs.base_url }}/"
 
       - name: Upload GitHub Pages artifact
+        # Only upload deployment artifacts for `main`, not pull requests
+        # TODO(ryouze): Consider moving the build job to a separate file so we won't need these `if` checks
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./public
 
   deploy:
+    # Deploy only from `main` after a successful build, never from pull requests
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
 
